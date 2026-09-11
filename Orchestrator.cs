@@ -18,6 +18,8 @@ public class Orchestrator
     {
         var builder = new StringBuilder();
         
+        new CreateLoggingInfrastructureActivity().Build(builder);
+        new EnsureSnapshotTableExistActivity(cleanup.Changes).Build(builder);
         new InitializeCleanupActivity(cleanup.Metadata).Build(builder);
         new ReportCleanupAgentsRegistered(cleanup.Changes).Build(builder);
         new ExecuteValidationsActivity(cleanup.Validations).Build(builder);

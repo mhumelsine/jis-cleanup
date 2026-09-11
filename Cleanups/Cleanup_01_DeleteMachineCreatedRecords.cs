@@ -1,7 +1,5 @@
 using JisCleanup.TableChanges;
 using JisCleanup.Validations;
-using ArrestDelete = JisCleanup.Changes.ArrestDelete;
-using CjisDocketDelete = JisCleanup.Changes.CjisDocketDelete;
 
 namespace JisCleanup.Cleanups;
 
@@ -15,23 +13,6 @@ public class Cleanup_01_DeleteMachineCreatedRecords : Cleanup2 {
             RequestedBy = "Michael Humelsine",
             CaseIds = [321321,321321,321321,321321,321321]
         };
-        
-        Changes = [
-            new CjisDocketDelete(),
-            new FaChargeDelete(),
-            new CourtCalendarDelete(),
-            new FirstAppearanceDelete(),
-            new CustodyStatusDelete(),
-            new ReleaseBondDelete(),
-            new ChargeJailInfoDelete(),
-            new CaseRelatedPersonDelete(),
-            new ChargeDelete(),
-            new ArrestDelete(),
-            new JailActivityDelete(),
-            new InmateDelete(),
-            new CaseDefendantDelete(),
-            new CjisCaseDelete()
-        ];
 
         Validations =
         [
@@ -51,6 +32,23 @@ public class Cleanup_01_DeleteMachineCreatedRecords : Cleanup2 {
             new SatelliteProvenanceValidation(),
             new ChargesRequiredValidation(),
             new DocketsRequiredValidation()
+        ];
+        
+        Changes = [
+            new CjisDocketDelete(),
+            new FaChargeDelete(),
+            new CourtCalendarDelete(),
+            new FirstAppearanceDelete(),
+            new CustodyStatusDelete(),
+            new ReleaseBondDelete(),
+            new ChargeJailInfoDelete(),
+            new CaseRelatedPersonDelete(),
+            new ChargeDelete(),
+            new ArrestDelete(),
+            new JailActivityDelete(),
+            new InmateDelete(),
+            new CaseDefendantDelete(),
+            new CjisCaseDelete()
         ];
     }
 }

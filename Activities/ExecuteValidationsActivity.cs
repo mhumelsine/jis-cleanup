@@ -12,7 +12,7 @@ public class ExecuteValidationsActivity(IValidation[] validations) : IActivity
               DECLARE
                   v_case_id JISJDW.Z__CLEANUP_CASE_QUEUE.case_id%TYPE;
                   v_is_valid PLS_INTEGER := 0;
-                  v_validation_error := NULL;
+                  v_validation_error VARCHAR2(512) := NULL;
 
                   CURSOR c_cases IS
                       SELECT

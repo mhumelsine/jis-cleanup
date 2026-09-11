@@ -3,21 +3,31 @@ namespace JisCleanup.TableChanges;
 public sealed class ChargeDelete : DeleteTableChange
 {
     public ChargeDelete()
-        : base(new TableDefinition("JISJDW", "CHARGE", "CHARGE_ID"))
+        : base(new TableDefinition(
+            "JISJDW",
+            "CHARGE",
+            "CHARGE_ID"))
     {
     }
 
-    public override string LoadContext()
-        => """
-            SELECT charge_row.charge_id
-            BULK COLLECT INTO v_charge_id_list
-            FROM JISJDW.CHARGE charge_row
-            WHERE charge_row.case_defendant_id = v_case_defendant_id
-            FOR UPDATE NOWAIT;
-            """;
-
     public override string WherePredicate
         => """
-            source_row.charge_id IN (SELECT COLUMN_VALUE FROM TABLE(v_charge_id_list))
+            source_row.case_defendant_id IN
+            (
+                SELECT case_defendant_row.case_defendant_id
+                FROM JISJDW.CASE_DEFENDANT case_defendant_row
+                WHERE case_defendant_row.case_id = v_case_id
+            )
+            """;
+
+    public override string Apply()
+        => $"""
+            DELETE
+            FROM {TargetTableName} source_row
+            WHERE {WherePredicate}
+            RETURNING
+                source_row.{TableDefinition.PrimaryKeyColumn}
+            BULK COLLECT INTO
+                {AffectedIdListName};
             """;
 }

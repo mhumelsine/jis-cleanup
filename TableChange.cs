@@ -58,4 +58,84 @@ public abstract class TableChange
             """;
 
     public abstract string Apply();
+    
+    private string BuildConstraintName(string suffix)
+    {
+        return $"Z_{TableDefinition.Table}_{suffix}";
+    }
+    
+    public string CreateSnapshotTableIfMissing()
+{
+    var checkConstraintName = BuildConstraintName("CK");
+    var uniqueConstraintName = BuildConstraintName("UQ");
+    var cleanupConstraintName = BuildConstraintName("FK");
+
+    return $"""
+        DECLARE
+            v_table_count PLS_INTEGER;
+        BEGIN
+            SELECT
+                COUNT(*)
+            INTO
+                v_table_count
+            FROM
+                ALL_TABLES
+            WHERE
+                owner = '{TableDefinition.Owner.ToUpperInvariant()}'
+                AND table_name = 'Z__{TableDefinition.Table.ToUpperInvariant()}';
+
+            IF v_table_count = 0
+            THEN
+                EXECUTE IMMEDIATE
+                    'CREATE TABLE {SnapshotTableName} AS 
+                    SELECT * 
+                    FROM {TargetTableName}
+                    WHERE 1 = 0';
+
+                EXECUTE IMMEDIATE
+                    'ALTER TABLE {SnapshotTableName} ADD 
+                    ( 
+                        cleanup_id NUMBER, 
+                        change_action VARCHAR2(50), 
+                        row_state VARCHAR2(50) 
+                    )';
+
+                EXECUTE IMMEDIATE
+                    'ALTER TABLE {SnapshotTableName} MODIFY 
+                    ( 
+                        cleanup_id NOT NULL, 
+                        change_action NOT NULL, 
+                        row_state NOT NULL 
+                    )';
+
+                EXECUTE IMMEDIATE
+                    'ALTER TABLE {SnapshotTableName} 
+                    ADD CONSTRAINT {checkConstraintName} 
+                    CHECK 
+                    ( 
+                        change_action IN (''UPDATE'', ''DELETE'') 
+                        AND row_state IN (''BEFORE'', ''AFTER'') 
+                    )';
+
+                EXECUTE IMMEDIATE
+                    'ALTER TABLE {SnapshotTableName} 
+                    ADD CONSTRAINT {uniqueConstraintName} 
+                    UNIQUE 
+                    ( 
+                        cleanup_id, 
+                        {TableDefinition.PrimaryKeyColumn}, 
+                        row_state 
+                    )';
+
+                EXECUTE IMMEDIATE
+                    'ALTER TABLE {SnapshotTableName} 
+                    ADD CONSTRAINT {cleanupConstraintName} 
+                    FOREIGN KEY (cleanup_id) 
+                    REFERENCES JISJDW.Z__CLEANUP (cleanup_id)';
+            END IF;
+        END;
+        /
+        
+        """;
+}
 }
