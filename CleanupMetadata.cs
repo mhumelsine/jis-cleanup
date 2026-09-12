@@ -7,7 +7,7 @@ public record CleanupMetadata
     public required string Name { get; init; }
     public required string Description { get; init; }
     public required string RequestedBy { get; init; }
-    public required HashSet<int> CaseIds { get; init; } = [];
+    public required HashSet<CaseId> CaseIds { get; init; } = [];
 
     // public CleanupMetadata()
     // {

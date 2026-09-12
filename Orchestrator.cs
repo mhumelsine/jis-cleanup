@@ -9,7 +9,8 @@ public class Cleanup
     public CleanupMetadata Metadata { get; set; }
     public TableChange[] Changes { get; set; }
     public IValidation[] Validations { get; set; }
-    
+
+    public BlockDeclarations Declarations { get; set; } = new();
 }
 
 public class Orchestrator
@@ -17,6 +18,9 @@ public class Orchestrator
     public void Build(Cleanup cleanup)
     {
         var builder = new StringBuilder();
+        
+        //add global declarations
+        cleanup.Declarations.AddVariable("v_count", "NUMBER");
         
         new CreateLoggingInfrastructureActivity().Build(builder);
         new LoggingProcedureActivity().Build(builder);

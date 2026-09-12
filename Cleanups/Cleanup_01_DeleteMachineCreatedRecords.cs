@@ -16,23 +16,7 @@ public class Cleanup_01_DeleteMachineCreatedRecords : Cleanup {
 
         Validations =
         [  
-            new CaseDefendantCountValidation(),
-            new ChargesRequiredValidation(),
-            new ChargeEvidenceValidation(),
-            new DocketsRequiredValidation(),
-            new DocketEvidenceValidation(),
-            new RootProvenanceValidation(),
-            new HumanAuditValidation(),
-            new AdvancedCaseGraphValidation(),
-            new ExternalDocketReferenceValidation(),
-            new SharedBondValidation(),
-            new SharedFirstAppearanceValidation(),
-            new SharedArrestCustodyValidation(),
-            new SharedArrestFirstAppearanceValidation(),
-            new ExternalArrestDocketValidation(),
-            new ArrestProvenanceValidation(),
-            new SharedInmateValidation(),
-            new SatelliteProvenanceValidation(),
+            new C
         ];
         
         Changes = [
