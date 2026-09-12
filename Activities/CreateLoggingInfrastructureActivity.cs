@@ -84,7 +84,7 @@ public class CreateLoggingInfrastructureActivity : IActivity
                         CREATE TABLE JISREM.CLEANUP_CASE_QUEUE
                         (
                             cleanup_id NUMBER NOT NULL,
-                            case_id    NUMBER NOT NULL,
+                            case_id    VARCHAR2(50) NOT NULL,
                             status     VARCHAR2(50) NOT NULL,
                             message    VARCHAR2(512) NULL,    
 
@@ -116,7 +116,7 @@ public class CreateLoggingInfrastructureActivity : IActivity
                         CREATE TABLE JISREM.CLEANUP_LOG
                         (
                             cleanup_id    NUMBER       NOT NULL,
-                            case_id       NUMBER       NULL,
+                            case_id       VARCHAR(50)  NULL,
                             log_sequence  NUMBER       NOT NULL,
                             logged_at     DATE DEFAULT SYSDATE NOT NULL,
                             step_name     VARCHAR2(50) NULL,
