@@ -11,12 +11,26 @@ public class Cleanup_01_DeleteMachineCreatedRecords : Cleanup {
             Name = GetType().Name,
             Description = "TODODODOD",
             RequestedBy = "Michael Humelsine",
-            CaseIds = [321321,321321,321321,321321,321321]
+            CaseIds = [
+                new CaseId("2026CF1202A"),
+                new CaseId("2026CF839A"),
+                new CaseId("2026CF839A")
+            ]
         };
-
+        
         Validations =
         [  
-            new C
+            new MustBeSingleDefendant(),
+            new MustHaveAtLeastOneCharge(),
+            //have charge in scope
+            //have docket in scope
+            //has a docket outside the scope
+            //must only have machine activity
+            new MustNotHaveProgressedPastBooking(),
+            new NoBondOutsideGhostDocket(),
+            new NoFirstAppearanceOutsideGhostDocket(),
+            new NoHearingOutsideGhostDocket(),
+            new NoSharedReleaseBond()
         ];
         
         Changes = [

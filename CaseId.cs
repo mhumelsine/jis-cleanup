@@ -10,7 +10,7 @@ public partial record CaseId
     {
         if (!CaseIdPattern().IsMatch(caseId))
         {
-            throw new ArgumentException($"Case ID '{caseId}' does not match the expected patter");
+            throw new ArgumentException($"Case ID '{caseId}' does not match the expected pattern");
         }
 
         Value = caseId;

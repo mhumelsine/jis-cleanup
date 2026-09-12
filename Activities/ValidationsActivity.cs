@@ -3,18 +3,31 @@ using JisCleanup.Validations;
 
 namespace JisCleanup.Activities;
 
-public class ExecuteValidationsActivity(IValidation[] validations) : IActivity
+public class ValidationsActivity(Cleanup cleanup) : IActivity
 {
     public void Build(StringBuilder builder)
     {
+        foreach (var validator in cleanup.Validations)
+        {
+            validator.Declares(cleanup.Declarations);
+        }
+        
         builder.AppendLine(
-            $"""
-              DECLARE
-                  v_case_id JISREM.CLEANUP_CASE_QUEUE.case_id%TYPE;
-                  v_is_valid PLS_INTEGER := 0;
-                  v_validation_error VARCHAR2(512) := NULL;
-                  v_count PLS_INTEGER := 0;
+            """
+             DECLARE
+             v_case_id JISREM.CLEANUP_CASE_QUEUE.case_id%TYPE;
+             v_is_valid PLS_INTEGER := 0;
+             v_validation_error VARCHAR2(512) := NULL;
+             v_count PLS_INTEGER := 0;
+             
+             """);
+        
+        cleanup.Declarations.BuildVariables(builder);
 
+        
+        builder.AppendLine(
+            """
+             
                   CURSOR c_cases IS
                       SELECT
                           case_id
@@ -37,9 +50,9 @@ public class ExecuteValidationsActivity(IValidation[] validations) : IActivity
 
              """);
         
-        foreach (var validation in validations)
+        foreach (var validation in cleanup.Validations)
         {
-            builder.AppendLine(validation.Validation());
+            validation.Validation(builder);
             builder.AppendLine(CheckValidation(validation.GetType().Name));
         }
         

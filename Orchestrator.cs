@@ -28,7 +28,7 @@ public class Orchestrator
         new InitializeCleanupActivity(cleanup.Metadata).Build(builder);
         new ReportCleanupAgentsRegistered(cleanup.Changes).Build(builder);
         new BeginTransactionActivity().Build(builder);
-        new ExecuteValidationsActivity(cleanup.Validations).Build(builder);
+        new ValidationsActivity(cleanup).Build(builder);
         new ApplyChangesActivity(cleanup.Changes).Build(builder);
         new CommitChangesActivity().Build(builder);
         
