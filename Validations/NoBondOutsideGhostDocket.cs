@@ -10,7 +10,8 @@ public class NoBondOutsideGhostDocket : Validator
            FOR UPDATE NOWAIT;
            v_bond_count := v_bond_ids.COUNT;
                             
-           SELECT COUNT(*) INTO v_count
+           SELECT COUNT(*) 
+           INTO v_count
            FROM JISJDW.CJIS_DOCKET d
            WHERE d.bond_id IN (SELECT COLUMN_VALUE FROM TABLE(v_bond_ids))
            AND d.cjis_docket_id NOT IN (SELECT COLUMN_VALUE FROM TABLE(v_docket_ids));
@@ -23,6 +24,6 @@ public class NoBondOutsideGhostDocket : Validator
     public override void Declares(BlockDeclarations declarations)
     {
         declarations.AddVariable("v_bond_count", "PLS_INTEGER");
-        declarations.AddVariable("v_bond_ids", "SYS.ODCINUMBERLIST()");
+        declarations.AddVariable("v_bond_ids", "SYS.ODCINUMBERLIST := SYS.ODCINUMBERLIST()");
     }
 }

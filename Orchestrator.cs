@@ -19,9 +19,6 @@ public class Orchestrator
     {
         var builder = new StringBuilder();
         
-        //add global declarations
-        cleanup.Declarations.AddVariable("v_count", "NUMBER");
-        
         new CreateLoggingInfrastructureActivity().Build(builder);
         new LoggingProcedureActivity().Build(builder);
         new EnsureSnapshotTableExistActivity(cleanup.Changes).Build(builder);

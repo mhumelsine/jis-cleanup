@@ -8,13 +8,5 @@ public sealed class CaseRelatedPersonDelete : DeleteTableChange
     }
 
     public override string WherePredicate
-        => """
-            EXISTS
-            (
-                SELECT 1
-                FROM JISJDW.CASE_DEFENDANT cd
-                WHERE cd.case_defendant_id = source_row.case_defendant_id
-                  AND cd.case_id = v_case_id
-            )
-            """;
+        => "case_defendant_id=v_case_defendant_id";
 }

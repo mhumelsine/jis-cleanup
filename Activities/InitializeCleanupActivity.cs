@@ -43,7 +43,7 @@ public class InitializeCleanupActivity(CleanupMetadata metadata) : IActivity
         foreach (var caseId in metadata.CaseIds)
         {
             builder.AppendLine(
-                $"  INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id,case_id, status) VALUES(:CLEANUP_ID,{caseId}, 'QUEUED');");
+                $"  INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id,case_id, status) VALUES(:CLEANUP_ID,'{caseId.Value}', 'QUEUED');");
         }
         
         builder.AppendLine(LogEmitter.Log($"Cleanup [{metadata.Name}] started", "INITIALIZATION"));

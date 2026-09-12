@@ -8,7 +8,5 @@ public sealed class CjisCaseDelete : DeleteTableChange
     }
 
     public override string WherePredicate
-        => """
-            source_row.case_id = v_case_id
-            """;
+        => "case_id=v_case_id";
 }

@@ -2,9 +2,16 @@ namespace JisCleanup.Validations;
 
 public class MustHaveNoHumanChanges : Validator
 {
+    //TODO:  We do not have SPN
     protected override string Collect()
         => """
-           SELECT COUNT(*) INTO v_count
+           SELECT MIN(create_date_time) I
+           NTO v_bad_start
+           FROM JISJDW.CJIS_DOCKET
+           WHERE cjis_docket_id IN (SELECT COLUMN_VALUE FROM TABLE(v_docket_ids));
+
+           SELECT COUNT(*) 
+           INTO v_count
            FROM JISJDW.AUDIT_TRAIL a
            WHERE a.cjis_spn=in_spn
              AND (a.cjis_case_number=v_caseno OR a.cjis_case_number LIKE v_caseno||'%')
@@ -16,5 +23,6 @@ public class MustHaveNoHumanChanges : Validator
 
     public override void Declares(BlockDeclarations declarations)
     {
+        declarations.AddVariable("v_bad_start", "DATE");
     }
 }

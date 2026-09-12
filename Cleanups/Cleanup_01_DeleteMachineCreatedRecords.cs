@@ -22,15 +22,34 @@ public class Cleanup_01_DeleteMachineCreatedRecords : Cleanup {
         [  
             new MustBeSingleDefendant(),
             new MustHaveAtLeastOneCharge(),
-            //have charge in scope
-            //have docket in scope
-            //has a docket outside the scope
-            //must only have machine activity
+            new ChargeMustHaveBadDocketEvidence(),
+            new CaseMustHaveAtLeastOneDocket(),
+            new NoDocketsOutsideBadDocketScope(),
+            new CjisCaseMustNotHaveHumanChanges(),
+            new CaseDefendantMustNotHaveHumanChanges(),
+            new ChargeMustNotHaveHumanChanges(),
+            new CjisDocketMustNotHaveHumanChanges(),
             new MustNotHaveProgressedPastBooking(),
             new NoBondOutsideGhostDocket(),
             new NoFirstAppearanceOutsideGhostDocket(),
             new NoHearingOutsideGhostDocket(),
-            new NoSharedReleaseBond()
+            new NoSharedReleaseBond(),
+            new NoSharedFirstAppearance(),
+            new NoSharedArrestCustody(),
+            new NoSharedArrestFirstAppearance(),
+            new NoArrestOutsideGhostDocket(),
+            new ArrestMustNotHaveHumanChanges(),
+            new NoSharedInmateArrest(),
+            new CustodyMustNotHaveHumanChanges(),
+            new BondMustNotHaveHumanChanges(),
+            new FirstAppearanceMustNotHaveHumanChanges(),
+            new FaChargeMustNotHaveHumanChanges(),
+            new CourtCalendarMustNotHaveHumanChanges(),
+            new ChargeJailInfoMustNotHaveHumanChanges(),
+            //new ArrestMustNotHaveHumanChanges() //TODO:  This was in the code twice
+            new InmateMustNotHaveHumanChanges(),
+            new JailActivityMustNotHaveHumanChanges(),
+            new CaseRelatedPersonNotHaveHumanChanges()
         ];
         
         Changes = [

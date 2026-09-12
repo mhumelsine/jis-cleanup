@@ -6,7 +6,7 @@ public class MustHaveAtLeastOneCharge : Validator
         => """
            SELECT charge_id BULK COLLECT INTO v_charge_ids
            FROM JISJDW.CHARGE ch
-           WHERE ch.case_defendant_id=v_case_defendant_id
+           WHERE ch.case_defendant_id=v_case_defendant_id;
 
            v_count := v_charge_ids.COUNT;
            """;
@@ -15,6 +15,6 @@ public class MustHaveAtLeastOneCharge : Validator
 
     public override void Declares(BlockDeclarations declarations)
     {
-        declarations.AddVariable("v_charge_ids", "SYS.ODCINUMBERLIST := SYS.ODCINUMBERLIST();");
+        declarations.AddVariable("v_charge_ids", "SYS.ODCINUMBERLIST := SYS.ODCINUMBERLIST()");
     }
 }

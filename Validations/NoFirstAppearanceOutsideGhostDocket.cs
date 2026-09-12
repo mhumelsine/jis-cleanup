@@ -10,7 +10,8 @@ public class NoFirstAppearanceOutsideGhostDocket : Validator
            FOR UPDATE NOWAIT;
            v_fa_count := v_fa_ids.COUNT;
                             
-           SELECT COUNT(*) INTO v_count
+           SELECT COUNT(*) 
+           INTO v_count
            FROM JISJDW.CJIS_DOCKET d
            WHERE d.first_appearance_id IN (SELECT COLUMN_VALUE FROM TABLE(v_fa_ids))
            AND d.cjis_docket_id NOT IN (SELECT COLUMN_VALUE FROM TABLE(v_docket_ids));
@@ -23,6 +24,6 @@ public class NoFirstAppearanceOutsideGhostDocket : Validator
     public override void Declares(BlockDeclarations declarations)
     {
         declarations.AddVariable("v_fa_count", "PLS_INTEGER");
-        declarations.AddVariable("v_fa_ids", "SYS.ODCINUMBERLIST()");
+        declarations.AddVariable("v_fa_ids", "SYS.ODCINUMBERLIST := SYS.ODCINUMBERLIST()");
     }
 }

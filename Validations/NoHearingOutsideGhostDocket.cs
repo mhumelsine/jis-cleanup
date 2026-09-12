@@ -10,7 +10,8 @@ public class NoHearingOutsideGhostDocket : Validator
            FOR UPDATE NOWAIT;
            v_calendar_count := v_cal_ids.COUNT;
                             
-           SELECT COUNT(*) INTO v_count
+           SELECT COUNT(*) 
+           INTO v_count
            FROM JISJDW.CJIS_DOCKET d
            WHERE d.court_calendar_id IN (SELECT COLUMN_VALUE FROM TABLE(v_cal_ids))
            AND d.cjis_docket_id NOT IN (SELECT COLUMN_VALUE FROM TABLE(v_docket_ids));
@@ -23,6 +24,6 @@ public class NoHearingOutsideGhostDocket : Validator
     public override void Declares(BlockDeclarations declarations)
     {
         declarations.AddVariable("v_calendar_count", "PLS_INTEGER");
-        declarations.AddVariable("v_cal_ids", "SYS.ODCINUMBERLIST()");
+        declarations.AddVariable("v_cal_ids", "SYS.ODCINUMBERLIST := SYS.ODCINUMBERLIST()");
     }
 }

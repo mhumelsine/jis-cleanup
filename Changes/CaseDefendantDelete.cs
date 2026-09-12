@@ -8,7 +8,5 @@ public sealed class CaseDefendantDelete : DeleteTableChange
     }
 
     public override string WherePredicate
-        => """
-            source_row.case_id = v_case_id
-            """;
+        => "case_defendant_id=v_case_defendant_id";
 }

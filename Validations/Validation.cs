@@ -13,7 +13,13 @@ public static class ValidationDefaults
 {
     public const string
         CurrentCaseId = "v_case_id",
-        BadDataStartDate = "";
+        BadDataStartDate = "",
+        OnlySustemCreatedOrChanged =
+            """
+            AND (NVL(UPPER(TRIM(create_user_id)),'~') NOT IN ('JISJDW','PNX2JIS','SYSTEMA')
+            OR (update_user_id IS NOT NULL 
+                    AND UPPER(TRIM(update_user_id)) NOT IN ('JISJDW','PNX2JIS','SYSTEMA')));
+            """;
 }
 
 public abstract class Validator : IValidation

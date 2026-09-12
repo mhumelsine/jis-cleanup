@@ -17,18 +17,18 @@ public abstract class DeleteTableChange : TableChange
     public override string Apply()
         => $"""
             DELETE 
-            FROM {TargetTableName} source_row
+            FROM {TargetTableName}
             WHERE {WherePredicate}
             RETURNING
                 {TableDefinition.PrimaryKeyColumn}
             BULK COLLECT INTO
                 {AffectedIdListName};
 
-
             """;
 
     public override string AfterSnapshot()
         => $"""
+            --SNAPSHOT AFTER
             IF {AffectedIdListName}.COUNT > 0 THEN
                 FORALL index_value IN 1 .. {AffectedIdListName}.COUNT
                     INSERT INTO {SnapshotTableName}
@@ -46,5 +46,6 @@ public abstract class DeleteTableChange : TableChange
                         '{SnapshotType.After.Value}'
                     );
             END IF;
+            
             """;
 }

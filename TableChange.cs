@@ -28,6 +28,7 @@ public abstract class TableChange
 
     public virtual string BeforeSnapshot()
         => $"""
+            --SNAPSHOT BEFORE
             INSERT INTO {SnapshotTableName}
             SELECT
                 source_row.*,
@@ -37,6 +38,7 @@ public abstract class TableChange
             FROM {TargetTableName} source_row
             WHERE {WherePredicate}
             ;
+
             """;
 
     public abstract string WherePredicate { get; }
