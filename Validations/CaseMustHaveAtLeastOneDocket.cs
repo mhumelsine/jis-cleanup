@@ -9,7 +9,7 @@ public class CaseMustHaveAtLeastOneDocket : Validator
            WHERE d.charge_id IN (SELECT COLUMN_VALUE FROM TABLE(v_charge_ids));
 
            v_docket_count := v_docket_ids.COUNT;
-            v_count := v_docket_ids.COUNT;
+           v_count := v_docket_ids.COUNT;
                           
            """;
 
@@ -17,5 +17,6 @@ public class CaseMustHaveAtLeastOneDocket : Validator
 
     public override void Declares(BlockDeclarations declarations)
     {
+        declarations.AddVariable("v_docket_count", "NUMBER");
     }
 }

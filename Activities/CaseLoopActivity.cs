@@ -2,7 +2,7 @@ using System.Text;
 
 namespace JisCleanup.Activities;
 
-public class DeclaresActivity(Cleanup cleanup) : IActivity
+public class CaseLoopActivity(Cleanup cleanup) : IActivity
 {
     public void Build(StringBuilder builder)
     {
@@ -20,12 +20,7 @@ public class DeclaresActivity(Cleanup cleanup) : IActivity
             """
             DECLARE
 
-            v_case_id JISREM.CLEANUP_CASE_QUEUE.case_id%TYPE;
-            v_is_valid PLS_INTEGER := 0;
-            v_validation_error VARCHAR2(512) := NULL;
-            v_count PLS_INTEGER := 0;
-            
-            CURSOR c_validate_cases IS
+            CURSOR c_cases IS
                 SELECT
                     case_id
                 FROM
@@ -35,22 +30,32 @@ public class DeclaresActivity(Cleanup cleanup) : IActivity
                     AND status = 'QUEUED'
                 ORDER BY
                     case_id;
-                    
-            CURSOR c_process_cases IS
-                SELECT
-                     case_id
-                FROM
-                    JISREM.CLEANUP_CASE_QUEUE
-                WHERE
-                    cleanup_id = :CLEANUP_ID
-                    AND status = 'VALIDATED'
-                ORDER BY
-                    case_id;
-
+                
             """);
         
         cleanup.Declarations.BuildTypes(builder);
+
+        builder.AppendLine(
+            """
+            BEGIN
+            FOR r_case IN c_cases
+            LOOP
+                DECLARE
+                    v_case_id JISREM.CLEANUP_CASE_QUEUE.case_id%TYPE := r_case.case_id;
+                    v_is_valid PLS_INTEGER := 0;
+                    v_validation_error VARCHAR2(512) := NULL;
+                    v_count PLS_INTEGER := 0;
+                    v_error_message VARCHAR2(512);
+
+            """);
+        
         cleanup.Declarations.BuildVariables(builder);
         
+        builder.AppendLine(
+            """
+                BEGIN
+                    SAVEPOINT case_start;
+                    
+            """);
     }
 }

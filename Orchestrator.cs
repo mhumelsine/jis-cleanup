@@ -25,8 +25,12 @@ public class Orchestrator
         new InitializeCleanupActivity(cleanup.Metadata).Build(builder);
         new ReportCleanupAgentsRegistered(cleanup.Changes).Build(builder);
         new BeginTransactionActivity().Build(builder);
+        
+        new CaseLoopActivity(cleanup).Build(builder);
         new ValidationsActivity(cleanup).Build(builder);
         new ApplyChangesActivity(cleanup.Changes).Build(builder);
+        new EndCaseLoopActivity().Build(builder);
+        
         new CommitChangesActivity().Build(builder);
         
         File.WriteAllText(cleanup.Metadata.OutputfileName, builder.ToString());

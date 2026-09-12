@@ -53,7 +53,7 @@ public class MustNotHaveProgressedPastBooking : Validator
 
            """;
 
-    protected override string Check() => ExactlyZero("Case appears to have progressed passed booking");
+    protected override string Check() => ExactlyZero("Case appears to have progressed past booking");
 
     public override void Declares(BlockDeclarations declarations)
     {

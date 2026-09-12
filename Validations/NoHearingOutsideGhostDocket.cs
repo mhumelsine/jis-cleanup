@@ -7,7 +7,7 @@ public class NoHearingOutsideGhostDocket : Validator
            SELECT court_calendar_id BULK COLLECT INTO v_cal_ids
            FROM JISJDW.COURT_CALENDAR cc
            WHERE cc.case_defendant_id=v_case_defendant_id
-           FOR UPDATE NOWAIT;
+           
            v_calendar_count := v_cal_ids.COUNT;
                             
            SELECT COUNT(*) 

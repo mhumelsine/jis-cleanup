@@ -12,7 +12,7 @@ public class JailActivityMustNotHaveHumanChanges : Validator
 
             """;
 
-    protected override string Check() => ExactlyZero("Release bond has human changes");
+    protected override string Check() => ExactlyZero("Jail activity has human changes");
 
     public override void Declares(BlockDeclarations declarations)
     {

@@ -11,7 +11,7 @@ public class MustHaveAtLeastOneCharge : Validator
            v_count := v_charge_ids.COUNT;
            """;
 
-    protected override string Check() => NotZero("Case has not charges");
+    protected override string Check() => NotZero("Case has no charges");
 
     public override void Declares(BlockDeclarations declarations)
     {

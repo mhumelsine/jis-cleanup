@@ -12,7 +12,7 @@ public class CaseRelatedPersonNotHaveHumanChanges : Validator
 
            """;
 
-    protected override string Check() => ExactlyZero("Release bond has human changes");
+    protected override string Check() => ExactlyZero("Case related person has human changes");
 
     public override void Declares(BlockDeclarations declarations)
     {

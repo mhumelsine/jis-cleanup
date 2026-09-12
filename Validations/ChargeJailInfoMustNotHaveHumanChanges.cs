@@ -6,13 +6,13 @@ public class ChargeJailInfoMustNotHaveHumanChanges : Validator
         => $"""
             SELECT COUNT(*)
             INTO v_count
-            FROM JISJDW.FIRST_APPEARANCE
-            WHERE first_appearance_id IN (SELECT COLUMN_VALUE FROM TABLE(v_fa_ids))
+            FROM JISJDW.CHARGE_JAIL_INFO
+            WHERE charge_id IN (SELECT COLUMN_VALUE FROM TABLE(v_charge_ids))
             {ValidationDefaults.OnlySustemCreatedOrChanged}
 
             """;
 
-    protected override string Check() => ExactlyZero("Release bond has human changes");
+    protected override string Check() => ExactlyZero("Charge Jail info has human changes");
 
     public override void Declares(BlockDeclarations declarations)
     {

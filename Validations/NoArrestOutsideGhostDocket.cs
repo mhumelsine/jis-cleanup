@@ -12,6 +12,7 @@ public class NoArrestOutsideGhostDocket : Validator
 
            """;
 
+    //TODO:  COnfusing message?
     protected override string Check() => ExactlyZero("Arrest is shared by another first appearance");
 
     public override void Declares(BlockDeclarations declarations)
