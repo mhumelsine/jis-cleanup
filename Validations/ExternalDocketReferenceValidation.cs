@@ -3,21 +3,50 @@ namespace JisCleanup.Validations;
 public sealed class ExternalDocketReferenceValidation : IValidation
 {
     public string Validation()
-        => $"""
-            SELECT COUNT(*)
-            INTO v_count
-            FROM JISJDW.CJIS_DOCKET docket_row
+        => """
+            SELECT COUNT(*) INTO v_count FROM JISJDW.CJIS_DOCKET d
             WHERE
             (
-                   docket_row.first_appearance_id IN (SELECT COLUMN_VALUE FROM TABLE(v_first_appearance_id_list))
-                OR docket_row.court_calendar_id IN (SELECT COLUMN_VALUE FROM TABLE(v_court_calendar_id_list))
-                OR docket_row.bond_id IN (SELECT COLUMN_VALUE FROM TABLE(v_bond_id_list))
-            )
-            AND docket_row.cjis_docket_id NOT IN
+             EXISTS (SELECT 1 FROM JISJDW.FIRST_APPEARANCE fa WHERE fa.first_appearance_id=d.first_appearance_id AND EXISTS
             (
-                SELECT COLUMN_VALUE FROM TABLE(v_cjis_docket_id_list)
-            );
+                SELECT 1
+                FROM JISJDW.CASE_DEFENDANT cd
+                WHERE cd.case_defendant_id = fa.case_defendant_id
+                  AND cd.case_id = v_case_id
+            ))
+             OR EXISTS (SELECT 1 FROM JISJDW.COURT_CALENDAR cc WHERE cc.court_calendar_id=d.court_calendar_id AND EXISTS
+            (
+                SELECT 1
+                FROM JISJDW.CASE_DEFENDANT cd
+                WHERE cd.case_defendant_id = cc.case_defendant_id
+                  AND cd.case_id = v_case_id
+            ))
+             OR EXISTS (SELECT 1 FROM JISJDW.RELEASE_BOND rb WHERE rb.bond_id=d.bond_id AND EXISTS
+            (
+                SELECT 1
+                FROM JISJDW.CHARGE ch
+                JOIN JISJDW.CASE_DEFENDANT cd
+                  ON cd.case_defendant_id = ch.case_defendant_id
+                WHERE ch.charge_id = rb.charge_id
+                  AND cd.case_id = v_case_id
+            ))
+            )
+            AND NOT (EXISTS
+            (
+                SELECT 1
+                FROM JISJDW.CHARGE ch
+                JOIN JISJDW.CASE_DEFENDANT cd
+                  ON cd.case_defendant_id = ch.case_defendant_id
+                WHERE ch.charge_id = d.charge_id
+                  AND cd.case_id = v_case_id
+            ));
 
-            {IValidation.Check("Hearing or bond is referenced by a docket outside the ghost docket set")}
+            v_is_valid := 1;
+            v_validation_error := NULL;
+
+            IF v_count > 0 THEN
+                v_is_valid := 0;
+                v_validation_error := 'Hearing or bond is referenced by a docket outside the ghost docket set';
+            END IF;
             """;
 }

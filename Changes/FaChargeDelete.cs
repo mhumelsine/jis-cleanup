@@ -1,49 +1,29 @@
-namespace JisCleanup.TableChanges;
+namespace JisCleanup;
 
 public sealed class FaChargeDelete : DeleteTableChange
 {
     public FaChargeDelete()
-        : base(new TableDefinition(
-            "JISJDW",
-            "FA_CHARGE",
-            "FIRST_APPEARANCE_ID"))
+        : base(new TableDefinition("JISJDW", "FA_CHARGE", "FIRST_APPEARANCE_ID"))
     {
     }
 
     public override string WherePredicate
         => """
-            source_row.charge_id IN
+            EXISTS
             (
-                SELECT charge_row.charge_id
-                FROM JISJDW.CHARGE charge_row
-                WHERE charge_row.case_defendant_id IN
-                (
-                    SELECT case_defendant_row.case_defendant_id
-                    FROM JISJDW.CASE_DEFENDANT case_defendant_row
-                    WHERE case_defendant_row.case_id = v_case_id
-                )
+                SELECT 1
+                FROM JISJDW.CHARGE ch
+                JOIN JISJDW.CASE_DEFENDANT cd
+                  ON cd.case_defendant_id = ch.case_defendant_id
+                WHERE ch.charge_id = source_row.charge_id
+                  AND cd.case_id = v_case_id
             )
-            OR source_row.first_appearance_id IN
+            OR EXISTS
             (
-                SELECT appearance_row.first_appearance_id
-                FROM JISJDW.FIRST_APPEARANCE appearance_row
-                WHERE appearance_row.case_defendant_id IN
-                (
-                    SELECT case_defendant_row.case_defendant_id
-                    FROM JISJDW.CASE_DEFENDANT case_defendant_row
-                    WHERE case_defendant_row.case_id = v_case_id
-                )
+                SELECT 1 FROM JISJDW.FIRST_APPEARANCE fa
+                JOIN JISJDW.CASE_DEFENDANT cd ON cd.case_defendant_id = fa.case_defendant_id
+                WHERE fa.first_appearance_id = source_row.first_appearance_id
+                  AND cd.case_id = v_case_id
             )
-            """;
-
-    public override string Apply()
-        => $"""
-            DELETE
-            FROM {TargetTableName} source_row
-            WHERE {WherePredicate}
-            RETURNING
-                source_row.{TableDefinition.PrimaryKeyColumn}
-            BULK COLLECT INTO
-                {AffectedIdListName};
             """;
 }

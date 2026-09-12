@@ -3,7 +3,7 @@ using JisCleanup.Validations;
 
 namespace JisCleanup.Cleanups;
 
-public class Cleanup_01_DeleteMachineCreatedRecords : Cleanup2 {
+public class Cleanup_01_DeleteMachineCreatedRecords : Cleanup {
     public Cleanup_01_DeleteMachineCreatedRecords()
     {
         Metadata = new CleanupMetadata
@@ -15,23 +15,24 @@ public class Cleanup_01_DeleteMachineCreatedRecords : Cleanup2 {
         };
 
         Validations =
-        [
-            new CaseNotSharedValidation(),
-            new MissingChargeEvidenceValidation(),
-            new MissingDocketEvidenceValidation(),
+        [  
+            new CaseDefendantCountValidation(),
+            new ChargesRequiredValidation(),
+            new ChargeEvidenceValidation(),
+            new DocketsRequiredValidation(),
+            new DocketEvidenceValidation(),
+            new RootProvenanceValidation(),
+            new HumanAuditValidation(),
+            new AdvancedCaseGraphValidation(),
             new ExternalDocketReferenceValidation(),
             new SharedBondValidation(),
             new SharedFirstAppearanceValidation(),
             new SharedArrestCustodyValidation(),
             new SharedArrestFirstAppearanceValidation(),
             new ExternalArrestDocketValidation(),
+            new ArrestProvenanceValidation(),
             new SharedInmateValidation(),
-            new RootProvenanceValidation(),
-            new HumanAuditValidation(),
-            new AdvancedCaseGraphValidation(),
             new SatelliteProvenanceValidation(),
-            new ChargesRequiredValidation(),
-            new DocketsRequiredValidation()
         ];
         
         Changes = [

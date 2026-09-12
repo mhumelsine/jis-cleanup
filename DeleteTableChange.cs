@@ -7,15 +7,24 @@ public abstract class DeleteTableChange : TableChange
     {
     }
 
+    public override void AddDeclares(BlockDeclarations declare)
+    {
+        declare.AddType($"t_{TableDefinition.PrimaryKeyColumn}", $"IS TABLE OF {TargetTableName}.{TableDefinition.PrimaryKeyColumn}%TYPE");
+        
+        declare.AddVariable($"{AffectedIdListName}", $"t_{TableDefinition.PrimaryKeyColumn}");
+    }
+
     public override string Apply()
         => $"""
             DELETE 
             FROM {TargetTableName} source_row
             WHERE {WherePredicate}
             RETURNING
-                source_row.{TableDefinition.PrimaryKeyColumn}
+                {TableDefinition.PrimaryKeyColumn}
             BULK COLLECT INTO
                 {AffectedIdListName};
+
+
             """;
 
     public override string AfterSnapshot()

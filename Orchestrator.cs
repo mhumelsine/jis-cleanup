@@ -4,7 +4,7 @@ using JisCleanup.Validations;
 
 namespace JisCleanup;
 
-public class Cleanup2
+public class Cleanup
 {
     public CleanupMetadata Metadata { get; set; }
     public TableChange[] Changes { get; set; }
@@ -14,14 +14,16 @@ public class Cleanup2
 
 public class Orchestrator
 {
-    public void Build(Cleanup2 cleanup)
+    public void Build(Cleanup cleanup)
     {
         var builder = new StringBuilder();
         
         new CreateLoggingInfrastructureActivity().Build(builder);
+        new LoggingProcedureActivity().Build(builder);
         new EnsureSnapshotTableExistActivity(cleanup.Changes).Build(builder);
         new InitializeCleanupActivity(cleanup.Metadata).Build(builder);
         new ReportCleanupAgentsRegistered(cleanup.Changes).Build(builder);
+        new BeginTransactionActivity().Build(builder);
         new ExecuteValidationsActivity(cleanup.Validations).Build(builder);
         new ApplyChangesActivity(cleanup.Changes).Build(builder);
         new CommitChangesActivity().Build(builder);

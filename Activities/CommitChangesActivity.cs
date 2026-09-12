@@ -9,21 +9,34 @@ public class CommitChangesActivity : IActivity
         builder.AppendLine(
             """
             BEGIN
-             IF TO_NUMBER('&&WHAT_IF')=1 THEN
-                ROLLBACK;
-                DBMS_OUTPUT.PUT_LINE('WHAT-IF completed. All changes rolled back.');
+             IF :WHAT_IF = 0 THEN
+                UPDATE JISREM.CLEANUP 
+                SET 
+                    status='COMPLETED'
+                WHERE cleanup_id=:CLEANUP_ID;
+                
+                COMMIT;
+                
+                JISREM.LOG
+                (
+                    p_cleanup_id => :CLEANUP_ID,
+                    p_step_name  => 'TRANSACTION',
+                    p_message    => 'Cleanup transaction committed'
+                );
+                
              ELSE
-                 UPDATE JISJDW.Z__CLEANUP 
-                 SET 
-                     status='COMPLETED',
-                     executed_date=SYSDATE 
-                 WHERE cleanup_id=:CLEANUP_ID;
-                 COMMIT;
-                 DBMS_OUTPUT.PUT_LINE('Cleanup committed.');
+                ROLLBACK;
+                
+                JISREM.LOG
+                (
+                    p_cleanup_id => :CLEANUP_ID,
+                    p_step_name  => 'TRANSACTION',
+                    p_message    => 'WHAT-IF was true transaction rolled back'
+                );
              END IF;
             END;
             /
-            UNDEFINE WHAT_IF
+            
             EXIT SUCCESS
             
             """);

@@ -1,38 +1,22 @@
-namespace JisCleanup.TableChanges;
+namespace JisCleanup;
 
 public sealed class ReleaseBondDelete : DeleteTableChange
 {
     public ReleaseBondDelete()
-        : base(new TableDefinition(
-            "JISJDW",
-            "RELEASE_BOND",
-            "BOND_ID"))
+        : base(new TableDefinition("JISJDW", "RELEASE_BOND", "BOND_ID"))
     {
     }
 
     public override string WherePredicate
         => """
-            source_row.charge_id IN
+            EXISTS
             (
-                SELECT charge_row.charge_id
-                FROM JISJDW.CHARGE charge_row
-                WHERE charge_row.case_defendant_id IN
-                (
-                    SELECT case_defendant_row.case_defendant_id
-                    FROM JISJDW.CASE_DEFENDANT case_defendant_row
-                    WHERE case_defendant_row.case_id = v_case_id
-                )
+                SELECT 1
+                FROM JISJDW.CHARGE ch
+                JOIN JISJDW.CASE_DEFENDANT cd
+                  ON cd.case_defendant_id = ch.case_defendant_id
+                WHERE ch.charge_id = source_row.charge_id
+                  AND cd.case_id = v_case_id
             )
-            """;
-
-    public override string Apply()
-        => $"""
-            DELETE
-            FROM {TargetTableName} source_row
-            WHERE {WherePredicate}
-            RETURNING
-                source_row.{TableDefinition.PrimaryKeyColumn}
-            BULK COLLECT INTO
-                {AffectedIdListName};
             """;
 }

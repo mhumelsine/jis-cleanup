@@ -3,13 +3,14 @@ namespace JisCleanup;
 public abstract class TableChange
 {
     protected TableDefinition TableDefinition;
-    public ActionType Action { get; }
     
+    public ActionType Action { get; }
+
     public string ChangeName => $"{GetType().Name}__{Action.Value}";
 
     public string AffectedIdListName => $"v_{TableDefinition.PrimaryKeyColumn}_list".ToLower();
 
-    public string SnapshotTableName => $"{TableDefinition.Owner}.Z__{TableDefinition.Table}";
+    public string SnapshotTableName => $"JISREM.{TableDefinition.Table}";
     public string TargetTableName => $"{TableDefinition.Owner}.{TableDefinition.Table}";
 
     protected TableChange(TableDefinition tableDefinition, ActionType action)
@@ -19,8 +20,13 @@ public abstract class TableChange
     }
 
     public override string ToString() => $"{GetType().Name}::{Action.Value}";
-    
-    public string BeforeSnapshot()
+
+    public virtual void AddDeclares(BlockDeclarations declare)
+    {
+        
+    }   
+
+    public virtual string BeforeSnapshot()
         => $"""
             INSERT INTO {SnapshotTableName}
             SELECT
@@ -39,103 +45,87 @@ public abstract class TableChange
 
     public string LogOperation()
         => $"""
-            INSERT INTO JISJDW.Z__CLEANUP_LOG
+
+            JISREM.LOG
             (
-                cleanup_id,
-                case_id,
-                log_sequence,
-                step_code,
-                affected_rows
-            )
-            VALUES
-            (
-                :cleanup_id,
-                :case_id,
-                JISJDW.Z__CLEANUP_LOG_SEQ.NEXTVAL,
-                '{ChangeName}',
-                {AffectedIdListName}.COUNT
+                p_cleanup_id    => :CLEANUP_ID,
+                p_case_id       => v_case_id,
+                p_step_name     => '{ChangeName}',
+                p_affected_rows => {AffectedIdListName}.COUNT
             );
+
             """;
 
     public abstract string Apply();
-    
+
     private string BuildConstraintName(string suffix)
     {
-        return $"Z_{TableDefinition.Table}_{suffix}";
+        return $"{TableDefinition.Table}_{suffix}";
     }
-    
+
     public string CreateSnapshotTableIfMissing()
-{
-    var checkConstraintName = BuildConstraintName("CK");
-    var uniqueConstraintName = BuildConstraintName("UQ");
-    var cleanupConstraintName = BuildConstraintName("FK");
+    {
+        var checkConstraintName = BuildConstraintName("CK");
+        var uniqueConstraintName = BuildConstraintName("UQ");
+        var cleanupConstraintName = BuildConstraintName("FK");
 
-    return $"""
-        DECLARE
-            v_table_count PLS_INTEGER;
-        BEGIN
-            SELECT
-                COUNT(*)
-            INTO
-                v_table_count
-            FROM
-                ALL_TABLES
-            WHERE
-                owner = '{TableDefinition.Owner.ToUpperInvariant()}'
-                AND table_name = 'Z__{TableDefinition.Table.ToUpperInvariant()}';
+        return $"""
+                DECLARE
+                    v_table_count PLS_INTEGER;
+                BEGIN
+                    SELECT
+                        COUNT(*)
+                    INTO
+                        v_table_count
+                    FROM
+                        ALL_TABLES
+                    WHERE
+                        owner = 'JISREM'
+                        AND table_name = '{TableDefinition.Table.ToUpperInvariant()}';
 
-            IF v_table_count = 0
-            THEN
-                EXECUTE IMMEDIATE
-                    'CREATE TABLE {SnapshotTableName} AS 
-                    SELECT * 
-                    FROM {TargetTableName}
-                    WHERE 1 = 0';
+                    IF v_table_count = 0
+                    THEN
+                        EXECUTE IMMEDIATE
+                            'CREATE TABLE {SnapshotTableName} AS 
+                            SELECT * 
+                            FROM {TargetTableName}
+                            WHERE 1 = 0';
 
-                EXECUTE IMMEDIATE
-                    'ALTER TABLE {SnapshotTableName} ADD 
-                    ( 
-                        cleanup_id NUMBER, 
-                        change_action VARCHAR2(50), 
-                        row_state VARCHAR2(50) 
-                    )';
+                        EXECUTE IMMEDIATE
+                            'ALTER TABLE {SnapshotTableName} ADD 
+                            ( 
+                                cleanup_id NUMBER, 
+                                change_action VARCHAR2(50), 
+                                row_state VARCHAR2(50) 
+                            )';
 
-                EXECUTE IMMEDIATE
-                    'ALTER TABLE {SnapshotTableName} MODIFY 
-                    ( 
-                        cleanup_id NOT NULL, 
-                        change_action NOT NULL, 
-                        row_state NOT NULL 
-                    )';
+                        EXECUTE IMMEDIATE
+                            'ALTER TABLE {SnapshotTableName} MODIFY 
+                            ( 
+                                cleanup_id NOT NULL, 
+                                change_action NOT NULL, 
+                                row_state NOT NULL 
+                            )';
 
-                EXECUTE IMMEDIATE
-                    'ALTER TABLE {SnapshotTableName} 
-                    ADD CONSTRAINT {checkConstraintName} 
-                    CHECK 
-                    ( 
-                        change_action IN (''UPDATE'', ''DELETE'') 
-                        AND row_state IN (''BEFORE'', ''AFTER'') 
-                    )';
+                        EXECUTE IMMEDIATE
+                            'ALTER TABLE {SnapshotTableName} 
+                            ADD CONSTRAINT {uniqueConstraintName} 
+                            UNIQUE 
+                            ( 
+                                cleanup_id, 
+                                {TableDefinition.PrimaryKeyColumn}, 
+                                row_state 
+                            )';
 
-                EXECUTE IMMEDIATE
-                    'ALTER TABLE {SnapshotTableName} 
-                    ADD CONSTRAINT {uniqueConstraintName} 
-                    UNIQUE 
-                    ( 
-                        cleanup_id, 
-                        {TableDefinition.PrimaryKeyColumn}, 
-                        row_state 
-                    )';
+                        EXECUTE IMMEDIATE
+                            'ALTER TABLE {SnapshotTableName} 
+                            ADD CONSTRAINT {cleanupConstraintName} 
+                            FOREIGN KEY (cleanup_id) 
+                            REFERENCES JISREM.CLEANUP (cleanup_id)';
+                    END IF;
+                END;
+                /
 
-                EXECUTE IMMEDIATE
-                    'ALTER TABLE {SnapshotTableName} 
-                    ADD CONSTRAINT {cleanupConstraintName} 
-                    FOREIGN KEY (cleanup_id) 
-                    REFERENCES JISJDW.Z__CLEANUP (cleanup_id)';
-            END IF;
-        END;
-        /
-        
-        """;
-}
+                """;
+    }
 }

@@ -1,16 +1,14 @@
 namespace JisCleanup.Validations;
 
-public sealed class ExternalArrestDocketValidation : IValidation
+public sealed class ArrestProvenanceValidation : IValidation
 {
     public string Validation()
         => """
-            SELECT COUNT(*) 
-            INTO v_count 
-            FROM JISJDW.CJIS_DOCKET d
+            SELECT COUNT(*) INTO v_count FROM JISJDW.ARREST a
             WHERE (EXISTS
             (
                 SELECT 1 FROM JISJDW.CUSTODY_STATUS cs
-                WHERE cs.arrest_id = d.arrest_id AND EXISTS
+                WHERE cs.arrest_id = a.arrest_id AND EXISTS
             (
                 SELECT 1
                 FROM JISJDW.CHARGE ch
@@ -22,9 +20,8 @@ public sealed class ExternalArrestDocketValidation : IValidation
             )
             OR EXISTS
             (
-                SELECT 1 
-                FROM JISJDW.CJIS_DOCKET d_1
-                WHERE d.arrest_id = d_1.arrest_id AND EXISTS
+                SELECT 1 FROM JISJDW.CJIS_DOCKET d
+                WHERE d.arrest_id = a.arrest_id AND EXISTS
             (
                 SELECT 1
                 FROM JISJDW.CHARGE ch
@@ -36,9 +33,8 @@ public sealed class ExternalArrestDocketValidation : IValidation
             )
             OR EXISTS
             (
-                SELECT 1 
-                FROM JISJDW.FIRST_APPEARANCE fa
-                WHERE fa.arrest_id = d.arrest_id AND EXISTS
+                SELECT 1 FROM JISJDW.FIRST_APPEARANCE fa
+                WHERE fa.arrest_id = a.arrest_id AND EXISTS
             (
                 SELECT 1
                 FROM JISJDW.CASE_DEFENDANT cd
@@ -46,22 +42,15 @@ public sealed class ExternalArrestDocketValidation : IValidation
                   AND cd.case_id = v_case_id
             )
             ))
-            AND NOT (EXISTS
-            (
-                SELECT 1
-                FROM JISJDW.CHARGE ch
-                JOIN JISJDW.CASE_DEFENDANT cd
-                  ON cd.case_defendant_id = ch.case_defendant_id
-                WHERE ch.charge_id = d.charge_id
-                  AND cd.case_id = v_case_id
-            ));
+            AND (NVL(UPPER(TRIM(a.create_user_id)),'~') NOT IN ('JISJDW','PNX2JIS','SYSTEMA')
+             OR (a.update_user_id IS NOT NULL AND UPPER(TRIM(a.update_user_id)) NOT IN ('JISJDW','PNX2JIS','SYSTEMA')));
 
             v_is_valid := 1;
             v_validation_error := NULL;
 
             IF v_count > 0 THEN
                 v_is_valid := 0;
-                v_validation_error := 'ARREST is referenced by a docket outside the ghost docket set';
+                v_validation_error := 'Candidate ARREST has human provenance';
             END IF;
             """;
 }

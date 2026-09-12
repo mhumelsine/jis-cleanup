@@ -3,37 +3,34 @@ namespace JisCleanup.Validations;
 public sealed class HumanAuditValidation : IValidation
 {
     public string Validation()
-        => $"""
-            SELECT MIN(create_date_time) INTO v_bad_start
-                FROM JISJDW.CJIS_DOCKET
-                WHERE cjis_docket_id IN (SELECT COLUMN_VALUE FROM TABLE(v_docket_ids));
-            
-                -- Root and charge rows must have machine provenance.
-                SELECT COUNT(*) INTO v_count
-                FROM
-                (
-                    SELECT c.create_user_id,c.update_user_id FROM JISJDW.CJIS_CASE c WHERE c.case_id=v_case_id
-                    UNION ALL
-                    SELECT cd.create_user_id,cd.update_user_id FROM JISJDW.CASE_DEFENDANT cd WHERE cd.case_defendant_id=v_case_defendant_id
-                    UNION ALL
-                    SELECT create_user_id,update_user_id FROM JISJDW.CHARGE
-                     WHERE charge_id IN (SELECT COLUMN_VALUE FROM TABLE(v_charge_ids))
-                    UNION ALL
-                    SELECT create_user_id,update_user_id FROM JISJDW.CJIS_DOCKET
-                     WHERE cjis_docket_id IN (SELECT COLUMN_VALUE FROM TABLE(v_docket_ids))
-                ) u
-                WHERE NVL(UPPER(TRIM(u.create_user_id)),'~') NOT IN ('JISJDW','PNX2JIS','SYSTEMA')
-                   OR (u.update_user_id IS NOT NULL
-                       AND UPPER(TRIM(u.update_user_id)) NOT IN ('JISJDW','PNX2JIS','SYSTEMA'));
-            
-                -- Any human audit on this exact graph after incident creation blocks deletion.
-                SELECT COUNT(*) INTO v_count
-                FROM JISJDW.AUDIT_TRAIL a
-                WHERE a.cjis_spn=in_spn
-                  AND (a.cjis_case_number=v_caseno OR a.cjis_case_number LIKE v_caseno||'%')
-                  AND a.activity_date_time>=v_bad_start
-                  AND NVL(UPPER(TRIM(a.activity_user_id)),'~') NOT IN ('JISJDW','PNX2JIS','SYSTEMA');
+        => """
+            SELECT COUNT(*) INTO v_count FROM JISJDW.AUDIT_TRAIL a
+            WHERE EXISTS
+            (
+             SELECT 1 FROM JISJDW.CASE_DEFENDANT cd
+             WHERE cd.case_id=v_case_id AND cd.cjis_spn=a.cjis_spn
+             AND (a.cjis_case_number=cd.cjis_case_number OR a.cjis_case_number LIKE cd.cjis_case_number||'%')
+            )
+            AND a.activity_date_time >=
+            (
+             SELECT MIN(d.create_date_time) FROM JISJDW.CJIS_DOCKET d WHERE EXISTS
+            (
+                SELECT 1
+                FROM JISJDW.CHARGE ch
+                JOIN JISJDW.CASE_DEFENDANT cd
+                  ON cd.case_defendant_id = ch.case_defendant_id
+                WHERE ch.charge_id = d.charge_id
+                  AND cd.case_id = v_case_id
+            )
+            )
+            AND NVL(UPPER(TRIM(a.activity_user_id)),'~') NOT IN ('JISJDW','PNX2JIS','SYSTEMA');
 
-            {IValidation.Check("Human AUDIT_TRAIL activity exists on the case graph")}
+            v_is_valid := 1;
+            v_validation_error := NULL;
+
+            IF v_count > 0 THEN
+                v_is_valid := 0;
+                v_validation_error := 'Human AUDIT_TRAIL activity exists on the case graph';
+            END IF;
             """;
 }
