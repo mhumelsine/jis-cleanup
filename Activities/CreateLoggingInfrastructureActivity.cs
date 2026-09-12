@@ -85,6 +85,7 @@ public class CreateLoggingInfrastructureActivity : IActivity
                         (
                             cleanup_id NUMBER NOT NULL,
                             case_id    VARCHAR2(50) NOT NULL,
+                            spn_id     VARCHAR2(50) NOT NULL,
                             status     VARCHAR2(50) NOT NULL,
                             message    VARCHAR2(512) NULL,    
 

@@ -6,7 +6,7 @@ public class NoFirstAppearanceOutsideGhostDocket : Validator
         => """
            SELECT first_appearance_id BULK COLLECT INTO v_fa_ids
            FROM JISJDW.FIRST_APPEARANCE fa
-           WHERE fa.case_defendant_id=v_case_defendant_id
+           WHERE fa.case_defendant_id=v_case_defendant_id;
            
            v_fa_count := v_fa_ids.COUNT;
                             

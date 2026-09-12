@@ -8,7 +8,7 @@ public class MustBeSingleDefendant : Validator
            SELECT COUNT(*),MIN(case_defendant_id)
            INTO v_count,v_case_defendant_id
            FROM JISJDW.CASE_DEFENDANT cd
-           WHERE cd.cjis_spn=in_spn AND cd.cjis_case_number=v_case_id;
+           WHERE cd.cjis_spn=v_spn_id AND cd.cjis_case_number=v_case_id;
 
            """;
 

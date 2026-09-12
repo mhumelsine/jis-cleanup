@@ -40,14 +40,18 @@ public class InitializeCleanupActivity(CleanupMetadata metadata) : IActivity
 
              """);
 
-        foreach (var caseId in metadata.CaseIds)
+        foreach (var caseInstance in metadata.Cases)
         {
             builder.AppendLine(
-                $"  INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id,case_id, status) VALUES(:CLEANUP_ID,'{caseId.Value}', 'QUEUED');");
+                $"""
+                 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, spn_id, status) 
+                 VALUES(:CLEANUP_ID,'{caseInstance.CaseId}', '{caseInstance.Spn}', 'QUEUED');
+
+                 """);
         }
         
         builder.AppendLine(LogEmitter.Log($"Cleanup [{metadata.Name}] started", "INITIALIZATION"));
-        builder.AppendLine(LogEmitter.Log($"[{metadata.CaseIds.Count}] case(s) will be affected","INITIALIZATION"));
+        builder.AppendLine(LogEmitter.Log($"[{metadata.Cases.Count}] case(s) will be affected","INITIALIZATION"));
 
         builder.AppendLine(
             """

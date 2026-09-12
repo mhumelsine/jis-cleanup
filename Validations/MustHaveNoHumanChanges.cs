@@ -13,7 +13,7 @@ public class MustHaveNoHumanChanges : Validator
            SELECT COUNT(*) 
            INTO v_count
            FROM JISJDW.AUDIT_TRAIL a
-           WHERE a.cjis_spn=in_spn
+           WHERE a.cjis_spn=v_spn_id
              AND (a.cjis_case_number=v_caseno OR a.cjis_case_number LIKE v_caseno||'%')
              AND a.activity_date_time>=v_bad_start
              AND NVL(UPPER(TRIM(a.activity_user_id)),'~') NOT IN ('JISJDW','PNX2JIS','SYSTEMA');

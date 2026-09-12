@@ -2,12 +2,30 @@ namespace JisCleanup;
 
 public record CleanupMetadata
 {
-    public string CleanupConfigurationFileName => $"{AppContext.BaseDirectory}/Cleanups/{Name}.yaml";
     public string OutputfileName => $"{AppContext.BaseDirectory}/Cleanups/{Name}.sql";
+    public string InputfileName => $"{AppContext.BaseDirectory}/Cleanups/{Name}.csv";
     public required string Name { get; init; }
     public required string Description { get; init; }
     public required string RequestedBy { get; init; }
-    public required HashSet<CaseId> CaseIds { get; init; } = [];
+    public HashSet<Case> Cases { get; init; } = [];
+
+    public void Load()
+    {
+        var file = new FileInfo(InputfileName);
+
+        if (!file.Exists) throw new FileNotFoundException($"Input file '{InputfileName}' was not found");
+
+        foreach (var line in File.ReadAllLines(file.FullName).Skip(1))
+        {
+            var segment = line.Split(',');
+
+            if (segment.Length != 4) throw new FileLoadException($"File contains invalid data at: '{line}'");
+
+            var cjisCase = new Case(segment[0], segment[1], segment[2], segment[3]);
+
+            Cases.Add(cjisCase);
+        }
+    }
 
     // public CleanupMetadata()
     // {

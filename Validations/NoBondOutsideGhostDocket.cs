@@ -6,7 +6,7 @@ public class NoBondOutsideGhostDocket : Validator
         => """
            SELECT bond_id BULK COLLECT INTO v_bond_ids
            FROM JISJDW.RELEASE_BOND
-           WHERE charge_id IN (SELECT COLUMN_VALUE FROM TABLE(v_charge_ids))
+           WHERE charge_id IN (SELECT COLUMN_VALUE FROM TABLE(v_charge_ids));
            
            v_bond_count := v_bond_ids.COUNT;
                             

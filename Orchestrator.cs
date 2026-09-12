@@ -11,12 +11,18 @@ public class Cleanup
     public IValidation[] Validations { get; set; }
 
     public BlockDeclarations Declarations { get; set; } = new();
+
+    public void Load()
+    {
+        Metadata.Load();
+    }
 }
 
 public class Orchestrator
 {
     public void Build(Cleanup cleanup)
     {
+        cleanup.Load();
         var builder = new StringBuilder();
         
         new CreateLoggingInfrastructureActivity().Build(builder);

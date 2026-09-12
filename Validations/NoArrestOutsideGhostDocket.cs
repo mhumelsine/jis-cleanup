@@ -12,8 +12,8 @@ public class NoArrestOutsideGhostDocket : Validator
 
            """;
 
-    //TODO:  COnfusing message?
-    protected override string Check() => ExactlyZero("Arrest is shared by another first appearance");
+    protected override string Check() 
+        => ExactlyZero("Arrest is referenced by a docket outside the ghost docket");
 
     public override void Declares(BlockDeclarations declarations)
     {
