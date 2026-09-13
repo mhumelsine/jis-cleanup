@@ -17,7 +17,7 @@ public abstract class DeleteTableChange : TableChange
     protected override string Apply(Charge charge)
         => $"""
             DELETE 
-            FROM {TargetTableName}
+            FROM {TargetTableName} source_row
             WHERE {WherePredicate(charge)}
             RETURNING
                 {TableDefinition.PrimaryKeyColumn}

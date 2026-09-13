@@ -8,5 +8,5 @@ public sealed class ChargeDelete : DeleteTableChange
     }
 
     public override string WherePredicate(Charge charge)
-        => "charge_id IN (SELECT COLUMN_VALUE FROM TABLE(v_charge_ids))";
+        => $"source_row.CHARGE_ID = '{charge.ChargeId}'";
 }

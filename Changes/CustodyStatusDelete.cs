@@ -8,5 +8,13 @@ public sealed class CustodyStatusDelete : DeleteTableChange
     }
 
     public override string WherePredicate(Charge charge)
-        => "charge_id IN (SELECT COLUMN_VALUE FROM TABLE(v_charge_ids))";
+        => $"""
+           EXISTS (
+               SELECT *
+               FROM JISREM.CJIS_DOCKET d
+               WHERE d.CHARGE_ID = '{charge.ChargeId}'
+               AND d.CHARGE_ID = source_row.CHARGE_ID
+               AND d.row_state = 'BEFORE'
+           )
+           """;
 }

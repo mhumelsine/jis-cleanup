@@ -8,5 +8,12 @@ public sealed class FirstAppearanceDelete : DeleteTableChange
     }
 
     public override string WherePredicate(Charge charge)
-        => "first_appearance_id IN (SELECT COLUMN_VALUE FROM TABLE(v_fa_ids))";
+        => $"""
+            EXISTS (select *
+                from JISJDW.CASE_DEFENDANT d
+                WHERE CJIS_CASE_NUMBER = '{charge.GetCjisCaseNumber()}'
+                  AND CJIS_SPN = '{charge.Spn}'
+                  AND d.CASE_DEFENDANT_ID = source_row.CASE_DEFENDANT_ID
+            )
+            """;
 }

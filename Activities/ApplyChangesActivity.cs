@@ -2,7 +2,7 @@ using System.Text;
 
 namespace JisCleanup.Activities;
 
-public class ApplyChangesActivity(Charge charge, TableChange[] changes) : IActivity
+public class ApplyChangesActivity(Charge charge, TableChange[] changes) : IDeclareActivity
 {
     public void Build(StringBuilder builder)
     {
@@ -29,5 +29,13 @@ public class ApplyChangesActivity(Charge charge, TableChange[] changes) : IActiv
                          AND charge_id = '{charge.ChargeId}';
 
              """);
+    }
+
+    public void BuildDeclares(BlockDeclarations declarations)
+    {
+        foreach (var change in changes)
+        {
+            change.AddDeclares(declarations);
+        }
     }
 }

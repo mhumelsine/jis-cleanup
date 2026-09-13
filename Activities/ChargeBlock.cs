@@ -2,27 +2,39 @@ using System.Text;
 
 namespace JisCleanup.Activities;
 
-public class ChargeBlock(Charge charge, IActivity Validate, IActivity Apply) : IActivity
+public class ChargeBlock(Charge charge, IDeclareActivity Validate, IDeclareActivity Apply) : IActivity
 {
     public void Build(StringBuilder builder)
     {
+        var declarations = new BlockDeclarations();
+        Validate.BuildDeclares(declarations);
+        Apply.BuildDeclares(declarations);
+        
         builder.AppendLine(
             $"""
              /***********************************************************
-             ***** CHARGE {charge.ChargeId} CJIS_CASE_NUMBER {charge.CjisCaseNumber}
+             ***** CHARGE {charge.ChargeId} CJIS_CASE_NUMBER {charge.CjisChargeNumber}
              ***********************************************************/
-             
+
              DECLARE
                  v_is_valid PLS_INTEGER := 1;
                  v_validation_error VARCHAR2(512) := NULL;
                  v_count PLS_INTEGER := 0;
                  v_error_message VARCHAR2(512);
-                 v_docket_ids VARCHAR2(1024);
+                 v_docket_id_str VARCHAR2(1024);
                  v_inserted_id PLS_INTEGER := 0;
-             BEGIN
-                SAVEPOINT before_record;
-                
-             """
+
+             """);
+        
+        declarations.BuildTypes(builder);
+        declarations.BuildVariables(builder);
+
+        builder.AppendLine(
+            """
+            BEGIN
+               SAVEPOINT before_record;
+               
+            """
         );
 
         Validate.Build(builder);
@@ -30,30 +42,30 @@ public class ChargeBlock(Charge charge, IActivity Validate, IActivity Apply) : I
 
         builder.AppendLine(
             $"""
-            EXCEPTION
-                WHEN OTHERS THEN
-                    v_error_message := SUBSTR(SQLERRM, 1, 512);
+             EXCEPTION
+                 WHEN OTHERS THEN
+                     v_error_message := SUBSTR(SQLERRM, 1, 512);
 
-                    ROLLBACK TO before_record;
-                    
-                    JISREM.LOG
-                    (
-                        p_cleanup_id => :CLEANUP_ID,
-                        p_charge_id    => '{charge.ChargeId}',
-                        p_step_name  => 'EXCEPTION',
-                        p_message    => v_error_message
-                    );
-                    
-                    UPDATE JISREM.CLEANUP_CASE_QUEUE
-                    SET 
-                        status = 'PROCESSING_FAILED',
-                        message = v_error_message
-                    WHERE cleanup_id = :CLEANUP_ID
-                    AND charge_id = '{charge.ChargeId}';
-            END;
-            /
-            
-            """
+                     ROLLBACK TO before_record;
+                     
+                     JISREM.LOG
+                     (
+                         p_cleanup_id => :CLEANUP_ID,
+                         p_charge_id    => '{charge.ChargeId}',
+                         p_step_name  => 'EXCEPTION',
+                         p_message    => v_error_message
+                     );
+                     
+                     UPDATE JISREM.CLEANUP_CASE_QUEUE
+                     SET 
+                         status = 'PROCESSING_FAILED',
+                         message = v_error_message
+                     WHERE cleanup_id = :CLEANUP_ID
+                     AND charge_id = '{charge.ChargeId}';
+             END;
+             /
+
+             """
         );
     }
 }

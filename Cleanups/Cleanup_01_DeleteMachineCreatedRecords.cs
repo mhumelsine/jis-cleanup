@@ -22,21 +22,21 @@ public class Cleanup_01_DeleteMachineCreatedRecords : Cleanup {
         
         Changes = [
             new RestoreStatusLocationBondAmount(),
-            new InsertCleanupDocketEntry()
-            // new CjisDocketDelete(),
-            // new FaChargeDelete(),
-            // new CourtCalendarDelete(),
-            // new FirstAppearanceDelete(),
-            // new CustodyStatusDelete(),
-            // new ReleaseBondDelete(),
-            // new ChargeJailInfoDelete(),
-            // new CaseRelatedPersonDelete(),
-            // new ChargeDelete(),
-            // new ArrestDelete(),
+            new CjisDocketDelete(),
+            new FaChargeDelete(),
+            new CourtCalendarDelete(),
+            new FirstAppearanceDelete(), 
+            new CustodyStatusDelete(), 
+            new ReleaseBondDelete(),
+            new ChargeJailInfoDelete(),
+            new CaseRelatedPersonDelete(),
+            new ChargeDelete(),
+            new ArrestDelete(),
             // new JailActivityDelete(),
             // new InmateDelete(),
             // new CaseDefendantDelete(),
-            // new CjisCaseDelete()
+            // new CjisCaseDelete(),
+            new InsertCleanupDocketEntry()
         ];
     }
 }

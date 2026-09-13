@@ -45,7 +45,7 @@ public class InitializeCleanupActivity(CleanupMetadata metadata) : IActivity
             builder.AppendLine(
                 $"""
                  INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-                 VALUES(:CLEANUP_ID, '{charge.CjisCaseNumber}', '{charge.ChargeId}', '{charge.Spn}', 'QUEUED');
+                 VALUES(:CLEANUP_ID, '{charge.CjisChargeNumber}', '{charge.ChargeId}', '{charge.Spn}', 'QUEUED');
 
                  """);
         }

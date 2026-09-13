@@ -3,13 +3,19 @@ namespace JisCleanup;
 public sealed class FaChargeDelete : DeleteTableChange
 {
     public FaChargeDelete()
-        : base(new TableDefinition("JISJDW", "FA_CHARGE", "FIRST_APPEARANCE_ID"))
+        : base(new TableDefinition("JISJDW", "FA_CHARGE", "FA_CHARGE_ID"))
     {
     }
 
     public override string WherePredicate(Charge charge)
         => """
-           charge_id IN (SELECT COLUMN_VALUE FROM TABLE(v_charge_ids))
-           OR first_appearance_id IN (SELECT COLUMN_VALUE FROM TABLE(v_fa_ids))
+           exists (
+               select CJIS_DOCKET_ID
+               from JISJDW.CHARGE c
+               inner join JISJDW.V_PNX2JIS_BAD_DKT d
+               on c.CHARGE_ID = d.CHARGE_ID
+               where c.CHARGE_ID = source_row.CHARGE_ID
+           )
+           and source_row.CHARGE_ID = '1172832'
            """;
 }

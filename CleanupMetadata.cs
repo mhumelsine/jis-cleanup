@@ -25,7 +25,7 @@ public record CleanupMetadata
             var charge = new Charge
             {
                 ChargeId = segment[0],
-                CjisCaseNumber = segment[1],
+                CjisChargeNumber = segment[1],
                 Spn = int.Parse(segment[2]),
                 BondAmount = segment[3],
                 //Location = segment[4],

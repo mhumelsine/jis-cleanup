@@ -8,5 +8,12 @@ public sealed class CourtCalendarDelete : DeleteTableChange
     }
 
     public override string WherePredicate(Charge charge)
-        => "court_calendar_id IN (SELECT COLUMN_VALUE FROM TABLE(v_cal_ids))";
+        => $"""
+           EXISTS (select *
+               from JISJDW.CASE_DEFENDANT d
+               WHERE CJIS_CASE_NUMBER = '{charge.GetCjisCaseNumber()}'
+                 AND CJIS_SPN = '{charge.Spn}'
+                 AND d.CASE_DEFENDANT_ID = source_row.CASE_DEFENDANT_ID
+           )
+           """;
 }

@@ -3,7 +3,7 @@ using JisCleanup.Validations;
 
 namespace JisCleanup.Activities;
 
-public class ValidationsActivity(Charge charge, IValidation[] validations) : IActivity
+public class ValidationsActivity(Charge charge, IValidation[] validations) : IDeclareActivity
 {
     public void Build(StringBuilder builder)
     { 
@@ -23,5 +23,13 @@ public class ValidationsActivity(Charge charge, IValidation[] validations) : IAc
 
              """);
         
+    }
+
+    public void BuildDeclares(BlockDeclarations declarations)
+    {
+        foreach (var validation in validations)
+        {
+            validation.Declares(declarations);
+        }
     }
 }

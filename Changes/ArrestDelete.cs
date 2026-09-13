@@ -8,5 +8,29 @@ public sealed class ArrestDelete : DeleteTableChange
     }
 
     public override string WherePredicate(Charge charge)
-        => "arrest_id IN (SELECT COLUMN_VALUE FROM TABLE(v_arrest_ids))";
+        => $"""
+           exists (
+               select ARREST_ID
+               from JISREM.CUSTODY_STATUS cs
+               WHERE CHARGE_ID = '{charge.ChargeId}'
+               AND cs.ARREST_ID = source_row.ARREST_ID
+               AND fa.row_state = 'BEFORE'
+               
+               UNION
+               
+               select ARREST_ID
+               from JISREM.CJIS_DOCKET cd
+               WHERE CHARGE_ID = '{charge.ChargeId}'
+               AND cd.ARREST_ID = source_row.ARREST_ID
+               AND fa.row_state = 'BEFORE'
+               
+               UNION
+               
+               select ARREST_ID
+               from JISREM.FIRST_APPEARANCE fa 
+               WHERE CHARGE_ID = '{charge.ChargeId}'
+               AND fa.ARREST_ID = source_row.ARREST_ID
+               AND fa.row_state = 'BEFORE'
+           )
+           """;
 }
