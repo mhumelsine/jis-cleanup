@@ -2,31 +2,31 @@ using System.Text;
 
 namespace JisCleanup.Activities;
 
-public class ApplyChangesActivity(TableChange[] changes) : IActivity
+public class ApplyChangesActivity(Charge charge, TableChange[] changes) : IActivity
 {
     public void Build(StringBuilder builder)
     {
-        builder.AppendLine(LogEmitter.LogCase("Starting cleanup for case", "CLEANUP"));
+        builder.AppendLine(LogEmitter.LogCharge("Starting cleanup for case", "CLEANUP", charge.ChargeId));
         
         foreach (var change in changes)
         {
-            builder.AppendLine(change.BeforeSnapshot());
-            builder.AppendLine(change.Apply());
-            builder.AppendLine(change.AfterSnapshot());
-            builder.AppendLine(change.LogOperation());
+            builder.AppendLine(change.BeforeSnapshot(charge));
+            builder.AppendLine(change.ApplyChange(charge));
+            builder.AppendLine(change.AfterSnapshot(charge));
+            builder.AppendLine(change.LogOperation(charge));
         }
         
-        builder.AppendLine(LogEmitter.LogCase("Completed cleanup for case", "CLEANUP"));
+        builder.AppendLine(LogEmitter.LogCharge("Completed cleanup for case", "CLEANUP", charge.ChargeId));
 
         builder.AppendLine(
-            """
+            $"""
                      UPDATE
                          JISREM.CLEANUP_CASE_QUEUE
                      SET
                          status = 'PROCESSED'
                      WHERE
                          cleanup_id = :CLEANUP_ID
-                         AND case_id = v_case_id;
+                         AND charge_id = '{charge.ChargeId}';
 
              """);
     }

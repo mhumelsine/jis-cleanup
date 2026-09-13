@@ -4,7 +4,7 @@ namespace JisCleanup.Validations;
 
 public interface IValidation
 {
-    void Validation(StringBuilder builder);
+    void Validation(StringBuilder builder, Charge charge);
 
     void Declares(BlockDeclarations declarations);
 }
@@ -12,7 +12,6 @@ public interface IValidation
 public static class ValidationDefaults
 {
     public const string
-        CurrentCaseId = "v_case_id",
         BadDataStartDate = "",
         OnlySustemCreatedOrChanged =
             """
@@ -24,26 +23,22 @@ public static class ValidationDefaults
 
 public abstract class Validator : IValidation
 {
-    public void Validation(StringBuilder builder)
+    public void Validation(StringBuilder builder, Charge charge)
     {
-        builder.AppendLine(Collect());
-        builder.AppendLine(Reset());
+        builder.AppendLine("IF v_is_valid = 1 THEN");
+        builder.AppendLine(Collect(charge));
         builder.AppendLine(Check());
+        builder.AppendLine(CheckValidation(GetType().Name, charge.ChargeId));
+        builder.AppendLine("END IF;");
     }
 
-    protected abstract string Collect();
+    protected abstract string Collect(Charge charge);
     protected abstract string Check();
 
     public abstract void Declares(BlockDeclarations declarations);
+    
 
-    private string Reset()
-        => $"""
-            v_is_valid := 1;
-            v_validation_error := NULL;
-
-            """;
-
-    protected string ExactlyOne(string errorMessage)
+    protected static string ExactlyOne(string errorMessage)
         => $"""
             IF v_count <> 1 THEN
                 v_is_valid := 0;
@@ -52,7 +47,7 @@ public abstract class Validator : IValidation
 
             """;
 
-    protected string ExactlyZero(string errorMessage)
+    protected static string ExactlyZero(string errorMessage)
         => $"""
              IF v_count <> 0 THEN
                  v_is_valid := 0;
@@ -61,11 +56,30 @@ public abstract class Validator : IValidation
 
              """;
     
-    protected string NotZero(string errorMessage)
+    protected static string NotZero(string errorMessage)
         => $"""
             IF v_count = 0 THEN
                 v_is_valid := 0;
                 v_validation_error := '{errorMessage}';
+            END IF;
+
+            """;
+    
+    protected static string CheckValidation(string stepName, string chargeId)
+        => $"""
+            IF v_is_valid <> 1 THEN
+                {LogEmitter.LogCaseValidationFailed(stepName, chargeId)}
+               
+               UPDATE
+                    JISREM.CLEANUP_CASE_QUEUE
+                SET
+                    status = 'VALIDATION_FAILED',
+                    message = v_validation_error
+                WHERE
+                    cleanup_id = :CLEANUP_ID
+                    AND charge_id = '{chargeId}';
+               
+                RETURN;
             END IF;
 
             """;

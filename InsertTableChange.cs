@@ -7,19 +7,14 @@ public class InsertTableChange : TableChange
     {
     }
 
-    public override string WherePredicate { get; }
+    public override string WherePredicate(Charge charge) => "";
 
-    public override string BeforeSnapshot()
-    {
-        return base.BeforeSnapshot();
-    }
-
-    public override string AfterSnapshot()
+    public override string AfterSnapshot(Charge charge)
     {
         throw new NotImplementedException();
     }
 
-    public override string Apply()
+    protected override string Apply(Charge charge)
     {
         throw new NotImplementedException();
     }

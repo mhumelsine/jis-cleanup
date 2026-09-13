@@ -7,6 +7,6 @@ public sealed class InmateDelete : DeleteTableChange
     {
     }
 
-    public override string WherePredicate
+    public override string WherePredicate(Charge charge)
         => "inmate_id IN (SELECT COLUMN_VALUE FROM TABLE(v_inmate_ids))";
 }

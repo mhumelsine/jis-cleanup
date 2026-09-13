@@ -26,7 +26,7 @@ public abstract class TableChange
         
     }   
 
-    public virtual string BeforeSnapshot()
+    public virtual string BeforeSnapshot(Charge charge)
         => $"""
             --SNAPSHOT BEFORE
             INSERT INTO {SnapshotTableName}
@@ -36,29 +36,38 @@ public abstract class TableChange
                 '{Action.Value}',
                 '{SnapshotType.Before.Value}'
             FROM {TargetTableName} source_row
-            WHERE {WherePredicate}
+            WHERE {WherePredicate(charge)}
             ;
 
             """;
 
-    public abstract string WherePredicate { get; }
+    public abstract string WherePredicate(Charge charge);
 
-    public abstract string AfterSnapshot();
+    public abstract string AfterSnapshot(Charge charge);
 
-    public string LogOperation()
+    public string LogOperation(Charge charge)
         => $"""
 
             JISREM.LOG
             (
                 p_cleanup_id    => :CLEANUP_ID,
-                p_case_id       => v_case_id,
+                p_charge_id       => '{charge.ChargeId}',
                 p_step_name     => '{ChangeName}',
-                p_affected_rows => {AffectedIdListName}.COUNT
+                p_affected_rows => v_count
             );
 
             """;
 
-    public abstract string Apply();
+    protected abstract string Apply(Charge charge);
+
+    public string ApplyChange(Charge charge)
+        => $"""
+           {Apply(charge)}
+
+            v_count := SQL%ROWCOUNT;
+            
+           """;
+        
 
     private string BuildConstraintName(string suffix)
     {

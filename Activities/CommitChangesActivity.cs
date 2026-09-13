@@ -8,6 +8,7 @@ public class CommitChangesActivity : IActivity
     {
         builder.AppendLine(
             """
+            BEGIN
              IF :WHAT_IF = 0 THEN
                 UPDATE JISREM.CLEANUP 
                 SET 

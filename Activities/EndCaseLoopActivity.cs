@@ -18,7 +18,7 @@ public class EndCaseLoopActivity : IActivity
                     JISREM.LOG
                     (
                         p_cleanup_id => :CLEANUP_ID,
-                        p_case_id => v_case_id,
+                        p_charge_id => v_case_id,
                         p_step_name => 'CASE_ERROR',
                         p_message => v_error_message
                     );

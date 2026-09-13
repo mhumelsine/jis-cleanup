@@ -7,7 +7,7 @@ public sealed class FaChargeDelete : DeleteTableChange
     {
     }
 
-    public override string WherePredicate
+    public override string WherePredicate(Charge charge)
         => """
            charge_id IN (SELECT COLUMN_VALUE FROM TABLE(v_charge_ids))
            OR first_appearance_id IN (SELECT COLUMN_VALUE FROM TABLE(v_fa_ids))

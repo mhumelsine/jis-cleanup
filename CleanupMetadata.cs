@@ -7,7 +7,7 @@ public record CleanupMetadata
     public required string Name { get; init; }
     public required string Description { get; init; }
     public required string RequestedBy { get; init; }
-    public HashSet<Case> Cases { get; init; } = [];
+    public HashSet<Charge> Charges { get; init; } = [];
 
     public void Load()
     {
@@ -19,11 +19,20 @@ public record CleanupMetadata
         {
             var segment = line.Split(',');
 
+            //TODO:  New new file format
             if (segment.Length != 4) throw new FileLoadException($"File contains invalid data at: '{line}'");
 
-            var cjisCase = new Case(segment[0], segment[1], segment[2], segment[3]);
+            var charge = new Charge
+            {
+                ChargeId = segment[0],
+                CjisCaseNumber = segment[1],
+                Spn = int.Parse(segment[2]),
+                BondAmount = segment[3],
+                //Location = segment[4],
+                //Status = segment[5]
+            };
 
-            Cases.Add(cjisCase);
+            Charges.Add(charge);
         }
     }
 

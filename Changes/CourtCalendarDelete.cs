@@ -7,6 +7,6 @@ public sealed class CourtCalendarDelete : DeleteTableChange
     {
     }
 
-    public override string WherePredicate
+    public override string WherePredicate(Charge charge)
         => "court_calendar_id IN (SELECT COLUMN_VALUE FROM TABLE(v_cal_ids))";
 }

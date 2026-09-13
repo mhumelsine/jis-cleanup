@@ -7,6 +7,6 @@ public sealed class FirstAppearanceDelete : DeleteTableChange
     {
     }
 
-    public override string WherePredicate
+    public override string WherePredicate(Charge charge)
         => "first_appearance_id IN (SELECT COLUMN_VALUE FROM TABLE(v_fa_ids))";
 }

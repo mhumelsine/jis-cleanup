@@ -13,24 +13,24 @@ public class LogEmitter
 
             """;
     
-    public static string LogCase(string message, string stepName)
+    public static string LogCharge(string message, string stepName, string chargeId)
         => $"""
             JISREM.LOG
             (
                 p_cleanup_id => :CLEANUP_ID,
-                p_case_id    => v_case_id,
+                p_charge_id    => '{chargeId}',
                 p_step_name  => '{stepName}',
                 p_message    => '{message}'
             );
             
             """;
     
-    public static string LogCaseValidationFailed(string message, string stepName)
+    public static string LogCaseValidationFailed(string stepName, string chargeId)
         => $"""
             JISREM.LOG
             (
                 p_cleanup_id => :CLEANUP_ID,
-                p_case_id    => v_case_id,
+                p_charge_id    => '{chargeId}',
                 p_step_name  => '{stepName}',
                 p_message    => 'Error: ' || v_validation_error
             );

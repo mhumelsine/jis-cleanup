@@ -11,7 +11,7 @@ public class LoggingProcedureActivity : IActivity
             CREATE OR REPLACE PROCEDURE JISREM.LOG
             (
                 p_cleanup_id    IN JISREM.CLEANUP_LOG.cleanup_id%TYPE,
-                p_case_id       IN JISREM.CLEANUP_LOG.case_id%TYPE       DEFAULT NULL,
+                p_charge_id       IN JISREM.CLEANUP_LOG.charge_id%TYPE   DEFAULT NULL,
                 p_step_name     IN JISREM.CLEANUP_LOG.step_name%TYPE     DEFAULT NULL,
                 p_message       IN JISREM.CLEANUP_LOG.message%TYPE       DEFAULT NULL,
                 p_affected_rows IN JISREM.CLEANUP_LOG.affected_rows%TYPE DEFAULT NULL
@@ -22,7 +22,7 @@ public class LoggingProcedureActivity : IActivity
                 INSERT INTO JISREM.CLEANUP_LOG
                 (
                     cleanup_id,
-                    case_id,
+                    charge_id,
                     log_sequence,
                     logged_at,
                     step_name,
@@ -32,7 +32,7 @@ public class LoggingProcedureActivity : IActivity
                 VALUES
                 (
                     p_cleanup_id,
-                    p_case_id,
+                    p_charge_id,
                     JISREM.CLEANUP_LOG_SEQ.NEXTVAL,
                     SYSDATE,
                     p_step_name,

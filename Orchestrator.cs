@@ -31,11 +31,14 @@ public class Orchestrator
         new InitializeCleanupActivity(cleanup.Metadata).Build(builder);
         new ReportCleanupAgentsRegistered(cleanup.Changes).Build(builder);
         new BeginTransactionActivity().Build(builder);
-        
-        new CaseLoopActivity(cleanup).Build(builder);
-        new ValidationsActivity(cleanup).Build(builder);
-        new ApplyChangesActivity(cleanup.Changes).Build(builder);
-        new EndCaseLoopActivity().Build(builder);
+
+        foreach (var charge in cleanup.Metadata.Charges)
+        {
+            var validateActivity = new ValidationsActivity(charge, cleanup.Validations);
+            var changeActivity = new ApplyChangesActivity(charge, cleanup.Changes);
+
+            new ChargeBlock(charge, validateActivity, changeActivity).Build(builder);
+        }
         
         new CommitChangesActivity().Build(builder);
         

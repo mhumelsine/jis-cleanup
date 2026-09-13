@@ -7,6 +7,6 @@ public sealed class ReleaseBondDelete : DeleteTableChange
     {
     }
 
-    public override string WherePredicate
+    public override string WherePredicate(Charge charge)
         => "bond_id IN (SELECT COLUMN_VALUE FROM TABLE(v_bond_ids))";
 }

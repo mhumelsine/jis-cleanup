@@ -14,11 +14,11 @@ public abstract class DeleteTableChange : TableChange
         declare.AddVariable($"{AffectedIdListName}", $"t_{TableDefinition.PrimaryKeyColumn}");
     }
 
-    public override string Apply()
+    protected override string Apply(Charge charge)
         => $"""
             DELETE 
             FROM {TargetTableName}
-            WHERE {WherePredicate}
+            WHERE {WherePredicate(charge)}
             RETURNING
                 {TableDefinition.PrimaryKeyColumn}
             BULK COLLECT INTO
@@ -26,7 +26,7 @@ public abstract class DeleteTableChange : TableChange
 
             """;
 
-    public override string AfterSnapshot()
+    public override string AfterSnapshot(Charge charge)
         => $"""
             --SNAPSHOT AFTER
             IF {AffectedIdListName}.COUNT > 0 THEN

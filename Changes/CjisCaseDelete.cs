@@ -7,6 +7,6 @@ public sealed class CjisCaseDelete : DeleteTableChange
     {
     }
 
-    public override string WherePredicate
+    public override string WherePredicate(Charge charge)
         => "case_id=v_case_id";
 }
