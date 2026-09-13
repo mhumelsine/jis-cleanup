@@ -22,7 +22,7 @@ public class Cleanup_01_DeleteMachineCreatedRecords : Cleanup {
         
         Changes = [
             new RestoreStatusLocationBondAmount(),
-            
+            new InsertCleanupDocketEntry()
             // new CjisDocketDelete(),
             // new FaChargeDelete(),
             // new CourtCalendarDelete(),

@@ -28,24 +28,26 @@ public abstract class DeleteTableChange : TableChange
 
     public override string AfterSnapshot(Charge charge)
         => $"""
-            --SNAPSHOT AFTER
-            IF {AffectedIdListName}.COUNT > 0 THEN
-                FORALL index_value IN 1 .. {AffectedIdListName}.COUNT
-                    INSERT INTO {SnapshotTableName}
-                    (
-                        {TableDefinition.PrimaryKeyColumn},
-                        cleanup_id,
-                        change_action,
-                        row_state
-                    )
-                    VALUES
-                    (
-                        {AffectedIdListName}(index_value),
-                        :cleanup_id,
-                        '{Action.Value}',
-                        '{SnapshotType.After.Value}'
-                    );
-            END IF;
-            
+            --SNAPSHOT AFTER";
+
             """;
+    // IF {AffectedIdListName}.COUNT > 0 THEN
+    //     FORALL index_value IN 1 .. {AffectedIdListName}.COUNT
+    //         INSERT INTO {SnapshotTableName}
+    //         (
+    //             {TableDefinition.PrimaryKeyColumn},
+    //             cleanup_id,
+    //             change_action,
+    //             row_state
+    //         )
+    //         VALUES
+    //         (
+    //             {AffectedIdListName}(index_value),
+    //             :cleanup_id,
+    //             '{Action.Value}',
+    //             '{SnapshotType.After.Value}'
+    //         );
+    // END IF;
+    //
+    // """;
 }

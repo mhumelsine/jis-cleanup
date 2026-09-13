@@ -17,6 +17,8 @@ public class ChargeBlock(Charge charge, IActivity Validate, IActivity Apply) : I
                  v_validation_error VARCHAR2(512) := NULL;
                  v_count PLS_INTEGER := 0;
                  v_error_message VARCHAR2(512);
+                 v_docket_ids VARCHAR2(1024);
+                 v_inserted_id PLS_INTEGER := 0;
              BEGIN
                 SAVEPOINT before_record;
                 
