@@ -44,7 +44,7 @@ public class Orchestrator
 
         var content = builder
             .Replace("__CLEANUP_ID__", $"'{Guid.NewGuid().ToString()}'")
-            .Replace("__WHAT_IF__", "1")
+            .Replace("__WHAT_IF__", "0")
             .ToString();
         
         File.WriteAllText(cleanup.Metadata.OutputfileName, content);

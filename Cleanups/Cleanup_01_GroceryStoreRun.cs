@@ -4,14 +4,14 @@ using JisCleanup.Validations;
 
 namespace JisCleanup.Cleanups;
 
-public class Cleanup_01_DeleteMachineCreatedRecords : Cleanup {
-    public Cleanup_01_DeleteMachineCreatedRecords()
+public class Cleanup_01_GroceryStoreRun : Cleanup {
+    public Cleanup_01_GroceryStoreRun()
     {
         
         Metadata = new CleanupMetadata
         {
             Name = GetType().Name,
-            Description = "Initial cleanup of around 395 cases with only invalid system activity",
+            Description = "Grocery store run; Initial cleanup of around 395 cases with only invalid system activity",
             RequestedBy = "JIS",
         };
         

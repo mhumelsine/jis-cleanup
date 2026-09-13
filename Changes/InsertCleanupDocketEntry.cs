@@ -9,8 +9,8 @@ public class InsertCleanupDocketEntry : InsertTableChange
 
     protected override string Apply(Charge charge)
         => $"""
-           SELECT LISTAGG(TO_CHAR(cjis_docket_id), ', ')
-                WITHIN GROUP (ORDER BY cjis_docket_id) AS charge_list
+           SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+                WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
            INTO v_docket_id_str
            FROM JISREM.CJIS_DOCKET
            WHERE row_state = 'BEFORE'
