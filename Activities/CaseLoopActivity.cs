@@ -23,7 +23,7 @@ public class CaseLoopActivity(Cleanup cleanup) : IActivity
             CURSOR c_cases IS
                 SELECT
                     case_id,
-                    spin_id
+                    spn_id
                 FROM
                     JISREM.CLEANUP_CASE_QUEUE
                 WHERE
