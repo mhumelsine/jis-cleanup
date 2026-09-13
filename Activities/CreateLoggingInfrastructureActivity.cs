@@ -8,10 +8,6 @@ public class CreateLoggingInfrastructureActivity : IActivity
     {
         builder.AppendLine(
             """
-            WHENEVER SQLERROR EXIT SQL.SQLCODE ROLLBACK
-            SET SERVEROUTPUT ON
-            SET VERIFY OFF
-
             DECLARE
                 v_object_count PLS_INTEGER;
             BEGIN

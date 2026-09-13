@@ -37,8 +37,6 @@ public class CommitChangesActivity : IActivity
             END;
             /
             
-            EXIT SUCCESS
-            
             """);
     }
 }
