@@ -18,7 +18,7 @@ public class ValidationsActivity(Charge charge, IValidation[] validations) : IDe
                     UPDATE JISREM.CLEANUP_CASE_QUEUE
                     SET status = 'VALIDATED',
                     message = 'All validations passed'
-                    WHERE cleanup_id = :CLEANUP_ID
+                    WHERE cleanup_id = __CLEANUP_ID__
                     AND charge_id = '{charge.ChargeId}';
 
              """);

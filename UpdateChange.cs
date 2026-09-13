@@ -14,7 +14,7 @@ public abstract class UpdateChange : TableChange
             INSERT INTO {SnapshotTableName}
             SELECT
                 source_row.*,
-                :cleanup_id,
+                __CLEANUP_ID__,
                 '{Action.Value}',
                 '{SnapshotType.After.Value}'
             FROM {TargetTableName} source_row

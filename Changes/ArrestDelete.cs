@@ -15,6 +15,7 @@ public sealed class ArrestDelete : DeleteTableChange
                WHERE CHARGE_ID = '{charge.ChargeId}'
                AND cs.ARREST_ID = source_row.ARREST_ID
                AND fa.row_state = 'BEFORE'
+               AND cs.cleanup_id = __CLEANUP_ID__
                
                UNION
                
@@ -23,6 +24,7 @@ public sealed class ArrestDelete : DeleteTableChange
                WHERE CHARGE_ID = '{charge.ChargeId}'
                AND cd.ARREST_ID = source_row.ARREST_ID
                AND fa.row_state = 'BEFORE'
+               AND cd.cleanup_id = __CLEANUP_ID__
                
                UNION
                
@@ -31,6 +33,7 @@ public sealed class ArrestDelete : DeleteTableChange
                WHERE CHARGE_ID = '{charge.ChargeId}'
                AND fa.ARREST_ID = source_row.ARREST_ID
                AND fa.row_state = 'BEFORE'
+               AND fa.cleanup_id = __CLEANUP_ID__
            )
            """;
 }

@@ -1,3 +1,5 @@
+using JisCleanup.Validations;
+
 namespace JisCleanup;
 
 public sealed class JailActivityDelete : DeleteTableChange
@@ -8,5 +10,15 @@ public sealed class JailActivityDelete : DeleteTableChange
     }
 
     public override string WherePredicate(Charge charge)
-        => "inmate_id IN (SELECT COLUMN_VALUE FROM TABLE(v_inmate_ids))";
+        => $"""
+           exists (
+                select *
+                from JISREM.ARREST a
+                WHERE a.INMATE_ID = source_row.INMATE_ID
+                and a.CJIS_SPN = '{charge.CjisSpn}'
+                AND a.cleanup_id = __CLEANUP_ID__
+           )
+           {ValidationDefaults.BadDataStartDate}
+           {ValidationDefaults.OnlySystemCreatedOrChanged}
+           """;
 }

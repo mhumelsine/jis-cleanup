@@ -1,3 +1,5 @@
+using JisCleanup.Validations;
+
 namespace JisCleanup;
 
 public sealed class ReleaseBondDelete : DeleteTableChange
@@ -8,5 +10,9 @@ public sealed class ReleaseBondDelete : DeleteTableChange
     }
 
     public override string WherePredicate(Charge charge)
-        => $"source_row.CHARGE_ID = '{charge.ChargeId}'";
+        => $"""
+            source_row.CHARGE_ID = {charge.ChargeId}
+            {ValidationDefaults.BadDataStartDate}
+            {ValidationDefaults.OnlySystemCreatedOrChanged}
+            """;
 }

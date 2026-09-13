@@ -6,7 +6,7 @@ public class ApplyChangesActivity(Charge charge, TableChange[] changes) : IDecla
 {
     public void Build(StringBuilder builder)
     {
-        builder.AppendLine(LogEmitter.LogCharge("Starting cleanup for case", "CLEANUP", charge.ChargeId));
+        builder.AppendLine(LogEmitter.LogCharge("Starting cleanup for case", "CLEANUP", charge.ChargeId.ToString()));
         
         foreach (var change in changes)
         {
@@ -16,7 +16,7 @@ public class ApplyChangesActivity(Charge charge, TableChange[] changes) : IDecla
             builder.AppendLine(change.LogOperation(charge));
         }
         
-        builder.AppendLine(LogEmitter.LogCharge("Completed cleanup for case", "CLEANUP", charge.ChargeId));
+        builder.AppendLine(LogEmitter.LogCharge("Completed cleanup for case", "CLEANUP", charge.ChargeId.ToString()));
 
         builder.AppendLine(
             $"""
@@ -25,7 +25,7 @@ public class ApplyChangesActivity(Charge charge, TableChange[] changes) : IDecla
                      SET
                          status = 'PROCESSED'
                      WHERE
-                         cleanup_id = :CLEANUP_ID
+                         cleanup_id = __CLEANUP_ID__
                          AND charge_id = '{charge.ChargeId}';
 
              """);

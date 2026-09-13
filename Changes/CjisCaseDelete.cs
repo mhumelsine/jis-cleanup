@@ -8,5 +8,9 @@ public sealed class CjisCaseDelete : DeleteTableChange
     }
 
     public override string WherePredicate(Charge charge)
-        => "case_id=v_case_id";
+        => $"""
+            "YEAR" = '{charge.GetCaseYear()}'
+            AND SEQ = '{charge.GetCaseSequence()}'
+            AND COURT_DESIGNATOR = '{charge.GetCaseCourt()}'
+            """;
 }

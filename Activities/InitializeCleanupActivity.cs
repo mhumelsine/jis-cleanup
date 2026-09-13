@@ -10,17 +10,14 @@ public class InitializeCleanupActivity(CleanupMetadata metadata) : IActivity
             $"""
              SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
              
-             VARIABLE WHAT_IF NUMBER
-             VARIABLE CLEANUP_ID NUMBER
-             
-             EXEC :WHAT_IF := 1
+
 
              DECLARE
                  v_existing NUMBER; 
              BEGIN
              
-                 IF :WHAT_IF IS NULL OR :WHAT_IF NOT IN (0,1) THEN 
-                      RAISE_APPLICATION_ERROR(-20001,'WHAT_IF must be 0 or 1'); END IF;
+                 IF __WHAT_IF__ IS NULL OR __WHAT_IF__ NOT IN (0,1) THEN 
+                      RAISE_APPLICATION_ERROR(-20001,'__WHAT_IF__ must be 0 or 1'); END IF;
                  
                  SELECT COUNT(*) 
                  INTO v_existing 
@@ -31,12 +28,9 @@ public class InitializeCleanupActivity(CleanupMetadata metadata) : IActivity
                       RAISE_APPLICATION_ERROR(-20002,'Cleanup [{metadata.Name}] already exists'); 
                  END IF;
                  
-                 SELECT JISREM.CLEANUP_SEQ.NEXTVAL 
-                 INTO :CLEANUP_ID 
-                 FROM dual;
                  
                  INSERT INTO JISREM.CLEANUP(cleanup_id,cleanup_name,description,requested_by,status)
-                 VALUES(:CLEANUP_ID,'{metadata.Name}','{metadata.Description}','{metadata.RequestedBy}','CREATED');
+                 VALUES(__CLEANUP_ID__,'{metadata.Name}','{metadata.Description}','{metadata.RequestedBy}','CREATED');
 
              """);
 
@@ -45,7 +39,7 @@ public class InitializeCleanupActivity(CleanupMetadata metadata) : IActivity
             builder.AppendLine(
                 $"""
                  INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-                 VALUES(:CLEANUP_ID, '{charge.CjisChargeNumber}', '{charge.ChargeId}', '{charge.Spn}', 'QUEUED');
+                 VALUES(__CLEANUP_ID__, '{charge.CjisCaseNumber}', '{charge.ChargeId}', '{charge.CjisSpn}', 'QUEUED');
 
                  """);
         }

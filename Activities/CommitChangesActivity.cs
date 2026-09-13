@@ -9,17 +9,17 @@ public class CommitChangesActivity : IActivity
         builder.AppendLine(
             """
             BEGIN
-             IF :WHAT_IF = 0 THEN
+             IF __WHAT_IF__ = 0 THEN
                 UPDATE JISREM.CLEANUP 
                 SET 
                     status='COMPLETED'
-                WHERE cleanup_id=:CLEANUP_ID;
+                WHERE cleanup_id=CLEANUP_ID;
                 
                 COMMIT;
                 
                 JISREM.LOG
                 (
-                    p_cleanup_id => :CLEANUP_ID,
+                    p_cleanup_id => __CLEANUP_ID__,
                     p_step_name  => 'TRANSACTION',
                     p_message    => 'Cleanup transaction committed'
                 );
@@ -29,7 +29,7 @@ public class CommitChangesActivity : IActivity
                 
                 JISREM.LOG
                 (
-                    p_cleanup_id => :CLEANUP_ID,
+                    p_cleanup_id => __CLEANUP_ID__,
                     p_step_name  => 'TRANSACTION',
                     p_message    => 'WHAT-IF was true transaction rolled back'
                 );

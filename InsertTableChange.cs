@@ -29,7 +29,7 @@ public abstract class InsertTableChange : TableChange
             // VALUES
             // (
             //     v_inserted_id,
-            //     :cleanup_id,
+            //     __CLEANUP_ID__,
             //     '{Action.Value}',
             //     '{SnapshotType.Before.Value}'
             // );
@@ -42,7 +42,7 @@ public abstract class InsertTableChange : TableChange
             INSERT INTO {SnapshotTableName}
             SELECT
                 source_row.*,
-                :cleanup_id,
+                __CLEANUP_ID__,
                 '{Action.Value}',
                 '{SnapshotType.After.Value}'
             FROM {TargetTableName} source_row

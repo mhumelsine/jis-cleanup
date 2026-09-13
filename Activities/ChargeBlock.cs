@@ -13,7 +13,7 @@ public class ChargeBlock(Charge charge, IDeclareActivity Validate, IDeclareActiv
         builder.AppendLine(
             $"""
              /***********************************************************
-             ***** CHARGE {charge.ChargeId} CJIS_CASE_NUMBER {charge.CjisChargeNumber}
+             ***** CHARGE {charge.ChargeId} CJIS_CASE_NUMBER {charge.CjisCaseNumber}
              ***********************************************************/
 
              DECLARE
@@ -50,7 +50,7 @@ public class ChargeBlock(Charge charge, IDeclareActivity Validate, IDeclareActiv
                      
                      JISREM.LOG
                      (
-                         p_cleanup_id => :CLEANUP_ID,
+                         p_cleanup_id => __CLEANUP_ID__,
                          p_charge_id    => '{charge.ChargeId}',
                          p_step_name  => 'EXCEPTION',
                          p_message    => v_error_message
@@ -60,7 +60,7 @@ public class ChargeBlock(Charge charge, IDeclareActivity Validate, IDeclareActiv
                      SET 
                          status = 'PROCESSING_FAILED',
                          message = v_error_message
-                     WHERE cleanup_id = :CLEANUP_ID
+                     WHERE cleanup_id = __CLEANUP_ID__
                      AND charge_id = '{charge.ChargeId}';
              END;
              /

@@ -1,3 +1,5 @@
+using JisCleanup.Validations;
+
 namespace JisCleanup;
 
 public sealed class CjisDocketDelete : DeleteTableChange
@@ -15,7 +17,10 @@ public sealed class CjisDocketDelete : DeleteTableChange
                 inner join JISJDW.V_PNX2JIS_BAD_DKT d
                 on c.CHARGE_ID = d.CHARGE_ID
                 where c.CHARGE_ID = source_row.CHARGE_ID
+                and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
             )
-            and source_row.CHARGE_ID = '{charge.ChargeId}'
+            and source_row.CHARGE_ID = {charge.ChargeId}
+            {ValidationDefaults.BadDataStartDate}
+            {ValidationDefaults.OnlySystemCreatedOrChanged}
             """;
 }

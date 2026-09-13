@@ -31,7 +31,7 @@ public class DeclaresActivity(Cleanup cleanup) : IActivity
                 FROM
                     JISREM.CLEANUP_CASE_QUEUE
                 WHERE
-                    cleanup_id = :CLEANUP_ID
+                    cleanup_id = __CLEANUP_ID__
                     AND status = 'QUEUED'
                 ORDER BY
                     case_id;
@@ -42,7 +42,7 @@ public class DeclaresActivity(Cleanup cleanup) : IActivity
                 FROM
                     JISREM.CLEANUP_CASE_QUEUE
                 WHERE
-                    cleanup_id = :CLEANUP_ID
+                    cleanup_id = __CLEANUP_ID__
                     AND status = 'VALIDATED'
                 ORDER BY
                     case_id;

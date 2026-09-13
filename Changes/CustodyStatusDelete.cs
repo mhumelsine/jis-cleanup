@@ -1,3 +1,5 @@
+using JisCleanup.Validations;
+
 namespace JisCleanup;
 
 public sealed class CustodyStatusDelete : DeleteTableChange
@@ -15,6 +17,9 @@ public sealed class CustodyStatusDelete : DeleteTableChange
                WHERE d.CHARGE_ID = '{charge.ChargeId}'
                AND d.CHARGE_ID = source_row.CHARGE_ID
                AND d.row_state = 'BEFORE'
+               AND d.cleanup_id = __CLEANUP_ID__
            )
+           {ValidationDefaults.BadDataStartDate}
+           {ValidationDefaults.OnlySystemCreatedOrChanged}
            """;
 }

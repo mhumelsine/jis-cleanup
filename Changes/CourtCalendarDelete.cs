@@ -1,3 +1,5 @@
+using JisCleanup.Validations;
+
 namespace JisCleanup;
 
 public sealed class CourtCalendarDelete : DeleteTableChange
@@ -9,11 +11,9 @@ public sealed class CourtCalendarDelete : DeleteTableChange
 
     public override string WherePredicate(Charge charge)
         => $"""
-           EXISTS (select *
-               from JISJDW.CASE_DEFENDANT d
-               WHERE CJIS_CASE_NUMBER = '{charge.GetCjisCaseNumber()}'
-                 AND CJIS_SPN = '{charge.Spn}'
-                 AND d.CASE_DEFENDANT_ID = source_row.CASE_DEFENDANT_ID
-           )
+           source_row.CASE_DEFENDANT_ID = {charge.CaseDefendantId}
+           AND source_row.CALENDAR_TYPE = 'FAP'
+           {ValidationDefaults.BadDataStartDate}
+           {ValidationDefaults.OnlySystemCreatedOrChanged}
            """;
 }

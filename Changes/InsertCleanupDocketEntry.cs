@@ -14,15 +14,23 @@ public class InsertCleanupDocketEntry : InsertTableChange
            INTO v_docket_id_str
            FROM JISREM.CJIS_DOCKET
            WHERE row_state = 'BEFORE'
-           AND change_action = 'DELETE';
+           AND change_action = 'DELETE'
+           AND CHARGE_ID = {charge.ChargeId}
+           AND cleanup_id = __CLEANUP_ID__;
+
+           --ensure at least 1 docket was deleted
+           IF v_docket_id_str IS NOT NULL THEN
                     
-           INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-           VALUES (v_inserted_id, '{charge.ChargeId}', SYSDATE,SYSDATE, 'APPF',
-                  'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-                  'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-                  'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-                  ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-                  ' JIS RECORD CORRECTION, BATCH ' || :CLEANUP_ID );
+               INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+               VALUES (v_inserted_id, '{charge.ChargeId}', SYSDATE,SYSDATE, 'APPF',
+                      'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+                      'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+                      'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+                      ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+                      ' JIS RECORD CORRECTION, BATCH ' || __CLEANUP_ID__ );
+              
+                v_count := SQL%ROWCOUNT;
+           END IF;
 
            """;
 }

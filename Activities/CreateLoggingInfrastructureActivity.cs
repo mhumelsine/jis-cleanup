@@ -28,17 +28,17 @@ public class CreateLoggingInfrastructureActivity : IActivity
                     EXECUTE IMMEDIATE '
                         CREATE TABLE JISREM.CLEANUP
                         (
-                            cleanup_id      NUMBER         NOT NULL,
+                            cleanup_id      VARCHAR2(50)     NOT NULL,
                             cleanup_name    VARCHAR2(100)  NOT NULL,
                             cleanup_date    DATE DEFAULT SYSDATE NOT NULL,
                             description     VARCHAR2(1000) NOT NULL,
                             requested_by    VARCHAR2(128),
                             status          VARCHAR2(20) NOT NULL,
 
-                            CONSTRAINT CLEANUP_PK
+                            CONSTRAINT REM_CLEANUP_PK
                                 PRIMARY KEY (cleanup_id),
 
-                            CONSTRAINT CLEANUP_NAME_UQ
+                            CONSTRAINT REM_CLEANUP_NAME_UQ
                                 UNIQUE (cleanup_name)
                         )
                     ';
@@ -83,17 +83,17 @@ public class CreateLoggingInfrastructureActivity : IActivity
                     EXECUTE IMMEDIATE '
                         CREATE TABLE JISREM.CLEANUP_CASE_QUEUE
                         (
-                            cleanup_id NUMBER NOT NULL,
+                            cleanup_id VARCHAR2(50) NOT NULL,
                             case_id    VARCHAR2(50) NOT NULL,
                             charge_id  VARCHAR2(50) NOT NULL,
                             spn_id     VARCHAR2(50) NOT NULL,
                             status     VARCHAR2(50) NOT NULL,
                             message    VARCHAR2(512) NULL,    
 
-                            CONSTRAINT CLN_CASE_Q_PK
+                            CONSTRAINT REM_CLN_CASE_Q_PK
                                 PRIMARY KEY (cleanup_id, charge_id),
 
-                            CONSTRAINT CLN_CASE_Q_FK
+                            CONSTRAINT REM_CLN_CASE_Q_FK
                                 FOREIGN KEY (cleanup_id)
                                 REFERENCES JISREM.CLEANUP (cleanup_id)
                         )
@@ -117,15 +117,15 @@ public class CreateLoggingInfrastructureActivity : IActivity
                     EXECUTE IMMEDIATE '
                         CREATE TABLE JISREM.CLEANUP_LOG
                         (
-                            cleanup_id    NUMBER       NOT NULL,
-                            charge_id     VARCHAR(50)  NULL,
+                            cleanup_id    VARCHAR(50)    NOT NULL,
+                            charge_id     VARCHAR2(50)  NULL,
                             log_sequence  NUMBER       NOT NULL,
                             logged_at     DATE DEFAULT SYSDATE NOT NULL,
                             step_name     VARCHAR2(50) NULL,
                             message       VARCHAR2(512) NULL,
                             affected_rows NUMBER,
 
-                            CONSTRAINT CLEANUP_LOG_PK
+                            CONSTRAINT REM_CLEANUP_LOG_PK
                                 PRIMARY KEY
                                     (log_sequence)
                         )

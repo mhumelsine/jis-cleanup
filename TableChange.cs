@@ -32,7 +32,7 @@ public abstract class TableChange
             INSERT INTO {SnapshotTableName}
             SELECT
                 source_row.*,
-                :cleanup_id,
+                __CLEANUP_ID__,
                 '{Action.Value}',
                 '{SnapshotType.Before.Value}'
             FROM {TargetTableName} source_row
@@ -50,7 +50,7 @@ public abstract class TableChange
 
             JISREM.LOG
             (
-                p_cleanup_id    => :CLEANUP_ID,
+                p_cleanup_id    => __CLEANUP_ID__,
                 p_charge_id       => '{charge.ChargeId}',
                 p_step_name     => '{ChangeName}',
                 p_affected_rows => v_count
@@ -71,7 +71,7 @@ public abstract class TableChange
 
     private string BuildConstraintName(string suffix)
     {
-        return $"{TableDefinition.Table}_{suffix}";
+        return $"REM_{TableDefinition.Table}_{suffix}";
     }
 
     public string CreateSnapshotTableIfMissing()
@@ -105,7 +105,7 @@ public abstract class TableChange
                         EXECUTE IMMEDIATE
                             'ALTER TABLE {SnapshotTableName} ADD 
                             ( 
-                                cleanup_id NUMBER, 
+                                cleanup_id VARCHAR2(50), 
                                 change_action VARCHAR2(50), 
                                 row_state VARCHAR2(50) 
                             )';

@@ -1,3 +1,5 @@
+using JisCleanup.Validations;
+
 namespace JisCleanup;
 
 public sealed class FaChargeDelete : DeleteTableChange
@@ -8,7 +10,7 @@ public sealed class FaChargeDelete : DeleteTableChange
     }
 
     public override string WherePredicate(Charge charge)
-        => """
+        => $"""
            exists (
                select CJIS_DOCKET_ID
                from JISJDW.CHARGE c
@@ -16,6 +18,8 @@ public sealed class FaChargeDelete : DeleteTableChange
                on c.CHARGE_ID = d.CHARGE_ID
                where c.CHARGE_ID = source_row.CHARGE_ID
            )
-           and source_row.CHARGE_ID = '1172832'
+           and source_row.CHARGE_ID = {charge.ChargeId}
+           {ValidationDefaults.BadDataStartDate}
+           {ValidationDefaults.OnlySystemCreatedOrChanged}
            """;
 }

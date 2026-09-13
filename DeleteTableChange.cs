@@ -9,28 +9,21 @@ public abstract class DeleteTableChange : TableChange
 
     public override void AddDeclares(BlockDeclarations declare)
     {
-        declare.AddType($"t_{TableDefinition.PrimaryKeyColumn}", $"IS TABLE OF {TargetTableName}.{TableDefinition.PrimaryKeyColumn}%TYPE");
+        //declare.AddType($"t_{TableDefinition.PrimaryKeyColumn}", $"IS TABLE OF {TargetTableName}.{TableDefinition.PrimaryKeyColumn}%TYPE");
         
-        declare.AddVariable($"{AffectedIdListName}", $"t_{TableDefinition.PrimaryKeyColumn}");
+        //declare.AddVariable($"{AffectedIdListName}", $"t_{TableDefinition.PrimaryKeyColumn}");
     }
 
     protected override string Apply(Charge charge)
         => $"""
             DELETE 
             FROM {TargetTableName} source_row
-            WHERE {WherePredicate(charge)}
-            RETURNING
-                {TableDefinition.PrimaryKeyColumn}
-            BULK COLLECT INTO
-                {AffectedIdListName};
+            WHERE {WherePredicate(charge)};
 
             """;
 
     public override string AfterSnapshot(Charge charge)
-        => $"""
-            --SNAPSHOT AFTER";
-
-            """;
+        => "";
     // IF {AffectedIdListName}.COUNT > 0 THEN
     //     FORALL index_value IN 1 .. {AffectedIdListName}.COUNT
     //         INSERT INTO {SnapshotTableName}
@@ -43,7 +36,7 @@ public abstract class DeleteTableChange : TableChange
     //         VALUES
     //         (
     //             {AffectedIdListName}(index_value),
-    //             :cleanup_id,
+    //             __CLEANUP_ID__,
     //             '{Action.Value}',
     //             '{SnapshotType.After.Value}'
     //         );

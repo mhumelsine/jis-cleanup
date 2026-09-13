@@ -12,12 +12,10 @@ public interface IValidation
 public static class ValidationDefaults
 {
     public const string
-        BadDataStartDate = "",
-        OnlySustemCreatedOrChanged =
+        BadDataStartDate = "AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')",
+        OnlySystemCreatedOrChanged =
             """
-            AND (NVL(UPPER(TRIM(create_user_id)),'~') NOT IN ('JISJDW','PNX2JIS','SYSTEMA')
-            OR (update_user_id IS NOT NULL 
-                    AND UPPER(TRIM(update_user_id)) NOT IN ('JISJDW','PNX2JIS','SYSTEMA')));
+            AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
             """;
 }
 
@@ -65,7 +63,7 @@ public abstract class Validator : IValidation
 
             """;
     
-    protected static string CheckValidation(string stepName, string chargeId)
+    protected static string CheckValidation(string stepName, int chargeId)
         => $"""
             IF v_is_valid <> 1 THEN
                 {LogEmitter.LogCaseValidationFailed(stepName, chargeId)}
@@ -76,8 +74,8 @@ public abstract class Validator : IValidation
                     status = 'VALIDATION_FAILED',
                     message = v_validation_error
                 WHERE
-                    cleanup_id = :CLEANUP_ID
-                    AND charge_id = '{chargeId}';
+                    cleanup_id = __CLEANUP_ID__
+                    AND charge_id = {chargeId};
                
                 RETURN;
             END IF;

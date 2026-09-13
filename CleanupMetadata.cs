@@ -20,16 +20,17 @@ public record CleanupMetadata
             var segment = line.Split(',');
 
             //TODO:  New new file format
-            if (segment.Length != 4) throw new FileLoadException($"File contains invalid data at: '{line}'");
+            if (segment.Length != 7) throw new FileLoadException($"File contains invalid data at: '{line}'");
 
             var charge = new Charge
             {
-                ChargeId = segment[0],
-                CjisChargeNumber = segment[1],
-                Spn = int.Parse(segment[2]),
-                BondAmount = segment[3],
-                //Location = segment[4],
-                //Status = segment[5]
+                CjisSpn = int.Parse(segment[0]),
+                CjisCaseNumber = segment[1],
+                CaseDefendantId = int.Parse(segment[2]),
+                ChargeId = int.Parse(segment[3]),
+                Status = segment[4],
+                Location = segment[5], 
+                BondAmount = segment[6]
             };
 
             Charges.Add(charge);

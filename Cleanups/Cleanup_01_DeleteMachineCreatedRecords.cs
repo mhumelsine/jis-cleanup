@@ -11,8 +11,8 @@ public class Cleanup_01_DeleteMachineCreatedRecords : Cleanup {
         Metadata = new CleanupMetadata
         {
             Name = GetType().Name,
-            Description = "TODODODOD",
-            RequestedBy = "Michael Humelsine",
+            Description = "Initial cleanup of around 395 cases with only invalid system activity",
+            RequestedBy = "JIS",
         };
         
         Validations =
@@ -28,10 +28,10 @@ public class Cleanup_01_DeleteMachineCreatedRecords : Cleanup {
             new FirstAppearanceDelete(), 
             new CustodyStatusDelete(), 
             new ReleaseBondDelete(),
-            new ChargeJailInfoDelete(),
-            new CaseRelatedPersonDelete(),
-            new ChargeDelete(),
-            new ArrestDelete(),
+            // new ChargeJailInfoDelete(),  //TODO:  Should we delete or not
+            // new CaseRelatedPersonDelete(),  //TODO:  
+            // new ChargeDelete(), //TODO:  Should we delete or not?
+            // new ArrestDelete(),
             // new JailActivityDelete(),
             // new InmateDelete(),
             // new CaseDefendantDelete(),

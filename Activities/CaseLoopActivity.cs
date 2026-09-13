@@ -27,7 +27,7 @@ public class CaseLoopActivity(Cleanup cleanup) : IActivity
                 FROM
                     JISREM.CLEANUP_CASE_QUEUE
                 WHERE
-                    cleanup_id = :CLEANUP_ID
+                    cleanup_id = __CLEANUP_ID__
                     AND status = 'QUEUED'
                 ORDER BY
                     case_id;

@@ -8,5 +8,5 @@ public sealed class CaseDefendantDelete : DeleteTableChange
     }
 
     public override string WherePredicate(Charge charge)
-        => "case_defendant_id=v_case_defendant_id";
+        => $"source_row.CASE_DEFENDANT_ID = {charge.CaseDefendantId}";
 }

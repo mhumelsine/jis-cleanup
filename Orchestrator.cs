@@ -41,7 +41,12 @@ public class Orchestrator
         }
         
         new CommitChangesActivity().Build(builder);
+
+        var content = builder
+            .Replace("__CLEANUP_ID__", $"'{Guid.NewGuid().ToString()}'")
+            .Replace("__WHAT_IF__", "1")
+            .ToString();
         
-        File.WriteAllText(cleanup.Metadata.OutputfileName, builder.ToString());
+        File.WriteAllText(cleanup.Metadata.OutputfileName, content);
     }
 }

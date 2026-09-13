@@ -17,7 +17,7 @@ public class EndCaseLoopActivity : IActivity
             
                     JISREM.LOG
                     (
-                        p_cleanup_id => :CLEANUP_ID,
+                        p_cleanup_id => __CLEANUP_ID__,
                         p_charge_id => v_case_id,
                         p_step_name => 'CASE_ERROR',
                         p_message => v_error_message
@@ -27,7 +27,7 @@ public class EndCaseLoopActivity : IActivity
                     SET 
                         status = 'PROCESSING_FAILED',
                         message = v_error_message
-                    WHERE cleanup_id = :CLEANUP_ID
+                    WHERE cleanup_id = __CLEANUP_ID__
                     AND case_id = v_case_id;
                     
                 END;
