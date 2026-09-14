@@ -2,8 +2,10 @@
 using JisCleanup.Cleanups;
 
 var cleanup = new Cleanup_01_GroceryStoreRun();
-var orchestrator = new Orchestrator();
+var inputFilePath = Path.Combine(PathHelper.GetCleanupPath(), $"{cleanup.GetType().Name}.csv");
+var writer = new CleanupWriter();
+var loader = new CsvChargeLoader(inputFilePath);
 
-orchestrator.Build(cleanup);
+cleanup.Build(writer, loader);
 
 Console.WriteLine("Build Success");

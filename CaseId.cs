@@ -19,5 +19,3 @@ public partial record CaseId
     [GeneratedRegex("^[0-9]{4}[A-Z]{2}[0-9]+[A-Z]$")]
     private static partial Regex CaseIdPattern();
 }
-
-public record Case(string ChargeId, string CaseId, string Count, string Spn);
