@@ -9,7 +9,7 @@ var cleanupType = Type.GetType($"JisCleanup.Cleanups.{cleanupName}");
 if (cleanupType == null)
     throw new InvalidOperationException($"Could not resolve type for cleanup name '{cleanupName}'");
 
-var inputFilePath = Path.Combine(PathHelper.GetCleanupPath(), $"{cleanupType.Name}.csv");
+var inputFilePath = Path.Combine(PathHelper.InputPath(), $"{cleanupType.Name}.csv");
 
 Console.WriteLine($"Using {cleanupType.FullName}");
 Console.WriteLine($"Input file: {inputFilePath}");
