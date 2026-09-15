@@ -30,7 +30,13 @@ public class Cleanup
             {
                 OutputFileName = $"{Metadata.Name}_Run{Metadata.RunNumber}_Partition{index + 1}.sql",
                 Items = x.ToHashSet(), //Ensure unique by properties
-                Metadata = Metadata
+                Metadata = new CleanupMetadata
+                {
+                    Name = $"{Metadata.Name}_Partition_{index + 1}",
+                    Description = Metadata.Description,
+                    RequestedBy = Metadata.RequestedBy,
+                    RunNumber = Metadata.RunNumber
+                }
             })
             .ToList();
 

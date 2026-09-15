@@ -404,3 +404,9 @@ Check the generated SQL, not just the C# configuration.
 - Verify insert changes use `v_inserted_id` correctly.
 - Verify snapshot tables still match their `JISJDW` source tables.
 - Test every partition outside production first.
+
+# Cleanup Checklist
+
+- [ ] The docket entry is correct (date and language) for the cleanup being applied
+- [ ] The cleanup name and description accurately describe the scenario
+- [ ] 

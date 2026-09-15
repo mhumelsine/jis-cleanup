@@ -8,7 +8,7 @@ public class JudicialOrderCleanup : Cleanup
     {
         Metadata = new CleanupMetadata
         {
-            Name = "Judical Order 2024CF1550",
+            Name = "Judicial_Order_2024CF1550",
             Description = "Manual correction for single case",
             RequestedBy = "Jessica Gillespie",
         };
