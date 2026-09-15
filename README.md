@@ -370,9 +370,7 @@ JISREM.CLEANUP_LOG_SEQ
 
 ## Partitioning
 
-The configured partition size is 100 charges, but the current `Partition` implementation does not enforce that correctly and divides by zero when fewer than 100 rows are loaded.
-
-Use `Chunk` before relying on the partition limit:
+The configured partition size is 100 charges.
 
 ```csharp
 private List<CleanupBatch<TRecord>> Partition<TRecord>(

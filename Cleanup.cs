@@ -12,7 +12,7 @@ public class Cleanup
     public TableChange[] Changes { get; protected init; }
     public IValidation[] Validations { get; protected init; }
     public BlockDeclarations Declarations { get; } = new();
-    
+
     public void Build<TRecord>(CleanupWriter writer, ILoader<TRecord> loader)
         where TRecord : Charge
     {
@@ -24,26 +24,15 @@ public class Cleanup
     }
 
     private List<CleanupBatch<TRecord>> Partition<TRecord>(ILoader<TRecord> loader)
-    {
-        var targets = loader.Load();
-
-        var batchCount = targets.Count() / 100; //int division is OK
-        
-        return targets
-            .Select((x, index) => new
+        => loader.Load()
+            .Chunk(PartitionSize)
+            .Select((x, index) => new CleanupBatch<TRecord>
             {
-                Record = x,
-                Index = index
-            })
-            .GroupBy(x => x.Index % batchCount, x => x.Record)
-            .Select(group => new CleanupBatch<TRecord>
-            {
-                OutputFileName = $"{Metadata.Name}_Run{Metadata.RunNumber +1}_Partition{group.Key+1}.sql",
-                Items = group.ToHashSet(), //Ensure unique by properties
+                OutputFileName = $"{Metadata.Name}_Run{Metadata.RunNumber + 1}_Partition{index + 1}.sql",
+                Items = x.ToHashSet(), //Ensure unique by properties
                 Metadata = Metadata
             })
             .ToList();
-    }
 
     private string Compile<TRecord>(CleanupBatch<TRecord> batch)
         where TRecord : Charge
