@@ -28,7 +28,7 @@ public class Cleanup
             .Chunk(PartitionSize)
             .Select((x, index) => new CleanupBatch<TRecord>
             {
-                OutputFileName = $"{Metadata.Name}_Run{Metadata.RunNumber + 1}_Partition{index + 1}.sql",
+                OutputFileName = $"{Metadata.Name}_Run{Metadata.RunNumber}_Partition{index + 1}.sql",
                 Items = x.ToHashSet(), //Ensure unique by properties
                 Metadata = Metadata
             })

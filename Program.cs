@@ -1,8 +1,8 @@
 ﻿using JisCleanup;
 using JisCleanup.Cleanups;
 
-var cleanup = new Cleanup_01_GroceryStoreRun();
-var inputFilePath = Path.Combine(PathHelper.GetCleanupPath(), $"{cleanup.GetType().Name}.csv");
+var cleanup = new JudicialOrderCleanup();
+var inputFilePath = Path.Combine(PathHelper.GetCleanupPath(), $"2024CF1550A2_Order.csv");
 var writer = new CleanupWriter();
 var loader = new CsvChargeLoader(inputFilePath);
 
