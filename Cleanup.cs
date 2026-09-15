@@ -4,13 +4,13 @@ using JisCleanup.Validations;
 
 namespace JisCleanup;
 
-public class Cleanup
+public abstract class Cleanup
 {
     private const int PartitionSize = 100;
 
-    public CleanupMetadata Metadata { get; init; }
-    public TableChange[] Changes { get; protected init; }
-    public IValidation[] Validations { get; protected init; }
+    protected CleanupMetadata Metadata { get; init; } = CleanupMetadata.None;
+    public TableChange[] Changes { get; protected init; } = [];
+    public IValidation[] Validations { get; protected init; } = [];
     public BlockDeclarations Declarations { get; } = new();
 
     public void Build<TRecord>(CleanupWriter writer, ILoader<TRecord> loader)

@@ -290,13 +290,7 @@ Console.WriteLine("Build Success");
 Run a Debug build:
 
 ```bash
-dotnet run
-```
-
-Run a Release build:
-
-```bash
-dotnet run --configuration Release
+dotnet run -- "CleanupName"
 ```
 
 Before generating the next run, update `Metadata.RunNumber`. The filename uses `RunNumber + 1`.
