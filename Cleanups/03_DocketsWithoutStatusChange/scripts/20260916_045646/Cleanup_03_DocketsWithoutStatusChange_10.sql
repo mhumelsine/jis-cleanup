@@ -318,326 +318,326 @@ BEGIN
     SELECT COUNT(*) 
     INTO v_existing 
     FROM JISREM.CLEANUP 
-    WHERE cleanup_name='20260916_100908_Cleanup_03_DocketsWithoutStatusChanges_1';
+    WHERE cleanup_name='20260916_045646_Cleanup_03_DocketsWithoutStatusChange_10';
     
     IF v_existing>0 THEN 
-         RAISE_APPLICATION_ERROR(-20002,'Cleanup [20260916_100908_Cleanup_03_DocketsWithoutStatusChanges_1] already exists'); 
+         RAISE_APPLICATION_ERROR(-20002,'Cleanup [20260916_045646_Cleanup_03_DocketsWithoutStatusChange_10] already exists'); 
     END IF;
     
     
     INSERT INTO JISREM.CLEANUP(cleanup_id,cleanup_name,description,requested_by,status)
-    VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da','20260916_100908_Cleanup_03_DocketsWithoutStatusChanges_1','Removes docket entries that do not status changes','JIS','CREATED');
+    VALUES('1f799779-8350-4528-95e0-347f3a304bfd','20260916_045646_Cleanup_03_DocketsWithoutStatusChange_10','Removes docket entries that do not status, location, or bond changes between 08/18 and 09/01','JIS','CREATED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF1616A1', '1246822', '3179', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2018CF1089A5', '1046911', '254583', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF1616A2', '1246823', '3179', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2020CF2821A1', '1115708', '183114', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF1601A1', '1224671', '8027', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2021CF9A1', '1122675', '242482', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF2147A1', '1228008', '8027', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2020CF2070C4', '1125004', '255333', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026MM986A1', '1245653', '11163', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2021CF689A1', '1127152', '265688', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026MM986A2', '1245652', '11163', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2021CF963A1', '1130364', '266127', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026MM986A3', '1245651', '11163', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2022CF291A1', '1148377', '246003', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2024CF3583A1', '1214339', '12002', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2022CF1991A1', '1157495', '107543', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2024CF3583A2', '1214340', '12002', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2022CF3540A1', '1167290', '250622', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF542A1', '1217781', '12002', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2023CF359A2', '1170911', '260977', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF542A2', '1217785', '12002', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2023CF359A1', '1170912', '260977', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF542A3', '1217783', '12002', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2023CF406A2', '1171146', '126453', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF542A4', '1217782', '12002', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2023CF189C44', '1176226', '271076', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF542A5', '1217784', '12002', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2023CF1256A3', '1176853', '201666', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF1233A1', '1244646', '13119', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2023CF1546A1', '1178707', '199126', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF1233A3', '1244648', '13119', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2023CF2430A2', '1185142', '105578', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF1233A4', '1244647', '13119', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2023CF2508A3', '1185645', '273833', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF92A1', '1237113', '15517', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2023CF3179A1', '1189478', '274411', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF92A2', '1237114', '15517', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2023CF3375A3', '1191887', '226823', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2022CF2105A1', '1158051', '15942', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF162A3', '1193339', '274918', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF1950A1', '1226898', '16577', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF224A1', '1193709', '265360', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF324A1', '1216518', '16577', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF687A2', '1196531', '275318', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025MM2268A1', '1235587', '17802', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF687A8', '1196536', '275318', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025MM2268A2', '1235588', '17802', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF897A2', '1197773', '113415', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025MM2268A3', '1235589', '17802', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF1286A1', '1200099', '184237', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF1706A1', '1247410', '22005', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF1286A4', '1200102', '184237', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF1706A2', '1247411', '22005', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF1286A10', '1200108', '184237', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF163A1', '1237860', '22816', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF1286E17', '1200450', '272983', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF2448A1', '1229859', '27008', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF1421A2', '1200844', '211518', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF2448A3', '1247466', '27008', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF1524A1', '1201477', '270565', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF2448A4', '1229861', '27008', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF1949A3', '1203935', '276314', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF2556A1', '1230627', '28224', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF2015A1', '1204328', '180800', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF2556A2', '1230628', '28224', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF2253A2', '1205988', '197593', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF2556A3', '1230630', '28224', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF2460A1', '1207155', '276670', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF1856A1', '1248492', '28224', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF2838A1', '1209555', '277053', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF2228A1', '1251731', '35925', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF2923A2', '1210088', '277135', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF1831A2', '1248294', '36551', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF2923A3', '1210089', '277135', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026MM1197A1', '1247583', '39916', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF2958A1', '1210243', '263824', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026MM1375A1', '1249616', '39916', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF2978A2', '1210348', '204378', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2023CF2203A1', '1183500', '46065', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF2643B2', '1210433', '262479', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CT793A1', '1246954', '46065', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF3002A5', '1210554', '271983', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CT793A3', '1246957', '46065', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF3023A1', '1210696', '251407', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF1837A1', '1248338', '50004', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF3181A1', '1211613', '277332', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2021CF477A1', '1125610', '51758', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF3251A2', '1212243', '230738', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2023CF3399A1', '1190861', '51758', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF3430A1', '1213487', '243798', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2023CF3399A2', '1190862', '51758', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2024CF3583A2', '1214340', '12002', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2023CF3399A3', '1190864', '51758', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF120A1', '1215438', '139817', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2023CF3399A4', '1190865', '51758', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF497A1', '1217594', '180640', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF1923A2', '1226759', '54838', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF718A1', '1218787', '251049', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF604A2', '1240427', '54838', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF940A1', '1220404', '257463', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF604A3', '1240428', '54838', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF948A1', '1220434', '278580', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2019CF3419A1', '1090470', '56094', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF1459A4', '1223849', '205401', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2019CF3419A2', '1090471', '56094', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025HH500A1', '1223916', '278619', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF99A1', '1237148', '57620', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF1508A1', '1224115', '256697', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF937A1', '1242979', '60854', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2023CF189B26', '1224286', '269073', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2014CF3464A1', '930289', '68598', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF1698A2', '1225284', '277689', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF1625A1', '1246876', '70003', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF1698A28', '1225288', '277689', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026MM954A1', '1245487', '74618', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF1698A36', '1225290', '277689', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026MM954A2', '1245488', '74618', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF1698A4', '1225293', '277689', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF2054A1', '1227434', '78646', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF1698A7', '1225296', '277689', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF2054A2', '1227435', '78646', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF1698A10', '1225298', '277689', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2024CF3586A1', '1214353', '79502', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF1698A37', '1225314', '277689', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2024CF3586A2', '1214354', '79502', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF1698A12', '1225323', '277689', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF1570A1', '1224441', '80770', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF1728A4', '1225491', '242954', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF1570A2', '1224442', '80770', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF1728A1', '1225494', '242954', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF38A1', '1236823', '80770', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF1894A1', '1226462', '252519', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF38A2', '1236824', '80770', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF1616F34', '1226711', '195187', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF1865A1', '1248548', '83278', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF1923A2', '1226759', '54838', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF1454A1', '1245897', '85807', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF1969A1', '1227009', '190014', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF1454A2', '1245898', '85807', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF2111A1', '1227766', '278590', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF1454A3', '1245899', '85807', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF1728C1', '1229070', '278335', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2024CF1971A1', '1204052', '88412', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF2378A2', '1229517', '255696', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026HH230A1', '1241078', '89966', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF2392A3', '1229569', '272384', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF1169A1', '1222060', '93921', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF2481A13', '1230074', '238833', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF1169A2', '1222058', '93921', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF2481A3', '1230079', '238833', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF1169A3', '1222062', '93921', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF2491A2', '1230133', '243631', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF1169A4', '1222057', '93921', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF2218A3', '1230625', '279563', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF1169A5', '1222059', '93921', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF2557A2', '1230658', '279181', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF1169A6', '1222061', '93921', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF2560A1', '1230665', '279841', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF1200A1', '1244496', '95361', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF2560A2', '1230666', '279841', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF1200A2', '1244495', '95361', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF2560A4', '1230668', '279841', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF1200A3', '1244497', '95361', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF2560A7', '1230671', '279841', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF1200A4', '1244499', '95361', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF2614A1', '1230976', '279429', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF1200A5', '1244500', '95361', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025MM1727A1', '1231062', '180807', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF1200A6', '1244498', '95361', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF2805A32', '1232240', '252306', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2010CF183A1', '732099', '95526', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF2934A2', '1232955', '242954', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2010CF183A2', '732100', '95526', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF3072A1', '1233833', '242954', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026MM274A1', '1239143', '95526', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF3072A7', '1233839', '242954', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2024CF2665A1', '1208420', '96099', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF3136A1', '1234292', '258889', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2024CF2665A2', '1208421', '96099', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF3157A3', '1234422', '279502', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025MM1938A1', '1232804', '96099', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025MM2174A1', '1234748', '279516', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF1472A1', '1245986', '97496', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF3250A9', '1234938', '203093', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2026CF936A1', '1242977', '98137', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF3348A1', '1235622', '265512', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF2209A1', '1228437', '98204', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF3496A2', '1236405', '236375', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF2209A2', '1228438', '98204', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2025CF3496A3', '1236408', '236375', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF2209A3', '1228442', '98204', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2026CF142A4', '1237366', '271328', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF3105A1', '1234089', '98204', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2026CF150A9', '1237460', '242954', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF3105A2', '1234090', '98204', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2026CF150A16', '1237467', '242954', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF3105A3', '1234091', '98204', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2026CF150A27', '1237478', '242954', 'QUEUED');
 
 INSERT INTO JISREM.CLEANUP_CASE_QUEUE(cleanup_id, case_id, charge_id, spn_id, status) 
-VALUES('0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da', '2025CF3105A4', '1234088', '98204', 'QUEUED');
+VALUES('1f799779-8350-4528-95e0-347f3a304bfd', '2026CF150A44', '1237495', '242954', 'QUEUED');
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
     p_step_name  => 'INITIALIZATION',
-    p_message    => 'Cleanup [20260916_100908_Cleanup_03_DocketsWithoutStatusChanges_1] started'
+    p_message    => 'Cleanup [20260916_045646_Cleanup_03_DocketsWithoutStatusChange_10] started'
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
     p_step_name  => 'INITIALIZATION',
     p_message    => '[100] case(s) will be affected'
 );
@@ -649,21 +649,21 @@ END;
 BEGIN
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
     p_step_name  => 'INITIALIZATION',
     p_message    => '[2] changes will be applied'
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
     p_step_name  => 'INITIALIZATION',
     p_message    => 'Cleanup agent registered: CjisDocketDelete::DELETE'
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
     p_step_name  => 'INITIALIZATION',
     p_message    => 'Cleanup agent registered: InsertCleanupDocketEntry::INSERT'
 );
@@ -673,7 +673,7 @@ END;
 
 SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
 /***********************************************************
-***** CHARGE 1246822 CJIS_CASE_NUMBER 2026CF1616A1
+***** CHARGE 1046911 CJIS_CASE_NUMBER 2018CF1089A5
 ***********************************************************/
 
 DECLARE
@@ -691,13 +691,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1246822';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1046911';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1246822',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1046911',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -706,7 +706,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -718,7 +718,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1246822
+and source_row.CHARGE_ID = 1046911
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -733,7 +733,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1246822
+and source_row.CHARGE_ID = 1046911
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -744,8 +744,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1246822',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1046911',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -758,19 +758,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1246822
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1046911
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1246822', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1046911', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -782,7 +782,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -791,16 +791,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1246822',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1046911',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1246822',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1046911',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -810,8 +810,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1246822';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1046911';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -821,8 +821,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1246822',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1046911',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -831,13 +831,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1246822';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1046911';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1246823 CJIS_CASE_NUMBER 2026CF1616A2
+***** CHARGE 1115708 CJIS_CASE_NUMBER 2020CF2821A1
 ***********************************************************/
 
 DECLARE
@@ -855,13 +855,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1246823';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1115708';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1246823',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1115708',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -870,7 +870,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -882,7 +882,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1246823
+and source_row.CHARGE_ID = 1115708
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -897,7 +897,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1246823
+and source_row.CHARGE_ID = 1115708
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -908,8 +908,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1246823',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1115708',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -922,19 +922,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1246823
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1115708
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1246823', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1115708', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -946,7 +946,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -955,16 +955,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1246823',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1115708',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1246823',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1115708',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -974,8 +974,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1246823';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1115708';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -985,8 +985,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1246823',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1115708',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -995,13 +995,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1246823';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1115708';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1224671 CJIS_CASE_NUMBER 2025CF1601A1
+***** CHARGE 1122675 CJIS_CASE_NUMBER 2021CF9A1
 ***********************************************************/
 
 DECLARE
@@ -1019,13 +1019,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1224671';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1122675';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1224671',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1122675',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -1034,7 +1034,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -1046,7 +1046,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1224671
+and source_row.CHARGE_ID = 1122675
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -1061,7 +1061,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1224671
+and source_row.CHARGE_ID = 1122675
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -1072,8 +1072,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1224671',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1122675',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -1086,19 +1086,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1224671
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1122675
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1224671', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1122675', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -1110,7 +1110,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -1119,16 +1119,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1224671',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1122675',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1224671',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1122675',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -1138,8 +1138,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1224671';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1122675';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -1149,8 +1149,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1224671',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1122675',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -1159,13 +1159,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1224671';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1122675';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1228008 CJIS_CASE_NUMBER 2025CF2147A1
+***** CHARGE 1125004 CJIS_CASE_NUMBER 2020CF2070C4
 ***********************************************************/
 
 DECLARE
@@ -1183,13 +1183,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1228008';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1125004';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1228008',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1125004',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -1198,7 +1198,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -1210,7 +1210,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1228008
+and source_row.CHARGE_ID = 1125004
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -1225,7 +1225,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1228008
+and source_row.CHARGE_ID = 1125004
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -1236,8 +1236,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1228008',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1125004',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -1250,19 +1250,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1228008
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1125004
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1228008', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1125004', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -1274,7 +1274,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -1283,16 +1283,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1228008',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1125004',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1228008',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1125004',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -1302,8 +1302,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1228008';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1125004';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -1313,8 +1313,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1228008',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1125004',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -1323,13 +1323,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1228008';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1125004';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1245653 CJIS_CASE_NUMBER 2026MM986A1
+***** CHARGE 1127152 CJIS_CASE_NUMBER 2021CF689A1
 ***********************************************************/
 
 DECLARE
@@ -1347,13 +1347,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1245653';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1127152';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1245653',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1127152',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -1362,7 +1362,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -1374,7 +1374,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1245653
+and source_row.CHARGE_ID = 1127152
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -1389,7 +1389,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1245653
+and source_row.CHARGE_ID = 1127152
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -1400,8 +1400,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1245653',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1127152',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -1414,19 +1414,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1245653
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1127152
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1245653', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1127152', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -1438,7 +1438,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -1447,16 +1447,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1245653',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1127152',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1245653',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1127152',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -1466,8 +1466,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1245653';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1127152';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -1477,8 +1477,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1245653',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1127152',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -1487,13 +1487,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1245653';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1127152';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1245652 CJIS_CASE_NUMBER 2026MM986A2
+***** CHARGE 1130364 CJIS_CASE_NUMBER 2021CF963A1
 ***********************************************************/
 
 DECLARE
@@ -1511,13 +1511,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1245652';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1130364';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1245652',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1130364',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -1526,7 +1526,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -1538,7 +1538,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1245652
+and source_row.CHARGE_ID = 1130364
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -1553,7 +1553,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1245652
+and source_row.CHARGE_ID = 1130364
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -1564,8 +1564,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1245652',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1130364',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -1578,19 +1578,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1245652
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1130364
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1245652', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1130364', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -1602,7 +1602,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -1611,16 +1611,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1245652',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1130364',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1245652',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1130364',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -1630,8 +1630,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1245652';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1130364';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -1641,8 +1641,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1245652',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1130364',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -1651,13 +1651,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1245652';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1130364';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1245651 CJIS_CASE_NUMBER 2026MM986A3
+***** CHARGE 1148377 CJIS_CASE_NUMBER 2022CF291A1
 ***********************************************************/
 
 DECLARE
@@ -1675,13 +1675,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1245651';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1148377';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1245651',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1148377',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -1690,7 +1690,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -1702,7 +1702,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1245651
+and source_row.CHARGE_ID = 1148377
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -1717,7 +1717,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1245651
+and source_row.CHARGE_ID = 1148377
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -1728,8 +1728,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1245651',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1148377',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -1742,19 +1742,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1245651
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1148377
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1245651', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1148377', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -1766,7 +1766,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -1775,16 +1775,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1245651',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1148377',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1245651',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1148377',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -1794,8 +1794,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1245651';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1148377';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -1805,8 +1805,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1245651',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1148377',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -1815,13 +1815,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1245651';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1148377';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1214339 CJIS_CASE_NUMBER 2024CF3583A1
+***** CHARGE 1157495 CJIS_CASE_NUMBER 2022CF1991A1
 ***********************************************************/
 
 DECLARE
@@ -1839,13 +1839,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1214339';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1157495';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1214339',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1157495',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -1854,7 +1854,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -1866,7 +1866,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1214339
+and source_row.CHARGE_ID = 1157495
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -1881,7 +1881,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1214339
+and source_row.CHARGE_ID = 1157495
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -1892,8 +1892,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1214339',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1157495',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -1906,19 +1906,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1214339
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1157495
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1214339', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1157495', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -1930,7 +1930,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -1939,16 +1939,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1214339',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1157495',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1214339',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1157495',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -1958,8 +1958,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1214339';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1157495';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -1969,8 +1969,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1214339',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1157495',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -1979,8 +1979,6076 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1214339';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1157495';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1167290 CJIS_CASE_NUMBER 2022CF3540A1
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1167290';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1167290',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1167290
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1167290
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1167290',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1167290
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1167290', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1167290',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1167290',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1167290';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1167290',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1167290';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1170911 CJIS_CASE_NUMBER 2023CF359A2
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1170911';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1170911',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1170911
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1170911
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1170911',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1170911
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1170911', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1170911',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1170911',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1170911';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1170911',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1170911';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1170912 CJIS_CASE_NUMBER 2023CF359A1
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1170912';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1170912',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1170912
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1170912
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1170912',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1170912
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1170912', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1170912',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1170912',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1170912';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1170912',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1170912';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1171146 CJIS_CASE_NUMBER 2023CF406A2
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1171146';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1171146',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1171146
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1171146
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1171146',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1171146
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1171146', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1171146',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1171146',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1171146';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1171146',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1171146';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1176226 CJIS_CASE_NUMBER 2023CF189C44
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1176226';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1176226',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1176226
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1176226
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1176226',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1176226
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1176226', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1176226',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1176226',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1176226';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1176226',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1176226';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1176853 CJIS_CASE_NUMBER 2023CF1256A3
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1176853';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1176853',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1176853
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1176853
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1176853',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1176853
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1176853', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1176853',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1176853',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1176853';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1176853',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1176853';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1178707 CJIS_CASE_NUMBER 2023CF1546A1
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1178707';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1178707',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1178707
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1178707
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1178707',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1178707
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1178707', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1178707',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1178707',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1178707';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1178707',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1178707';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1185142 CJIS_CASE_NUMBER 2023CF2430A2
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1185142';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1185142',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1185142
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1185142
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1185142',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1185142
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1185142', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1185142',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1185142',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1185142';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1185142',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1185142';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1185645 CJIS_CASE_NUMBER 2023CF2508A3
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1185645';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1185645',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1185645
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1185645
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1185645',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1185645
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1185645', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1185645',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1185645',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1185645';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1185645',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1185645';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1189478 CJIS_CASE_NUMBER 2023CF3179A1
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1189478';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1189478',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1189478
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1189478
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1189478',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1189478
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1189478', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1189478',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1189478',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1189478';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1189478',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1189478';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1191887 CJIS_CASE_NUMBER 2023CF3375A3
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1191887';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1191887',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1191887
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1191887
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1191887',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1191887
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1191887', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1191887',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1191887',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1191887';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1191887',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1191887';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1193339 CJIS_CASE_NUMBER 2024CF162A3
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1193339';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1193339',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1193339
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1193339
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1193339',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1193339
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1193339', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1193339',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1193339',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1193339';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1193339',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1193339';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1193709 CJIS_CASE_NUMBER 2024CF224A1
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1193709';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1193709',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1193709
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1193709
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1193709',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1193709
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1193709', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1193709',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1193709',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1193709';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1193709',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1193709';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1196531 CJIS_CASE_NUMBER 2024CF687A2
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1196531';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1196531',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1196531
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1196531
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1196531',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1196531
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1196531', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1196531',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1196531',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1196531';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1196531',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1196531';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1196536 CJIS_CASE_NUMBER 2024CF687A8
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1196536';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1196536',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1196536
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1196536
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1196536',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1196536
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1196536', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1196536',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1196536',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1196536';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1196536',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1196536';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1197773 CJIS_CASE_NUMBER 2024CF897A2
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1197773';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1197773',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1197773
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1197773
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1197773',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1197773
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1197773', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1197773',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1197773',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1197773';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1197773',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1197773';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1200099 CJIS_CASE_NUMBER 2024CF1286A1
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1200099';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1200099',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1200099
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1200099
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1200099',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1200099
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1200099', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1200099',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1200099',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1200099';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1200099',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1200099';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1200102 CJIS_CASE_NUMBER 2024CF1286A4
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1200102';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1200102',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1200102
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1200102
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1200102',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1200102
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1200102', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1200102',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1200102',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1200102';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1200102',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1200102';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1200108 CJIS_CASE_NUMBER 2024CF1286A10
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1200108';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1200108',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1200108
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1200108
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1200108',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1200108
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1200108', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1200108',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1200108',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1200108';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1200108',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1200108';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1200450 CJIS_CASE_NUMBER 2024CF1286E17
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1200450';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1200450',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1200450
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1200450
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1200450',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1200450
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1200450', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1200450',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1200450',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1200450';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1200450',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1200450';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1200844 CJIS_CASE_NUMBER 2024CF1421A2
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1200844';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1200844',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1200844
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1200844
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1200844',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1200844
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1200844', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1200844',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1200844',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1200844';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1200844',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1200844';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1201477 CJIS_CASE_NUMBER 2024CF1524A1
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1201477';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1201477',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1201477
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1201477
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1201477',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1201477
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1201477', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1201477',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1201477',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1201477';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1201477',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1201477';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1203935 CJIS_CASE_NUMBER 2024CF1949A3
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1203935';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1203935',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1203935
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1203935
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1203935',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1203935
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1203935', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1203935',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1203935',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1203935';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1203935',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1203935';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1204328 CJIS_CASE_NUMBER 2024CF2015A1
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1204328';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1204328',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1204328
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1204328
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1204328',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1204328
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1204328', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1204328',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1204328',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1204328';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1204328',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1204328';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1205988 CJIS_CASE_NUMBER 2024CF2253A2
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1205988';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1205988',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1205988
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1205988
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1205988',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1205988
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1205988', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1205988',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1205988',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1205988';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1205988',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1205988';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1207155 CJIS_CASE_NUMBER 2024CF2460A1
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1207155';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1207155',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1207155
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1207155
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1207155',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1207155
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1207155', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1207155',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1207155',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1207155';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1207155',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1207155';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1209555 CJIS_CASE_NUMBER 2024CF2838A1
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1209555';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1209555',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1209555
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1209555
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1209555',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1209555
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1209555', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1209555',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1209555',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1209555';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1209555',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1209555';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1210088 CJIS_CASE_NUMBER 2024CF2923A2
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1210088';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1210088',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1210088
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1210088
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1210088',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1210088
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1210088', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1210088',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1210088',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1210088';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1210088',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1210088';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1210089 CJIS_CASE_NUMBER 2024CF2923A3
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1210089';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1210089',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1210089
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1210089
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1210089',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1210089
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1210089', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1210089',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1210089',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1210089';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1210089',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1210089';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1210243 CJIS_CASE_NUMBER 2024CF2958A1
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1210243';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1210243',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1210243
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1210243
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1210243',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1210243
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1210243', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1210243',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1210243',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1210243';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1210243',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1210243';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1210348 CJIS_CASE_NUMBER 2024CF2978A2
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1210348';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1210348',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1210348
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1210348
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1210348',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1210348
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1210348', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1210348',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1210348',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1210348';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1210348',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1210348';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1210433 CJIS_CASE_NUMBER 2024CF2643B2
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1210433';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1210433',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1210433
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1210433
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1210433',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1210433
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1210433', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1210433',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1210433',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1210433';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1210433',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1210433';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1210554 CJIS_CASE_NUMBER 2024CF3002A5
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1210554';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1210554',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1210554
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1210554
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1210554',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1210554
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1210554', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1210554',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1210554',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1210554';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1210554',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1210554';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1210696 CJIS_CASE_NUMBER 2024CF3023A1
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1210696';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1210696',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1210696
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1210696
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1210696',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1210696
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1210696', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1210696',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1210696',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1210696';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1210696',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1210696';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1211613 CJIS_CASE_NUMBER 2024CF3181A1
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1211613';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1211613',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1211613
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1211613
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1211613',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1211613
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1211613', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1211613',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1211613',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1211613';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1211613',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1211613';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1212243 CJIS_CASE_NUMBER 2024CF3251A2
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1212243';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1212243',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1212243
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1212243
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1212243',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1212243
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1212243', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1212243',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1212243',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1212243';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1212243',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1212243';
+END;
+/
+
+/***********************************************************
+***** CHARGE 1213487 CJIS_CASE_NUMBER 2024CF3430A1
+***********************************************************/
+
+DECLARE
+    v_is_valid PLS_INTEGER := 1;
+    v_validation_error VARCHAR2(512) := NULL;
+    v_count PLS_INTEGER := 0;
+    v_error_message VARCHAR2(512);
+    v_docket_id_str VARCHAR2(1024);
+    v_inserted_id PLS_INTEGER := 0;
+
+BEGIN
+   SAVEPOINT before_record;
+   
+
+       UPDATE JISREM.CLEANUP_CASE_QUEUE
+       SET status = 'VALIDATED',
+       message = 'All validations passed'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1213487';
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1213487',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Starting cleanup for case'
+);
+
+--SNAPSHOT BEFORE
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'DELETE',
+    'BEFORE'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1213487
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
+;
+
+DELETE 
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE exists (
+    select CJIS_DOCKET_ID
+    from JISJDW.CHARGE c
+    inner join JISJDW.V_PNX2JIS_BAD_DKT d
+    on c.CHARGE_ID = d.CHARGE_ID
+    where c.CHARGE_ID = source_row.CHARGE_ID
+    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
+)
+and source_row.CHARGE_ID = 1213487
+AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
+AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1213487',
+    p_step_name     => 'CjisDocketDelete__DELETE',
+    p_affected_rows => v_count
+);
+
+v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
+
+SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
+     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
+INTO v_docket_id_str
+FROM JISREM.CJIS_DOCKET
+WHERE row_state = 'BEFORE'
+AND change_action = 'DELETE'
+AND CHARGE_ID = 1213487
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
+
+--ensure at least 1 docket was deleted
+IF v_docket_id_str IS NOT NULL THEN
+         
+    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
+    VALUES (v_inserted_id, '1213487', SYSDATE,SYSDATE, 'APPF',
+           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
+           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
+           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
+   
+     v_count := SQL%ROWCOUNT;
+END IF;
+
+
+ v_count := SQL%ROWCOUNT;
+ 
+--SNAPSHOT AFTER
+INSERT INTO JISREM.CJIS_DOCKET
+SELECT
+    source_row.*,
+    '1f799779-8350-4528-95e0-347f3a304bfd',
+    'INSERT',
+    'AFTER'
+FROM JISJDW.CJIS_DOCKET source_row
+WHERE CJIS_DOCKET_ID = v_inserted_id;
+
+
+JISREM.LOG
+(
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1213487',
+    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
+    p_affected_rows => v_count
+);
+
+JISREM.LOG
+(
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1213487',
+    p_step_name  => 'CLEANUP',
+    p_message    => 'Completed cleanup for case'
+);
+
+        UPDATE
+            JISREM.CLEANUP_CASE_QUEUE
+        SET
+            status = 'PROCESSED'
+        WHERE
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1213487';
+
+EXCEPTION
+    WHEN OTHERS THEN
+        v_error_message := SUBSTR(SQLERRM, 1, 512);
+
+        ROLLBACK TO before_record;
+        
+        JISREM.LOG
+        (
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1213487',
+            p_step_name  => 'EXCEPTION',
+            p_message    => v_error_message
+        );
+        
+        UPDATE JISREM.CLEANUP_CASE_QUEUE
+        SET 
+            status = 'PROCESSING_FAILED',
+            message = v_error_message
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1213487';
 END;
 /
 
@@ -2003,12 +8071,12 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
        AND charge_id = '1214340';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
     p_charge_id    => '1214340',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
@@ -2018,7 +8086,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -2056,7 +8124,7 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
     p_charge_id       => '1214340',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
@@ -2071,7 +8139,7 @@ FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
 AND CHARGE_ID = 1214340
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
@@ -2082,7 +8150,7 @@ IF v_docket_id_str IS NOT NULL THEN
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -2094,7 +8162,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -2103,7 +8171,7 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
     p_charge_id       => '1214340',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
@@ -2111,7 +8179,7 @@ JISREM.LOG
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
     p_charge_id    => '1214340',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
@@ -2122,7 +8190,7 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
             AND charge_id = '1214340';
 
 EXCEPTION
@@ -2133,7 +8201,7 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
             p_charge_id    => '1214340',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
@@ -2143,13 +8211,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
         AND charge_id = '1214340';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1217781 CJIS_CASE_NUMBER 2025CF542A1
+***** CHARGE 1215438 CJIS_CASE_NUMBER 2025CF120A1
 ***********************************************************/
 
 DECLARE
@@ -2167,13 +8235,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1217781';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1215438';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1217781',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1215438',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -2182,7 +8250,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -2194,7 +8262,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1217781
+and source_row.CHARGE_ID = 1215438
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -2209,7 +8277,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1217781
+and source_row.CHARGE_ID = 1215438
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -2220,8 +8288,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1217781',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1215438',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -2234,19 +8302,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1217781
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1215438
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1217781', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1215438', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -2258,7 +8326,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -2267,16 +8335,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1217781',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1215438',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1217781',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1215438',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -2286,8 +8354,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1217781';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1215438';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -2297,8 +8365,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1217781',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1215438',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -2307,13 +8375,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1217781';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1215438';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1217785 CJIS_CASE_NUMBER 2025CF542A2
+***** CHARGE 1217594 CJIS_CASE_NUMBER 2025CF497A1
 ***********************************************************/
 
 DECLARE
@@ -2331,13 +8399,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1217785';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1217594';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1217785',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1217594',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -2346,7 +8414,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -2358,7 +8426,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1217785
+and source_row.CHARGE_ID = 1217594
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -2373,7 +8441,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1217785
+and source_row.CHARGE_ID = 1217594
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -2384,8 +8452,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1217785',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1217594',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -2398,19 +8466,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1217785
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1217594
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1217785', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1217594', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -2422,7 +8490,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -2431,16 +8499,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1217785',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1217594',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1217785',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1217594',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -2450,8 +8518,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1217785';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1217594';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -2461,8 +8529,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1217785',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1217594',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -2471,13 +8539,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1217785';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1217594';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1217783 CJIS_CASE_NUMBER 2025CF542A3
+***** CHARGE 1218787 CJIS_CASE_NUMBER 2025CF718A1
 ***********************************************************/
 
 DECLARE
@@ -2495,13 +8563,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1217783';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1218787';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1217783',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1218787',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -2510,7 +8578,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -2522,7 +8590,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1217783
+and source_row.CHARGE_ID = 1218787
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -2537,7 +8605,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1217783
+and source_row.CHARGE_ID = 1218787
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -2548,8 +8616,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1217783',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1218787',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -2562,19 +8630,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1217783
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1218787
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1217783', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1218787', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -2586,7 +8654,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -2595,16 +8663,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1217783',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1218787',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1217783',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1218787',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -2614,8 +8682,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1217783';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1218787';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -2625,8 +8693,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1217783',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1218787',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -2635,13 +8703,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1217783';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1218787';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1217782 CJIS_CASE_NUMBER 2025CF542A4
+***** CHARGE 1220404 CJIS_CASE_NUMBER 2025CF940A1
 ***********************************************************/
 
 DECLARE
@@ -2659,13 +8727,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1217782';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1220404';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1217782',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1220404',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -2674,7 +8742,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -2686,7 +8754,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1217782
+and source_row.CHARGE_ID = 1220404
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -2701,7 +8769,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1217782
+and source_row.CHARGE_ID = 1220404
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -2712,8 +8780,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1217782',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1220404',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -2726,19 +8794,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1217782
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1220404
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1217782', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1220404', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -2750,7 +8818,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -2759,16 +8827,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1217782',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1220404',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1217782',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1220404',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -2778,8 +8846,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1217782';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1220404';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -2789,8 +8857,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1217782',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1220404',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -2799,13 +8867,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1217782';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1220404';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1217784 CJIS_CASE_NUMBER 2025CF542A5
+***** CHARGE 1220434 CJIS_CASE_NUMBER 2025CF948A1
 ***********************************************************/
 
 DECLARE
@@ -2823,13 +8891,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1217784';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1220434';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1217784',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1220434',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -2838,7 +8906,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -2850,7 +8918,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1217784
+and source_row.CHARGE_ID = 1220434
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -2865,7 +8933,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1217784
+and source_row.CHARGE_ID = 1220434
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -2876,8 +8944,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1217784',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1220434',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -2890,19 +8958,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1217784
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1220434
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1217784', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1220434', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -2914,7 +8982,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -2923,16 +8991,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1217784',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1220434',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1217784',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1220434',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -2942,8 +9010,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1217784';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1220434';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -2953,8 +9021,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1217784',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1220434',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -2963,13 +9031,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1217784';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1220434';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1244646 CJIS_CASE_NUMBER 2026CF1233A1
+***** CHARGE 1223849 CJIS_CASE_NUMBER 2025CF1459A4
 ***********************************************************/
 
 DECLARE
@@ -2987,13 +9055,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1244646';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1223849';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1244646',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1223849',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -3002,7 +9070,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -3014,7 +9082,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1244646
+and source_row.CHARGE_ID = 1223849
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -3029,7 +9097,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1244646
+and source_row.CHARGE_ID = 1223849
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -3040,8 +9108,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1244646',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1223849',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -3054,19 +9122,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1244646
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1223849
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1244646', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1223849', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -3078,7 +9146,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -3087,16 +9155,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1244646',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1223849',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1244646',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1223849',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -3106,8 +9174,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1244646';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1223849';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -3117,8 +9185,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1244646',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1223849',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -3127,13 +9195,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1244646';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1223849';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1244648 CJIS_CASE_NUMBER 2026CF1233A3
+***** CHARGE 1223916 CJIS_CASE_NUMBER 2025HH500A1
 ***********************************************************/
 
 DECLARE
@@ -3151,13 +9219,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1244648';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1223916';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1244648',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1223916',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -3166,7 +9234,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -3178,7 +9246,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1244648
+and source_row.CHARGE_ID = 1223916
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -3193,7 +9261,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1244648
+and source_row.CHARGE_ID = 1223916
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -3204,8 +9272,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1244648',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1223916',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -3218,19 +9286,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1244648
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1223916
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1244648', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1223916', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -3242,7 +9310,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -3251,16 +9319,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1244648',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1223916',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1244648',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1223916',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -3270,8 +9338,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1244648';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1223916';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -3281,8 +9349,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1244648',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1223916',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -3291,13 +9359,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1244648';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1223916';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1244647 CJIS_CASE_NUMBER 2026CF1233A4
+***** CHARGE 1224115 CJIS_CASE_NUMBER 2025CF1508A1
 ***********************************************************/
 
 DECLARE
@@ -3315,13 +9383,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1244647';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1224115';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1244647',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1224115',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -3330,7 +9398,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -3342,7 +9410,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1244647
+and source_row.CHARGE_ID = 1224115
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -3357,7 +9425,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1244647
+and source_row.CHARGE_ID = 1224115
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -3368,8 +9436,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1244647',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1224115',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -3382,19 +9450,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1244647
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1224115
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1244647', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1224115', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -3406,7 +9474,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -3415,16 +9483,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1244647',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1224115',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1244647',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1224115',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -3434,8 +9502,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1244647';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1224115';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -3445,8 +9513,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1244647',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1224115',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -3455,13 +9523,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1244647';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1224115';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1237113 CJIS_CASE_NUMBER 2026CF92A1
+***** CHARGE 1224286 CJIS_CASE_NUMBER 2023CF189B26
 ***********************************************************/
 
 DECLARE
@@ -3479,13 +9547,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1237113';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1224286';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1237113',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1224286',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -3494,7 +9562,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -3506,7 +9574,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1237113
+and source_row.CHARGE_ID = 1224286
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -3521,7 +9589,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1237113
+and source_row.CHARGE_ID = 1224286
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -3532,8 +9600,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1237113',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1224286',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -3546,19 +9614,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1237113
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1224286
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1237113', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1224286', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -3570,7 +9638,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -3579,16 +9647,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1237113',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1224286',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1237113',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1224286',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -3598,8 +9666,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1237113';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1224286';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -3609,8 +9677,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1237113',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1224286',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -3619,13 +9687,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1237113';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1224286';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1237114 CJIS_CASE_NUMBER 2026CF92A2
+***** CHARGE 1225284 CJIS_CASE_NUMBER 2025CF1698A2
 ***********************************************************/
 
 DECLARE
@@ -3643,13 +9711,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1237114';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1225284';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1237114',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1225284',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -3658,7 +9726,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -3670,7 +9738,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1237114
+and source_row.CHARGE_ID = 1225284
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -3685,7 +9753,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1237114
+and source_row.CHARGE_ID = 1225284
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -3696,8 +9764,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1237114',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1225284',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -3710,19 +9778,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1237114
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1225284
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1237114', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1225284', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -3734,7 +9802,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -3743,16 +9811,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1237114',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1225284',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1237114',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1225284',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -3762,8 +9830,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1237114';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1225284';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -3773,8 +9841,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1237114',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1225284',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -3783,13 +9851,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1237114';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1225284';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1158051 CJIS_CASE_NUMBER 2022CF2105A1
+***** CHARGE 1225288 CJIS_CASE_NUMBER 2025CF1698A28
 ***********************************************************/
 
 DECLARE
@@ -3807,13 +9875,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1158051';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1225288';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1158051',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1225288',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -3822,7 +9890,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -3834,7 +9902,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1158051
+and source_row.CHARGE_ID = 1225288
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -3849,7 +9917,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1158051
+and source_row.CHARGE_ID = 1225288
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -3860,8 +9928,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1158051',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1225288',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -3874,19 +9942,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1158051
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1225288
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1158051', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1225288', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -3898,7 +9966,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -3907,16 +9975,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1158051',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1225288',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1158051',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1225288',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -3926,8 +9994,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1158051';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1225288';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -3937,8 +10005,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1158051',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1225288',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -3947,13 +10015,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1158051';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1225288';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1226898 CJIS_CASE_NUMBER 2025CF1950A1
+***** CHARGE 1225290 CJIS_CASE_NUMBER 2025CF1698A36
 ***********************************************************/
 
 DECLARE
@@ -3971,13 +10039,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1226898';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1225290';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1226898',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1225290',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -3986,7 +10054,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -3998,7 +10066,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1226898
+and source_row.CHARGE_ID = 1225290
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -4013,7 +10081,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1226898
+and source_row.CHARGE_ID = 1225290
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -4024,8 +10092,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1226898',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1225290',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -4038,19 +10106,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1226898
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1225290
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1226898', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1225290', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -4062,7 +10130,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -4071,16 +10139,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1226898',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1225290',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1226898',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1225290',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -4090,8 +10158,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1226898';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1225290';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -4101,8 +10169,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1226898',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1225290',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -4111,13 +10179,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1226898';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1225290';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1216518 CJIS_CASE_NUMBER 2025CF324A1
+***** CHARGE 1225293 CJIS_CASE_NUMBER 2025CF1698A4
 ***********************************************************/
 
 DECLARE
@@ -4135,13 +10203,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1216518';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1225293';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1216518',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1225293',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -4150,7 +10218,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -4162,7 +10230,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1216518
+and source_row.CHARGE_ID = 1225293
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -4177,7 +10245,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1216518
+and source_row.CHARGE_ID = 1225293
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -4188,8 +10256,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1216518',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1225293',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -4202,19 +10270,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1216518
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1225293
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1216518', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1225293', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -4226,7 +10294,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -4235,16 +10303,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1216518',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1225293',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1216518',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1225293',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -4254,8 +10322,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1216518';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1225293';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -4265,8 +10333,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1216518',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1225293',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -4275,13 +10343,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1216518';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1225293';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1235587 CJIS_CASE_NUMBER 2025MM2268A1
+***** CHARGE 1225296 CJIS_CASE_NUMBER 2025CF1698A7
 ***********************************************************/
 
 DECLARE
@@ -4299,13 +10367,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1235587';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1225296';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1235587',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1225296',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -4314,7 +10382,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -4326,7 +10394,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1235587
+and source_row.CHARGE_ID = 1225296
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -4341,7 +10409,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1235587
+and source_row.CHARGE_ID = 1225296
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -4352,8 +10420,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1235587',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1225296',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -4366,19 +10434,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1235587
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1225296
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1235587', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1225296', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -4390,7 +10458,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -4399,16 +10467,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1235587',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1225296',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1235587',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1225296',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -4418,8 +10486,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1235587';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1225296';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -4429,8 +10497,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1235587',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1225296',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -4439,13 +10507,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1235587';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1225296';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1235588 CJIS_CASE_NUMBER 2025MM2268A2
+***** CHARGE 1225298 CJIS_CASE_NUMBER 2025CF1698A10
 ***********************************************************/
 
 DECLARE
@@ -4463,13 +10531,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1235588';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1225298';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1235588',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1225298',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -4478,7 +10546,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -4490,7 +10558,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1235588
+and source_row.CHARGE_ID = 1225298
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -4505,7 +10573,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1235588
+and source_row.CHARGE_ID = 1225298
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -4516,8 +10584,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1235588',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1225298',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -4530,19 +10598,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1235588
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1225298
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1235588', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1225298', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -4554,7 +10622,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -4563,16 +10631,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1235588',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1225298',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1235588',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1225298',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -4582,8 +10650,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1235588';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1225298';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -4593,8 +10661,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1235588',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1225298',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -4603,13 +10671,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1235588';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1225298';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1235589 CJIS_CASE_NUMBER 2025MM2268A3
+***** CHARGE 1225314 CJIS_CASE_NUMBER 2025CF1698A37
 ***********************************************************/
 
 DECLARE
@@ -4627,13 +10695,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1235589';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1225314';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1235589',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1225314',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -4642,7 +10710,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -4654,7 +10722,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1235589
+and source_row.CHARGE_ID = 1225314
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -4669,7 +10737,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1235589
+and source_row.CHARGE_ID = 1225314
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -4680,8 +10748,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1235589',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1225314',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -4694,19 +10762,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1235589
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1225314
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1235589', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1225314', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -4718,7 +10786,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -4727,16 +10795,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1235589',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1225314',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1235589',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1225314',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -4746,8 +10814,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1235589';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1225314';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -4757,8 +10825,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1235589',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1225314',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -4767,13 +10835,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1235589';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1225314';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1247410 CJIS_CASE_NUMBER 2026CF1706A1
+***** CHARGE 1225323 CJIS_CASE_NUMBER 2025CF1698A12
 ***********************************************************/
 
 DECLARE
@@ -4791,13 +10859,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1247410';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1225323';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1247410',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1225323',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -4806,7 +10874,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -4818,7 +10886,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1247410
+and source_row.CHARGE_ID = 1225323
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -4833,7 +10901,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1247410
+and source_row.CHARGE_ID = 1225323
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -4844,8 +10912,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1247410',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1225323',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -4858,19 +10926,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1247410
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1225323
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1247410', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1225323', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -4882,7 +10950,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -4891,16 +10959,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1247410',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1225323',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1247410',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1225323',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -4910,8 +10978,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1247410';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1225323';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -4921,8 +10989,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1247410',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1225323',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -4931,13 +10999,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1247410';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1225323';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1247411 CJIS_CASE_NUMBER 2026CF1706A2
+***** CHARGE 1225491 CJIS_CASE_NUMBER 2025CF1728A4
 ***********************************************************/
 
 DECLARE
@@ -4955,13 +11023,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1247411';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1225491';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1247411',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1225491',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -4970,7 +11038,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -4982,7 +11050,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1247411
+and source_row.CHARGE_ID = 1225491
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -4997,7 +11065,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1247411
+and source_row.CHARGE_ID = 1225491
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -5008,8 +11076,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1247411',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1225491',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -5022,19 +11090,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1247411
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1225491
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1247411', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1225491', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -5046,7 +11114,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -5055,16 +11123,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1247411',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1225491',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1247411',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1225491',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -5074,8 +11142,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1247411';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1225491';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -5085,8 +11153,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1247411',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1225491',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -5095,13 +11163,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1247411';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1225491';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1237860 CJIS_CASE_NUMBER 2026CF163A1
+***** CHARGE 1225494 CJIS_CASE_NUMBER 2025CF1728A1
 ***********************************************************/
 
 DECLARE
@@ -5119,13 +11187,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1237860';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1225494';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1237860',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1225494',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -5134,7 +11202,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -5146,7 +11214,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1237860
+and source_row.CHARGE_ID = 1225494
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -5161,7 +11229,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1237860
+and source_row.CHARGE_ID = 1225494
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -5172,8 +11240,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1237860',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1225494',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -5186,19 +11254,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1237860
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1225494
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1237860', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1225494', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -5210,7 +11278,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -5219,16 +11287,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1237860',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1225494',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1237860',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1225494',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -5238,8 +11306,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1237860';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1225494';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -5249,8 +11317,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1237860',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1225494',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -5259,13 +11327,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1237860';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1225494';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1229859 CJIS_CASE_NUMBER 2025CF2448A1
+***** CHARGE 1226462 CJIS_CASE_NUMBER 2025CF1894A1
 ***********************************************************/
 
 DECLARE
@@ -5283,13 +11351,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1229859';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1226462';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1229859',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1226462',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -5298,7 +11366,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -5310,7 +11378,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1229859
+and source_row.CHARGE_ID = 1226462
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -5325,7 +11393,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1229859
+and source_row.CHARGE_ID = 1226462
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -5336,8 +11404,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1229859',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1226462',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -5350,19 +11418,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1229859
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1226462
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1229859', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1226462', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -5374,7 +11442,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -5383,16 +11451,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1229859',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1226462',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1229859',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1226462',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -5402,8 +11470,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1229859';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1226462';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -5413,8 +11481,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1229859',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1226462',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -5423,13 +11491,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1229859';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1226462';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1247466 CJIS_CASE_NUMBER 2025CF2448A3
+***** CHARGE 1226711 CJIS_CASE_NUMBER 2025CF1616F34
 ***********************************************************/
 
 DECLARE
@@ -5447,13 +11515,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1247466';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1226711';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1247466',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1226711',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -5462,7 +11530,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -5474,7 +11542,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1247466
+and source_row.CHARGE_ID = 1226711
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -5489,7 +11557,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1247466
+and source_row.CHARGE_ID = 1226711
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -5500,8 +11568,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1247466',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1226711',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -5514,19 +11582,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1247466
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1226711
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1247466', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1226711', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -5538,7 +11606,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -5547,16 +11615,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1247466',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1226711',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1247466',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1226711',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -5566,8 +11634,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1247466';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1226711';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -5577,8 +11645,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1247466',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1226711',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -5587,2960 +11655,8 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1247466';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1229861 CJIS_CASE_NUMBER 2025CF2448A4
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1229861';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1229861',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1229861
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1229861
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1229861',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1229861
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1229861', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1229861',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1229861',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1229861';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1229861',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1229861';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1230627 CJIS_CASE_NUMBER 2025CF2556A1
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1230627';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1230627',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1230627
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1230627
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1230627',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1230627
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1230627', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1230627',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1230627',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1230627';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1230627',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1230627';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1230628 CJIS_CASE_NUMBER 2025CF2556A2
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1230628';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1230628',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1230628
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1230628
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1230628',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1230628
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1230628', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1230628',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1230628',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1230628';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1230628',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1230628';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1230630 CJIS_CASE_NUMBER 2025CF2556A3
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1230630';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1230630',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1230630
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1230630
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1230630',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1230630
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1230630', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1230630',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1230630',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1230630';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1230630',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1230630';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1248492 CJIS_CASE_NUMBER 2026CF1856A1
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1248492';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1248492',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1248492
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1248492
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1248492',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1248492
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1248492', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1248492',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1248492',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1248492';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1248492',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1248492';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1251731 CJIS_CASE_NUMBER 2026CF2228A1
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1251731';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1251731',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1251731
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1251731
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1251731',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1251731
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1251731', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1251731',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1251731',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1251731';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1251731',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1251731';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1248294 CJIS_CASE_NUMBER 2026CF1831A2
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1248294';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1248294',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1248294
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1248294
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1248294',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1248294
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1248294', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1248294',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1248294',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1248294';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1248294',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1248294';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1247583 CJIS_CASE_NUMBER 2026MM1197A1
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1247583';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1247583',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1247583
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1247583
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1247583',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1247583
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1247583', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1247583',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1247583',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1247583';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1247583',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1247583';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1249616 CJIS_CASE_NUMBER 2026MM1375A1
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1249616';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1249616',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1249616
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1249616
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1249616',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1249616
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1249616', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1249616',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1249616',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1249616';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1249616',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1249616';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1183500 CJIS_CASE_NUMBER 2023CF2203A1
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1183500';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1183500',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1183500
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1183500
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1183500',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1183500
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1183500', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1183500',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1183500',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1183500';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1183500',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1183500';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1246954 CJIS_CASE_NUMBER 2026CT793A1
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1246954';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1246954',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1246954
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1246954
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1246954',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1246954
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1246954', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1246954',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1246954',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1246954';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1246954',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1246954';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1246957 CJIS_CASE_NUMBER 2026CT793A3
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1246957';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1246957',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1246957
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1246957
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1246957',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1246957
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1246957', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1246957',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1246957',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1246957';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1246957',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1246957';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1248338 CJIS_CASE_NUMBER 2026CF1837A1
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1248338';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1248338',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1248338
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1248338
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1248338',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1248338
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1248338', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1248338',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1248338',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1248338';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1248338',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1248338';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1125610 CJIS_CASE_NUMBER 2021CF477A1
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1125610';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1125610',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1125610
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1125610
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1125610',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1125610
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1125610', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1125610',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1125610',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1125610';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1125610',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1125610';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1190861 CJIS_CASE_NUMBER 2023CF3399A1
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1190861';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1190861',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1190861
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1190861
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1190861',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1190861
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1190861', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1190861',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1190861',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1190861';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1190861',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1190861';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1190862 CJIS_CASE_NUMBER 2023CF3399A2
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1190862';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1190862',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1190862
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1190862
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1190862',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1190862
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1190862', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1190862',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1190862',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1190862';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1190862',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1190862';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1190864 CJIS_CASE_NUMBER 2023CF3399A3
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1190864';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1190864',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1190864
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1190864
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1190864',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1190864
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1190864', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1190864',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1190864',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1190864';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1190864',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1190864';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1190865 CJIS_CASE_NUMBER 2023CF3399A4
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1190865';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1190865',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1190865
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1190865
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1190865',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1190865
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1190865', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1190865',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1190865',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1190865';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1190865',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1190865';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1226711';
 END;
 /
 
@@ -8563,12 +11679,12 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
        AND charge_id = '1226759';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
     p_charge_id    => '1226759',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
@@ -8578,7 +11694,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -8616,7 +11732,7 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
     p_charge_id       => '1226759',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
@@ -8631,7 +11747,7 @@ FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
 AND CHARGE_ID = 1226759
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
@@ -8642,7 +11758,7 @@ IF v_docket_id_str IS NOT NULL THEN
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -8654,7 +11770,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -8663,7 +11779,7 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
     p_charge_id       => '1226759',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
@@ -8671,7 +11787,7 @@ JISREM.LOG
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
     p_charge_id    => '1226759',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
@@ -8682,7 +11798,7 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
             AND charge_id = '1226759';
 
 EXCEPTION
@@ -8693,7 +11809,7 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
             p_charge_id    => '1226759',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
@@ -8703,13 +11819,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
         AND charge_id = '1226759';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1240427 CJIS_CASE_NUMBER 2026CF604A2
+***** CHARGE 1227009 CJIS_CASE_NUMBER 2025CF1969A1
 ***********************************************************/
 
 DECLARE
@@ -8727,13 +11843,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1240427';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1227009';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1240427',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1227009',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -8742,7 +11858,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -8754,7 +11870,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1240427
+and source_row.CHARGE_ID = 1227009
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -8769,7 +11885,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1240427
+and source_row.CHARGE_ID = 1227009
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -8780,8 +11896,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1240427',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1227009',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -8794,19 +11910,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1240427
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1227009
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1240427', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1227009', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -8818,7 +11934,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -8827,16 +11943,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1240427',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1227009',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1240427',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1227009',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -8846,8 +11962,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1240427';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1227009';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -8857,8 +11973,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1240427',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1227009',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -8867,13 +11983,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1240427';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1227009';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1240428 CJIS_CASE_NUMBER 2026CF604A3
+***** CHARGE 1227766 CJIS_CASE_NUMBER 2025CF2111A1
 ***********************************************************/
 
 DECLARE
@@ -8891,13 +12007,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1240428';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1227766';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1240428',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1227766',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -8906,7 +12022,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -8918,7 +12034,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1240428
+and source_row.CHARGE_ID = 1227766
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -8933,7 +12049,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1240428
+and source_row.CHARGE_ID = 1227766
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -8944,8 +12060,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1240428',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1227766',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -8958,19 +12074,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1240428
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1227766
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1240428', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1227766', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -8982,7 +12098,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -8991,16 +12107,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1240428',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1227766',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1240428',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1227766',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -9010,8 +12126,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1240428';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1227766';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -9021,8 +12137,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1240428',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1227766',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -9031,13 +12147,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1240428';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1227766';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1090470 CJIS_CASE_NUMBER 2019CF3419A1
+***** CHARGE 1229070 CJIS_CASE_NUMBER 2025CF1728C1
 ***********************************************************/
 
 DECLARE
@@ -9055,13 +12171,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1090470';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1229070';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1090470',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1229070',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -9070,7 +12186,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -9082,7 +12198,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1090470
+and source_row.CHARGE_ID = 1229070
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -9097,7 +12213,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1090470
+and source_row.CHARGE_ID = 1229070
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -9108,8 +12224,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1090470',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1229070',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -9122,19 +12238,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1090470
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1229070
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1090470', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1229070', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -9146,7 +12262,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -9155,16 +12271,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1090470',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1229070',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1090470',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1229070',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -9174,8 +12290,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1090470';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1229070';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -9185,8 +12301,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1090470',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1229070',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -9195,13 +12311,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1090470';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1229070';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1090471 CJIS_CASE_NUMBER 2019CF3419A2
+***** CHARGE 1229517 CJIS_CASE_NUMBER 2025CF2378A2
 ***********************************************************/
 
 DECLARE
@@ -9219,13 +12335,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1090471';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1229517';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1090471',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1229517',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -9234,7 +12350,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -9246,7 +12362,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1090471
+and source_row.CHARGE_ID = 1229517
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -9261,7 +12377,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1090471
+and source_row.CHARGE_ID = 1229517
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -9272,8 +12388,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1090471',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1229517',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -9286,19 +12402,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1090471
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1229517
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1090471', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1229517', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -9310,7 +12426,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -9319,16 +12435,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1090471',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1229517',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1090471',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1229517',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -9338,8 +12454,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1090471';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1229517';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -9349,8 +12465,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1090471',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1229517',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -9359,13 +12475,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1090471';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1229517';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1237148 CJIS_CASE_NUMBER 2026CF99A1
+***** CHARGE 1229569 CJIS_CASE_NUMBER 2025CF2392A3
 ***********************************************************/
 
 DECLARE
@@ -9383,13 +12499,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1237148';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1229569';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1237148',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1229569',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -9398,7 +12514,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -9410,7 +12526,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1237148
+and source_row.CHARGE_ID = 1229569
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -9425,7 +12541,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1237148
+and source_row.CHARGE_ID = 1229569
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -9436,8 +12552,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1237148',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1229569',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -9450,19 +12566,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1237148
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1229569
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1237148', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1229569', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -9474,7 +12590,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -9483,16 +12599,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1237148',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1229569',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1237148',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1229569',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -9502,8 +12618,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1237148';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1229569';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -9513,8 +12629,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1237148',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1229569',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -9523,13 +12639,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1237148';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1229569';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1242979 CJIS_CASE_NUMBER 2026CF937A1
+***** CHARGE 1230074 CJIS_CASE_NUMBER 2025CF2481A13
 ***********************************************************/
 
 DECLARE
@@ -9547,13 +12663,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1242979';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1230074';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1242979',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1230074',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -9562,7 +12678,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -9574,7 +12690,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1242979
+and source_row.CHARGE_ID = 1230074
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -9589,7 +12705,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1242979
+and source_row.CHARGE_ID = 1230074
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -9600,8 +12716,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1242979',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1230074',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -9614,19 +12730,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1242979
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1230074
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1242979', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1230074', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -9638,7 +12754,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -9647,16 +12763,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1242979',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1230074',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1242979',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1230074',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -9666,8 +12782,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1242979';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1230074';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -9677,8 +12793,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1242979',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1230074',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -9687,13 +12803,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1242979';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1230074';
 END;
 /
 
 /***********************************************************
-***** CHARGE 930289 CJIS_CASE_NUMBER 2014CF3464A1
+***** CHARGE 1230079 CJIS_CASE_NUMBER 2025CF2481A3
 ***********************************************************/
 
 DECLARE
@@ -9711,13 +12827,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '930289';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1230079';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '930289',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1230079',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -9726,7 +12842,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -9738,7 +12854,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 930289
+and source_row.CHARGE_ID = 1230079
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -9753,7 +12869,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 930289
+and source_row.CHARGE_ID = 1230079
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -9764,8 +12880,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '930289',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1230079',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -9778,19 +12894,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 930289
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1230079
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '930289', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1230079', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -9802,7 +12918,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -9811,16 +12927,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '930289',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1230079',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '930289',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1230079',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -9830,8 +12946,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '930289';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1230079';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -9841,8 +12957,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '930289',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1230079',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -9851,13 +12967,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '930289';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1230079';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1246876 CJIS_CASE_NUMBER 2026CF1625A1
+***** CHARGE 1230133 CJIS_CASE_NUMBER 2025CF2491A2
 ***********************************************************/
 
 DECLARE
@@ -9875,13 +12991,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1246876';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1230133';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1246876',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1230133',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -9890,7 +13006,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -9902,7 +13018,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1246876
+and source_row.CHARGE_ID = 1230133
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -9917,7 +13033,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1246876
+and source_row.CHARGE_ID = 1230133
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -9928,8 +13044,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1246876',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1230133',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -9942,19 +13058,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1246876
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1230133
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1246876', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1230133', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -9966,7 +13082,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -9975,16 +13091,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1246876',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1230133',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1246876',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1230133',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -9994,8 +13110,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1246876';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1230133';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -10005,8 +13121,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1246876',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1230133',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -10015,13 +13131,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1246876';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1230133';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1245487 CJIS_CASE_NUMBER 2026MM954A1
+***** CHARGE 1230625 CJIS_CASE_NUMBER 2025CF2218A3
 ***********************************************************/
 
 DECLARE
@@ -10039,13 +13155,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1245487';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1230625';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1245487',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1230625',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -10054,7 +13170,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -10066,7 +13182,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1245487
+and source_row.CHARGE_ID = 1230625
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -10081,7 +13197,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1245487
+and source_row.CHARGE_ID = 1230625
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -10092,8 +13208,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1245487',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1230625',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -10106,19 +13222,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1245487
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1230625
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1245487', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1230625', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -10130,7 +13246,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -10139,16 +13255,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1245487',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1230625',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1245487',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1230625',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -10158,8 +13274,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1245487';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1230625';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -10169,8 +13285,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1245487',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1230625',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -10179,13 +13295,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1245487';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1230625';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1245488 CJIS_CASE_NUMBER 2026MM954A2
+***** CHARGE 1230658 CJIS_CASE_NUMBER 2025CF2557A2
 ***********************************************************/
 
 DECLARE
@@ -10203,13 +13319,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1245488';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1230658';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1245488',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1230658',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -10218,7 +13334,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -10230,7 +13346,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1245488
+and source_row.CHARGE_ID = 1230658
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -10245,7 +13361,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1245488
+and source_row.CHARGE_ID = 1230658
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -10256,8 +13372,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1245488',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1230658',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -10270,19 +13386,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1245488
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1230658
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1245488', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1230658', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -10294,7 +13410,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -10303,16 +13419,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1245488',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1230658',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1245488',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1230658',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -10322,8 +13438,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1245488';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1230658';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -10333,8 +13449,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1245488',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1230658',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -10343,13 +13459,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1245488';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1230658';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1227434 CJIS_CASE_NUMBER 2025CF2054A1
+***** CHARGE 1230665 CJIS_CASE_NUMBER 2025CF2560A1
 ***********************************************************/
 
 DECLARE
@@ -10367,13 +13483,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1227434';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1230665';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1227434',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1230665',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -10382,7 +13498,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -10394,7 +13510,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1227434
+and source_row.CHARGE_ID = 1230665
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -10409,7 +13525,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1227434
+and source_row.CHARGE_ID = 1230665
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -10420,8 +13536,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1227434',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1230665',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -10434,19 +13550,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1227434
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1230665
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1227434', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1230665', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -10458,7 +13574,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -10467,16 +13583,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1227434',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1230665',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1227434',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1230665',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -10486,8 +13602,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1227434';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1230665';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -10497,8 +13613,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1227434',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1230665',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -10507,13 +13623,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1227434';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1230665';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1227435 CJIS_CASE_NUMBER 2025CF2054A2
+***** CHARGE 1230666 CJIS_CASE_NUMBER 2025CF2560A2
 ***********************************************************/
 
 DECLARE
@@ -10531,13 +13647,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1227435';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1230666';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1227435',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1230666',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -10546,7 +13662,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -10558,7 +13674,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1227435
+and source_row.CHARGE_ID = 1230666
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -10573,7 +13689,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1227435
+and source_row.CHARGE_ID = 1230666
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -10584,8 +13700,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1227435',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1230666',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -10598,19 +13714,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1227435
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1230666
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1227435', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1230666', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -10622,7 +13738,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -10631,16 +13747,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1227435',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1230666',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1227435',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1230666',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -10650,8 +13766,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1227435';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1230666';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -10661,8 +13777,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1227435',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1230666',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -10671,13 +13787,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1227435';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1230666';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1214353 CJIS_CASE_NUMBER 2024CF3586A1
+***** CHARGE 1230668 CJIS_CASE_NUMBER 2025CF2560A4
 ***********************************************************/
 
 DECLARE
@@ -10695,13 +13811,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1214353';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1230668';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1214353',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1230668',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -10710,7 +13826,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -10722,7 +13838,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1214353
+and source_row.CHARGE_ID = 1230668
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -10737,7 +13853,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1214353
+and source_row.CHARGE_ID = 1230668
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -10748,8 +13864,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1214353',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1230668',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -10762,19 +13878,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1214353
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1230668
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1214353', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1230668', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -10786,7 +13902,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -10795,16 +13911,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1214353',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1230668',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1214353',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1230668',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -10814,8 +13930,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1214353';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1230668';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -10825,8 +13941,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1214353',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1230668',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -10835,13 +13951,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1214353';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1230668';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1214354 CJIS_CASE_NUMBER 2024CF3586A2
+***** CHARGE 1230671 CJIS_CASE_NUMBER 2025CF2560A7
 ***********************************************************/
 
 DECLARE
@@ -10859,13 +13975,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1214354';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1230671';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1214354',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1230671',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -10874,7 +13990,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -10886,7 +14002,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1214354
+and source_row.CHARGE_ID = 1230671
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -10901,7 +14017,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1214354
+and source_row.CHARGE_ID = 1230671
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -10912,8 +14028,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1214354',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1230671',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -10926,19 +14042,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1214354
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1230671
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1214354', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1230671', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -10950,7 +14066,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -10959,16 +14075,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1214354',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1230671',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1214354',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1230671',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -10978,8 +14094,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1214354';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1230671';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -10989,8 +14105,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1214354',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1230671',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -10999,13 +14115,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1214354';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1230671';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1224441 CJIS_CASE_NUMBER 2025CF1570A1
+***** CHARGE 1230976 CJIS_CASE_NUMBER 2025CF2614A1
 ***********************************************************/
 
 DECLARE
@@ -11023,13 +14139,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1224441';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1230976';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1224441',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1230976',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -11038,7 +14154,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -11050,7 +14166,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1224441
+and source_row.CHARGE_ID = 1230976
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -11065,7 +14181,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1224441
+and source_row.CHARGE_ID = 1230976
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -11076,8 +14192,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1224441',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1230976',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -11090,19 +14206,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1224441
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1230976
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1224441', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1230976', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -11114,7 +14230,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -11123,16 +14239,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1224441',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1230976',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1224441',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1230976',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -11142,8 +14258,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1224441';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1230976';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -11153,8 +14269,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1224441',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1230976',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -11163,13 +14279,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1224441';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1230976';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1224442 CJIS_CASE_NUMBER 2025CF1570A2
+***** CHARGE 1231062 CJIS_CASE_NUMBER 2025MM1727A1
 ***********************************************************/
 
 DECLARE
@@ -11187,13 +14303,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1224442';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1231062';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1224442',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1231062',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -11202,7 +14318,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -11214,7 +14330,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1224442
+and source_row.CHARGE_ID = 1231062
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -11229,7 +14345,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1224442
+and source_row.CHARGE_ID = 1231062
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -11240,8 +14356,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1224442',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1231062',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -11254,19 +14370,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1224442
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1231062
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1224442', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1231062', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -11278,7 +14394,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -11287,16 +14403,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1224442',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1231062',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1224442',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1231062',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -11306,8 +14422,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1224442';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1231062';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -11317,8 +14433,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1224442',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1231062',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -11327,13 +14443,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1224442';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1231062';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1236823 CJIS_CASE_NUMBER 2026CF38A1
+***** CHARGE 1232240 CJIS_CASE_NUMBER 2025CF2805A32
 ***********************************************************/
 
 DECLARE
@@ -11351,13 +14467,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1236823';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1232240';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1236823',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1232240',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -11366,7 +14482,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -11378,7 +14494,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1236823
+and source_row.CHARGE_ID = 1232240
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -11393,7 +14509,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1236823
+and source_row.CHARGE_ID = 1232240
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -11404,8 +14520,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1236823',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1232240',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -11418,19 +14534,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1236823
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1232240
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1236823', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1232240', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -11442,7 +14558,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -11451,16 +14567,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1236823',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1232240',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1236823',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1232240',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -11470,8 +14586,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1236823';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1232240';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -11481,8 +14597,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1236823',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1232240',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -11491,13 +14607,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1236823';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1232240';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1236824 CJIS_CASE_NUMBER 2026CF38A2
+***** CHARGE 1232955 CJIS_CASE_NUMBER 2025CF2934A2
 ***********************************************************/
 
 DECLARE
@@ -11515,13 +14631,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1236824';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1232955';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1236824',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1232955',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -11530,7 +14646,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -11542,7 +14658,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1236824
+and source_row.CHARGE_ID = 1232955
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -11557,7 +14673,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1236824
+and source_row.CHARGE_ID = 1232955
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -11568,8 +14684,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1236824',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1232955',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -11582,19 +14698,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1236824
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1232955
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1236824', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1232955', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -11606,7 +14722,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -11615,16 +14731,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1236824',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1232955',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1236824',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1232955',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -11634,8 +14750,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1236824';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1232955';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -11645,8 +14761,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1236824',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1232955',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -11655,13 +14771,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1236824';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1232955';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1248548 CJIS_CASE_NUMBER 2026CF1865A1
+***** CHARGE 1233833 CJIS_CASE_NUMBER 2025CF3072A1
 ***********************************************************/
 
 DECLARE
@@ -11679,13 +14795,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1248548';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1233833';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1248548',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1233833',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -11694,7 +14810,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -11706,7 +14822,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1248548
+and source_row.CHARGE_ID = 1233833
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -11721,7 +14837,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1248548
+and source_row.CHARGE_ID = 1233833
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -11732,8 +14848,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1248548',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1233833',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -11746,19 +14862,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1248548
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1233833
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1248548', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1233833', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -11770,7 +14886,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -11779,16 +14895,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1248548',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1233833',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1248548',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1233833',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -11798,8 +14914,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1248548';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1233833';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -11809,8 +14925,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1248548',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1233833',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -11819,13 +14935,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1248548';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1233833';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1245897 CJIS_CASE_NUMBER 2026CF1454A1
+***** CHARGE 1233839 CJIS_CASE_NUMBER 2025CF3072A7
 ***********************************************************/
 
 DECLARE
@@ -11843,13 +14959,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1245897';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1233839';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1245897',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1233839',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -11858,7 +14974,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -11870,7 +14986,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1245897
+and source_row.CHARGE_ID = 1233839
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -11885,7 +15001,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1245897
+and source_row.CHARGE_ID = 1233839
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -11896,8 +15012,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1245897',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1233839',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -11910,19 +15026,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1245897
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1233839
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1245897', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1233839', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -11934,7 +15050,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -11943,16 +15059,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1245897',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1233839',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1245897',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1233839',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -11962,8 +15078,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1245897';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1233839';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -11973,8 +15089,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1245897',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1233839',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -11983,13 +15099,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1245897';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1233839';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1245898 CJIS_CASE_NUMBER 2026CF1454A2
+***** CHARGE 1234292 CJIS_CASE_NUMBER 2025CF3136A1
 ***********************************************************/
 
 DECLARE
@@ -12007,13 +15123,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1245898';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1234292';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1245898',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1234292',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -12022,7 +15138,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -12034,7 +15150,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1245898
+and source_row.CHARGE_ID = 1234292
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -12049,7 +15165,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1245898
+and source_row.CHARGE_ID = 1234292
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -12060,8 +15176,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1245898',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1234292',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -12074,19 +15190,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1245898
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1234292
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1245898', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1234292', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -12098,7 +15214,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -12107,16 +15223,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1245898',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1234292',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1245898',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1234292',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -12126,8 +15242,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1245898';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1234292';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -12137,8 +15253,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1245898',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1234292',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -12147,13 +15263,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1245898';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1234292';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1245899 CJIS_CASE_NUMBER 2026CF1454A3
+***** CHARGE 1234422 CJIS_CASE_NUMBER 2025CF3157A3
 ***********************************************************/
 
 DECLARE
@@ -12171,13 +15287,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1245899';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1234422';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1245899',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1234422',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -12186,7 +15302,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -12198,7 +15314,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1245899
+and source_row.CHARGE_ID = 1234422
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -12213,7 +15329,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1245899
+and source_row.CHARGE_ID = 1234422
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -12224,8 +15340,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1245899',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1234422',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -12238,19 +15354,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1245899
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1234422
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1245899', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1234422', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -12262,7 +15378,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -12271,16 +15387,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1245899',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1234422',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1245899',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1234422',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -12290,8 +15406,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1245899';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1234422';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -12301,8 +15417,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1245899',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1234422',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -12311,13 +15427,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1245899';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1234422';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1204052 CJIS_CASE_NUMBER 2024CF1971A1
+***** CHARGE 1234748 CJIS_CASE_NUMBER 2025MM2174A1
 ***********************************************************/
 
 DECLARE
@@ -12335,13 +15451,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1204052';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1234748';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1204052',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1234748',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -12350,7 +15466,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -12362,7 +15478,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1204052
+and source_row.CHARGE_ID = 1234748
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -12377,7 +15493,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1204052
+and source_row.CHARGE_ID = 1234748
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -12388,8 +15504,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1204052',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1234748',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -12402,19 +15518,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1204052
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1234748
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1204052', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1234748', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -12426,7 +15542,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -12435,16 +15551,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1204052',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1234748',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1204052',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1234748',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -12454,8 +15570,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1204052';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1234748';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -12465,8 +15581,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1204052',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1234748',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -12475,13 +15591,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1204052';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1234748';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1241078 CJIS_CASE_NUMBER 2026HH230A1
+***** CHARGE 1234938 CJIS_CASE_NUMBER 2025CF3250A9
 ***********************************************************/
 
 DECLARE
@@ -12499,13 +15615,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1241078';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1234938';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1241078',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1234938',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -12514,7 +15630,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -12526,7 +15642,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1241078
+and source_row.CHARGE_ID = 1234938
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -12541,7 +15657,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1241078
+and source_row.CHARGE_ID = 1234938
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -12552,8 +15668,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1241078',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1234938',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -12566,19 +15682,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1241078
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1234938
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1241078', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1234938', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -12590,7 +15706,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -12599,16 +15715,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1241078',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1234938',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1241078',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1234938',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -12618,8 +15734,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1241078';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1234938';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -12629,8 +15745,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1241078',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1234938',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -12639,13 +15755,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1241078';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1234938';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1222060 CJIS_CASE_NUMBER 2025CF1169A1
+***** CHARGE 1235622 CJIS_CASE_NUMBER 2025CF3348A1
 ***********************************************************/
 
 DECLARE
@@ -12663,13 +15779,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1222060';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1235622';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1222060',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1235622',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -12678,7 +15794,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -12690,7 +15806,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1222060
+and source_row.CHARGE_ID = 1235622
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -12705,7 +15821,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1222060
+and source_row.CHARGE_ID = 1235622
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -12716,8 +15832,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1222060',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1235622',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -12730,19 +15846,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1222060
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1235622
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1222060', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1235622', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -12754,7 +15870,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -12763,16 +15879,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1222060',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1235622',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1222060',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1235622',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -12782,8 +15898,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1222060';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1235622';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -12793,8 +15909,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1222060',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1235622',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -12803,13 +15919,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1222060';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1235622';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1222058 CJIS_CASE_NUMBER 2025CF1169A2
+***** CHARGE 1236405 CJIS_CASE_NUMBER 2025CF3496A2
 ***********************************************************/
 
 DECLARE
@@ -12827,13 +15943,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1222058';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1236405';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1222058',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1236405',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -12842,7 +15958,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -12854,7 +15970,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1222058
+and source_row.CHARGE_ID = 1236405
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -12869,7 +15985,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1222058
+and source_row.CHARGE_ID = 1236405
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -12880,8 +15996,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1222058',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1236405',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -12894,19 +16010,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1222058
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1236405
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1222058', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1236405', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -12918,7 +16034,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -12927,16 +16043,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1222058',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1236405',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1222058',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1236405',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -12946,8 +16062,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1222058';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1236405';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -12957,8 +16073,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1222058',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1236405',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -12967,13 +16083,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1222058';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1236405';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1222062 CJIS_CASE_NUMBER 2025CF1169A3
+***** CHARGE 1236408 CJIS_CASE_NUMBER 2025CF3496A3
 ***********************************************************/
 
 DECLARE
@@ -12991,13 +16107,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1222062';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1236408';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1222062',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1236408',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -13006,7 +16122,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -13018,7 +16134,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1222062
+and source_row.CHARGE_ID = 1236408
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -13033,7 +16149,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1222062
+and source_row.CHARGE_ID = 1236408
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -13044,8 +16160,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1222062',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1236408',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -13058,19 +16174,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1222062
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1236408
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1222062', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1236408', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -13082,7 +16198,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -13091,16 +16207,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1222062',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1236408',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1222062',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1236408',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -13110,8 +16226,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1222062';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1236408';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -13121,8 +16237,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1222062',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1236408',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -13131,13 +16247,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1222062';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1236408';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1222057 CJIS_CASE_NUMBER 2025CF1169A4
+***** CHARGE 1237366 CJIS_CASE_NUMBER 2026CF142A4
 ***********************************************************/
 
 DECLARE
@@ -13155,13 +16271,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1222057';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1237366';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1222057',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1237366',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -13170,7 +16286,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -13182,7 +16298,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1222057
+and source_row.CHARGE_ID = 1237366
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -13197,7 +16313,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1222057
+and source_row.CHARGE_ID = 1237366
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -13208,8 +16324,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1222057',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1237366',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -13222,19 +16338,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1222057
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1237366
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1222057', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1237366', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -13246,7 +16362,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -13255,16 +16371,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1222057',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1237366',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1222057',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1237366',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -13274,8 +16390,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1222057';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1237366';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -13285,8 +16401,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1222057',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1237366',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -13295,13 +16411,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1222057';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1237366';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1222059 CJIS_CASE_NUMBER 2025CF1169A5
+***** CHARGE 1237460 CJIS_CASE_NUMBER 2026CF150A9
 ***********************************************************/
 
 DECLARE
@@ -13319,13 +16435,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1222059';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1237460';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1222059',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1237460',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -13334,7 +16450,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -13346,7 +16462,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1222059
+and source_row.CHARGE_ID = 1237460
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -13361,7 +16477,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1222059
+and source_row.CHARGE_ID = 1237460
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -13372,8 +16488,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1222059',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1237460',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -13386,19 +16502,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1222059
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1237460
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1222059', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1237460', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -13410,7 +16526,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -13419,16 +16535,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1222059',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1237460',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1222059',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1237460',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -13438,8 +16554,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1222059';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1237460';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -13449,8 +16565,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1222059',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1237460',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -13459,13 +16575,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1222059';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1237460';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1222061 CJIS_CASE_NUMBER 2025CF1169A6
+***** CHARGE 1237467 CJIS_CASE_NUMBER 2026CF150A16
 ***********************************************************/
 
 DECLARE
@@ -13483,13 +16599,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1222061';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1237467';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1222061',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1237467',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -13498,7 +16614,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -13510,7 +16626,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1222061
+and source_row.CHARGE_ID = 1237467
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -13525,7 +16641,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1222061
+and source_row.CHARGE_ID = 1237467
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -13536,8 +16652,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1222061',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1237467',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -13550,19 +16666,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1222061
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1237467
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1222061', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1237467', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -13574,7 +16690,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -13583,16 +16699,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1222061',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1237467',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1222061',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1237467',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -13602,8 +16718,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1222061';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1237467';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -13613,8 +16729,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1222061',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1237467',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -13623,13 +16739,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1222061';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1237467';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1244496 CJIS_CASE_NUMBER 2026CF1200A1
+***** CHARGE 1237478 CJIS_CASE_NUMBER 2026CF150A27
 ***********************************************************/
 
 DECLARE
@@ -13647,13 +16763,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1244496';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1237478';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1244496',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1237478',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -13662,7 +16778,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -13674,7 +16790,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1244496
+and source_row.CHARGE_ID = 1237478
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -13689,7 +16805,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1244496
+and source_row.CHARGE_ID = 1237478
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -13700,8 +16816,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1244496',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1237478',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -13714,19 +16830,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1244496
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1237478
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1244496', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1237478', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -13738,7 +16854,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -13747,16 +16863,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1244496',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1237478',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1244496',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1237478',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -13766,8 +16882,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1244496';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1237478';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -13777,8 +16893,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1244496',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1237478',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -13787,13 +16903,13 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1244496';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1237478';
 END;
 /
 
 /***********************************************************
-***** CHARGE 1244495 CJIS_CASE_NUMBER 2026CF1200A2
+***** CHARGE 1237495 CJIS_CASE_NUMBER 2026CF150A44
 ***********************************************************/
 
 DECLARE
@@ -13811,13 +16927,13 @@ BEGIN
        UPDATE JISREM.CLEANUP_CASE_QUEUE
        SET status = 'VALIDATED',
        message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1244495';
+       WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+       AND charge_id = '1237495';
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1244495',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1237495',
     p_step_name  => 'CLEANUP',
     p_message    => 'Starting cleanup for case'
 );
@@ -13826,7 +16942,7 @@ JISREM.LOG
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'DELETE',
     'BEFORE'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -13838,7 +16954,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1244495
+and source_row.CHARGE_ID = 1237495
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
 ;
@@ -13853,7 +16969,7 @@ WHERE exists (
     where c.CHARGE_ID = source_row.CHARGE_ID
     and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
 )
-and source_row.CHARGE_ID = 1244495
+and source_row.CHARGE_ID = 1237495
 AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
 AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
 
@@ -13864,8 +16980,8 @@ AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYST
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1244495',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1237495',
     p_step_name     => 'CjisDocketDelete__DELETE',
     p_affected_rows => v_count
 );
@@ -13878,19 +16994,19 @@ INTO v_docket_id_str
 FROM JISREM.CJIS_DOCKET
 WHERE row_state = 'BEFORE'
 AND change_action = 'DELETE'
-AND CHARGE_ID = 1244495
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
+AND CHARGE_ID = 1237495
+AND cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd';
 
 --ensure at least 1 docket was deleted
 IF v_docket_id_str IS NOT NULL THEN
          
     INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1244495', SYSDATE,SYSDATE, 'APPF',
+    VALUES (v_inserted_id, '1237495', SYSDATE,SYSDATE, 'APPF',
            'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
            'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
            'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
            ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
+           ' JIS RECORD CORRECTION, BATCH ' || '1f799779-8350-4528-95e0-347f3a304bfd' );
    
      v_count := SQL%ROWCOUNT;
 END IF;
@@ -13902,7 +17018,7 @@ END IF;
 INSERT INTO JISREM.CJIS_DOCKET
 SELECT
     source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+    '1f799779-8350-4528-95e0-347f3a304bfd',
     'INSERT',
     'AFTER'
 FROM JISJDW.CJIS_DOCKET source_row
@@ -13911,16 +17027,16 @@ WHERE CJIS_DOCKET_ID = v_inserted_id;
 
 JISREM.LOG
 (
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1244495',
+    p_cleanup_id    => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id       => '1237495',
     p_step_name     => 'InsertCleanupDocketEntry__INSERT',
     p_affected_rows => v_count
 );
 
 JISREM.LOG
 (
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1244495',
+    p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+    p_charge_id    => '1237495',
     p_step_name  => 'CLEANUP',
     p_message    => 'Completed cleanup for case'
 );
@@ -13930,8 +17046,8 @@ JISREM.LOG
         SET
             status = 'PROCESSED'
         WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1244495';
+            cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+            AND charge_id = '1237495';
 
 EXCEPTION
     WHEN OTHERS THEN
@@ -13941,8 +17057,8 @@ EXCEPTION
         
         JISREM.LOG
         (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1244495',
+            p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
+            p_charge_id    => '1237495',
             p_step_name  => 'EXCEPTION',
             p_message    => v_error_message
         );
@@ -13951,3124 +17067,8 @@ EXCEPTION
         SET 
             status = 'PROCESSING_FAILED',
             message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1244495';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1244497 CJIS_CASE_NUMBER 2026CF1200A3
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1244497';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1244497',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1244497
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1244497
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1244497',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1244497
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1244497', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1244497',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1244497',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1244497';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1244497',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1244497';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1244499 CJIS_CASE_NUMBER 2026CF1200A4
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1244499';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1244499',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1244499
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1244499
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1244499',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1244499
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1244499', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1244499',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1244499',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1244499';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1244499',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1244499';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1244500 CJIS_CASE_NUMBER 2026CF1200A5
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1244500';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1244500',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1244500
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1244500
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1244500',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1244500
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1244500', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1244500',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1244500',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1244500';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1244500',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1244500';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1244498 CJIS_CASE_NUMBER 2026CF1200A6
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1244498';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1244498',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1244498
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1244498
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1244498',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1244498
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1244498', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1244498',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1244498',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1244498';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1244498',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1244498';
-END;
-/
-
-/***********************************************************
-***** CHARGE 732099 CJIS_CASE_NUMBER 2010CF183A1
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '732099';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '732099',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 732099
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 732099
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '732099',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 732099
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '732099', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '732099',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '732099',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '732099';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '732099',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '732099';
-END;
-/
-
-/***********************************************************
-***** CHARGE 732100 CJIS_CASE_NUMBER 2010CF183A2
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '732100';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '732100',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 732100
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 732100
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '732100',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 732100
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '732100', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '732100',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '732100',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '732100';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '732100',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '732100';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1239143 CJIS_CASE_NUMBER 2026MM274A1
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1239143';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1239143',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1239143
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1239143
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1239143',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1239143
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1239143', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1239143',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1239143',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1239143';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1239143',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1239143';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1208420 CJIS_CASE_NUMBER 2024CF2665A1
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1208420';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1208420',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1208420
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1208420
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1208420',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1208420
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1208420', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1208420',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1208420',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1208420';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1208420',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1208420';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1208421 CJIS_CASE_NUMBER 2024CF2665A2
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1208421';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1208421',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1208421
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1208421
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1208421',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1208421
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1208421', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1208421',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1208421',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1208421';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1208421',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1208421';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1232804 CJIS_CASE_NUMBER 2025MM1938A1
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1232804';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1232804',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1232804
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1232804
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1232804',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1232804
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1232804', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1232804',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1232804',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1232804';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1232804',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1232804';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1245986 CJIS_CASE_NUMBER 2026CF1472A1
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1245986';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1245986',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1245986
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1245986
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1245986',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1245986
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1245986', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1245986',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1245986',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1245986';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1245986',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1245986';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1242977 CJIS_CASE_NUMBER 2026CF936A1
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1242977';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1242977',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1242977
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1242977
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1242977',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1242977
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1242977', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1242977',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1242977',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1242977';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1242977',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1242977';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1228437 CJIS_CASE_NUMBER 2025CF2209A1
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1228437';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1228437',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1228437
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1228437
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1228437',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1228437
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1228437', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1228437',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1228437',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1228437';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1228437',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1228437';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1228438 CJIS_CASE_NUMBER 2025CF2209A2
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1228438';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1228438',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1228438
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1228438
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1228438',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1228438
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1228438', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1228438',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1228438',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1228438';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1228438',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1228438';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1228442 CJIS_CASE_NUMBER 2025CF2209A3
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1228442';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1228442',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1228442
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1228442
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1228442',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1228442
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1228442', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1228442',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1228442',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1228442';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1228442',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1228442';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1234089 CJIS_CASE_NUMBER 2025CF3105A1
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1234089';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1234089',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1234089
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1234089
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1234089',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1234089
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1234089', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1234089',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1234089',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1234089';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1234089',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1234089';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1234090 CJIS_CASE_NUMBER 2025CF3105A2
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1234090';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1234090',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1234090
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1234090
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1234090',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1234090
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1234090', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1234090',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1234090',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1234090';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1234090',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1234090';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1234091 CJIS_CASE_NUMBER 2025CF3105A3
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1234091';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1234091',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1234091
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1234091
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1234091',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1234091
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1234091', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1234091',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1234091',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1234091';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1234091',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1234091';
-END;
-/
-
-/***********************************************************
-***** CHARGE 1234088 CJIS_CASE_NUMBER 2025CF3105A4
-***********************************************************/
-
-DECLARE
-    v_is_valid PLS_INTEGER := 1;
-    v_validation_error VARCHAR2(512) := NULL;
-    v_count PLS_INTEGER := 0;
-    v_error_message VARCHAR2(512);
-    v_docket_id_str VARCHAR2(1024);
-    v_inserted_id PLS_INTEGER := 0;
-
-BEGIN
-   SAVEPOINT before_record;
-   
-
-       UPDATE JISREM.CLEANUP_CASE_QUEUE
-       SET status = 'VALIDATED',
-       message = 'All validations passed'
-       WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-       AND charge_id = '1234088';
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1234088',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Starting cleanup for case'
-);
-
---SNAPSHOT BEFORE
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'DELETE',
-    'BEFORE'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1234088
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-;
-
-DELETE 
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE exists (
-    select CJIS_DOCKET_ID
-    from JISJDW.CHARGE c
-    inner join JISJDW.V_PNX2JIS_BAD_DKT d
-    on c.CHARGE_ID = d.CHARGE_ID
-    where c.CHARGE_ID = source_row.CHARGE_ID
-    and d.CJIS_DOCKET_ID = source_row.CJIS_DOCKET_ID
-)
-and source_row.CHARGE_ID = 1234088
-AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')
-AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA');
-
-
- v_count := SQL%ROWCOUNT;
- 
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1234088',
-    p_step_name     => 'CjisDocketDelete__DELETE',
-    p_affected_rows => v_count
-);
-
-v_inserted_id := JISJDW.cjis_docket_seq.NEXTVAL;
-
-SELECT LISTAGG(TO_CHAR(DOCKET_SEQ), ', ')
-     WITHIN GROUP (ORDER BY DOCKET_SEQ) AS charge_list
-INTO v_docket_id_str
-FROM JISREM.CJIS_DOCKET
-WHERE row_state = 'BEFORE'
-AND change_action = 'DELETE'
-AND CHARGE_ID = 1234088
-AND cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da';
-
---ensure at least 1 docket was deleted
-IF v_docket_id_str IS NOT NULL THEN
-         
-    INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
-    VALUES (v_inserted_id, '1234088', SYSDATE,SYSDATE, 'APPF',
-           'PURSUANT TO ADMINISTRATIVE ORDER 2026-__ ENTERED 09/__/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
-           'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
-           'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-           ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
-           ' JIS RECORD CORRECTION, BATCH ' || '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da' );
-   
-     v_count := SQL%ROWCOUNT;
-END IF;
-
-
- v_count := SQL%ROWCOUNT;
- 
---SNAPSHOT AFTER
-INSERT INTO JISREM.CJIS_DOCKET
-SELECT
-    source_row.*,
-    '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    'INSERT',
-    'AFTER'
-FROM JISJDW.CJIS_DOCKET source_row
-WHERE CJIS_DOCKET_ID = v_inserted_id;
-
-
-JISREM.LOG
-(
-    p_cleanup_id    => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id       => '1234088',
-    p_step_name     => 'InsertCleanupDocketEntry__INSERT',
-    p_affected_rows => v_count
-);
-
-JISREM.LOG
-(
-    p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-    p_charge_id    => '1234088',
-    p_step_name  => 'CLEANUP',
-    p_message    => 'Completed cleanup for case'
-);
-
-        UPDATE
-            JISREM.CLEANUP_CASE_QUEUE
-        SET
-            status = 'PROCESSED'
-        WHERE
-            cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-            AND charge_id = '1234088';
-
-EXCEPTION
-    WHEN OTHERS THEN
-        v_error_message := SUBSTR(SQLERRM, 1, 512);
-
-        ROLLBACK TO before_record;
-        
-        JISREM.LOG
-        (
-            p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
-            p_charge_id    => '1234088',
-            p_step_name  => 'EXCEPTION',
-            p_message    => v_error_message
-        );
-        
-        UPDATE JISREM.CLEANUP_CASE_QUEUE
-        SET 
-            status = 'PROCESSING_FAILED',
-            message = v_error_message
-        WHERE cleanup_id = '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da'
-        AND charge_id = '1234088';
+        WHERE cleanup_id = '1f799779-8350-4528-95e0-347f3a304bfd'
+        AND charge_id = '1237495';
 END;
 /
 
@@ -17083,7 +17083,7 @@ BEGIN
     
     JISREM.LOG
     (
-        p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+        p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
         p_step_name  => 'TRANSACTION',
         p_message    => 'Cleanup transaction committed'
     );
@@ -17093,7 +17093,7 @@ BEGIN
     
     JISREM.LOG
     (
-        p_cleanup_id => '0b3bca10-4bdc-40eb-9cfe-0a7fddfc39da',
+        p_cleanup_id => '1f799779-8350-4528-95e0-347f3a304bfd',
         p_step_name  => 'TRANSACTION',
         p_message    => 'WHAT-IF was true transaction rolled back'
     );

@@ -1,4 +1,21 @@
 with target_set as (
+    /*
+        GOAL:  Target records with bad dockets,
+                no changes to inmate activity,
+                BUT have a change to bond amount. location, or status
+                which should not have occurred.
+
+        POSSIBLE Issue:
+            - INMATE activity -> Bang thought we were only targeting people that are NOT inmates (not current in the CJ system)
+                What we actually did is target there was no INMATE activity (did not move in or out of jail) during the period.
+
+        CHARGES with bad docket entries
+        having LOCATION, STATUS, or BOND AMOUNT affected
+        WITH no human entered dockets after 8/18
+        WITH no human activity/changes after 2026-08-18 00:00 (All tables in DB)
+        WITH no INMATE activity (new or changed) after 2026-08-18 00:00
+        395 found on production; 402 on test database
+    */
     select
         b.cjis_spn,
         b.cjis_case_number,
@@ -84,36 +101,24 @@ with target_set as (
       and ds.docket_count_since_start > 0
       and ds.machine_docket_count = ds.docket_count_since_start
       and ds.nonmachine_docket_count = 0
-      and exists (
-        SELECT
-            cjis_case_number
+      and not exists (
+        SELECT *
         FROM audit_trail sys_only_changes
         WHERE activity_date_time > TO_DATE('2026-08-18 00:00','YYYY-MM-DD HH24:MI')
-          and sys_only_changes.cjis_case_number = c.cjis_case_number
-        GROUP BY
-            cjis_case_number
-        HAVING COUNT(*) =
-               SUM(
-                       CASE
-                           WHEN activity_user_id IN ('JISJDW', 'SYSTEMA', 'PNX2JIS')
-                               THEN 1
-                           ELSE 0
-                           END
-               )
-
+          and activity_user_id NOT IN ('JISJDW', 'SYSTEMA', 'PNX2JIS')
+          and sys_only_changes.CJIS_CASE_NUMBER = c.CJIS_CASE_NUMBER
     )
 
-    and not exists (
+      and exists (
         select *
-        from (
-                 select
-                     row_number() over(partition by CJIS_SPN order by INMATE_ID desc) latest
-                ,i.*
-                 from JISJDW.INMATE i
-             ) "inmate_after"
-        where coalesce(UPDATE_DATE_TIME, CREATE_DATE_TIME) > to_date('2026-08-18','YYYY-MM-DD')
-          and latest = 1
-          and c.CJIS_SPN = "inmate_after".CJIS_SPN
+        from JISJDW.INMATE i
+        where i.CJIS_SPN = b.CJIS_SPN
+          and i.INMATE_ID = (
+            select MAX(INMATE_ID)
+            from JISJDW.INMATE i2
+            where i2.CJIS_SPN = i.CJIS_SPN
+        )
+          AND PHYSICAL_RELEASE_DATE < to_date('2026-08-18','YYYY-MM-DD')
     )
 )
 
