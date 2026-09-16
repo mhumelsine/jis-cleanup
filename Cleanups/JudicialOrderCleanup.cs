@@ -2,9 +2,9 @@ using JisCleanup.Changes;
 
 namespace JisCleanup.Cleanups;
 
-public class JudicialOrderCleanup : Cleanup
+public class JudicialOrderCleanupBase : CleanupBase
 {
-    public JudicialOrderCleanup()
+    public JudicialOrderCleanupBase()
     {
         Metadata = new CleanupMetadata
         {

@@ -2,18 +2,18 @@ using System.Text;
 
 namespace JisCleanup.Activities;
 
-public class CaseLoopActivity(Cleanup cleanup) : IActivity
+public class CaseLoopActivity(CleanupBase cleanupBase) : IActivity
 {
     public void Build(StringBuilder builder)
     {
-        foreach (var validation in cleanup.Validations)
+        foreach (var validation in cleanupBase.Validations)
         {
-            validation.Declares(cleanup.Declarations);
+            validation.Declares(cleanupBase.Declarations);
         }
         
-        foreach (var change in cleanup.Changes)
+        foreach (var change in cleanupBase.Changes)
         {
-            change.AddDeclares(cleanup.Declarations);
+            change.AddDeclares(cleanupBase.Declarations);
         }
         
         builder.AppendLine(
@@ -34,7 +34,7 @@ public class CaseLoopActivity(Cleanup cleanup) : IActivity
                 
             """);
         
-        cleanup.Declarations.BuildTypes(builder);
+        cleanupBase.Declarations.BuildTypes(builder);
 
         builder.AppendLine(
             """
@@ -51,7 +51,7 @@ public class CaseLoopActivity(Cleanup cleanup) : IActivity
 
             """);
         
-        cleanup.Declarations.BuildVariables(builder);
+        cleanupBase.Declarations.BuildVariables(builder);
         
         builder.AppendLine(
             """

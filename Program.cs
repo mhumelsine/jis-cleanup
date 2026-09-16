@@ -4,27 +4,30 @@ if (args.Length != 1)
     throw new ArgumentException("Missing positional argument for the cleanup name");
 
 var cleanupName = args[0];
-var cleanupType = Type.GetType($"JisCleanup.Cleanups.{cleanupName}");
+var cleanupType = Type.GetType($"JisCleanup.Cleanups.Cleanup_{cleanupName}");
 
 if (cleanupType == null)
     throw new InvalidOperationException($"Could not resolve type for cleanup name '{cleanupName}'");
 
-var inputFilePath = Path.Combine(PathHelper.InputPath(), $"{cleanupType.Name}.csv");
+var timestamp = DateTime.Now.ToString("yyyyMMdd_hhmmss");
+var queryFilePath = Path.Combine(PathHelper.GetCleanupPath(cleanupName), $"query.sql");
+var dataFilePath = Path.Combine(PathHelper.GetCleanupPath(cleanupName), $"{timestamp}_data.csv");
 
-Console.WriteLine($"Using {cleanupType.FullName}");
-Console.WriteLine($"Input file: {inputFilePath}");
-
+Console.WriteLine($"Using:\t\t{cleanupType.FullName}");
+Console.WriteLine($"Query file:\t\t{queryFilePath}");
+Console.WriteLine($"Query file:\t\t{dataFilePath}");
 
 var instance = Activator.CreateInstance(cleanupType);
 
 if (instance == null)
     throw new InvalidOperationException($"Could not create instance of type '{cleanupType.FullName}'");
 
-var cleanup = (Cleanup)instance;
+var cleanup = (CleanupBase)instance;
 
-var writer = new CleanupWriter();
-var loader = new CsvChargeLoader(inputFilePath);
+var extractor = new OracleCsvDataExtractor();
+var loader = new CsvChargeLoader(dataFilePath);
 
-cleanup.Build(writer, loader);
+extractor.Extract(queryFilePath, dataFilePath);
+cleanup.Build(loader, timestamp, PathHelper.GetCleanupPath(cleanupName));
 
 Console.WriteLine("Build Success");

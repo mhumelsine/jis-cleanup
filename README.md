@@ -1,10 +1,42 @@
 # JIS Cleanup Script Generator
 
-Use this project to generate repeatable Oracle cleanup scripts. For each cleanup, add one `Cleanup` class, configure its validators and changes, add the matching CSV, and run the generator.
+Use this project to generate repeatable Oracle cleanup scripts. Each cleanup has its own directory containing the cleanup class, source query, and generated data and SQL files.
+
+## Quick Start
+
+- [ ] Configure a `.env` file at the root of you repository.  This is not checked into source control for security.
+
+```
+ORACLE_USERNAME=TODO_SOMEUSER
+ORACLE_PASSWORD=TODO_SOMEPASSWORD
+ORACLE_HOST=TODO_SOMEHOST
+```
+
+- [ ] `pwsh New-Cleanup.ps1 "CleanupName" to create a new cleanup `
+
+```powershell
+pwsh New-Cleanup.ps1 "03_DocketsWithStatusChanges" 
+```
+
+- [ ] Populate the query.sql file with the query you'd like to use in the newly created directory: `Cleanups/
+[Cleanup Name]`
+
+- [ ] Execute the build script to compile and emit the batch of sql files
+```powershell
+pwsh Build-Cleanup.ps1 "03_DocketsWithStatusChanges" 
+```
 
 ## What It Does
 
-The generator builds Oracle scripts that:
+The generator:
+
+1. Runs the cleanup's `query.sql` against Oracle.
+2. Writes the query results to a timestamped CSV file.
+3. Loads the extracted records.
+4. Builds the configured cleanup scripts.
+5. Writes the generated SQL files to the cleanup directory.
+
+The generated Oracle scripts:
 
 - Validate each charge before changing it.
 - Apply the configured inserts, updates, and deletes in order.
@@ -32,49 +64,155 @@ Snapshots work like this:
 ## Requirements
 
 - .NET 10 SDK
+- PowerShell
+- Oracle connection settings in the project's `.env` file
 
-## Add a Cleanup
+`Build-Cleanup.ps1` loads the values from `.env` into the local process environment before running the generator. The required variable names are determined by `OracleCsvDataExtractor`.
 
-Create one class derived from `Cleanup` for each cleanup scenario.
+## Cleanup Structure
+
+Each cleanup is stored in its own directory:
+
+```text
+Cleanups/
+└── CleanupName/
+    ├── Cleanup_CleanupName.cs
+    ├── query.sql
+    ├── scripts/
+    └── yyyyMMdd_hhmmss_data.csv
+```
+
+The `scripts` directory is created for cleanup-specific SQL or supporting scripts. Generated files are written under the cleanup path by `CleanupBase.Build`.
+
+The cleanup name passed on the command line must match both:
+
+- The cleanup directory: `Cleanups/CleanupName`
+- The class suffix: `JisCleanup.Cleanups.Cleanup_CleanupName`
+
+## Create a Cleanup
+
+Run:
+
+```powershell
+.\New-Cleanup.ps1 "CleanupName"
+```
+
+The script creates:
+
+```text
+Cleanups/CleanupName/
+├── Cleanup_CleanupName.cs
+├── query.sql
+└── scripts/
+```
+
+If the cleanup directory already exists, the script exits without changing it.
+
+The generated class is a starting point:
 
 ```csharp
+using JisCleanup.Changes;
+using JisCleanup.TableChanges;
+using JisCleanup.Validations;
+
 namespace JisCleanup.Cleanups;
 
-public class Cleanup_01_GroceryStoreRun : Cleanup
+public class Cleanup_CleanupName : CleanupBase
 {
-    public Cleanup_01_GroceryStoreRun()
+    public Cleanup_CleanupName()
     {
         Metadata = new CleanupMetadata
         {
             Name = GetType().Name,
-            Description = "Grocery store run; Initial cleanup of around 395 cases with only invalid system activity",
-            RequestedBy = "JIS",
-            RunNumber = 0
+            Description = "TODO",
+            RequestedBy = "JIS"
         };
 
         Validations =
         [
-            new NoHumanActivity()
+            // TODO
         ];
 
         Changes =
         [
-            new RestoreStatusLocationBondAmount(),
-            new CjisDocketDelete(),
-            new FaChargeDelete(),
-            new CourtCalendarDelete(),
-            new FirstAppearanceDelete(),
-            new CustodyStatusDelete(),
-            new ReleaseBondDelete(),
+            // TODO
             new InsertCleanupDocketEntry()
         ];
     }
 }
 ```
 
-The order of `Changes` is the execution order. Put dependent changes after the changes that produce the rows or snapshots they need.
+Update the metadata, validators, and changes for the cleanup before building it.
 
-## Input
+The order of `Changes` is the execution order. Put dependent changes after the changes that produce the rows or snapshots they require.
+
+## Define the Source Query
+
+Add the Oracle query used to identify the records to:
+
+```text
+Cleanups/CleanupName/query.sql
+```
+
+When the cleanup is built, the query results are written to:
+
+```text
+Cleanups/CleanupName/yyyyMMdd_hhmmss_data.csv
+```
+
+The same timestamp is passed to `CleanupBase.Build` for the generated cleanup output.
+
+## Build a Cleanup
+
+Run:
+
+```powershell
+.\Build-Cleanup.ps1 "CleanupName"
+```
+
+`Build-Cleanup.ps1`:
+
+1. Requires the cleanup name as a positional argument.
+2. Loads local environment variables from `.env`.
+3. Runs `dotnet run -- "CleanupName"`.
+
+You can also run the generator directly if the required environment variables are already set:
+
+```powershell
+dotnet run -- "CleanupName"
+```
+
+The application resolves the cleanup type using:
+
+```csharp
+Type.GetType($"JisCleanup.Cleanups.Cleanup_{cleanupName}")
+```
+
+For example:
+
+```powershell
+.\Build-Cleanup.ps1 "01_GroceryStoreRun"
+```
+
+This resolves:
+
+```text
+JisCleanup.Cleanups.Cleanup_01_GroceryStoreRun
+```
+
+and uses:
+
+```text
+Cleanups/01_GroceryStoreRun/query.sql
+```
+
+A successful build ends with:
+
+```text
+Build Success
+```
+
+## Input Loading
 
 `ILoader<TRecord>` handles input loading:
 
@@ -85,28 +223,21 @@ public interface ILoader<out TRecord>
 }
 ```
 
-`CsvChargeLoader` is currently the only loader. It reads a header followed by seven columns in this order:
+`CsvChargeLoader` loads the timestamped CSV created by `OracleCsvDataExtractor`.
+
+The loader expects a header followed by seven columns in this order:
 
 ```text
 CJIS SPN,CJIS Case Number,Case Defendant ID,Charge ID,Status,Location,Bond Amount
 ```
 
-Name the CSV after the cleanup class and put both files in `Cleanups`:
-
-```text
-Cleanup_01_GroceryStoreRun.cs
-Cleanup_01_GroceryStoreRun.csv
-```
-
-The CSV loader expects exactly seven comma-separated values. It does not handle quoted values that contain commas.
+The CSV loader expects exactly seven comma-separated values. It does not handle quoted values containing commas.
 
 ## Validators
 
-Add validators to the scenario's `Validations` collection. They run before the changes for each charge.
+Add validators to the cleanup's `Validations` collection. They run before the changes for each charge.
 
-A validator collects the current database state and checks whether the charge is safe to process. Add any PL/SQL variables or types through `Declares`.
-
-`NoHumanActivity` checks the audit trail for non-system activity after the configured cutoff:
+A validator collects the current database state and checks whether the charge is safe to process. Add any required PL/SQL variables or types through `Declares`.
 
 ```csharp
 public class NoHumanActivity : Validator
@@ -136,7 +267,7 @@ public class NoHumanActivity : Validator
 
 ## Changes
 
-Every change derives from `TableChange` and receives a `TableDefinition`:
+Every table change receives a `TableDefinition`:
 
 ```csharp
 new TableDefinition("JISJDW", "CASE_DEFENDANT", "CASE_DEFENDANT_ID")
@@ -145,8 +276,8 @@ new TableDefinition("JISJDW", "CASE_DEFENDANT", "CASE_DEFENDANT_ID")
 That maps:
 
 ```text
-Source:   JISJDW.CASE_DEFENDANT
-Snapshot: JISREM.CASE_DEFENDANT
+Source:      JISJDW.CASE_DEFENDANT
+Snapshot:    JISREM.CASE_DEFENDANT
 Primary key: CASE_DEFENDANT_ID
 ```
 
@@ -159,9 +290,9 @@ Primary key: CASE_DEFENDANT_ID
 - Stores `SQL%ROWCOUNT` in `v_count`.
 - Logs the operation.
 
-### DeleteChange
+### Delete Change
 
-Derive from `DeleteTableChange` and implement `WherePredicate`.
+Derive from `DeleteTableChange` and implement `WherePredicate`:
 
 ```csharp
 public sealed class CaseDefendantDelete : DeleteTableChange
@@ -181,11 +312,11 @@ public sealed class CaseDefendantDelete : DeleteTableChange
 
 The generated SQL snapshots the matching rows as `BEFORE`, deletes them, records the affected-row count, and does not create an `AFTER` snapshot.
 
-A predicate can also use snapshots created by earlier changes. `ArrestDelete` takes that approach to find related `ARREST_ID` values. If a predicate depends on an earlier snapshot, keep those changes in the required order.
+A predicate can use snapshots created by earlier changes. If a predicate depends on an earlier snapshot, keep the changes in the required order.
 
-### UpdateChange
+### Update Change
 
-Derive from `UpdateChange`. Implement `WherePredicate` and `Apply`.
+Derive from `UpdateChange` and implement `WherePredicate` and `Apply`:
 
 ```csharp
 public sealed class RestoreExample : UpdateChange
@@ -211,9 +342,9 @@ public sealed class RestoreExample : UpdateChange
 
 The generated SQL captures `BEFORE`, runs the update, captures `AFTER`, and logs the affected-row count.
 
-### InsertChange
+### Insert Change
 
-Derive from `InsertTableChange`, pass the Oracle sequence name, and implement `Apply`.
+Derive from `InsertTableChange`, pass the Oracle sequence name, and implement `Apply`:
 
 ```csharp
 public sealed class InsertCleanupDocketEntry : InsertTableChange
@@ -243,8 +374,6 @@ public sealed class InsertCleanupDocketEntry : InsertTableChange
 
 `InsertTableChange` assigns the sequence's `NEXTVAL` to `v_inserted_id`. Use that variable as the inserted primary key. The generated SQL inserts the row, captures it as `AFTER`, and does not create a `BEFORE` snapshot.
 
-`InsertTableChange.WherePredicate` currently targets `CJIS_DOCKET_ID`. If another insert change targets a different primary-key column, override the predicate or generalize the base implementation first.
-
 ## Activities
 
 Activities append PL/SQL to the output through `IActivity`:
@@ -268,82 +397,26 @@ The main activities are:
 
 `ChargeBlock` catches unhandled errors for one charge, rolls back to `before_record`, logs the error, and marks that queue entry as `PROCESSING_FAILED`. Processing can then continue with the next generated charge block.
 
-`CaseLoopActivity`, `DeclaresActivity`, and `EndCaseLoopActivity` contain an alternate queue-driven case loop. They are not called by the current `Cleanup.Compile` path, which emits one `ChargeBlock` per loaded charge.
-
-## Run It
-
-Select the cleanup in `Program.cs`:
-
-```csharp
-var cleanup = new Cleanup_01_GroceryStoreRun();
-var inputFilePath = Path.Combine(
-    PathHelper.GetCleanupPath(),
-    $"{cleanup.GetType().Name}.csv");
-
-var writer = new CleanupWriter();
-var loader = new CsvChargeLoader(inputFilePath);
-
-cleanup.Build(writer, loader);
-Console.WriteLine("Build Success");
-```
-
-Run a Debug build:
-
-```bash
-dotnet run -- "CleanupName"
-```
-
-Before generating the next run, update `Metadata.RunNumber`. The filename uses `RunNumber + 1`.
-
-## Output
-
-Input and output files are resolved from the `Cleanups` directory. `PathHelper` currently resolves that directory as `../../../Cleanups` from the build output directory.
-
-Generated filenames follow this format:
-
-```text
-{CleanupName}_Run{RunNumber + 1}_Partition{PartitionNumber}.sql
-```
-
-For example:
-
-```text
-Cleanup_01_GroceryStoreRun_Run1_Partition1.sql
-Cleanup_01_GroceryStoreRun_Run1_Partition2.sql
-```
-
-Each partition gets its own GUID-based `cleanup_id`.
-
-The generator writes each filename to the console:
-
-```text
-Emitted: Cleanup_01_GroceryStoreRun_Run1_Partition1.sql
-```
-
-A successful run ends with:
-
-```text
-Build Success
-```
+`CaseLoopActivity`, `DeclaresActivity`, and `EndCaseLoopActivity` contain an alternate queue-driven case loop. They are not called by the current compile path, which emits one `ChargeBlock` per loaded charge.
 
 ## What the Generated Script Does
 
 Each SQL file:
 
-1. Creates missing cleanup tables and sequences in `JISREM`.
-2. Creates the logging procedure.
-3. Creates missing snapshot tables for the configured changes.
-4. Registers the cleanup and its queued charges.
-5. Starts the transaction.
-6. Processes each charge:
-   1. Creates a savepoint.
-   2. Runs the validators.
-   3. Captures the required before snapshots.
-   4. Applies the configured changes in order.
-   5. Captures the required after snapshots.
-   6. Logs affected-row counts.
-   7. Rolls back and logs the charge if that charge fails.
-7. Commits the cleanup.
+- Creates missing cleanup tables and sequences in `JISREM`.
+- Creates the logging procedure.
+- Creates missing snapshot tables for the configured changes.
+- Registers the cleanup and its queued charges.
+- Starts the transaction.
+- Processes each charge:
+   - Creates a savepoint.
+   - Runs the validators.
+   - Captures the required before snapshots.
+   - Applies the configured changes in order.
+   - Captures the required after snapshots.
+   - Logs affected-row counts.
+   - Rolls back and logs the charge if that charge fails.
+- Commits the cleanup.
 
 Placeholder resolution currently sets:
 
@@ -385,22 +458,28 @@ private List<CleanupBatch<TRecord>> Partition<TRecord>(
 }
 ```
 
+Generated SQL filenames follow the format defined by `CleanupBase`. Review the emitted filenames in the console after each build.
+
 ## Before You Execute a Generated Script
 
 Check the generated SQL, not just the C# configuration.
 
-- Verify the cleanup name, description, requestor, and run number.
-- Verify the input CSV and row count.
+- Verify the cleanup name, description, and requestor.
+- Verify the source query and extracted row count.
 - Verify validation predicates and cutoff values.
 - Verify change order.
 - Verify table owners, table names, primary keys, and sequences.
 - Verify each `WherePredicate` selects only the intended rows.
 - Verify insert changes use `v_inserted_id` correctly.
 - Verify snapshot tables still match their `JISJDW` source tables.
-- Test every partition outside production first.
+- Test every generated script outside production first.
 
-# Cleanup Checklist
+## Cleanup Checklist
 
-- [ ] The docket entry is correct (date and language) for the cleanup being applied
-- [ ] The cleanup name and description accurately describe the scenario
-- [ ] 
+- The docket entry is correct for the cleanup being applied, including date and language.
+- The cleanup name and description accurately describe the scenario.
+- `query.sql` selects only the intended records.
+- The generated CSV contains the expected records and columns.
+- Validators fail safely when a record should not be changed.
+- Changes are ordered correctly.
+- Generated SQL has been reviewed and tested before production execution.

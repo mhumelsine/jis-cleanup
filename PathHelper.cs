@@ -1,10 +1,10 @@
 namespace JisCleanup;
 
-public class PathHelper
+public static class PathHelper
 {
-    private static string GetCleanupPath()
+    public static string GetCleanupPath(string cleanupName)
     {
-        var relativePath = Path.Combine("..", "..", "..", "Cleanups");
+        var relativePath = Path.Combine("..", "..", "..", "Cleanups", cleanupName);
         
         var baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
         var root = Path.GetFullPath(Path.Combine(baseDirectory, relativePath));
@@ -16,30 +16,4 @@ public class PathHelper
 
         return root;
     }
-    
-    public static string OutputPath()
-    {
-        var output = Path.Combine(GetCleanupPath(), "output");
-
-        if (!Directory.Exists(output))
-        {
-            Directory.CreateDirectory(output);
-        }
-
-        return output;
-    }
-    
-    public static string InputPath()
-    {
-        var input = Path.Combine(GetCleanupPath(), "input");
-
-        if (!Directory.Exists(input))
-        {
-            throw new DirectoryNotFoundException($"Path: '{input}' was not found");
-        }
-
-        return input;
-    }
-
-
 }
