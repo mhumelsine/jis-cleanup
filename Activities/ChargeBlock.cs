@@ -29,24 +29,29 @@ public class ChargeBlock(Charge charge, IDeclareActivity Validate, IDeclareActiv
         declarations.BuildTypes(builder);
         declarations.BuildVariables(builder);
 
-        builder.AppendLine(
-            """
-            BEGIN
-               SAVEPOINT before_record;
-               
-            """
-        );
+         builder.AppendLine(
+             """
+             BEGIN
+                
+             """
+         );
 
         Validate.Build(builder);
         Apply.Build(builder);
 
         builder.AppendLine(
             $"""
+                IF __WHAT_IF__ = 0 THEN
+                     COMMIT;
+                 ELSE
+                     ROLLBACK;
+                 END IF;
+             
              EXCEPTION
                  WHEN OTHERS THEN
                      v_error_message := SUBSTR(SQLERRM, 1, 512);
 
-                     ROLLBACK TO before_record;
+                     ROLLBACK;
                      
                      JISREM.LOG
                      (
@@ -62,6 +67,7 @@ public class ChargeBlock(Charge charge, IDeclareActivity Validate, IDeclareActiv
                          message = v_error_message
                      WHERE cleanup_id = __CLEANUP_ID__
                      AND charge_id = '{charge.ChargeId}';
+                     
              END;
              /
 

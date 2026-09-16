@@ -13,7 +13,7 @@
     </ItemGroup>
     <ItemGroup>
       <Folder Include="Cleanups\01_GroceryStoreRun\scripts\" />
-      <Folder Include="Cleanups\03_DocketsWithoutStatusChange\scripts\" />
+      <Folder Include="Cleanups\03_DocketsWithoutStatusChanges\scripts\" />
     </ItemGroup>
     <ItemGroup>
       <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="23.26.301" />
