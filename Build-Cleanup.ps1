@@ -1,6 +1,6 @@
 param(
-    [Parameter(Mandatory = $true, HelpMessage = "Enter the cleanup name.")]
-    [string]$CleanupName
+    [Parameter(Mandatory = $true, HelpMessage = "Enter the cleanup names to build.")]
+    [string[]]$CleanupNames
 )
 
 #set local env vars
@@ -10,4 +10,4 @@ Get-Content .env | ForEach-Object {
 
 }
 
-dotnet run -- "$CleanupName"
+dotnet run -- "build" $CleanupNames

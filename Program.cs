@@ -1,33 +1,39 @@
 ﻿using JisCleanup;
 
-if (args.Length != 1)
-    throw new ArgumentException("Missing positional argument for the cleanup name");
+//args build "CleanupName", "CleanupName2
 
-var cleanupName = args[0];
-var cleanupType = Type.GetType($"JisCleanup.Cleanups.Cleanup_{cleanupName}");
 
-if (cleanupType == null)
-    throw new InvalidOperationException($"Could not resolve type for cleanup name '{cleanupName}'");
+if (args.Length < 1)
+    throw new ArgumentException("Missing positional argument; specify a command: build, run");
 
-var timestamp = DateTime.Now.ToString("yyyyMMdd_hhmmss");
-var queryFilePath = Path.Combine(PathHelper.GetCleanupPath(cleanupName), $"query.sql");
-var dataFilePath = Path.Combine(PathHelper.GetCleanupPath(cleanupName), $"{timestamp}_data.csv");
+var command = args[0];
+var cleanupList = new List<string>();
 
-Console.WriteLine($"Using:\t\t{cleanupType.FullName}");
-Console.WriteLine($"Query file:\t\t{queryFilePath}");
-Console.WriteLine($"Query file:\t\t{dataFilePath}");
+for (var i = 1; i < args.Length; i++)
+{
+    cleanupList.Add(args[i]);
+}
 
-var instance = Activator.CreateInstance(cleanupType);
+switch (command)
+{
+    case "build":
+        var buildTimestamp = DateTime.Now.ToString("yyyyMMdd_hhmmss");
+        
+        foreach (var cleanup in args.Skip(1))
+        {
+            ScriptBuilder.Build(cleanup, buildTimestamp);
+        }
+        return 0;
+    
+    case "run":
+        var scriptTimestamp = args.Skip(1).First();
+        
+        foreach (var cleanup in args.Skip(2))
+        {
+            ScriptRunner.Run(cleanup, scriptTimestamp);
+        }
 
-if (instance == null)
-    throw new InvalidOperationException($"Could not create instance of type '{cleanupType.FullName}'");
-
-var cleanup = (CleanupBase)instance;
-
-var extractor = new OracleCsvDataExtractor();
-var loader = new CsvChargeLoader(dataFilePath);
-
-extractor.Extract(queryFilePath, dataFilePath);
-cleanup.Build(loader, timestamp, PathHelper.GetCleanupPath(cleanupName));
-
-Console.WriteLine("Build Success");
+        return 0;
+    default:
+        return 1;
+}

@@ -3,7 +3,7 @@ using Oracle.ManagedDataAccess.Client;
 
 namespace JisCleanup;
 
-public class OracleCsvDataExtractor
+public class OracleFacade
 {
     private OracleConnection Connect()
     {
@@ -17,10 +17,7 @@ public class OracleCsvDataExtractor
 
     public void Extract(string queryFilePath, string outputFilePath)
     {
-        if (!File.Exists(queryFilePath))
-            throw new ArgumentException($"Expected input file '{queryFilePath}' was not found");
-
-        var queryText = File.ReadAllText(queryFilePath);
+        var queryText = GetCommandTextFromFile(queryFilePath);
 
         using var connection = Connect();
         using var command = new OracleCommand(queryText, connection);
@@ -46,5 +43,36 @@ public class OracleCsvDataExtractor
             reader.GetValues(line);
             writer.WriteLine(string.Join(',', line));
         }
+    }
+
+    public void ExecuteCommandFromFile(string filePath)
+    {
+        var commands = GetCommandTextFromFile(filePath)
+            .Split("/\n"); //remove plsql batch terminators
+
+        using var connection = Connect();
+        
+        //using var command = new OracleCommand(queryText, connection);
+
+        connection.Open();
+        
+        using var transaction = connection.BeginTransaction(IsolationLevel.Serializable);
+        
+        foreach (var commandText in commands)
+        {
+            using var command = new OracleCommand(commandText, connection);
+            command.ExecuteNonQuery();
+            //Console.WriteLine(commandText);
+        }
+        
+        transaction.Commit();
+    }
+
+    private static string GetCommandTextFromFile(string filePath)
+    {
+        if (!File.Exists(filePath))
+            throw new ArgumentException($"Expected input file '{filePath}' was not found");
+
+        return File.ReadAllText(filePath);
     }
 }
