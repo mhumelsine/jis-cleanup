@@ -25,15 +25,6 @@ switch (command)
         }
         return 0;
     
-    case "run":
-        var scriptTimestamp = args.Skip(1).First();
-        
-        foreach (var cleanup in args.Skip(2))
-        {
-            ScriptRunner.Run(cleanup, scriptTimestamp);
-        }
-
-        return 0;
     default:
         return 1;
 }

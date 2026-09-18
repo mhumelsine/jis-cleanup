@@ -45,29 +45,6 @@ public class OracleFacade
         }
     }
 
-    public void ExecuteCommandFromFile(string filePath)
-    {
-        var commands = GetCommandTextFromFile(filePath)
-            .Split("/\n"); //remove plsql batch terminators
-
-        using var connection = Connect();
-        
-        //using var command = new OracleCommand(queryText, connection);
-
-        connection.Open();
-        
-        using var transaction = connection.BeginTransaction(IsolationLevel.Serializable);
-        
-        foreach (var commandText in commands)
-        {
-            using var command = new OracleCommand(commandText, connection);
-            command.ExecuteNonQuery();
-            //Console.WriteLine(commandText);
-        }
-        
-        transaction.Commit();
-    }
-
     private static string GetCommandTextFromFile(string filePath)
     {
         if (!File.Exists(filePath))
