@@ -59,8 +59,15 @@ public static class ManualListVisitor
     {
         using var workbook = new XLWorkbook(filePath);
 
-        // DuckDB-created workbooks commonly contain one worksheet.
         var worksheet = workbook.Worksheet(1);
+        
+        //freeze top row
+        worksheet.SheetView.FreezeRows(1);    
+        
+        //hide columns not needed by review staff
+        worksheet.Column("C").Hide();
+        worksheet.Column("D").Hide();
+        worksheet.Column("H").Hide();
 
         var lastRowNumber =
             worksheet.LastRowUsed()?.RowNumber() ?? 1;
@@ -81,23 +88,70 @@ public static class ManualListVisitor
             lastDataRow: lastRowNumber,
             allowedValues:
             [
-                "Approve",
-                "Reject",
-                "Needs Review"
+                "D",
+                "R",
+                "O",
+                "V"
             ]);
 
         //LOCATION
         ApplyDropdown(
             worksheet,
-            columnLetter: "I",
+            columnLetter: "F",
             firstDataRow: 2,
             lastDataRow: lastRowNumber,
             allowedValues:
             [
-                "Complete",
-                "Incomplete",
-                "Not Applicable"
+                "BOND",
+                "BONDRT",
+                "CAP.",
+                "CLRK",
+                "LCJ",
+                "OREC",
+                "OTJA",
+                "PTRL",
+                "RLSD",
+                "RLSDBE",
+                "RLSDCC",
+                "RLSDDS",
+                "RLSDNG",
+                "RLSDNI",
+                "RLSDNP",
+                "RLSDPB",
+                "RLSDPT",
+                "RLSDTS",
+                "RLSDWD",
+                "STPR",
+                "SUMM"
             ]);
+        
+        // bold top row
+        worksheet
+            .Range(1, 1, 1, 8)
+            .Style.Font.Bold = true;
+        
+        //shade every other case
+        var isShaded = false;
+        for (var row = 2; row < lastRowNumber; row++)
+        {
+            //every case reset, swap shading
+            if (worksheet.Cell(row, "H").GetValue<int>() == 1)
+            {
+                isShaded = !isShaded;
+            }
+
+            if (isShaded)
+            {
+                worksheet
+                    .Range(row, 1, row, 8)
+                    .Style.Fill.BackgroundColor = XLColor.LightGray;
+            }
+        }
+
+        foreach (var column in worksheet.ColumnsUsed())
+        {
+            column.AdjustToContents();
+        }
 
         workbook.Save();
     }

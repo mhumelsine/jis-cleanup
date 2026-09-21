@@ -2,6 +2,7 @@ $ErrorActionPreference = "Stop"
 
 $duckDb = (Get-Command duckdb -ErrorAction Stop).Source
 $rootDirectory = Join-Path $HOME "Desktop/partitioned_manual"
+$friendlyDirectory = Join-Path $HOME "Desktop/partitioned_friendly"
 
 & $duckDb -version
 
@@ -61,3 +62,12 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 Write-Host "Completed successfully."
+
+New-Item -ItemType Directory -Path $friendlyDirectory -Force | Out-Null
+
+Get-ChildItem $rootDirectory -Filter *.xlsx -Recurse | ForEach-Object {
+    $partition = $_.Directory.Name -replace '^PARTITION_NUMBER=', ''
+    $destination = Join-Path $friendlyDirectory "technical_review_$partition.xlsx"
+
+    Copy-Item -LiteralPath $_.FullName -Destination $destination
+}
