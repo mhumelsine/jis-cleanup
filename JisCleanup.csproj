@@ -16,6 +16,7 @@
       <Folder Include="Cleanups\03_DocketsWithoutStatusChanges\scripts\" />
     </ItemGroup>
     <ItemGroup>
+      <PackageReference Include="ClosedXML" Version="0.105.1" />
       <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="23.26.301" />
     </ItemGroup>
 </Project>

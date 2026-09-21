@@ -25,6 +25,9 @@ switch (command)
         }
         return 0;
     
+    case "excel":
+        ManualListVisitor.Visit(cleanupList.First());
+        return 0;
     default:
         return 1;
 }
