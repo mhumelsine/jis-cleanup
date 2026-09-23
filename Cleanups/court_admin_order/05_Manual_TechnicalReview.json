@@ -1,0 +1,7976 @@
+[
+  {
+    "CJIS_SPN": 101294,
+    "CJIS_CASE_NUMBER": "2025CF1924A1",
+    "CASE_DEFENDANT_ID": 882047,
+    "CHARGE_ID": 1226764,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 10244,
+    "CJIS_CASE_NUMBER": "2026MM1359A1",
+    "CASE_DEFENDANT_ID": 897823,
+    "CHARGE_ID": 1249507,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 10244,
+    "CJIS_CASE_NUMBER": "2026MM1359A2",
+    "CASE_DEFENDANT_ID": 897823,
+    "CHARGE_ID": 1249508,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 10244,
+    "CJIS_CASE_NUMBER": "2026MM1359A3",
+    "CASE_DEFENDANT_ID": 897823,
+    "CHARGE_ID": 1249509,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 105600,
+    "CJIS_CASE_NUMBER": "2022CF3055A1",
+    "CASE_DEFENDANT_ID": 842039,
+    "CHARGE_ID": 1163834,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 105600,
+    "CJIS_CASE_NUMBER": "2022CF3055A2",
+    "CASE_DEFENDANT_ID": 842039,
+    "CHARGE_ID": 1163835,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 105600,
+    "CJIS_CASE_NUMBER": "2022CF3055A4",
+    "CASE_DEFENDANT_ID": 842039,
+    "CHARGE_ID": 1163836,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 105600,
+    "CJIS_CASE_NUMBER": "2023CF227A1",
+    "CASE_DEFENDANT_ID": 846197,
+    "CHARGE_ID": 1170135,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 108409,
+    "CJIS_CASE_NUMBER": "2026MM648A1",
+    "CASE_DEFENDANT_ID": 893691,
+    "CHARGE_ID": 1242878,
+    "STATUS": "O",
+    "LOCATION": "OREC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 108409,
+    "CJIS_CASE_NUMBER": "2026MM648A2",
+    "CASE_DEFENDANT_ID": 893691,
+    "CHARGE_ID": 1242879,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 115653,
+    "CJIS_CASE_NUMBER": "2026CF1317A1",
+    "CASE_DEFENDANT_ID": 895163,
+    "CHARGE_ID": 1245100,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 117750,
+    "CJIS_CASE_NUMBER": "2026MM2159A1",
+    "CASE_DEFENDANT_ID": 902181,
+    "CHARGE_ID": 1253087,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 119759,
+    "CJIS_CASE_NUMBER": "2025CF2192A1",
+    "CASE_DEFENDANT_ID": 883151,
+    "CHARGE_ID": 1228295,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 119759,
+    "CJIS_CASE_NUMBER": "2025CF3223A1",
+    "CASE_DEFENDANT_ID": 889198,
+    "CHARGE_ID": 1234779,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 121333,
+    "CJIS_CASE_NUMBER": "2021CF2661A1",
+    "CASE_DEFENDANT_ID": 828073,
+    "CHARGE_ID": 1141964,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 121339,
+    "CJIS_CASE_NUMBER": "2013CF2966A2",
+    "CASE_DEFENDANT_ID": 645715,
+    "CHARGE_ID": 879690,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 122031,
+    "CJIS_CASE_NUMBER": "2021CF3098A2",
+    "CASE_DEFENDANT_ID": 829913,
+    "CHARGE_ID": 1144665,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 122031,
+    "CJIS_CASE_NUMBER": "2021CF3103A2",
+    "CASE_DEFENDANT_ID": 829921,
+    "CHARGE_ID": 1144678,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 122031,
+    "CJIS_CASE_NUMBER": "2022CF940A2",
+    "CASE_DEFENDANT_ID": 834607,
+    "CHARGE_ID": 1152084,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 123842,
+    "CJIS_CASE_NUMBER": "2026CF798A1",
+    "CASE_DEFENDANT_ID": 893281,
+    "CHARGE_ID": 1241644,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 125101,
+    "CJIS_CASE_NUMBER": "2026CF809A1",
+    "CASE_DEFENDANT_ID": 893321,
+    "CHARGE_ID": 1241684,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 125101,
+    "CJIS_CASE_NUMBER": "2026CF809A2",
+    "CASE_DEFENDANT_ID": 893321,
+    "CHARGE_ID": 1241685,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 129452,
+    "CJIS_CASE_NUMBER": "2012CF3095A1",
+    "CASE_DEFENDANT_ID": 607671,
+    "CHARGE_ID": 832095,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 129452,
+    "CJIS_CASE_NUMBER": "2012CF3095A3",
+    "CASE_DEFENDANT_ID": 607671,
+    "CHARGE_ID": 838014,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 129452,
+    "CJIS_CASE_NUMBER": "2012CF3095A4",
+    "CASE_DEFENDANT_ID": 607671,
+    "CHARGE_ID": 838015,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 129452,
+    "CJIS_CASE_NUMBER": "2012CF3395A1",
+    "CASE_DEFENDANT_ID": 610872,
+    "CHARGE_ID": 835996,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 129452,
+    "CJIS_CASE_NUMBER": "2012CF3395A2",
+    "CASE_DEFENDANT_ID": 610872,
+    "CHARGE_ID": 835997,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 130251,
+    "CJIS_CASE_NUMBER": "2004CF1646A1",
+    "CASE_DEFENDANT_ID": 385654,
+    "CHARGE_ID": 520289,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 132884,
+    "CJIS_CASE_NUMBER": "2025MM1658A1",
+    "CASE_DEFENDANT_ID": 886292,
+    "CHARGE_ID": 1230280,
+    "STATUS": "D",
+    "LOCATION": "OREC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 136493,
+    "CJIS_CASE_NUMBER": "2022CF1314A1",
+    "CASE_DEFENDANT_ID": 835837,
+    "CHARGE_ID": 1153966,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 136493,
+    "CJIS_CASE_NUMBER": "2022CF1926A2",
+    "CASE_DEFENDANT_ID": 837914,
+    "CHARGE_ID": 1157135,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 136493,
+    "CJIS_CASE_NUMBER": "2022CF1926A3",
+    "CASE_DEFENDANT_ID": 837914,
+    "CHARGE_ID": 1157136,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 137716,
+    "CJIS_CASE_NUMBER": "2013CF2638A1",
+    "CASE_DEFENDANT_ID": 641885,
+    "CHARGE_ID": 875186,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 137716,
+    "CJIS_CASE_NUMBER": "2013CF2638A2",
+    "CASE_DEFENDANT_ID": 641885,
+    "CHARGE_ID": 875187,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 137716,
+    "CJIS_CASE_NUMBER": "2020CF2469A2",
+    "CASE_DEFENDANT_ID": 809422,
+    "CHARGE_ID": 1113715,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 138047,
+    "CJIS_CASE_NUMBER": "2026MM1624A1",
+    "CASE_DEFENDANT_ID": 899390,
+    "CHARGE_ID": 1251935,
+    "STATUS": "W",
+    "LOCATION": "WARR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 139283,
+    "CJIS_CASE_NUMBER": "2026CF940A1",
+    "CASE_DEFENDANT_ID": 893776,
+    "CHARGE_ID": 1242987,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 139283,
+    "CJIS_CASE_NUMBER": "2026CF940A2",
+    "CASE_DEFENDANT_ID": 893776,
+    "CHARGE_ID": 1242988,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 143311,
+    "CJIS_CASE_NUMBER": "2020CF1244A1",
+    "CASE_DEFENDANT_ID": 803955,
+    "CHARGE_ID": 1105507,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 143311,
+    "CJIS_CASE_NUMBER": "2020CF1244A3",
+    "CASE_DEFENDANT_ID": 803955,
+    "CHARGE_ID": 1107822,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 143311,
+    "CJIS_CASE_NUMBER": "2020CF1569A1",
+    "CASE_DEFENDANT_ID": 806271,
+    "CHARGE_ID": 1107296,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 143311,
+    "CJIS_CASE_NUMBER": "2020CF1569A2",
+    "CASE_DEFENDANT_ID": 806271,
+    "CHARGE_ID": 1107297,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 143311,
+    "CJIS_CASE_NUMBER": "2022CF3457A1",
+    "CASE_DEFENDANT_ID": 843585,
+    "CHARGE_ID": 1166428,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 145529,
+    "CJIS_CASE_NUMBER": "2026CF791A1",
+    "CASE_DEFENDANT_ID": 893249,
+    "CHARGE_ID": 1241597,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": "10000"
+  },
+  {
+    "CJIS_SPN": 145529,
+    "CJIS_CASE_NUMBER": "2026CF791A2",
+    "CASE_DEFENDANT_ID": 893249,
+    "CHARGE_ID": 1241598,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": "5000"
+  },
+  {
+    "CJIS_SPN": 145539,
+    "CJIS_CASE_NUMBER": "2015CF1345A1",
+    "CASE_DEFENDANT_ID": 694698,
+    "CHARGE_ID": 945202,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 145539,
+    "CJIS_CASE_NUMBER": "2020CF2868A1",
+    "CASE_DEFENDANT_ID": 811004,
+    "CHARGE_ID": 1118175,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 145539,
+    "CJIS_CASE_NUMBER": "2020CF963A1",
+    "CASE_DEFENDANT_ID": 802821,
+    "CHARGE_ID": 1103513,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 148409,
+    "CJIS_CASE_NUMBER": "2026CF2261A1",
+    "CASE_DEFENDANT_ID": 899386,
+    "CHARGE_ID": 1251926,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 149029,
+    "CJIS_CASE_NUMBER": "2025CF2980A1",
+    "CASE_DEFENDANT_ID": 888222,
+    "CHARGE_ID": 1233312,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 149029,
+    "CJIS_CASE_NUMBER": "2025CF2980A2",
+    "CASE_DEFENDANT_ID": 888222,
+    "CHARGE_ID": 1233315,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 149029,
+    "CJIS_CASE_NUMBER": "2025CF2980A3",
+    "CASE_DEFENDANT_ID": 888222,
+    "CHARGE_ID": 1233314,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 149030,
+    "CJIS_CASE_NUMBER": "2022CF28A1",
+    "CASE_DEFENDANT_ID": 831300,
+    "CHARGE_ID": 1146927,
+    "STATUS": "W",
+    "LOCATION": "WARR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 149304,
+    "CJIS_CASE_NUMBER": "2026CF1491A1",
+    "CASE_DEFENDANT_ID": 895812,
+    "CHARGE_ID": 1246099,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 149304,
+    "CJIS_CASE_NUMBER": "2026CF1491A2",
+    "CASE_DEFENDANT_ID": 895812,
+    "CHARGE_ID": 1246100,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 150898,
+    "CJIS_CASE_NUMBER": "2022CF3209A1",
+    "CASE_DEFENDANT_ID": 842522,
+    "CHARGE_ID": 1164671,
+    "STATUS": "O",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 151194,
+    "CJIS_CASE_NUMBER": "2021CF1360A1",
+    "CASE_DEFENDANT_ID": 820577,
+    "CHARGE_ID": 1131870,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 151194,
+    "CJIS_CASE_NUMBER": "2021CF1360A2",
+    "CASE_DEFENDANT_ID": 820577,
+    "CHARGE_ID": 1131869,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 151645,
+    "CJIS_CASE_NUMBER": "2025CT2007A1",
+    "CASE_DEFENDANT_ID": 889464,
+    "CHARGE_ID": 1235175,
+    "STATUS": "C",
+    "LOCATION": "CAP.",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 153741,
+    "CJIS_CASE_NUMBER": "2021CF2971A1",
+    "CASE_DEFENDANT_ID": 829354,
+    "CHARGE_ID": 1143805,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 153741,
+    "CJIS_CASE_NUMBER": "2021CF2971A2",
+    "CASE_DEFENDANT_ID": 829354,
+    "CHARGE_ID": 1143806,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 153741,
+    "CJIS_CASE_NUMBER": "2021CF2971A3",
+    "CASE_DEFENDANT_ID": 829354,
+    "CHARGE_ID": 1143807,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 153741,
+    "CJIS_CASE_NUMBER": "2021CF2971A4",
+    "CASE_DEFENDANT_ID": 829354,
+    "CHARGE_ID": 1143811,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 153741,
+    "CJIS_CASE_NUMBER": "2021CF2971A5",
+    "CASE_DEFENDANT_ID": 829354,
+    "CHARGE_ID": 1143808,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 153741,
+    "CJIS_CASE_NUMBER": "2021CF2971A6",
+    "CASE_DEFENDANT_ID": 829354,
+    "CHARGE_ID": 1143809,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 153741,
+    "CJIS_CASE_NUMBER": "2021CF2971A7",
+    "CASE_DEFENDANT_ID": 829354,
+    "CHARGE_ID": 1143812,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 153741,
+    "CJIS_CASE_NUMBER": "2021CF2971A8",
+    "CASE_DEFENDANT_ID": 829354,
+    "CHARGE_ID": 1148495,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 156527,
+    "CJIS_CASE_NUMBER": "2026CF1961A2",
+    "CASE_DEFENDANT_ID": 897991,
+    "CHARGE_ID": 1249746,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 156527,
+    "CJIS_CASE_NUMBER": "2026CF1961A3",
+    "CASE_DEFENDANT_ID": 897991,
+    "CHARGE_ID": 1249748,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 156527,
+    "CJIS_CASE_NUMBER": "2026CF1961A4",
+    "CASE_DEFENDANT_ID": 897991,
+    "CHARGE_ID": 1251924,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 158759,
+    "CJIS_CASE_NUMBER": "2022CF681A1",
+    "CASE_DEFENDANT_ID": 833556,
+    "CHARGE_ID": 1150519,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 159800,
+    "CJIS_CASE_NUMBER": "2024CF3410A1",
+    "CASE_DEFENDANT_ID": 873925,
+    "CHARGE_ID": 1213359,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 159800,
+    "CJIS_CASE_NUMBER": "2024CF3410A13",
+    "CASE_DEFENDANT_ID": 873925,
+    "CHARGE_ID": 1213364,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 159800,
+    "CJIS_CASE_NUMBER": "2024CF3410A14",
+    "CASE_DEFENDANT_ID": 873925,
+    "CHARGE_ID": 1213365,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 159800,
+    "CJIS_CASE_NUMBER": "2024CF3410A2",
+    "CASE_DEFENDANT_ID": 873925,
+    "CHARGE_ID": 1213360,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 159800,
+    "CJIS_CASE_NUMBER": "2024CF3410A3",
+    "CASE_DEFENDANT_ID": 873925,
+    "CHARGE_ID": 1213362,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 159800,
+    "CJIS_CASE_NUMBER": "2024CF3410A4",
+    "CASE_DEFENDANT_ID": 873925,
+    "CHARGE_ID": 1213363,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 159800,
+    "CJIS_CASE_NUMBER": "2024CF3410A5",
+    "CASE_DEFENDANT_ID": 873925,
+    "CHARGE_ID": 1213374,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 159800,
+    "CJIS_CASE_NUMBER": "2024CF3410A6",
+    "CASE_DEFENDANT_ID": 873925,
+    "CHARGE_ID": 1213361,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 160317,
+    "CJIS_CASE_NUMBER": "2026CT512A1",
+    "CASE_DEFENDANT_ID": 894292,
+    "CHARGE_ID": 1243836,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 160374,
+    "CJIS_CASE_NUMBER": "2025CF20A1",
+    "CASE_DEFENDANT_ID": 874864,
+    "CHARGE_ID": 1214796,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 160374,
+    "CJIS_CASE_NUMBER": "2025CF20A2",
+    "CASE_DEFENDANT_ID": 874864,
+    "CHARGE_ID": 1214795,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 161047,
+    "CJIS_CASE_NUMBER": "2026CT502A1",
+    "CASE_DEFENDANT_ID": 894225,
+    "CHARGE_ID": 1243735,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 161384,
+    "CJIS_CASE_NUMBER": "2019CF3697A1",
+    "CASE_DEFENDANT_ID": 795445,
+    "CHARGE_ID": 1092240,
+    "STATUS": "D",
+    "LOCATION": "RLSDWD",
+    "BOND_AMT": "0"
+  },
+  {
+    "CJIS_SPN": 161384,
+    "CJIS_CASE_NUMBER": "2019CF3698A1",
+    "CASE_DEFENDANT_ID": 795446,
+    "CHARGE_ID": 1092242,
+    "STATUS": "D",
+    "LOCATION": "RLSDWD",
+    "BOND_AMT": "0"
+  },
+  {
+    "CJIS_SPN": 161384,
+    "CJIS_CASE_NUMBER": "2019CF3698A2",
+    "CASE_DEFENDANT_ID": 795446,
+    "CHARGE_ID": 1095256,
+    "STATUS": "D",
+    "LOCATION": "RLSDWD",
+    "BOND_AMT": "0"
+  },
+  {
+    "CJIS_SPN": 161384,
+    "CJIS_CASE_NUMBER": "2026HH225A1",
+    "CASE_DEFENDANT_ID": 892901,
+    "CHARGE_ID": 1241024,
+    "STATUS": "D",
+    "LOCATION": "OTJA",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 161858,
+    "CJIS_CASE_NUMBER": "2024CF2519A1",
+    "CASE_DEFENDANT_ID": 870353,
+    "CHARGE_ID": 1207498,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 161858,
+    "CJIS_CASE_NUMBER": "2024CF2519A2",
+    "CASE_DEFENDANT_ID": 870353,
+    "CHARGE_ID": 1207499,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 162754,
+    "CJIS_CASE_NUMBER": "2022CF2164A1",
+    "CASE_DEFENDANT_ID": 838644,
+    "CHARGE_ID": 1158379,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 162754,
+    "CJIS_CASE_NUMBER": "2022CF2164A2",
+    "CASE_DEFENDANT_ID": 838644,
+    "CHARGE_ID": 1158381,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 162754,
+    "CJIS_CASE_NUMBER": "2022CF2164A3",
+    "CASE_DEFENDANT_ID": 838644,
+    "CHARGE_ID": 1158382,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 162754,
+    "CJIS_CASE_NUMBER": "2022CF2164A4",
+    "CASE_DEFENDANT_ID": 838644,
+    "CHARGE_ID": 1158383,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 162754,
+    "CJIS_CASE_NUMBER": "2022CF2164A5",
+    "CASE_DEFENDANT_ID": 838644,
+    "CHARGE_ID": 1158380,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": "0"
+  },
+  {
+    "CJIS_SPN": 162754,
+    "CJIS_CASE_NUMBER": "2026HH627A1",
+    "CASE_DEFENDANT_ID": 897475,
+    "CHARGE_ID": 1248635,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": "0"
+  },
+  {
+    "CJIS_SPN": 162864,
+    "CJIS_CASE_NUMBER": "2025CF2855A1",
+    "CASE_DEFENDANT_ID": 887775,
+    "CHARGE_ID": 1232567,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 162864,
+    "CJIS_CASE_NUMBER": "2025CF2855A2",
+    "CASE_DEFENDANT_ID": 887775,
+    "CHARGE_ID": 1232568,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 163298,
+    "CJIS_CASE_NUMBER": "2024CF1643A1",
+    "CASE_DEFENDANT_ID": 867274,
+    "CHARGE_ID": 1202190,
+    "STATUS": "D",
+    "LOCATION": "RLSDDS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 163298,
+    "CJIS_CASE_NUMBER": "2026HH1996A1",
+    "CASE_DEFENDANT_ID": 902157,
+    "CHARGE_ID": 1253077,
+    "STATUS": "D",
+    "LOCATION": "RLSDDS",
+    "BOND_AMT": "0"
+  },
+  {
+    "CJIS_SPN": 163298,
+    "CJIS_CASE_NUMBER": "2026HH1996A2",
+    "CASE_DEFENDANT_ID": 902157,
+    "CHARGE_ID": 1253078,
+    "STATUS": "D",
+    "LOCATION": "RLSDDS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 168577,
+    "CJIS_CASE_NUMBER": "2023CF3547A1",
+    "CASE_DEFENDANT_ID": 860656,
+    "CHARGE_ID": 1193820,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 168577,
+    "CJIS_CASE_NUMBER": "2023CF3547A2",
+    "CASE_DEFENDANT_ID": 860656,
+    "CHARGE_ID": 1191788,
+    "STATUS": "D",
+    "LOCATION": "RLSDNG",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 168577,
+    "CJIS_CASE_NUMBER": "2023CF3547A3",
+    "CASE_DEFENDANT_ID": 860656,
+    "CHARGE_ID": 1191787,
+    "STATUS": "D",
+    "LOCATION": "RLSDNG",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 168577,
+    "CJIS_CASE_NUMBER": "2023CF3547A4",
+    "CASE_DEFENDANT_ID": 860656,
+    "CHARGE_ID": 1191786,
+    "STATUS": "D",
+    "LOCATION": "RLSDNG",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 168577,
+    "CJIS_CASE_NUMBER": "2023CF3547A5",
+    "CASE_DEFENDANT_ID": 860656,
+    "CHARGE_ID": 1191785,
+    "STATUS": "D",
+    "LOCATION": "RLSDNG",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 168577,
+    "CJIS_CASE_NUMBER": "2023CF3547A6",
+    "CASE_DEFENDANT_ID": 860656,
+    "CHARGE_ID": 1191789,
+    "STATUS": "D",
+    "LOCATION": "RLSDNG",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 168577,
+    "CJIS_CASE_NUMBER": "2026MM419A1",
+    "CASE_DEFENDANT_ID": 892314,
+    "CHARGE_ID": 1240060,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": "0"
+  },
+  {
+    "CJIS_SPN": 170862,
+    "CJIS_CASE_NUMBER": "2026CF823A1",
+    "CASE_DEFENDANT_ID": 893381,
+    "CHARGE_ID": 1241762,
+    "STATUS": "D",
+    "LOCATION": "RLSDDS",
+    "BOND_AMT": "0"
+  },
+  {
+    "CJIS_SPN": 170968,
+    "CJIS_CASE_NUMBER": "2024CF1246A1",
+    "CASE_DEFENDANT_ID": 865937,
+    "CHARGE_ID": 1199871,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 172201,
+    "CJIS_CASE_NUMBER": "2026CF1614A1",
+    "CASE_DEFENDANT_ID": 896230,
+    "CHARGE_ID": 1246817,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 172226,
+    "CJIS_CASE_NUMBER": "2026CF1969A1",
+    "CASE_DEFENDANT_ID": 898032,
+    "CHARGE_ID": 1249809,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 172226,
+    "CJIS_CASE_NUMBER": "2026CF1969A2",
+    "CASE_DEFENDANT_ID": 898032,
+    "CHARGE_ID": 1249810,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 173716,
+    "CJIS_CASE_NUMBER": "2005MM1813A1",
+    "CASE_DEFENDANT_ID": 405426,
+    "CHARGE_ID": 548841,
+    "STATUS": "V",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 174267,
+    "CJIS_CASE_NUMBER": "2026CF1079A1",
+    "CASE_DEFENDANT_ID": 894233,
+    "CHARGE_ID": 1243752,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": "0"
+  },
+  {
+    "CJIS_SPN": 174464,
+    "CJIS_CASE_NUMBER": "2026CF765A1",
+    "CASE_DEFENDANT_ID": 893173,
+    "CHARGE_ID": 1241460,
+    "STATUS": "D",
+    "LOCATION": "RLSD",
+    "BOND_AMT": "0"
+  },
+  {
+    "CJIS_SPN": 174464,
+    "CJIS_CASE_NUMBER": "2026CF765A2",
+    "CASE_DEFENDANT_ID": 893173,
+    "CHARGE_ID": 1241461,
+    "STATUS": "D",
+    "LOCATION": "RLSD",
+    "BOND_AMT": "0"
+  },
+  {
+    "CJIS_SPN": 174904,
+    "CJIS_CASE_NUMBER": "2025CF2678A1",
+    "CASE_DEFENDANT_ID": 887113,
+    "CHARGE_ID": 1231399,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 175253,
+    "CJIS_CASE_NUMBER": "2005CF1973A2",
+    "CASE_DEFENDANT_ID": 411012,
+    "CHARGE_ID": 556665,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 175253,
+    "CJIS_CASE_NUMBER": "2005CF1973A4",
+    "CASE_DEFENDANT_ID": 411012,
+    "CHARGE_ID": 556667,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 175253,
+    "CJIS_CASE_NUMBER": "2005CF1973A5",
+    "CASE_DEFENDANT_ID": 411012,
+    "CHARGE_ID": 556668,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 176861,
+    "CJIS_CASE_NUMBER": "2026CF839A1",
+    "CASE_DEFENDANT_ID": 893440,
+    "CHARGE_ID": 1242096,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 176861,
+    "CJIS_CASE_NUMBER": "2026CF839A2",
+    "CASE_DEFENDANT_ID": 893440,
+    "CHARGE_ID": 1242097,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 176861,
+    "CJIS_CASE_NUMBER": "2026CF839A3",
+    "CASE_DEFENDANT_ID": 893440,
+    "CHARGE_ID": 1242098,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 176861,
+    "CJIS_CASE_NUMBER": "2026CF839A4",
+    "CASE_DEFENDANT_ID": 893440,
+    "CHARGE_ID": 1242101,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 176861,
+    "CJIS_CASE_NUMBER": "2026CF839A5",
+    "CASE_DEFENDANT_ID": 893440,
+    "CHARGE_ID": 1242102,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 176861,
+    "CJIS_CASE_NUMBER": "2026CF839A6",
+    "CASE_DEFENDANT_ID": 893440,
+    "CHARGE_ID": 1242103,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 17802,
+    "CJIS_CASE_NUMBER": "2025MM2268A1",
+    "CASE_DEFENDANT_ID": 889709,
+    "CHARGE_ID": 1235587,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 17802,
+    "CJIS_CASE_NUMBER": "2025MM2268A2",
+    "CASE_DEFENDANT_ID": 889709,
+    "CHARGE_ID": 1235588,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 17802,
+    "CJIS_CASE_NUMBER": "2025MM2268A3",
+    "CASE_DEFENDANT_ID": 889709,
+    "CHARGE_ID": 1235589,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 178684,
+    "CJIS_CASE_NUMBER": "2026MM736A1",
+    "CASE_DEFENDANT_ID": 894236,
+    "CHARGE_ID": 1243755,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 179663,
+    "CJIS_CASE_NUMBER": "2026CF920A1",
+    "CASE_DEFENDANT_ID": 893705,
+    "CHARGE_ID": 1242900,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "5000"
+  },
+  {
+    "CJIS_SPN": 179663,
+    "CJIS_CASE_NUMBER": "2026CF920A2",
+    "CASE_DEFENDANT_ID": 893705,
+    "CHARGE_ID": 1242899,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 179663,
+    "CJIS_CASE_NUMBER": "2026CF920A3",
+    "CASE_DEFENDANT_ID": 893705,
+    "CHARGE_ID": 1242901,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 179663,
+    "CJIS_CASE_NUMBER": "2026CF920A4",
+    "CASE_DEFENDANT_ID": 893705,
+    "CHARGE_ID": 1242902,
+    "STATUS": "O",
+    "LOCATION": "OREC",
+    "BOND_AMT": "0"
+  },
+  {
+    "CJIS_SPN": 180658,
+    "CJIS_CASE_NUMBER": "2026CF745A1",
+    "CASE_DEFENDANT_ID": 893082,
+    "CHARGE_ID": 1241335,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 180658,
+    "CJIS_CASE_NUMBER": "2026CF745A3",
+    "CASE_DEFENDANT_ID": 893082,
+    "CHARGE_ID": 1241336,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 181498,
+    "CJIS_CASE_NUMBER": "2026CF1376A1",
+    "CASE_DEFENDANT_ID": 895363,
+    "CHARGE_ID": 1245429,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "750"
+  },
+  {
+    "CJIS_SPN": 181498,
+    "CJIS_CASE_NUMBER": "2026CF1376A2",
+    "CASE_DEFENDANT_ID": 895363,
+    "CHARGE_ID": 1245431,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "750"
+  },
+  {
+    "CJIS_SPN": 181498,
+    "CJIS_CASE_NUMBER": "2026CF1376A3",
+    "CASE_DEFENDANT_ID": 895363,
+    "CHARGE_ID": 1245430,
+    "STATUS": "O",
+    "LOCATION": "OREC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 181498,
+    "CJIS_CASE_NUMBER": "2026CF1703A1",
+    "CASE_DEFENDANT_ID": 896726,
+    "CHARGE_ID": 1247402,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 181498,
+    "CJIS_CASE_NUMBER": "2026CF1703A2",
+    "CASE_DEFENDANT_ID": 896726,
+    "CHARGE_ID": 1247403,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 181754,
+    "CJIS_CASE_NUMBER": "2026CF151A1",
+    "CASE_DEFENDANT_ID": 890873,
+    "CHARGE_ID": 1237562,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 181754,
+    "CJIS_CASE_NUMBER": "2026CF151A2",
+    "CASE_DEFENDANT_ID": 890873,
+    "CHARGE_ID": 1237563,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 182175,
+    "CJIS_CASE_NUMBER": "2025CF2064A1",
+    "CASE_DEFENDANT_ID": 882597,
+    "CHARGE_ID": 1227502,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 182175,
+    "CJIS_CASE_NUMBER": "2026CF1596A1",
+    "CASE_DEFENDANT_ID": 896145,
+    "CHARGE_ID": 1246709,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 182907,
+    "CJIS_CASE_NUMBER": "2025MM1347A1",
+    "CASE_DEFENDANT_ID": 882521,
+    "CHARGE_ID": 1227384,
+    "STATUS": "C",
+    "LOCATION": "CAPIAS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 183191,
+    "CJIS_CASE_NUMBER": "2025HH1093A1",
+    "CASE_DEFENDANT_ID": 888708,
+    "CHARGE_ID": 1234072,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 185499,
+    "CJIS_CASE_NUMBER": "2026MM1374A1",
+    "CASE_DEFENDANT_ID": 897889,
+    "CHARGE_ID": 1249611,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 186009,
+    "CJIS_CASE_NUMBER": "2025CF1953A1",
+    "CASE_DEFENDANT_ID": 882171,
+    "CHARGE_ID": 1226918,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": "7500"
+  },
+  {
+    "CJIS_SPN": 186009,
+    "CJIS_CASE_NUMBER": "2025MM1070A1",
+    "CASE_DEFENDANT_ID": 880936,
+    "CHARGE_ID": 1224838,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": "0"
+  },
+  {
+    "CJIS_SPN": 186626,
+    "CJIS_CASE_NUMBER": "2026CF862A1",
+    "CASE_DEFENDANT_ID": 893511,
+    "CHARGE_ID": 1242554,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": "0"
+  },
+  {
+    "CJIS_SPN": 187821,
+    "CJIS_CASE_NUMBER": "2018CF1722A1",
+    "CASE_DEFENDANT_ID": 769365,
+    "CHARGE_ID": 1051662,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": "0"
+  },
+  {
+    "CJIS_SPN": 187821,
+    "CJIS_CASE_NUMBER": "2019CF3034A1",
+    "CASE_DEFENDANT_ID": 792859,
+    "CHARGE_ID": 1088175,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 187821,
+    "CJIS_CASE_NUMBER": "2023CF1700A1",
+    "CASE_DEFENDANT_ID": 852508,
+    "CHARGE_ID": 1179742,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 187821,
+    "CJIS_CASE_NUMBER": "2024CF183A1",
+    "CASE_DEFENDANT_ID": 861686,
+    "CHARGE_ID": 1193424,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 187821,
+    "CJIS_CASE_NUMBER": "2026CF1036A1",
+    "CASE_DEFENDANT_ID": 894123,
+    "CHARGE_ID": 1243546,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 187821,
+    "CJIS_CASE_NUMBER": "2026CF1365A2",
+    "CASE_DEFENDANT_ID": 895340,
+    "CHARGE_ID": 1245381,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 187821,
+    "CJIS_CASE_NUMBER": "2026CF1365A3",
+    "CASE_DEFENDANT_ID": 895340,
+    "CHARGE_ID": 1245382,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 188090,
+    "CJIS_CASE_NUMBER": "2023CF1201A1",
+    "CASE_DEFENDANT_ID": 850297,
+    "CHARGE_ID": 1176468,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 188090,
+    "CJIS_CASE_NUMBER": "2026HH544A1",
+    "CASE_DEFENDANT_ID": 896031,
+    "CHARGE_ID": 1246474,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 189493,
+    "CJIS_CASE_NUMBER": "2008CF2015A1",
+    "CASE_DEFENDANT_ID": 498401,
+    "CHARGE_ID": 677103,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 189493,
+    "CJIS_CASE_NUMBER": "2008CF2015A2",
+    "CASE_DEFENDANT_ID": 498401,
+    "CHARGE_ID": 677107,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 189493,
+    "CJIS_CASE_NUMBER": "2008CF2015A3",
+    "CASE_DEFENDANT_ID": 498401,
+    "CHARGE_ID": 677108,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 189493,
+    "CJIS_CASE_NUMBER": "2008CF2015A4",
+    "CASE_DEFENDANT_ID": 498401,
+    "CHARGE_ID": 677104,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 189493,
+    "CJIS_CASE_NUMBER": "2008CF2015A5",
+    "CASE_DEFENDANT_ID": 498401,
+    "CHARGE_ID": 677105,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 189493,
+    "CJIS_CASE_NUMBER": "2008CF2015A6",
+    "CASE_DEFENDANT_ID": 498401,
+    "CHARGE_ID": 677106,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 189493,
+    "CJIS_CASE_NUMBER": "2008CF2015A7",
+    "CASE_DEFENDANT_ID": 498401,
+    "CHARGE_ID": 680232,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 189493,
+    "CJIS_CASE_NUMBER": "2008CF2015A8",
+    "CASE_DEFENDANT_ID": 498401,
+    "CHARGE_ID": 680233,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 189493,
+    "CJIS_CASE_NUMBER": "2012CF3114A1",
+    "CASE_DEFENDANT_ID": 608004,
+    "CHARGE_ID": 832465,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 189493,
+    "CJIS_CASE_NUMBER": "2021CF1503A1",
+    "CASE_DEFENDANT_ID": 821319,
+    "CHARGE_ID": 1132936,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 189493,
+    "CJIS_CASE_NUMBER": "2025CF8A1",
+    "CASE_DEFENDANT_ID": 874819,
+    "CHARGE_ID": 1214721,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 189493,
+    "CJIS_CASE_NUMBER": "2025CF8A2",
+    "CASE_DEFENDANT_ID": 874819,
+    "CHARGE_ID": 1214722,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 191709,
+    "CJIS_CASE_NUMBER": "2026CF1993A1",
+    "CASE_DEFENDANT_ID": 898121,
+    "CHARGE_ID": 1249939,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 192080,
+    "CJIS_CASE_NUMBER": "2026CF3821A2",
+    "CASE_DEFENDANT_ID": 901821,
+    "CHARGE_ID": 1252607,
+    "STATUS": "O",
+    "LOCATION": "LCJ",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 192080,
+    "CJIS_CASE_NUMBER": "2026CF3821A3",
+    "CASE_DEFENDANT_ID": 901821,
+    "CHARGE_ID": 1252608,
+    "STATUS": "O",
+    "LOCATION": "LCJ",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 192783,
+    "CJIS_CASE_NUMBER": "2025CF288A1",
+    "CASE_DEFENDANT_ID": 875908,
+    "CHARGE_ID": 1216357,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 193153,
+    "CJIS_CASE_NUMBER": "2026CF2066A1",
+    "CASE_DEFENDANT_ID": 898555,
+    "CHARGE_ID": 1250628,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 193153,
+    "CJIS_CASE_NUMBER": "2026CF2066A2",
+    "CASE_DEFENDANT_ID": 898555,
+    "CHARGE_ID": 1250629,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 193153,
+    "CJIS_CASE_NUMBER": "2026CF2066A3",
+    "CASE_DEFENDANT_ID": 898555,
+    "CHARGE_ID": 1250630,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 193153,
+    "CJIS_CASE_NUMBER": "2026HH717A1",
+    "CASE_DEFENDANT_ID": 898556,
+    "CHARGE_ID": 1250631,
+    "STATUS": "D",
+    "LOCATION": "OTJA",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 193946,
+    "CJIS_CASE_NUMBER": "2026HH1999A1",
+    "CASE_DEFENDANT_ID": 902243,
+    "CHARGE_ID": 1253145,
+    "STATUS": "D",
+    "LOCATION": "FEDERAL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 193982,
+    "CJIS_CASE_NUMBER": "2007CF3364A1",
+    "CASE_DEFENDANT_ID": 476803,
+    "CHARGE_ID": 648735,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 193982,
+    "CJIS_CASE_NUMBER": "2007CF3364A2",
+    "CASE_DEFENDANT_ID": 476803,
+    "CHARGE_ID": 648736,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 193982,
+    "CJIS_CASE_NUMBER": "2007CF3514A1",
+    "CASE_DEFENDANT_ID": 477874,
+    "CHARGE_ID": 650359,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 193982,
+    "CJIS_CASE_NUMBER": "2009CF1161A1",
+    "CASE_DEFENDANT_ID": 517916,
+    "CHARGE_ID": 704819,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 193982,
+    "CJIS_CASE_NUMBER": "2009CF1161A2",
+    "CASE_DEFENDANT_ID": 517916,
+    "CHARGE_ID": 704820,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 193982,
+    "CJIS_CASE_NUMBER": "2009CF1630A1",
+    "CASE_DEFENDANT_ID": 520270,
+    "CHARGE_ID": 708705,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 193982,
+    "CJIS_CASE_NUMBER": "2013HH1206A1",
+    "CASE_DEFENDANT_ID": 641972,
+    "CHARGE_ID": 875313,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 193982,
+    "CJIS_CASE_NUMBER": "2025HH4A1",
+    "CASE_DEFENDANT_ID": 874837,
+    "CHARGE_ID": 1214738,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 194042,
+    "CJIS_CASE_NUMBER": "2026MM1201A1",
+    "CASE_DEFENDANT_ID": 896851,
+    "CHARGE_ID": 1247589,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 195443,
+    "CJIS_CASE_NUMBER": "2012MM5544A1",
+    "CASE_DEFENDANT_ID": 619867,
+    "CHARGE_ID": 846865,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 195443,
+    "CJIS_CASE_NUMBER": "2013CF228A3",
+    "CASE_DEFENDANT_ID": 623746,
+    "CHARGE_ID": 851187,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 195443,
+    "CJIS_CASE_NUMBER": "2013CF228A5",
+    "CASE_DEFENDANT_ID": 623746,
+    "CHARGE_ID": 851191,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 195443,
+    "CJIS_CASE_NUMBER": "2015CF427B1",
+    "CASE_DEFENDANT_ID": 690506,
+    "CHARGE_ID": 938949,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 195443,
+    "CJIS_CASE_NUMBER": "2015CF427B3",
+    "CASE_DEFENDANT_ID": 690506,
+    "CHARGE_ID": 938954,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 195443,
+    "CJIS_CASE_NUMBER": "2015CF427B4",
+    "CASE_DEFENDANT_ID": 690506,
+    "CHARGE_ID": 938952,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 195443,
+    "CJIS_CASE_NUMBER": "2015CF427B5",
+    "CASE_DEFENDANT_ID": 690506,
+    "CHARGE_ID": 938955,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 195443,
+    "CJIS_CASE_NUMBER": "2015CF427B6",
+    "CASE_DEFENDANT_ID": 690506,
+    "CHARGE_ID": 938953,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 195443,
+    "CJIS_CASE_NUMBER": "2015CF427B8",
+    "CASE_DEFENDANT_ID": 690506,
+    "CHARGE_ID": 938950,
+    "STATUS": "D",
+    "LOCATION": "RLSDNI",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 195443,
+    "CJIS_CASE_NUMBER": "2016CF2840A1",
+    "CASE_DEFENDANT_ID": 732483,
+    "CHARGE_ID": 996423,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 195443,
+    "CJIS_CASE_NUMBER": "2022CF2756A2",
+    "CASE_DEFENDANT_ID": 840847,
+    "CHARGE_ID": 1161910,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 195443,
+    "CJIS_CASE_NUMBER": "2022CF2756A3",
+    "CASE_DEFENDANT_ID": 840847,
+    "CHARGE_ID": 1161911,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 195443,
+    "CJIS_CASE_NUMBER": "2022CF2756A4",
+    "CASE_DEFENDANT_ID": 840847,
+    "CHARGE_ID": 1161912,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 195443,
+    "CJIS_CASE_NUMBER": "2022CF2756A5",
+    "CASE_DEFENDANT_ID": 840847,
+    "CHARGE_ID": 1161913,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 199275,
+    "CJIS_CASE_NUMBER": "2019CF3457A1",
+    "CASE_DEFENDANT_ID": 794347,
+    "CHARGE_ID": 1090615,
+    "STATUS": "D",
+    "LOCATION": "RLSDDS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 199275,
+    "CJIS_CASE_NUMBER": "2020CF1783A1",
+    "CASE_DEFENDANT_ID": 807425,
+    "CHARGE_ID": 1108444,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 199275,
+    "CJIS_CASE_NUMBER": "2020CF1783A2",
+    "CASE_DEFENDANT_ID": 807425,
+    "CHARGE_ID": 1108445,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 199275,
+    "CJIS_CASE_NUMBER": "2022CF3084A1",
+    "CASE_DEFENDANT_ID": 842108,
+    "CHARGE_ID": 1163953,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 199275,
+    "CJIS_CASE_NUMBER": "2022CF3084A2",
+    "CASE_DEFENDANT_ID": 842108,
+    "CHARGE_ID": 1163954,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 199275,
+    "CJIS_CASE_NUMBER": "2022CF3084A3",
+    "CASE_DEFENDANT_ID": 842108,
+    "CHARGE_ID": 1163955,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 199275,
+    "CJIS_CASE_NUMBER": "2024CF1652A1",
+    "CASE_DEFENDANT_ID": 867294,
+    "CHARGE_ID": 1202255,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 199275,
+    "CJIS_CASE_NUMBER": "2024CF1652A2",
+    "CASE_DEFENDANT_ID": 867294,
+    "CHARGE_ID": 1202256,
+    "STATUS": "D",
+    "LOCATION": "RLSDNI",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 199275,
+    "CJIS_CASE_NUMBER": "2024CF761A1",
+    "CASE_DEFENDANT_ID": 864061,
+    "CHARGE_ID": 1196954,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 199686,
+    "CJIS_CASE_NUMBER": "2021CF3232A1",
+    "CASE_DEFENDANT_ID": 830362,
+    "CHARGE_ID": 1145451,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 199686,
+    "CJIS_CASE_NUMBER": "2022CF2820A1",
+    "CASE_DEFENDANT_ID": 841118,
+    "CHARGE_ID": 1162263,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 200795,
+    "CJIS_CASE_NUMBER": "2026CF1398A1",
+    "CASE_DEFENDANT_ID": 895453,
+    "CHARGE_ID": 1245548,
+    "STATUS": "D",
+    "LOCATION": "RLSD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 200795,
+    "CJIS_CASE_NUMBER": "2026CF82A1",
+    "CASE_DEFENDANT_ID": 890662,
+    "CHARGE_ID": 1237057,
+    "STATUS": "D",
+    "LOCATION": "RLSD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 201033,
+    "CJIS_CASE_NUMBER": "2018CF882A1",
+    "CASE_DEFENDANT_ID": 765079,
+    "CHARGE_ID": 1045263,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 201033,
+    "CJIS_CASE_NUMBER": "2026CF561A1",
+    "CASE_DEFENDANT_ID": 892365,
+    "CHARGE_ID": 1240193,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 201033,
+    "CJIS_CASE_NUMBER": "2026CF564A1",
+    "CASE_DEFENDANT_ID": 892385,
+    "CHARGE_ID": 1240210,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 201033,
+    "CJIS_CASE_NUMBER": "2026CF633A2",
+    "CASE_DEFENDANT_ID": 892655,
+    "CHARGE_ID": 1240621,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 201379,
+    "CJIS_CASE_NUMBER": "2026MM1840A1",
+    "CASE_DEFENDANT_ID": 900196,
+    "CHARGE_ID": 1252113,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 201379,
+    "CJIS_CASE_NUMBER": "2026MM1840A2",
+    "CASE_DEFENDANT_ID": 900196,
+    "CHARGE_ID": 1252114,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 202372,
+    "CJIS_CASE_NUMBER": "2025CF1913A1",
+    "CASE_DEFENDANT_ID": 881983,
+    "CHARGE_ID": 1226550,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 202372,
+    "CJIS_CASE_NUMBER": "2025CF1913A2",
+    "CASE_DEFENDANT_ID": 881983,
+    "CHARGE_ID": 1226551,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 202795,
+    "CJIS_CASE_NUMBER": "2026CF1769A1",
+    "CASE_DEFENDANT_ID": 896963,
+    "CHARGE_ID": 1247725,
+    "STATUS": "D",
+    "LOCATION": "RLSDNI",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 202795,
+    "CJIS_CASE_NUMBER": "2026CF928A1",
+    "CASE_DEFENDANT_ID": 893725,
+    "CHARGE_ID": 1242936,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 202795,
+    "CJIS_CASE_NUMBER": "2026CF928A2",
+    "CASE_DEFENDANT_ID": 893725,
+    "CHARGE_ID": 1242937,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 202795,
+    "CJIS_CASE_NUMBER": "2026CF928A3",
+    "CASE_DEFENDANT_ID": 893725,
+    "CHARGE_ID": 1242938,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 202795,
+    "CJIS_CASE_NUMBER": "2026CF928A4",
+    "CASE_DEFENDANT_ID": 893725,
+    "CHARGE_ID": 1242939,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 202795,
+    "CJIS_CASE_NUMBER": "2026CF928A5",
+    "CASE_DEFENDANT_ID": 893725,
+    "CHARGE_ID": 1242940,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 202795,
+    "CJIS_CASE_NUMBER": "2026CF928A6",
+    "CASE_DEFENDANT_ID": 893725,
+    "CHARGE_ID": 1242941,
+    "STATUS": "D",
+    "LOCATION": "RLSDNI",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 204050,
+    "CJIS_CASE_NUMBER": "2023CF2058A1",
+    "CASE_DEFENDANT_ID": 854394,
+    "CHARGE_ID": 1182566,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 204370,
+    "CJIS_CASE_NUMBER": "2016CF1912A1",
+    "CASE_DEFENDANT_ID": 728941,
+    "CHARGE_ID": 990341,
+    "STATUS": "D",
+    "LOCATION": "DOC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 206674,
+    "CJIS_CASE_NUMBER": "2026CF1746A1",
+    "CASE_DEFENDANT_ID": 896853,
+    "CHARGE_ID": 1247591,
+    "STATUS": "D",
+    "LOCATION": "RLSDNI",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 208914,
+    "CJIS_CASE_NUMBER": "2026MM1211A1",
+    "CASE_DEFENDANT_ID": 896931,
+    "CHARGE_ID": 1247679,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 208914,
+    "CJIS_CASE_NUMBER": "2026MM1211A2",
+    "CASE_DEFENDANT_ID": 896931,
+    "CHARGE_ID": 1247680,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 208914,
+    "CJIS_CASE_NUMBER": "2026MM1211A3",
+    "CASE_DEFENDANT_ID": 896931,
+    "CHARGE_ID": 1247681,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 210373,
+    "CJIS_CASE_NUMBER": "2026CF2152A1",
+    "CASE_DEFENDANT_ID": 898953,
+    "CHARGE_ID": 1251215,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 210373,
+    "CJIS_CASE_NUMBER": "2026CF2152A2",
+    "CASE_DEFENDANT_ID": 898953,
+    "CHARGE_ID": 1251212,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 210373,
+    "CJIS_CASE_NUMBER": "2026CF2152A3",
+    "CASE_DEFENDANT_ID": 898953,
+    "CHARGE_ID": 1251213,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 210373,
+    "CJIS_CASE_NUMBER": "2026CF2152A4",
+    "CASE_DEFENDANT_ID": 898953,
+    "CHARGE_ID": 1251214,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 210373,
+    "CJIS_CASE_NUMBER": "2026CF2152A5",
+    "CASE_DEFENDANT_ID": 898953,
+    "CHARGE_ID": 1251216,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 212395,
+    "CJIS_CASE_NUMBER": "2013MM1358A1",
+    "CASE_DEFENDANT_ID": 632560,
+    "CHARGE_ID": 861372,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 212395,
+    "CJIS_CASE_NUMBER": "2015MM1121A1",
+    "CASE_DEFENDANT_ID": 693990,
+    "CHARGE_ID": 944399,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 212395,
+    "CJIS_CASE_NUMBER": "2026MM1141A1",
+    "CASE_DEFENDANT_ID": 896353,
+    "CHARGE_ID": 1246981,
+    "STATUS": "C",
+    "LOCATION": "CAP.",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 217903,
+    "CJIS_CASE_NUMBER": "2019CF4212A1",
+    "CASE_DEFENDANT_ID": 797456,
+    "CHARGE_ID": 1095767,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 217903,
+    "CJIS_CASE_NUMBER": "2019CF4212A2",
+    "CASE_DEFENDANT_ID": 797456,
+    "CHARGE_ID": 1095768,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 217903,
+    "CJIS_CASE_NUMBER": "2019CF4212A3",
+    "CASE_DEFENDANT_ID": 797456,
+    "CHARGE_ID": 1095769,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 217903,
+    "CJIS_CASE_NUMBER": "2019CF4212A4",
+    "CASE_DEFENDANT_ID": 797456,
+    "CHARGE_ID": 1095770,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 217903,
+    "CJIS_CASE_NUMBER": "2019CF4212A5",
+    "CASE_DEFENDANT_ID": 797456,
+    "CHARGE_ID": 1095771,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 220172,
+    "CJIS_CASE_NUMBER": "2026CF1785A1",
+    "CASE_DEFENDANT_ID": 896998,
+    "CHARGE_ID": 1247792,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 220982,
+    "CJIS_CASE_NUMBER": "2025CF2730A1",
+    "CASE_DEFENDANT_ID": 887276,
+    "CHARGE_ID": 1231651,
+    "STATUS": "O",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 220982,
+    "CJIS_CASE_NUMBER": "2025CF2730A2",
+    "CASE_DEFENDANT_ID": 887276,
+    "CHARGE_ID": 1231652,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 220982,
+    "CJIS_CASE_NUMBER": "2025CF3010A1",
+    "CASE_DEFENDANT_ID": 888320,
+    "CHARGE_ID": 1233461,
+    "STATUS": "O",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 221020,
+    "CJIS_CASE_NUMBER": "2025CF2279A1",
+    "CASE_DEFENDANT_ID": 883625,
+    "CHARGE_ID": 1228914,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 221329,
+    "CJIS_CASE_NUMBER": "2025CF3402A1",
+    "CASE_DEFENDANT_ID": 889933,
+    "CHARGE_ID": 1235967,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 221513,
+    "CJIS_CASE_NUMBER": "2026CF946A1",
+    "CASE_DEFENDANT_ID": 893789,
+    "CHARGE_ID": 1243017,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 221513,
+    "CJIS_CASE_NUMBER": "2026CF946A2",
+    "CASE_DEFENDANT_ID": 893789,
+    "CHARGE_ID": 1243018,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 221513,
+    "CJIS_CASE_NUMBER": "2026CF946A3",
+    "CASE_DEFENDANT_ID": 893789,
+    "CHARGE_ID": 1243019,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 221513,
+    "CJIS_CASE_NUMBER": "2026CT364A1",
+    "CASE_DEFENDANT_ID": 893232,
+    "CHARGE_ID": 1241552,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 221513,
+    "CJIS_CASE_NUMBER": "2026CT364A2",
+    "CASE_DEFENDANT_ID": 893232,
+    "CHARGE_ID": 1241553,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 222910,
+    "CJIS_CASE_NUMBER": "2025CF172A1",
+    "CASE_DEFENDANT_ID": 875444,
+    "CHARGE_ID": 1215650,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 222910,
+    "CJIS_CASE_NUMBER": "2025CF172A2",
+    "CASE_DEFENDANT_ID": 875444,
+    "CHARGE_ID": 1215653,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 222910,
+    "CJIS_CASE_NUMBER": "2025CF172A3",
+    "CASE_DEFENDANT_ID": 875444,
+    "CHARGE_ID": 1215651,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 222910,
+    "CJIS_CASE_NUMBER": "2025CF172A4",
+    "CASE_DEFENDANT_ID": 875444,
+    "CHARGE_ID": 1215654,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 222910,
+    "CJIS_CASE_NUMBER": "2025CF172A5",
+    "CASE_DEFENDANT_ID": 875444,
+    "CHARGE_ID": 1215652,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 222910,
+    "CJIS_CASE_NUMBER": "2025CF172A6",
+    "CASE_DEFENDANT_ID": 875444,
+    "CHARGE_ID": 1215656,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 222910,
+    "CJIS_CASE_NUMBER": "2025CF172A7",
+    "CASE_DEFENDANT_ID": 875444,
+    "CHARGE_ID": 1215657,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 222910,
+    "CJIS_CASE_NUMBER": "2025CF172A8",
+    "CASE_DEFENDANT_ID": 875444,
+    "CHARGE_ID": 1215655,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 224859,
+    "CJIS_CASE_NUMBER": "2023CT160A1",
+    "CASE_DEFENDANT_ID": 846182,
+    "CHARGE_ID": 1170112,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 224859,
+    "CJIS_CASE_NUMBER": "2024CT204A1",
+    "CASE_DEFENDANT_ID": 862305,
+    "CHARGE_ID": 1194368,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 225147,
+    "CJIS_CASE_NUMBER": "2024CF1464A1",
+    "CASE_DEFENDANT_ID": 866623,
+    "CHARGE_ID": 1201128,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 225147,
+    "CJIS_CASE_NUMBER": "2024CF1464A2",
+    "CASE_DEFENDANT_ID": 866623,
+    "CHARGE_ID": 1201129,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 225147,
+    "CJIS_CASE_NUMBER": "2024CF1464A3",
+    "CASE_DEFENDANT_ID": 866623,
+    "CHARGE_ID": 1201130,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 225147,
+    "CJIS_CASE_NUMBER": "2025CF1690A1",
+    "CASE_DEFENDANT_ID": 881176,
+    "CHARGE_ID": 1225206,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 225147,
+    "CJIS_CASE_NUMBER": "2025CF1690A2",
+    "CASE_DEFENDANT_ID": 881176,
+    "CHARGE_ID": 1225207,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 225147,
+    "CJIS_CASE_NUMBER": "2026HH568A1",
+    "CASE_DEFENDANT_ID": 896683,
+    "CHARGE_ID": 1247336,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 225147,
+    "CJIS_CASE_NUMBER": "2026HH568A2",
+    "CASE_DEFENDANT_ID": 896683,
+    "CHARGE_ID": 1247342,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 226092,
+    "CJIS_CASE_NUMBER": "2026CF1689A1",
+    "CASE_DEFENDANT_ID": 896643,
+    "CHARGE_ID": 1247299,
+    "STATUS": "R",
+    "LOCATION": "LCJ",
+    "BOND_AMT": "NOBOND"
+  },
+  {
+    "CJIS_SPN": 226092,
+    "CJIS_CASE_NUMBER": "2026CF1689A2",
+    "CASE_DEFENDANT_ID": 896643,
+    "CHARGE_ID": 1247300,
+    "STATUS": "R",
+    "LOCATION": "LCJ",
+    "BOND_AMT": "NoBOND"
+  },
+  {
+    "CJIS_SPN": 226415,
+    "CJIS_CASE_NUMBER": "2025CF3476A1",
+    "CASE_DEFENDANT_ID": 890173,
+    "CHARGE_ID": 1236326,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 226901,
+    "CJIS_CASE_NUMBER": "2026CF1628A1",
+    "CASE_DEFENDANT_ID": 896301,
+    "CHARGE_ID": 1246904,
+    "STATUS": "D",
+    "LOCATION": "RLSDNI",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 226901,
+    "CJIS_CASE_NUMBER": "2026CF1651A1",
+    "CASE_DEFENDANT_ID": 896391,
+    "CHARGE_ID": 1247019,
+    "STATUS": "D",
+    "LOCATION": "OTJA",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 227129,
+    "CJIS_CASE_NUMBER": "2026CF908A1",
+    "CASE_DEFENDANT_ID": 893649,
+    "CHARGE_ID": 1242821,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 228625,
+    "CJIS_CASE_NUMBER": "2026CF1892A2",
+    "CASE_DEFENDANT_ID": 897571,
+    "CHARGE_ID": 1248725,
+    "STATUS": "D",
+    "LOCATION": "RLSDDS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 228625,
+    "CJIS_CASE_NUMBER": "2026CF1892A3",
+    "CASE_DEFENDANT_ID": 897571,
+    "CHARGE_ID": 1248726,
+    "STATUS": "D",
+    "LOCATION": "RLSDDS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 229206,
+    "CJIS_CASE_NUMBER": "2025CF1497A1",
+    "CASE_DEFENDANT_ID": 880473,
+    "CHARGE_ID": 1224031,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 229206,
+    "CJIS_CASE_NUMBER": "2025CF2618A1",
+    "CASE_DEFENDANT_ID": 886859,
+    "CHARGE_ID": 1230991,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 229206,
+    "CJIS_CASE_NUMBER": "2025CF2618A2",
+    "CASE_DEFENDANT_ID": 886859,
+    "CHARGE_ID": 1230992,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 229206,
+    "CJIS_CASE_NUMBER": "2025CF2618A3",
+    "CASE_DEFENDANT_ID": 886859,
+    "CHARGE_ID": 1230993,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 229206,
+    "CJIS_CASE_NUMBER": "2025CF2618A4",
+    "CASE_DEFENDANT_ID": 886859,
+    "CHARGE_ID": 1230994,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 229206,
+    "CJIS_CASE_NUMBER": "2025CF2618A5",
+    "CASE_DEFENDANT_ID": 886859,
+    "CHARGE_ID": 1230995,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 229206,
+    "CJIS_CASE_NUMBER": "2025CF2658A1",
+    "CASE_DEFENDANT_ID": 887042,
+    "CHARGE_ID": 1231305,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 229206,
+    "CJIS_CASE_NUMBER": "2025CF2658A2",
+    "CASE_DEFENDANT_ID": 887042,
+    "CHARGE_ID": 1231306,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 229206,
+    "CJIS_CASE_NUMBER": "2025CF2658A3",
+    "CASE_DEFENDANT_ID": 887042,
+    "CHARGE_ID": 1231307,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 229206,
+    "CJIS_CASE_NUMBER": "2025CF2720A1",
+    "CASE_DEFENDANT_ID": 887246,
+    "CHARGE_ID": 1231605,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 229206,
+    "CJIS_CASE_NUMBER": "2025CF2720A2",
+    "CASE_DEFENDANT_ID": 887246,
+    "CHARGE_ID": 1231606,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 229261,
+    "CJIS_CASE_NUMBER": "2013CF2697A1",
+    "CASE_DEFENDANT_ID": 642275,
+    "CHARGE_ID": 875730,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 229261,
+    "CJIS_CASE_NUMBER": "2013CF2697A2",
+    "CASE_DEFENDANT_ID": 642275,
+    "CHARGE_ID": 916392,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 229305,
+    "CJIS_CASE_NUMBER": "2026CF655A1",
+    "CASE_DEFENDANT_ID": 892707,
+    "CHARGE_ID": 1240701,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 229634,
+    "CJIS_CASE_NUMBER": "2013CF679A1",
+    "CASE_DEFENDANT_ID": 630606,
+    "CHARGE_ID": 858942,
+    "STATUS": "O",
+    "LOCATION": "LCJ",
+    "BOND_AMT": "NOBOND"
+  },
+  {
+    "CJIS_SPN": 229634,
+    "CJIS_CASE_NUMBER": "2013CF679A2",
+    "CASE_DEFENDANT_ID": 630606,
+    "CHARGE_ID": 861838,
+    "STATUS": "O",
+    "LOCATION": "LCJ",
+    "BOND_AMT": "NOBOND"
+  },
+  {
+    "CJIS_SPN": 230348,
+    "CJIS_CASE_NUMBER": "2026CF1997A1",
+    "CASE_DEFENDANT_ID": 898216,
+    "CHARGE_ID": 1250049,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 230348,
+    "CJIS_CASE_NUMBER": "2026CF1997A2",
+    "CASE_DEFENDANT_ID": 898216,
+    "CHARGE_ID": 1250050,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 233946,
+    "CJIS_CASE_NUMBER": "2026CF1765A1",
+    "CASE_DEFENDANT_ID": 896947,
+    "CHARGE_ID": 1247699,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "25000"
+  },
+  {
+    "CJIS_SPN": 233946,
+    "CJIS_CASE_NUMBER": "2026CF1765A2",
+    "CASE_DEFENDANT_ID": 896947,
+    "CHARGE_ID": 1247700,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "25000"
+  },
+  {
+    "CJIS_SPN": 233946,
+    "CJIS_CASE_NUMBER": "2026CF1765A3",
+    "CASE_DEFENDANT_ID": 896947,
+    "CHARGE_ID": 1247701,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 233946,
+    "CJIS_CASE_NUMBER": "2026CF1765A4",
+    "CASE_DEFENDANT_ID": 896947,
+    "CHARGE_ID": 1247703,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "10000"
+  },
+  {
+    "CJIS_SPN": 233946,
+    "CJIS_CASE_NUMBER": "2026CF1765A5",
+    "CASE_DEFENDANT_ID": 896947,
+    "CHARGE_ID": 1247702,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 233946,
+    "CJIS_CASE_NUMBER": "2026CF1765A6",
+    "CASE_DEFENDANT_ID": 896947,
+    "CHARGE_ID": 1247705,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 233946,
+    "CJIS_CASE_NUMBER": "2026CF1765A7",
+    "CASE_DEFENDANT_ID": 896947,
+    "CHARGE_ID": 1247704,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 2344,
+    "CJIS_CASE_NUMBER": "2024CF14A1",
+    "CASE_DEFENDANT_ID": 861056,
+    "CHARGE_ID": 1192425,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 2344,
+    "CJIS_CASE_NUMBER": "2024CF477A1",
+    "CASE_DEFENDANT_ID": 862911,
+    "CHARGE_ID": 1195312,
+    "STATUS": "O",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 2344,
+    "CJIS_CASE_NUMBER": "2026CF693A1",
+    "CASE_DEFENDANT_ID": 892877,
+    "CHARGE_ID": 1240990,
+    "STATUS": "O",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 236200,
+    "CJIS_CASE_NUMBER": "2024CF3443A1",
+    "CASE_DEFENDANT_ID": 874053,
+    "CHARGE_ID": 1213563,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 236200,
+    "CJIS_CASE_NUMBER": "2024MM1410A1",
+    "CASE_DEFENDANT_ID": 868651,
+    "CHARGE_ID": 1204359,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 236398,
+    "CJIS_CASE_NUMBER": "2014CF3165A1",
+    "CASE_DEFENDANT_ID": 682675,
+    "CHARGE_ID": 927892,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 236398,
+    "CJIS_CASE_NUMBER": "2017HH1293A1",
+    "CASE_DEFENDANT_ID": 751335,
+    "CHARGE_ID": 1025215,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 236398,
+    "CJIS_CASE_NUMBER": "2017HH210A1",
+    "CASE_DEFENDANT_ID": 739060,
+    "CHARGE_ID": 1007514,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 236832,
+    "CJIS_CASE_NUMBER": "2026CF817A1",
+    "CASE_DEFENDANT_ID": 893365,
+    "CHARGE_ID": 1241736,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 237073,
+    "CJIS_CASE_NUMBER": "2026CF230A1",
+    "CASE_DEFENDANT_ID": 891166,
+    "CHARGE_ID": 1238231,
+    "STATUS": "V",
+    "LOCATION": "CAP.",
+    "BOND_AMT": "NOBOND"
+  },
+  {
+    "CJIS_SPN": 237073,
+    "CJIS_CASE_NUMBER": "2026CF230A2",
+    "CASE_DEFENDANT_ID": 891166,
+    "CHARGE_ID": 1238232,
+    "STATUS": "V",
+    "LOCATION": "CAP.",
+    "BOND_AMT": "NOBOND"
+  },
+  {
+    "CJIS_SPN": 23715,
+    "CJIS_CASE_NUMBER": "2026CF1962A1",
+    "CASE_DEFENDANT_ID": 897992,
+    "CHARGE_ID": 1249768,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 23715,
+    "CJIS_CASE_NUMBER": "2026CF1962A2",
+    "CASE_DEFENDANT_ID": 897992,
+    "CHARGE_ID": 1249769,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 238238,
+    "CJIS_CASE_NUMBER": "2026MM1254A1",
+    "CASE_DEFENDANT_ID": 897238,
+    "CHARGE_ID": 1248155,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "250"
+  },
+  {
+    "CJIS_SPN": 238752,
+    "CJIS_CASE_NUMBER": "2022CF3576A1",
+    "CASE_DEFENDANT_ID": 844342,
+    "CHARGE_ID": 1167515,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 238752,
+    "CJIS_CASE_NUMBER": "2022CF3576A2",
+    "CASE_DEFENDANT_ID": 844342,
+    "CHARGE_ID": 1167516,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 238752,
+    "CJIS_CASE_NUMBER": "2026CF1457A1",
+    "CASE_DEFENDANT_ID": 895716,
+    "CHARGE_ID": 1245908,
+    "STATUS": "V",
+    "LOCATION": "CAP.",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 238752,
+    "CJIS_CASE_NUMBER": "2026CF1457A3",
+    "CASE_DEFENDANT_ID": 895716,
+    "CHARGE_ID": 1245909,
+    "STATUS": "V",
+    "LOCATION": "CAP.",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 239834,
+    "CJIS_CASE_NUMBER": "2024CF2220A1",
+    "CASE_DEFENDANT_ID": 869296,
+    "CHARGE_ID": 1208383,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 239834,
+    "CJIS_CASE_NUMBER": "2024CF2220A2",
+    "CASE_DEFENDANT_ID": 869296,
+    "CHARGE_ID": 1205860,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 240364,
+    "CJIS_CASE_NUMBER": "2026CF3869A1",
+    "CASE_DEFENDANT_ID": 901996,
+    "CHARGE_ID": 1253000,
+    "STATUS": "O",
+    "LOCATION": "LCJ",
+    "BOND_AMT": "10000"
+  },
+  {
+    "CJIS_SPN": 240364,
+    "CJIS_CASE_NUMBER": "2026CF3869A2",
+    "CASE_DEFENDANT_ID": 901996,
+    "CHARGE_ID": 1253001,
+    "STATUS": "O",
+    "LOCATION": "LCJ",
+    "BOND_AMT": "10000"
+  },
+  {
+    "CJIS_SPN": 240364,
+    "CJIS_CASE_NUMBER": "2026CF3869A3",
+    "CASE_DEFENDANT_ID": 901996,
+    "CHARGE_ID": 1253002,
+    "STATUS": "O",
+    "LOCATION": "LCJ",
+    "BOND_AMT": "10000"
+  },
+  {
+    "CJIS_SPN": 240822,
+    "CJIS_CASE_NUMBER": "2025CF1995A1",
+    "CASE_DEFENDANT_ID": 882348,
+    "CHARGE_ID": 1227127,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 240822,
+    "CJIS_CASE_NUMBER": "2025CF1995A2",
+    "CASE_DEFENDANT_ID": 882348,
+    "CHARGE_ID": 1227128,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 241449,
+    "CJIS_CASE_NUMBER": "2019CF3926A1",
+    "CASE_DEFENDANT_ID": 796361,
+    "CHARGE_ID": 1093936,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 241449,
+    "CJIS_CASE_NUMBER": "2019CF3926A2",
+    "CASE_DEFENDANT_ID": 796361,
+    "CHARGE_ID": 1093935,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 241574,
+    "CJIS_CASE_NUMBER": "2021CF2754A1",
+    "CASE_DEFENDANT_ID": 828475,
+    "CHARGE_ID": 1142511,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 241574,
+    "CJIS_CASE_NUMBER": "2022CF3629A1",
+    "CASE_DEFENDANT_ID": 844590,
+    "CHARGE_ID": 1167866,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 242166,
+    "CJIS_CASE_NUMBER": "2026CF1450A2",
+    "CASE_DEFENDANT_ID": 895673,
+    "CHARGE_ID": 1245841,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 242527,
+    "CJIS_CASE_NUMBER": "2025CF1810A1",
+    "CASE_DEFENDANT_ID": 881639,
+    "CHARGE_ID": 1226040,
+    "STATUS": "D",
+    "LOCATION": "LCJ",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 242826,
+    "CJIS_CASE_NUMBER": "2024CF2756A1",
+    "CASE_DEFENDANT_ID": 871351,
+    "CHARGE_ID": 1209051,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 242826,
+    "CJIS_CASE_NUMBER": "2024CF2756A2",
+    "CASE_DEFENDANT_ID": 871351,
+    "CHARGE_ID": 1209052,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 242826,
+    "CJIS_CASE_NUMBER": "2024CF2756A3",
+    "CASE_DEFENDANT_ID": 871351,
+    "CHARGE_ID": 1209053,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 242826,
+    "CJIS_CASE_NUMBER": "2024CF2756A4",
+    "CASE_DEFENDANT_ID": 871351,
+    "CHARGE_ID": 1209054,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 242826,
+    "CJIS_CASE_NUMBER": "2024CF2756A5",
+    "CASE_DEFENDANT_ID": 871351,
+    "CHARGE_ID": 1209060,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 242826,
+    "CJIS_CASE_NUMBER": "2024CF2756A6",
+    "CASE_DEFENDANT_ID": 871351,
+    "CHARGE_ID": 1209055,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 242826,
+    "CJIS_CASE_NUMBER": "2024CF2756A7",
+    "CASE_DEFENDANT_ID": 871351,
+    "CHARGE_ID": 1209057,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 242826,
+    "CJIS_CASE_NUMBER": "2024CF2756A8",
+    "CASE_DEFENDANT_ID": 871351,
+    "CHARGE_ID": 1209058,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 242826,
+    "CJIS_CASE_NUMBER": "2024CF2756A9",
+    "CASE_DEFENDANT_ID": 871351,
+    "CHARGE_ID": 1209059,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "5000"
+  },
+  {
+    "CJIS_SPN": 242948,
+    "CJIS_CASE_NUMBER": "2015CF3490A2",
+    "CASE_DEFENDANT_ID": 711024,
+    "CHARGE_ID": 971410,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 242948,
+    "CJIS_CASE_NUMBER": "2015CF3490A3",
+    "CASE_DEFENDANT_ID": 711024,
+    "CHARGE_ID": 971411,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 242948,
+    "CJIS_CASE_NUMBER": "2026HH578A1",
+    "CASE_DEFENDANT_ID": 896806,
+    "CHARGE_ID": 1247503,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 243287,
+    "CJIS_CASE_NUMBER": "2020CF1990A1",
+    "CASE_DEFENDANT_ID": 808022,
+    "CHARGE_ID": 1109355,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 243287,
+    "CJIS_CASE_NUMBER": "2020CF1990A2",
+    "CASE_DEFENDANT_ID": 808022,
+    "CHARGE_ID": 1109354,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 243287,
+    "CJIS_CASE_NUMBER": "2020CF1990A3",
+    "CASE_DEFENDANT_ID": 808022,
+    "CHARGE_ID": 1109356,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 243287,
+    "CJIS_CASE_NUMBER": "2020CF1990A5",
+    "CASE_DEFENDANT_ID": 808022,
+    "CHARGE_ID": 1109358,
+    "STATUS": "D",
+    "LOCATION": "RLSDNI",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 243287,
+    "CJIS_CASE_NUMBER": "2020CF559A1",
+    "CASE_DEFENDANT_ID": 800978,
+    "CHARGE_ID": 1100840,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 243622,
+    "CJIS_CASE_NUMBER": "2026CF1800A1",
+    "CASE_DEFENDANT_ID": 897042,
+    "CHARGE_ID": 1247869,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 243622,
+    "CJIS_CASE_NUMBER": "2026CF1800A2",
+    "CASE_DEFENDANT_ID": 897042,
+    "CHARGE_ID": 1247871,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 243622,
+    "CJIS_CASE_NUMBER": "2026CF1800A3",
+    "CASE_DEFENDANT_ID": 897042,
+    "CHARGE_ID": 1247870,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 244136,
+    "CJIS_CASE_NUMBER": "2019CT1368A1",
+    "CASE_DEFENDANT_ID": 790088,
+    "CHARGE_ID": 1083970,
+    "STATUS": "R",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 244885,
+    "CJIS_CASE_NUMBER": "2026CF640A1",
+    "CASE_DEFENDANT_ID": 892664,
+    "CHARGE_ID": 1240638,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 245023,
+    "CJIS_CASE_NUMBER": "2016CT947A1",
+    "CASE_DEFENDANT_ID": 724401,
+    "CHARGE_ID": 984315,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 245023,
+    "CJIS_CASE_NUMBER": "2018CF3991A1",
+    "CASE_DEFENDANT_ID": 781284,
+    "CHARGE_ID": 1069027,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 245023,
+    "CJIS_CASE_NUMBER": "2018CF3991A2",
+    "CASE_DEFENDANT_ID": 781284,
+    "CHARGE_ID": 1069028,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 245023,
+    "CJIS_CASE_NUMBER": "2018CF3991A3",
+    "CASE_DEFENDANT_ID": 781284,
+    "CHARGE_ID": 1069029,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 245327,
+    "CJIS_CASE_NUMBER": "2025CF1745A1",
+    "CASE_DEFENDANT_ID": 881401,
+    "CHARGE_ID": 1225624,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 24533,
+    "CJIS_CASE_NUMBER": "2026CF855A1",
+    "CASE_DEFENDANT_ID": 893490,
+    "CHARGE_ID": 1242299,
+    "STATUS": "D",
+    "LOCATION": "RLSD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 245983,
+    "CJIS_CASE_NUMBER": "2016CT1604A1",
+    "CASE_DEFENDANT_ID": 729237,
+    "CHARGE_ID": 990809,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 247170,
+    "CJIS_CASE_NUMBER": "2025CF3148A1",
+    "CASE_DEFENDANT_ID": 888903,
+    "CHARGE_ID": 1234354,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 247170,
+    "CJIS_CASE_NUMBER": "2025CF3148A2",
+    "CASE_DEFENDANT_ID": 888903,
+    "CHARGE_ID": 1234355,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 247170,
+    "CJIS_CASE_NUMBER": "2025CF3148A3",
+    "CASE_DEFENDANT_ID": 888903,
+    "CHARGE_ID": 1234356,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 247170,
+    "CJIS_CASE_NUMBER": "2025CT1953A1",
+    "CASE_DEFENDANT_ID": 889064,
+    "CHARGE_ID": 1234567,
+    "STATUS": "V",
+    "LOCATION": "CAP.",
+    "BOND_AMT": "ROR"
+  },
+  {
+    "CJIS_SPN": 247546,
+    "CJIS_CASE_NUMBER": "2021CF2497A1",
+    "CASE_DEFENDANT_ID": 827432,
+    "CHARGE_ID": 1140883,
+    "STATUS": "D",
+    "LOCATION": "OREC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 248026,
+    "CJIS_CASE_NUMBER": "2026CF1122A1",
+    "CASE_DEFENDANT_ID": 894398,
+    "CHARGE_ID": 1244011,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 248026,
+    "CJIS_CASE_NUMBER": "2026CF1122A2",
+    "CASE_DEFENDANT_ID": 894398,
+    "CHARGE_ID": 1244012,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 248026,
+    "CJIS_CASE_NUMBER": "2026CF1122A3",
+    "CASE_DEFENDANT_ID": 894398,
+    "CHARGE_ID": 1244013,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 248026,
+    "CJIS_CASE_NUMBER": "2026CF1122A4",
+    "CASE_DEFENDANT_ID": 894398,
+    "CHARGE_ID": 1244014,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 248026,
+    "CJIS_CASE_NUMBER": "2026CF1122A5",
+    "CASE_DEFENDANT_ID": 894398,
+    "CHARGE_ID": 1244015,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 248046,
+    "CJIS_CASE_NUMBER": "2025MM2341A1",
+    "CASE_DEFENDANT_ID": 890076,
+    "CHARGE_ID": 1236188,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 248046,
+    "CJIS_CASE_NUMBER": "2026CF472A1",
+    "CASE_DEFENDANT_ID": 892005,
+    "CHARGE_ID": 1239538,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 248046,
+    "CJIS_CASE_NUMBER": "2026CF472A2",
+    "CASE_DEFENDANT_ID": 892005,
+    "CHARGE_ID": 1239539,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 248046,
+    "CJIS_CASE_NUMBER": "2026CF472A3",
+    "CASE_DEFENDANT_ID": 892005,
+    "CHARGE_ID": 1239540,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 248499,
+    "CJIS_CASE_NUMBER": "2018CF1521A1",
+    "CASE_DEFENDANT_ID": 768292,
+    "CHARGE_ID": 1050121,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 248499,
+    "CJIS_CASE_NUMBER": "2018CF948A1",
+    "CASE_DEFENDANT_ID": 765457,
+    "CHARGE_ID": 1045778,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 248499,
+    "CJIS_CASE_NUMBER": "2018CF948A2",
+    "CASE_DEFENDANT_ID": 765457,
+    "CHARGE_ID": 1045779,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 248499,
+    "CJIS_CASE_NUMBER": "2018CF948A3",
+    "CASE_DEFENDANT_ID": 765457,
+    "CHARGE_ID": 1049080,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 248499,
+    "CJIS_CASE_NUMBER": "2018CF948A4",
+    "CASE_DEFENDANT_ID": 765457,
+    "CHARGE_ID": 1045777,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 248499,
+    "CJIS_CASE_NUMBER": "2018CF948A5",
+    "CASE_DEFENDANT_ID": 765457,
+    "CHARGE_ID": 1045776,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 248499,
+    "CJIS_CASE_NUMBER": "2019CF165A1",
+    "CASE_DEFENDANT_ID": 782521,
+    "CHARGE_ID": 1071081,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 249495,
+    "CJIS_CASE_NUMBER": "2025CF3492A1",
+    "CASE_DEFENDANT_ID": 890205,
+    "CHARGE_ID": 1236391,
+    "STATUS": "D",
+    "LOCATION": "RLSDWD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 249702,
+    "CJIS_CASE_NUMBER": "2026CF1922A1",
+    "CASE_DEFENDANT_ID": 897768,
+    "CHARGE_ID": 1249429,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 249702,
+    "CJIS_CASE_NUMBER": "2026CF1922A2",
+    "CASE_DEFENDANT_ID": 897768,
+    "CHARGE_ID": 1249430,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 250159,
+    "CJIS_CASE_NUMBER": "2024MM2252A1",
+    "CASE_DEFENDANT_ID": 873359,
+    "CHARGE_ID": 1212325,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 250159,
+    "CJIS_CASE_NUMBER": "2026CF1214A1",
+    "CASE_DEFENDANT_ID": 894780,
+    "CHARGE_ID": 1244571,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 250159,
+    "CJIS_CASE_NUMBER": "2026CF1214A2",
+    "CASE_DEFENDANT_ID": 894780,
+    "CHARGE_ID": 1244572,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 250159,
+    "CJIS_CASE_NUMBER": "2026CF1214A3",
+    "CASE_DEFENDANT_ID": 894780,
+    "CHARGE_ID": 1244573,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 251798,
+    "CJIS_CASE_NUMBER": "2022CF242A2",
+    "CASE_DEFENDANT_ID": 831995,
+    "CHARGE_ID": 1148076,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 251798,
+    "CJIS_CASE_NUMBER": "2022CF3587A1",
+    "CASE_DEFENDANT_ID": 844384,
+    "CHARGE_ID": 1167609,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 251798,
+    "CJIS_CASE_NUMBER": "2022CF3587A3",
+    "CASE_DEFENDANT_ID": 844384,
+    "CHARGE_ID": 1167610,
+    "STATUS": "D",
+    "LOCATION": "RLSDNI",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 251798,
+    "CJIS_CASE_NUMBER": "2025CF1707A2",
+    "CASE_DEFENDANT_ID": 881252,
+    "CHARGE_ID": 1225357,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 252181,
+    "CJIS_CASE_NUMBER": "2020CF2228A1",
+    "CASE_DEFENDANT_ID": 808702,
+    "CHARGE_ID": 1110528,
+    "STATUS": "O",
+    "LOCATION": "LCJ",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 252181,
+    "CJIS_CASE_NUMBER": "2021CF1861A1",
+    "CASE_DEFENDANT_ID": 823394,
+    "CHARGE_ID": 1135585,
+    "STATUS": "O",
+    "LOCATION": "LCJ",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 252701,
+    "CJIS_CASE_NUMBER": "2026CF794A1",
+    "CASE_DEFENDANT_ID": 893260,
+    "CHARGE_ID": 1241611,
+    "STATUS": "D",
+    "LOCATION": "RLSDCC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 254002,
+    "CJIS_CASE_NUMBER": "2019CT2319A1",
+    "CASE_DEFENDANT_ID": 796132,
+    "CHARGE_ID": 1093409,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 254002,
+    "CJIS_CASE_NUMBER": "2021CF2583A1",
+    "CASE_DEFENDANT_ID": 827766,
+    "CHARGE_ID": 1141412,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 254002,
+    "CJIS_CASE_NUMBER": "2022MM746A1",
+    "CASE_DEFENDANT_ID": 835272,
+    "CHARGE_ID": 1153111,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 254002,
+    "CJIS_CASE_NUMBER": "2022MM746A2",
+    "CASE_DEFENDANT_ID": 835272,
+    "CHARGE_ID": 1153110,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 254002,
+    "CJIS_CASE_NUMBER": "2023CF1975A1",
+    "CASE_DEFENDANT_ID": 853942,
+    "CHARGE_ID": 1181974,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 254002,
+    "CJIS_CASE_NUMBER": "2023CF2198A1",
+    "CASE_DEFENDANT_ID": 855010,
+    "CHARGE_ID": 1183451,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 254318,
+    "CJIS_CASE_NUMBER": "2025CF2057A1",
+    "CASE_DEFENDANT_ID": 882558,
+    "CHARGE_ID": 1227443,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 254318,
+    "CJIS_CASE_NUMBER": "2025MM1541A1",
+    "CASE_DEFENDANT_ID": 883857,
+    "CHARGE_ID": 1229265,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 254318,
+    "CJIS_CASE_NUMBER": "2025MM1618A1",
+    "CASE_DEFENDANT_ID": 885734,
+    "CHARGE_ID": 1229815,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 254879,
+    "CJIS_CASE_NUMBER": "2021CF1222A1",
+    "CASE_DEFENDANT_ID": 819589,
+    "CHARGE_ID": 1130603,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 255428,
+    "CJIS_CASE_NUMBER": "2023CF1153A1",
+    "CASE_DEFENDANT_ID": 850129,
+    "CHARGE_ID": 1175927,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 255428,
+    "CJIS_CASE_NUMBER": "2023CF1153A2",
+    "CASE_DEFENDANT_ID": 850129,
+    "CHARGE_ID": 1175928,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 255428,
+    "CJIS_CASE_NUMBER": "2023CF1153A3",
+    "CASE_DEFENDANT_ID": 850129,
+    "CHARGE_ID": 1175929,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 255428,
+    "CJIS_CASE_NUMBER": "2023CF1740A1",
+    "CASE_DEFENDANT_ID": 852694,
+    "CHARGE_ID": 1179950,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 255428,
+    "CJIS_CASE_NUMBER": "2023CF1740A2",
+    "CASE_DEFENDANT_ID": 852694,
+    "CHARGE_ID": 1179951,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 255428,
+    "CJIS_CASE_NUMBER": "2023CF3481A1",
+    "CASE_DEFENDANT_ID": 860414,
+    "CHARGE_ID": 1191437,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 255428,
+    "CJIS_CASE_NUMBER": "2025CF1984A1",
+    "CASE_DEFENDANT_ID": 882291,
+    "CHARGE_ID": 1227076,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 255487,
+    "CJIS_CASE_NUMBER": "2024CF3300A1",
+    "CASE_DEFENDANT_ID": 873536,
+    "CHARGE_ID": 1212590,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 255487,
+    "CJIS_CASE_NUMBER": "2026CF1485A1",
+    "CASE_DEFENDANT_ID": 895805,
+    "CHARGE_ID": 1246086,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 256045,
+    "CJIS_CASE_NUMBER": "2025CT1207A1",
+    "CASE_DEFENDANT_ID": 882272,
+    "CHARGE_ID": 1227052,
+    "STATUS": "R",
+    "LOCATION": "OREC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 256479,
+    "CJIS_CASE_NUMBER": "2026MM1339A2",
+    "CASE_DEFENDANT_ID": 897704,
+    "CHARGE_ID": 1249251,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 256479,
+    "CJIS_CASE_NUMBER": "2026MM1339A3",
+    "CASE_DEFENDANT_ID": 897704,
+    "CHARGE_ID": 1249252,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 256521,
+    "CJIS_CASE_NUMBER": "2024CF2764A1",
+    "CASE_DEFENDANT_ID": 871384,
+    "CHARGE_ID": 1209090,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 256521,
+    "CJIS_CASE_NUMBER": "2025CF1261A1",
+    "CASE_DEFENDANT_ID": 879670,
+    "CHARGE_ID": 1222750,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 257125,
+    "CJIS_CASE_NUMBER": "2018CF3289A1",
+    "CASE_DEFENDANT_ID": 777302,
+    "CHARGE_ID": 1063153,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 257125,
+    "CJIS_CASE_NUMBER": "2018CF3289A2",
+    "CASE_DEFENDANT_ID": 777302,
+    "CHARGE_ID": 1063154,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 258205,
+    "CJIS_CASE_NUMBER": "2024CF1933A1",
+    "CASE_DEFENDANT_ID": 868283,
+    "CHARGE_ID": 1203794,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 258205,
+    "CJIS_CASE_NUMBER": "2024CF1933A2",
+    "CASE_DEFENDANT_ID": 868283,
+    "CHARGE_ID": 1203795,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 258205,
+    "CJIS_CASE_NUMBER": "2024CF2254A1",
+    "CASE_DEFENDANT_ID": 869382,
+    "CHARGE_ID": 1206004,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 258205,
+    "CJIS_CASE_NUMBER": "2024CF2254A2",
+    "CASE_DEFENDANT_ID": 869382,
+    "CHARGE_ID": 1206003,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 258205,
+    "CJIS_CASE_NUMBER": "2026CF1388A1",
+    "CASE_DEFENDANT_ID": 895392,
+    "CHARGE_ID": 1245483,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 258236,
+    "CJIS_CASE_NUMBER": "2026CF1403A1",
+    "CASE_DEFENDANT_ID": 895485,
+    "CHARGE_ID": 1245590,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 258236,
+    "CJIS_CASE_NUMBER": "2026CF1403A2",
+    "CASE_DEFENDANT_ID": 895485,
+    "CHARGE_ID": 1245591,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "150"
+  },
+  {
+    "CJIS_SPN": 258702,
+    "CJIS_CASE_NUMBER": "2026CF1738A1",
+    "CASE_DEFENDANT_ID": 896822,
+    "CHARGE_ID": 1247541,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 259302,
+    "CJIS_CASE_NUMBER": "2020CF3205A2",
+    "CASE_DEFENDANT_ID": 812974,
+    "CHARGE_ID": 1120738,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 259302,
+    "CJIS_CASE_NUMBER": "2020CF3205A3",
+    "CASE_DEFENDANT_ID": 812974,
+    "CHARGE_ID": 1120737,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 259302,
+    "CJIS_CASE_NUMBER": "2020CF3205A5",
+    "CASE_DEFENDANT_ID": 812974,
+    "CHARGE_ID": 1120740,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 259302,
+    "CJIS_CASE_NUMBER": "2020CF3364A1",
+    "CASE_DEFENDANT_ID": 813936,
+    "CHARGE_ID": 1122038,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 259302,
+    "CJIS_CASE_NUMBER": "2020CF3364A10",
+    "CASE_DEFENDANT_ID": 813936,
+    "CHARGE_ID": 1122047,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 259302,
+    "CJIS_CASE_NUMBER": "2020CF3364A2",
+    "CASE_DEFENDANT_ID": 813936,
+    "CHARGE_ID": 1122039,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 259302,
+    "CJIS_CASE_NUMBER": "2020CF3364A3",
+    "CASE_DEFENDANT_ID": 813936,
+    "CHARGE_ID": 1122040,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 259302,
+    "CJIS_CASE_NUMBER": "2020CF3364A4",
+    "CASE_DEFENDANT_ID": 813936,
+    "CHARGE_ID": 1122041,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 259302,
+    "CJIS_CASE_NUMBER": "2020CF3364A5",
+    "CASE_DEFENDANT_ID": 813936,
+    "CHARGE_ID": 1122042,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 259302,
+    "CJIS_CASE_NUMBER": "2020CF3364A6",
+    "CASE_DEFENDANT_ID": 813936,
+    "CHARGE_ID": 1122043,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 259302,
+    "CJIS_CASE_NUMBER": "2020CF3364A7",
+    "CASE_DEFENDANT_ID": 813936,
+    "CHARGE_ID": 1122044,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 259302,
+    "CJIS_CASE_NUMBER": "2020CF3364A8",
+    "CASE_DEFENDANT_ID": 813936,
+    "CHARGE_ID": 1122045,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 259302,
+    "CJIS_CASE_NUMBER": "2020CF3364A9",
+    "CASE_DEFENDANT_ID": 813936,
+    "CHARGE_ID": 1122046,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 259867,
+    "CJIS_CASE_NUMBER": "2026MM1155A1",
+    "CASE_DEFENDANT_ID": 896425,
+    "CHARGE_ID": 1247075,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "10000"
+  },
+  {
+    "CJIS_SPN": 260118,
+    "CJIS_CASE_NUMBER": "2026MM1465A1",
+    "CASE_DEFENDANT_ID": 898435,
+    "CHARGE_ID": 1250431,
+    "STATUS": "O",
+    "LOCATION": "OREC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 260183,
+    "CJIS_CASE_NUMBER": "2021CF268A1",
+    "CASE_DEFENDANT_ID": 815885,
+    "CHARGE_ID": 1124481,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 260821,
+    "CJIS_CASE_NUMBER": "2026CF1976A1",
+    "CASE_DEFENDANT_ID": 898052,
+    "CHARGE_ID": 1249839,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 260821,
+    "CJIS_CASE_NUMBER": "2026CF1976A2",
+    "CASE_DEFENDANT_ID": 898052,
+    "CHARGE_ID": 1249840,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 260821,
+    "CJIS_CASE_NUMBER": "2026MM1626A1",
+    "CASE_DEFENDANT_ID": 899392,
+    "CHARGE_ID": 1251937,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 261698,
+    "CJIS_CASE_NUMBER": "2026CF2005A1",
+    "CASE_DEFENDANT_ID": 898255,
+    "CHARGE_ID": 1250111,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 261760,
+    "CJIS_CASE_NUMBER": "2025MM2356A1",
+    "CASE_DEFENDANT_ID": 890142,
+    "CHARGE_ID": 1236290,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 262781,
+    "CJIS_CASE_NUMBER": "2020CT156A1",
+    "CASE_DEFENDANT_ID": 799338,
+    "CHARGE_ID": 1098549,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 262794,
+    "CJIS_CASE_NUMBER": "2025CF2902A2",
+    "CASE_DEFENDANT_ID": 887894,
+    "CHARGE_ID": 1232747,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 262794,
+    "CJIS_CASE_NUMBER": "2025CF3216A1",
+    "CASE_DEFENDANT_ID": 889173,
+    "CHARGE_ID": 1234734,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 262804,
+    "CJIS_CASE_NUMBER": "2024CF3009A1",
+    "CASE_DEFENDANT_ID": 872385,
+    "CHARGE_ID": 1210613,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 262804,
+    "CJIS_CASE_NUMBER": "2024CF38A1",
+    "CASE_DEFENDANT_ID": 861128,
+    "CHARGE_ID": 1192557,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 263043,
+    "CJIS_CASE_NUMBER": "2026CF1354A1",
+    "CASE_DEFENDANT_ID": 895283,
+    "CHARGE_ID": 1245307,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 263043,
+    "CJIS_CASE_NUMBER": "2026CF1354A2",
+    "CASE_DEFENDANT_ID": 895283,
+    "CHARGE_ID": 1245308,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 263274,
+    "CJIS_CASE_NUMBER": "2025CF1852A1",
+    "CASE_DEFENDANT_ID": 881725,
+    "CHARGE_ID": 1226183,
+    "STATUS": "D",
+    "LOCATION": "RLSDDS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 263274,
+    "CJIS_CASE_NUMBER": "2025CF641A1",
+    "CASE_DEFENDANT_ID": 877197,
+    "CHARGE_ID": 1218362,
+    "STATUS": "D",
+    "LOCATION": "RLSDDS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 263727,
+    "CJIS_CASE_NUMBER": "2025HH499A1",
+    "CASE_DEFENDANT_ID": 880411,
+    "CHARGE_ID": 1223913,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 263753,
+    "CJIS_CASE_NUMBER": "2026MM1176A1",
+    "CASE_DEFENDANT_ID": 896686,
+    "CHARGE_ID": 1247343,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 264027,
+    "CJIS_CASE_NUMBER": "2026MM1838A1",
+    "CASE_DEFENDANT_ID": 900189,
+    "CHARGE_ID": 1252108,
+    "STATUS": "D",
+    "LOCATION": "OREC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 264027,
+    "CJIS_CASE_NUMBER": "2026MM1838A2",
+    "CASE_DEFENDANT_ID": 900189,
+    "CHARGE_ID": 1252109,
+    "STATUS": "D",
+    "LOCATION": "OREC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 264027,
+    "CJIS_CASE_NUMBER": "2026MM1838A3",
+    "CASE_DEFENDANT_ID": 900189,
+    "CHARGE_ID": 1252110,
+    "STATUS": "D",
+    "LOCATION": "OREC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 264173,
+    "CJIS_CASE_NUMBER": "2026CT1021A1",
+    "CASE_DEFENDANT_ID": 898336,
+    "CHARGE_ID": 1250282,
+    "STATUS": "R",
+    "LOCATION": "LCJ",
+    "BOND_AMT": "NOBOND"
+  },
+  {
+    "CJIS_SPN": 264536,
+    "CJIS_CASE_NUMBER": "2026CF1097A1",
+    "CASE_DEFENDANT_ID": 894323,
+    "CHARGE_ID": 1243888,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 264536,
+    "CJIS_CASE_NUMBER": "2026CF1097A2",
+    "CASE_DEFENDANT_ID": 894323,
+    "CHARGE_ID": 1243889,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 264536,
+    "CJIS_CASE_NUMBER": "2026CF1097A3",
+    "CASE_DEFENDANT_ID": 894323,
+    "CHARGE_ID": 1243890,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 264536,
+    "CJIS_CASE_NUMBER": "2026CF1097A4",
+    "CASE_DEFENDANT_ID": 894323,
+    "CHARGE_ID": 1243892,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 264536,
+    "CJIS_CASE_NUMBER": "2026CF1097A5",
+    "CASE_DEFENDANT_ID": 894323,
+    "CHARGE_ID": 1243891,
+    "STATUS": "D",
+    "LOCATION": "RLSDNI",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 264536,
+    "CJIS_CASE_NUMBER": "2026MM877A1",
+    "CASE_DEFENDANT_ID": 895001,
+    "CHARGE_ID": 1244864,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 265008,
+    "CJIS_CASE_NUMBER": "2020CF3008A1",
+    "CASE_DEFENDANT_ID": 811714,
+    "CHARGE_ID": 1120047,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 265008,
+    "CJIS_CASE_NUMBER": "2020CF3008A2",
+    "CASE_DEFENDANT_ID": 811714,
+    "CHARGE_ID": 1119086,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 265875,
+    "CJIS_CASE_NUMBER": "2026CF950A1",
+    "CASE_DEFENDANT_ID": 893798,
+    "CHARGE_ID": 1243042,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 265875,
+    "CJIS_CASE_NUMBER": "2026CF950A2",
+    "CASE_DEFENDANT_ID": 893798,
+    "CHARGE_ID": 1243043,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 266065,
+    "CJIS_CASE_NUMBER": "2025CF2141A1",
+    "CASE_DEFENDANT_ID": 882913,
+    "CHARGE_ID": 1227981,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 266065,
+    "CJIS_CASE_NUMBER": "2026CF1107A1",
+    "CASE_DEFENDANT_ID": 894350,
+    "CHARGE_ID": 1243938,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 266065,
+    "CJIS_CASE_NUMBER": "2026CF1120A1",
+    "CASE_DEFENDANT_ID": 894391,
+    "CHARGE_ID": 1244004,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 266073,
+    "CJIS_CASE_NUMBER": "2024CF2575A1",
+    "CASE_DEFENDANT_ID": 870599,
+    "CHARGE_ID": 1207858,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 266073,
+    "CJIS_CASE_NUMBER": "2026CF1951A1",
+    "CASE_DEFENDANT_ID": 897938,
+    "CHARGE_ID": 1249692,
+    "STATUS": "D",
+    "LOCATION": "RLSDCC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 266073,
+    "CJIS_CASE_NUMBER": "2026CF1951A2",
+    "CASE_DEFENDANT_ID": 897938,
+    "CHARGE_ID": 1249690,
+    "STATUS": "D",
+    "LOCATION": "RLSDCC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 266073,
+    "CJIS_CASE_NUMBER": "2026CF1951A3",
+    "CASE_DEFENDANT_ID": 897938,
+    "CHARGE_ID": 1249689,
+    "STATUS": "D",
+    "LOCATION": "RLSDCC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 266073,
+    "CJIS_CASE_NUMBER": "2026CF1951A4",
+    "CASE_DEFENDANT_ID": 897938,
+    "CHARGE_ID": 1249691,
+    "STATUS": "D",
+    "LOCATION": "RLSDNI",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 266736,
+    "CJIS_CASE_NUMBER": "2026CF970A1",
+    "CASE_DEFENDANT_ID": 893914,
+    "CHARGE_ID": 1243190,
+    "STATUS": "D",
+    "LOCATION": "RLSD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 266736,
+    "CJIS_CASE_NUMBER": "2026CF970A5",
+    "CASE_DEFENDANT_ID": 893914,
+    "CHARGE_ID": 1243189,
+    "STATUS": "D",
+    "LOCATION": "RLSD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 266736,
+    "CJIS_CASE_NUMBER": "2026CF970A6",
+    "CASE_DEFENDANT_ID": 893914,
+    "CHARGE_ID": 1243188,
+    "STATUS": "D",
+    "LOCATION": "RLSD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 266743,
+    "CJIS_CASE_NUMBER": "2025CF2034A1",
+    "CASE_DEFENDANT_ID": 882502,
+    "CHARGE_ID": 1227341,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 266855,
+    "CJIS_CASE_NUMBER": "2026CF1838A1",
+    "CASE_DEFENDANT_ID": 897322,
+    "CHARGE_ID": 1248341,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "5000"
+  },
+  {
+    "CJIS_SPN": 266855,
+    "CJIS_CASE_NUMBER": "2026CF1838A2",
+    "CASE_DEFENDANT_ID": 897322,
+    "CHARGE_ID": 1248340,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "5000"
+  },
+  {
+    "CJIS_SPN": 266855,
+    "CJIS_CASE_NUMBER": "2026CF1838A3",
+    "CASE_DEFENDANT_ID": 897322,
+    "CHARGE_ID": 1248342,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 266855,
+    "CJIS_CASE_NUMBER": "2026CF1838A4",
+    "CASE_DEFENDANT_ID": 897322,
+    "CHARGE_ID": 1248343,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 267514,
+    "CJIS_CASE_NUMBER": "2026CF1971A1",
+    "CASE_DEFENDANT_ID": 898044,
+    "CHARGE_ID": 1249825,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "10000"
+  },
+  {
+    "CJIS_SPN": 267639,
+    "CJIS_CASE_NUMBER": "2025CT1892A1",
+    "CASE_DEFENDANT_ID": 888625,
+    "CHARGE_ID": 1233986,
+    "STATUS": "D",
+    "LOCATION": "RLSD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 267639,
+    "CJIS_CASE_NUMBER": "2025CT849A1",
+    "CASE_DEFENDANT_ID": 880158,
+    "CHARGE_ID": 1223562,
+    "STATUS": "D",
+    "LOCATION": "RLSD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 267639,
+    "CJIS_CASE_NUMBER": "2025MM2329A1",
+    "CASE_DEFENDANT_ID": 890032,
+    "CHARGE_ID": 1236115,
+    "STATUS": "D",
+    "LOCATION": "RLSD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 267850,
+    "CJIS_CASE_NUMBER": "2026MM1630A1",
+    "CASE_DEFENDANT_ID": 899412,
+    "CHARGE_ID": 1251969,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 267850,
+    "CJIS_CASE_NUMBER": "2026MM1630A2",
+    "CASE_DEFENDANT_ID": 899412,
+    "CHARGE_ID": 1251970,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 268117,
+    "CJIS_CASE_NUMBER": "2025CF1048A1",
+    "CASE_DEFENDANT_ID": 878722,
+    "CHARGE_ID": 1221303,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 268686,
+    "CJIS_CASE_NUMBER": "2025CF3298A1",
+    "CASE_DEFENDANT_ID": 889466,
+    "CHARGE_ID": 1235179,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 268690,
+    "CJIS_CASE_NUMBER": "2022MM190A1",
+    "CASE_DEFENDANT_ID": 832113,
+    "CHARGE_ID": 1148319,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 268877,
+    "CJIS_CASE_NUMBER": "2025CF1515A1",
+    "CASE_DEFENDANT_ID": 880543,
+    "CHARGE_ID": 1224157,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 269313,
+    "CJIS_CASE_NUMBER": "2025CF1609A1",
+    "CASE_DEFENDANT_ID": 880893,
+    "CHARGE_ID": 1224737,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 269313,
+    "CJIS_CASE_NUMBER": "2025CF1609A2",
+    "CASE_DEFENDANT_ID": 880893,
+    "CHARGE_ID": 1224738,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 269313,
+    "CJIS_CASE_NUMBER": "2025CF2498A1",
+    "CASE_DEFENDANT_ID": 886210,
+    "CHARGE_ID": 1230159,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 269313,
+    "CJIS_CASE_NUMBER": "2025CF2498A2",
+    "CASE_DEFENDANT_ID": 886210,
+    "CHARGE_ID": 1230160,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 269313,
+    "CJIS_CASE_NUMBER": "2025CF2498A3",
+    "CASE_DEFENDANT_ID": 886210,
+    "CHARGE_ID": 1230163,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 269335,
+    "CJIS_CASE_NUMBER": "2026MM930A1",
+    "CASE_DEFENDANT_ID": 895309,
+    "CHARGE_ID": 1245337,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 269335,
+    "CJIS_CASE_NUMBER": "2026MM931A1",
+    "CASE_DEFENDANT_ID": 895310,
+    "CHARGE_ID": 1245338,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 270934,
+    "CJIS_CASE_NUMBER": "2026CF1948A1",
+    "CASE_DEFENDANT_ID": 897918,
+    "CHARGE_ID": 1249651,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 270934,
+    "CJIS_CASE_NUMBER": "2026CF1948A2",
+    "CASE_DEFENDANT_ID": 897918,
+    "CHARGE_ID": 1249652,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 271530,
+    "CJIS_CASE_NUMBER": "2026CT748A1",
+    "CASE_DEFENDANT_ID": 895990,
+    "CHARGE_ID": 1246420,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 271530,
+    "CJIS_CASE_NUMBER": "2026CT748A3",
+    "CASE_DEFENDANT_ID": 895990,
+    "CHARGE_ID": 1246422,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 271539,
+    "CJIS_CASE_NUMBER": "2022CF3621A1",
+    "CASE_DEFENDANT_ID": 844557,
+    "CHARGE_ID": 1167829,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 271552,
+    "CJIS_CASE_NUMBER": "2026CF904A1",
+    "CASE_DEFENDANT_ID": 893643,
+    "CHARGE_ID": 1242811,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 271552,
+    "CJIS_CASE_NUMBER": "2026CF904A2",
+    "CASE_DEFENDANT_ID": 893643,
+    "CHARGE_ID": 1242810,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 271552,
+    "CJIS_CASE_NUMBER": "2026CF904A3",
+    "CASE_DEFENDANT_ID": 893643,
+    "CHARGE_ID": 1242812,
+    "STATUS": "D",
+    "LOCATION": "RLSDNI",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 271552,
+    "CJIS_CASE_NUMBER": "2026CF904A4",
+    "CASE_DEFENDANT_ID": 893643,
+    "CHARGE_ID": 1242813,
+    "STATUS": "D",
+    "LOCATION": "RLSDNI",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 272078,
+    "CJIS_CASE_NUMBER": "2025CF1862A1",
+    "CASE_DEFENDANT_ID": 881771,
+    "CHARGE_ID": 1226240,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 272233,
+    "CJIS_CASE_NUMBER": "2023CF1679A1",
+    "CASE_DEFENDANT_ID": 852392,
+    "CHARGE_ID": 1179605,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 272233,
+    "CJIS_CASE_NUMBER": "2023CF1679A2",
+    "CASE_DEFENDANT_ID": 852392,
+    "CHARGE_ID": 1179998,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 272233,
+    "CJIS_CASE_NUMBER": "2023CF1679A3",
+    "CASE_DEFENDANT_ID": 852392,
+    "CHARGE_ID": 1179999,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 272233,
+    "CJIS_CASE_NUMBER": "2023CF1679A4",
+    "CASE_DEFENDANT_ID": 852392,
+    "CHARGE_ID": 1180000,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 272233,
+    "CJIS_CASE_NUMBER": "2023CF1679A5",
+    "CASE_DEFENDANT_ID": 852392,
+    "CHARGE_ID": 1179606,
+    "STATUS": "D",
+    "LOCATION": "RLSDNI",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 272468,
+    "CJIS_CASE_NUMBER": "2026CF870A1",
+    "CASE_DEFENDANT_ID": 893531,
+    "CHARGE_ID": 1242626,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 272468,
+    "CJIS_CASE_NUMBER": "2026CF870A2",
+    "CASE_DEFENDANT_ID": 893531,
+    "CHARGE_ID": 1242627,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 272517,
+    "CJIS_CASE_NUMBER": "2025CF1610A1",
+    "CASE_DEFENDANT_ID": 880900,
+    "CHARGE_ID": 1224754,
+    "STATUS": "D",
+    "LOCATION": "RLSDWD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 272684,
+    "CJIS_CASE_NUMBER": "2023CF2262A1",
+    "CASE_DEFENDANT_ID": 855261,
+    "CHARGE_ID": 1183803,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 272684,
+    "CJIS_CASE_NUMBER": "2023CF2262A2",
+    "CASE_DEFENDANT_ID": 855261,
+    "CHARGE_ID": 1183804,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 272684,
+    "CJIS_CASE_NUMBER": "2023CF2262A3",
+    "CASE_DEFENDANT_ID": 855261,
+    "CHARGE_ID": 1183805,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 272684,
+    "CJIS_CASE_NUMBER": "2023CF2263A1",
+    "CASE_DEFENDANT_ID": 855262,
+    "CHARGE_ID": 1183807,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 272684,
+    "CJIS_CASE_NUMBER": "2024CF834A1",
+    "CASE_DEFENDANT_ID": 864323,
+    "CHARGE_ID": 1197371,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 272804,
+    "CJIS_CASE_NUMBER": "2023CF1260A1",
+    "CASE_DEFENDANT_ID": 850544,
+    "CHARGE_ID": 1176867,
+    "STATUS": "O",
+    "LOCATION": "OREC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 272804,
+    "CJIS_CASE_NUMBER": "2023CF1260A2",
+    "CASE_DEFENDANT_ID": 850544,
+    "CHARGE_ID": 1176868,
+    "STATUS": "O",
+    "LOCATION": "OREC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 272891,
+    "CJIS_CASE_NUMBER": "2026CF1513A1",
+    "CASE_DEFENDANT_ID": 895867,
+    "CHARGE_ID": 1246211,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 272930,
+    "CJIS_CASE_NUMBER": "2023CF1408A1",
+    "CASE_DEFENDANT_ID": 851235,
+    "CHARGE_ID": 1177849,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 273100,
+    "CJIS_CASE_NUMBER": "2026CF1406A1",
+    "CASE_DEFENDANT_ID": 895507,
+    "CHARGE_ID": 1245612,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 273100,
+    "CJIS_CASE_NUMBER": "2026CF1406A2",
+    "CASE_DEFENDANT_ID": 895507,
+    "CHARGE_ID": 1245611,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 273100,
+    "CJIS_CASE_NUMBER": "2026CF1670A1",
+    "CASE_DEFENDANT_ID": 896455,
+    "CHARGE_ID": 1247108,
+    "STATUS": "D",
+    "LOCATION": "RLSDWD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 273256,
+    "CJIS_CASE_NUMBER": "2023CF1789A1",
+    "CASE_DEFENDANT_ID": 852872,
+    "CHARGE_ID": 1180216,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 273319,
+    "CJIS_CASE_NUMBER": "2026CF1707A3",
+    "CASE_DEFENDANT_ID": 896734,
+    "CHARGE_ID": 1247413,
+    "STATUS": "D",
+    "LOCATION": "RLSD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 273319,
+    "CJIS_CASE_NUMBER": "2026CF1708A1",
+    "CASE_DEFENDANT_ID": 896735,
+    "CHARGE_ID": 1247414,
+    "STATUS": "D",
+    "LOCATION": "RLSDCC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 273319,
+    "CJIS_CASE_NUMBER": "2026CF1708A3",
+    "CASE_DEFENDANT_ID": 896735,
+    "CHARGE_ID": 1247415,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 273592,
+    "CJIS_CASE_NUMBER": "2023CF2232A1",
+    "CASE_DEFENDANT_ID": 855176,
+    "CHARGE_ID": 1183673,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 273829,
+    "CJIS_CASE_NUMBER": "2023CF2943A1",
+    "CASE_DEFENDANT_ID": 858265,
+    "CHARGE_ID": 1188156,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 273829,
+    "CJIS_CASE_NUMBER": "2023CF2943A2",
+    "CASE_DEFENDANT_ID": 858265,
+    "CHARGE_ID": 1188157,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 273946,
+    "CJIS_CASE_NUMBER": "2026CF1805A1",
+    "CASE_DEFENDANT_ID": 897219,
+    "CHARGE_ID": 1248064,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 273946,
+    "CJIS_CASE_NUMBER": "2026CF1805A2",
+    "CASE_DEFENDANT_ID": 897219,
+    "CHARGE_ID": 1248065,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 274094,
+    "CJIS_CASE_NUMBER": "2025CF1551A1",
+    "CASE_DEFENDANT_ID": 880650,
+    "CHARGE_ID": 1224355,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 274094,
+    "CJIS_CASE_NUMBER": "2025CF2119A1",
+    "CASE_DEFENDANT_ID": 882804,
+    "CHARGE_ID": 1227806,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 274242,
+    "CJIS_CASE_NUMBER": "2023CF2967A1",
+    "CASE_DEFENDANT_ID": 858352,
+    "CHARGE_ID": 1188315,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 274242,
+    "CJIS_CASE_NUMBER": "2023CF2967A2",
+    "CASE_DEFENDANT_ID": 858352,
+    "CHARGE_ID": 1188316,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 274336,
+    "CJIS_CASE_NUMBER": "2024CF1142A2",
+    "CASE_DEFENDANT_ID": 865529,
+    "CHARGE_ID": 1199282,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 274336,
+    "CJIS_CASE_NUMBER": "2024CF1142A3",
+    "CASE_DEFENDANT_ID": 865529,
+    "CHARGE_ID": 1199279,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 274336,
+    "CJIS_CASE_NUMBER": "2024CF1142A4",
+    "CASE_DEFENDANT_ID": 865529,
+    "CHARGE_ID": 1199280,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 274486,
+    "CJIS_CASE_NUMBER": "2023CF3259A10",
+    "CASE_DEFENDANT_ID": 859572,
+    "CHARGE_ID": 1190076,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 274486,
+    "CJIS_CASE_NUMBER": "2023CF3259A5",
+    "CASE_DEFENDANT_ID": 859572,
+    "CHARGE_ID": 1190071,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 274486,
+    "CJIS_CASE_NUMBER": "2023CF3259A6",
+    "CASE_DEFENDANT_ID": 859572,
+    "CHARGE_ID": 1190072,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 274486,
+    "CJIS_CASE_NUMBER": "2023CF3259A7",
+    "CASE_DEFENDANT_ID": 859572,
+    "CHARGE_ID": 1190073,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 274486,
+    "CJIS_CASE_NUMBER": "2023CF3259A8",
+    "CASE_DEFENDANT_ID": 859572,
+    "CHARGE_ID": 1190074,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 274486,
+    "CJIS_CASE_NUMBER": "2023CF3259A9",
+    "CASE_DEFENDANT_ID": 859572,
+    "CHARGE_ID": 1190075,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 274945,
+    "CJIS_CASE_NUMBER": "2026MM1562A1",
+    "CASE_DEFENDANT_ID": 899022,
+    "CHARGE_ID": 1251379,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 275138,
+    "CJIS_CASE_NUMBER": "2025CF2288A1",
+    "CASE_DEFENDANT_ID": 883658,
+    "CHARGE_ID": 1228979,
+    "STATUS": "D",
+    "LOCATION": "OREC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 275138,
+    "CJIS_CASE_NUMBER": "2025CF2288A2",
+    "CASE_DEFENDANT_ID": 883658,
+    "CHARGE_ID": 1228980,
+    "STATUS": "D",
+    "LOCATION": "OREC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 275138,
+    "CJIS_CASE_NUMBER": "2025CF2288A3",
+    "CASE_DEFENDANT_ID": 883658,
+    "CHARGE_ID": 1228981,
+    "STATUS": "D",
+    "LOCATION": "OREC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 275294,
+    "CJIS_CASE_NUMBER": "2024CF661A2",
+    "CASE_DEFENDANT_ID": 863644,
+    "CHARGE_ID": 1196432,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 275403,
+    "CJIS_CASE_NUMBER": "2024MM2086A1",
+    "CASE_DEFENDANT_ID": 872318,
+    "CHARGE_ID": 1210519,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 275425,
+    "CJIS_CASE_NUMBER": "2024CF813A1",
+    "CASE_DEFENDANT_ID": 864234,
+    "CHARGE_ID": 1197236,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 275704,
+    "CJIS_CASE_NUMBER": "2024MM873A1",
+    "CASE_DEFENDANT_ID": 865648,
+    "CHARGE_ID": 1199426,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 27596,
+    "CJIS_CASE_NUMBER": "2026CF1252A1",
+    "CASE_DEFENDANT_ID": 894927,
+    "CHARGE_ID": 1244749,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 275987,
+    "CJIS_CASE_NUMBER": "2025CF2882A1",
+    "CASE_DEFENDANT_ID": 887830,
+    "CHARGE_ID": 1232662,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 275987,
+    "CJIS_CASE_NUMBER": "2025CF2882A2",
+    "CASE_DEFENDANT_ID": 887830,
+    "CHARGE_ID": 1232663,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 275987,
+    "CJIS_CASE_NUMBER": "2025CF2882A3",
+    "CASE_DEFENDANT_ID": 887830,
+    "CHARGE_ID": 1232665,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 275987,
+    "CJIS_CASE_NUMBER": "2025CF2882A4",
+    "CASE_DEFENDANT_ID": 887830,
+    "CHARGE_ID": 1235961,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 275987,
+    "CJIS_CASE_NUMBER": "2025CF2882A5",
+    "CASE_DEFENDANT_ID": 887830,
+    "CHARGE_ID": 1232664,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 275987,
+    "CJIS_CASE_NUMBER": "2025CF2882A6",
+    "CASE_DEFENDANT_ID": 887830,
+    "CHARGE_ID": 1232668,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 275987,
+    "CJIS_CASE_NUMBER": "2025CF2882A7",
+    "CASE_DEFENDANT_ID": 887830,
+    "CHARGE_ID": 1232666,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 275987,
+    "CJIS_CASE_NUMBER": "2025CF2882A8",
+    "CASE_DEFENDANT_ID": 887830,
+    "CHARGE_ID": 1232667,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 275999,
+    "CJIS_CASE_NUMBER": "2026MM1293A1",
+    "CASE_DEFENDANT_ID": 897445,
+    "CHARGE_ID": 1248615,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 276800,
+    "CJIS_CASE_NUMBER": "2025CF3215A1",
+    "CASE_DEFENDANT_ID": 889171,
+    "CHARGE_ID": 1234732,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 276840,
+    "CJIS_CASE_NUMBER": "2026CF984A3",
+    "CASE_DEFENDANT_ID": 893958,
+    "CHARGE_ID": 1253236,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 276840,
+    "CJIS_CASE_NUMBER": "2026CF984A4",
+    "CASE_DEFENDANT_ID": 893958,
+    "CHARGE_ID": 1253237,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 276840,
+    "CJIS_CASE_NUMBER": "2026CF984A5",
+    "CASE_DEFENDANT_ID": 893958,
+    "CHARGE_ID": 1253238,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 276864,
+    "CJIS_CASE_NUMBER": "2024CF2329F1",
+    "CASE_DEFENDANT_ID": 887138,
+    "CHARGE_ID": 1231436,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 276864,
+    "CJIS_CASE_NUMBER": "2024CF2329F4",
+    "CASE_DEFENDANT_ID": 887138,
+    "CHARGE_ID": 1231438,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 276864,
+    "CJIS_CASE_NUMBER": "2024CF2329F5",
+    "CASE_DEFENDANT_ID": 887138,
+    "CHARGE_ID": 1231437,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 276945,
+    "CJIS_CASE_NUMBER": "2026HH551A1",
+    "CASE_DEFENDANT_ID": 896167,
+    "CHARGE_ID": 1246731,
+    "STATUS": "D",
+    "LOCATION": "OTJA",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 276945,
+    "CJIS_CASE_NUMBER": "2026HH551A2",
+    "CASE_DEFENDANT_ID": 896167,
+    "CHARGE_ID": 1246732,
+    "STATUS": "D",
+    "LOCATION": "OTJA",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 276945,
+    "CJIS_CASE_NUMBER": "2026HH551A3",
+    "CASE_DEFENDANT_ID": 896167,
+    "CHARGE_ID": 1246733,
+    "STATUS": "D",
+    "LOCATION": "OTJA",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 276945,
+    "CJIS_CASE_NUMBER": "2026HH551A4",
+    "CASE_DEFENDANT_ID": 896167,
+    "CHARGE_ID": 1246734,
+    "STATUS": "D",
+    "LOCATION": "OTJA",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 277142,
+    "CJIS_CASE_NUMBER": "2024CF2936A1",
+    "CASE_DEFENDANT_ID": 872046,
+    "CHARGE_ID": 1210122,
+    "STATUS": "D",
+    "LOCATION": "RLSDNG",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 277270,
+    "CJIS_CASE_NUMBER": "2026MM1625A1",
+    "CASE_DEFENDANT_ID": 899391,
+    "CHARGE_ID": 1251936,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 277524,
+    "CJIS_CASE_NUMBER": "2024CF3456A1",
+    "CASE_DEFENDANT_ID": 874137,
+    "CHARGE_ID": 1215418,
+    "STATUS": "O",
+    "LOCATION": "RLSD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 277524,
+    "CJIS_CASE_NUMBER": "2025CF1566A1",
+    "CASE_DEFENDANT_ID": 880703,
+    "CHARGE_ID": 1224425,
+    "STATUS": "O",
+    "LOCATION": "RLSD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 277524,
+    "CJIS_CASE_NUMBER": "2025CF1566A2",
+    "CASE_DEFENDANT_ID": 880703,
+    "CHARGE_ID": 1224426,
+    "STATUS": "O",
+    "LOCATION": "RLSD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 277643,
+    "CJIS_CASE_NUMBER": "2024CF3498A1",
+    "CASE_DEFENDANT_ID": 874290,
+    "CHARGE_ID": 1213910,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 277643,
+    "CJIS_CASE_NUMBER": "2024CF3498A2",
+    "CASE_DEFENDANT_ID": 874290,
+    "CHARGE_ID": 1213911,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 277643,
+    "CJIS_CASE_NUMBER": "2024CF3498A3",
+    "CASE_DEFENDANT_ID": 874290,
+    "CHARGE_ID": 1213912,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 277643,
+    "CJIS_CASE_NUMBER": "2024CF3498A4",
+    "CASE_DEFENDANT_ID": 874290,
+    "CHARGE_ID": 1213913,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 277643,
+    "CJIS_CASE_NUMBER": "2024CF3498A5",
+    "CASE_DEFENDANT_ID": 874290,
+    "CHARGE_ID": 1213914,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 277643,
+    "CJIS_CASE_NUMBER": "2024CF3498A6",
+    "CASE_DEFENDANT_ID": 874290,
+    "CHARGE_ID": 1213915,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 277643,
+    "CJIS_CASE_NUMBER": "2024CF3498A7",
+    "CASE_DEFENDANT_ID": 874290,
+    "CHARGE_ID": 1213916,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 277643,
+    "CJIS_CASE_NUMBER": "2024CF3498A8",
+    "CASE_DEFENDANT_ID": 874290,
+    "CHARGE_ID": 1213917,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 277728,
+    "CJIS_CASE_NUMBER": "2025CF111A1",
+    "CASE_DEFENDANT_ID": 875268,
+    "CHARGE_ID": 1215387,
+    "STATUS": "D",
+    "LOCATION": "RLSD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 277728,
+    "CJIS_CASE_NUMBER": "2026CF1685A2",
+    "CASE_DEFENDANT_ID": 896635,
+    "CHARGE_ID": 1247302,
+    "STATUS": "D",
+    "LOCATION": "RLSD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 277747,
+    "CJIS_CASE_NUMBER": "2026CT327A1",
+    "CASE_DEFENDANT_ID": 892969,
+    "CHARGE_ID": 1241113,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 277747,
+    "CJIS_CASE_NUMBER": "2026CT327A2",
+    "CASE_DEFENDANT_ID": 892969,
+    "CHARGE_ID": 1241114,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 278062,
+    "CJIS_CASE_NUMBER": "2025CF323A1",
+    "CASE_DEFENDANT_ID": 876017,
+    "CHARGE_ID": 1216513,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "10000"
+  },
+  {
+    "CJIS_SPN": 278062,
+    "CJIS_CASE_NUMBER": "2025CF323A2",
+    "CASE_DEFENDANT_ID": 876017,
+    "CHARGE_ID": 1216517,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 278062,
+    "CJIS_CASE_NUMBER": "2025CF323A3",
+    "CASE_DEFENDANT_ID": 876017,
+    "CHARGE_ID": 1216516,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 278062,
+    "CJIS_CASE_NUMBER": "2025CF323A4",
+    "CASE_DEFENDANT_ID": 876017,
+    "CHARGE_ID": 1216514,
+    "STATUS": "D",
+    "LOCATION": "RLSDNI",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 278062,
+    "CJIS_CASE_NUMBER": "2025CF323A5",
+    "CASE_DEFENDANT_ID": 876017,
+    "CHARGE_ID": 1216515,
+    "STATUS": "D",
+    "LOCATION": "RLSDNI",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 278075,
+    "CJIS_CASE_NUMBER": "2025MM250A1",
+    "CASE_DEFENDANT_ID": 876069,
+    "CHARGE_ID": 1216588,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 278162,
+    "CJIS_CASE_NUMBER": "2025CF3396A1",
+    "CASE_DEFENDANT_ID": 889920,
+    "CHARGE_ID": 1235945,
+    "STATUS": "D",
+    "LOCATION": "RLSDWD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 278162,
+    "CJIS_CASE_NUMBER": "2025CF3396A2",
+    "CASE_DEFENDANT_ID": 889920,
+    "CHARGE_ID": 1235946,
+    "STATUS": "D",
+    "LOCATION": "RLSDWD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 278162,
+    "CJIS_CASE_NUMBER": "2025CF3396A3",
+    "CASE_DEFENDANT_ID": 889920,
+    "CHARGE_ID": 1235947,
+    "STATUS": "D",
+    "LOCATION": "RLSDWD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 278167,
+    "CJIS_CASE_NUMBER": "2025CF2234A1",
+    "CASE_DEFENDANT_ID": 883334,
+    "CHARGE_ID": 1228563,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 278539,
+    "CJIS_CASE_NUMBER": "2025CF3432A1",
+    "CASE_DEFENDANT_ID": 890049,
+    "CHARGE_ID": 1236147,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 278539,
+    "CJIS_CASE_NUMBER": "2025CF3432A2",
+    "CASE_DEFENDANT_ID": 890049,
+    "CHARGE_ID": 1236148,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 278638,
+    "CJIS_CASE_NUMBER": "2025CF2112A1",
+    "CASE_DEFENDANT_ID": 882785,
+    "CHARGE_ID": 1227781,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 278638,
+    "CJIS_CASE_NUMBER": "2025CF2112A2",
+    "CASE_DEFENDANT_ID": 882785,
+    "CHARGE_ID": 1227782,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 278638,
+    "CJIS_CASE_NUMBER": "2025CF2112A3",
+    "CASE_DEFENDANT_ID": 882785,
+    "CHARGE_ID": 1227780,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 278658,
+    "CJIS_CASE_NUMBER": "2026CF1427A1",
+    "CASE_DEFENDANT_ID": 895563,
+    "CHARGE_ID": 1245706,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1500"
+  },
+  {
+    "CJIS_SPN": 278658,
+    "CJIS_CASE_NUMBER": "2026CF1427A2",
+    "CASE_DEFENDANT_ID": 895563,
+    "CHARGE_ID": 1245705,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 278925,
+    "CJIS_CASE_NUMBER": "2026MM1047A1",
+    "CASE_DEFENDANT_ID": 895882,
+    "CHARGE_ID": 1246245,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 279312,
+    "CJIS_CASE_NUMBER": "2025CF2619A1",
+    "CASE_DEFENDANT_ID": 886860,
+    "CHARGE_ID": 1230996,
+    "STATUS": "D",
+    "LOCATION": "RLSDCC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 279424,
+    "CJIS_CASE_NUMBER": "2025CF3175A1",
+    "CASE_DEFENDANT_ID": 889044,
+    "CHARGE_ID": 1234540,
+    "STATUS": "D",
+    "LOCATION": "RLSDWD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 279424,
+    "CJIS_CASE_NUMBER": "2025CF3175A2",
+    "CASE_DEFENDANT_ID": 889044,
+    "CHARGE_ID": 1234541,
+    "STATUS": "D",
+    "LOCATION": "RLSDWD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 279424,
+    "CJIS_CASE_NUMBER": "2025CF3175A3",
+    "CASE_DEFENDANT_ID": 889044,
+    "CHARGE_ID": 1234542,
+    "STATUS": "D",
+    "LOCATION": "RLSDWD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 279424,
+    "CJIS_CASE_NUMBER": "2025CF3175A4",
+    "CASE_DEFENDANT_ID": 889044,
+    "CHARGE_ID": 1234543,
+    "STATUS": "D",
+    "LOCATION": "RLSDWD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 279530,
+    "CJIS_CASE_NUMBER": "2025MM1437A1",
+    "CASE_DEFENDANT_ID": 883088,
+    "CHARGE_ID": 1228203,
+    "STATUS": "V",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 279639,
+    "CJIS_CASE_NUMBER": "2026CT305A1",
+    "CASE_DEFENDANT_ID": 892830,
+    "CHARGE_ID": 1240878,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 279644,
+    "CJIS_CASE_NUMBER": "2026CF2084A1",
+    "CASE_DEFENDANT_ID": 898635,
+    "CHARGE_ID": 1250734,
+    "STATUS": "O",
+    "LOCATION": "OREC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 279644,
+    "CJIS_CASE_NUMBER": "2026CF2084A2",
+    "CASE_DEFENDANT_ID": 898635,
+    "CHARGE_ID": 1250735,
+    "STATUS": "O",
+    "LOCATION": "OREC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 279669,
+    "CJIS_CASE_NUMBER": "2025CF2350A1",
+    "CASE_DEFENDANT_ID": 883902,
+    "CHARGE_ID": 1229330,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 279669,
+    "CJIS_CASE_NUMBER": "2026MM1629A1",
+    "CASE_DEFENDANT_ID": 899409,
+    "CHARGE_ID": 1251963,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 279825,
+    "CJIS_CASE_NUMBER": "2025CF2912A1",
+    "CASE_DEFENDANT_ID": 887940,
+    "CHARGE_ID": 1232847,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 279825,
+    "CJIS_CASE_NUMBER": "2026MM866A1",
+    "CASE_DEFENDANT_ID": 894939,
+    "CHARGE_ID": 1244771,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 279941,
+    "CJIS_CASE_NUMBER": "2025CF2681A1",
+    "CASE_DEFENDANT_ID": 887125,
+    "CHARGE_ID": 1231417,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 280177,
+    "CJIS_CASE_NUMBER": "2025CT1818A1",
+    "CASE_DEFENDANT_ID": 888139,
+    "CHARGE_ID": 1233159,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 280221,
+    "CJIS_CASE_NUMBER": "2025CF3021A1",
+    "CASE_DEFENDANT_ID": 888356,
+    "CHARGE_ID": 1233520,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 280221,
+    "CJIS_CASE_NUMBER": "2025HV65A1",
+    "CASE_DEFENDANT_ID": 888354,
+    "CHARGE_ID": 1233518,
+    "STATUS": "D",
+    "LOCATION": "OTJA",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 280408,
+    "CJIS_CASE_NUMBER": "2025CF3206A1",
+    "CASE_DEFENDANT_ID": 889157,
+    "CHARGE_ID": 1234708,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 280502,
+    "CJIS_CASE_NUMBER": "2025MM2299A1",
+    "CASE_DEFENDANT_ID": 889862,
+    "CHARGE_ID": 1235826,
+    "STATUS": "D",
+    "LOCATION": "RLSDNI",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 28055,
+    "CJIS_CASE_NUMBER": "2026CF1647A1",
+    "CASE_DEFENDANT_ID": 896352,
+    "CHARGE_ID": 1246978,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "10000"
+  },
+  {
+    "CJIS_SPN": 28055,
+    "CJIS_CASE_NUMBER": "2026CF1647A2",
+    "CASE_DEFENDANT_ID": 896352,
+    "CHARGE_ID": 1246980,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 28055,
+    "CJIS_CASE_NUMBER": "2026CF1647A3",
+    "CASE_DEFENDANT_ID": 896352,
+    "CHARGE_ID": 1246979,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 280600,
+    "CJIS_CASE_NUMBER": "2025CF3479A1",
+    "CASE_DEFENDANT_ID": 890183,
+    "CHARGE_ID": 1236343,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 280606,
+    "CJIS_CASE_NUMBER": "2025CF3489A1",
+    "CASE_DEFENDANT_ID": 890201,
+    "CHARGE_ID": 1236381,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 280709,
+    "CJIS_CASE_NUMBER": "2026MM1196A1",
+    "CASE_DEFENDANT_ID": 896845,
+    "CHARGE_ID": 1247582,
+    "STATUS": "R",
+    "LOCATION": "LCJ",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 280831,
+    "CJIS_CASE_NUMBER": "2026CF248A1",
+    "CASE_DEFENDANT_ID": 891239,
+    "CHARGE_ID": 1238359,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 280831,
+    "CJIS_CASE_NUMBER": "2026CF641A3",
+    "CASE_DEFENDANT_ID": 892665,
+    "CHARGE_ID": 1240640,
+    "STATUS": "D",
+    "LOCATION": "RLSDNI",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 280831,
+    "CJIS_CASE_NUMBER": "2026MM540A1",
+    "CASE_DEFENDANT_ID": 893062,
+    "CHARGE_ID": 1241307,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281040,
+    "CJIS_CASE_NUMBER": "2026CF507A1",
+    "CASE_DEFENDANT_ID": 892099,
+    "CHARGE_ID": 1239708,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281040,
+    "CJIS_CASE_NUMBER": "2026CF507A2",
+    "CASE_DEFENDANT_ID": 892099,
+    "CHARGE_ID": 1239707,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 281041,
+    "CJIS_CASE_NUMBER": "2026CF508A1",
+    "CASE_DEFENDANT_ID": 892100,
+    "CHARGE_ID": 1239710,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281041,
+    "CJIS_CASE_NUMBER": "2026CF508A2",
+    "CASE_DEFENDANT_ID": 892100,
+    "CHARGE_ID": 1239709,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281120,
+    "CJIS_CASE_NUMBER": "2026CF596A1",
+    "CASE_DEFENDANT_ID": 892476,
+    "CHARGE_ID": 1240366,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281120,
+    "CJIS_CASE_NUMBER": "2026CF596A2",
+    "CASE_DEFENDANT_ID": 892476,
+    "CHARGE_ID": 1240367,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281215,
+    "CJIS_CASE_NUMBER": "2026CF700A1",
+    "CASE_DEFENDANT_ID": 892903,
+    "CHARGE_ID": 1241027,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "15000"
+  },
+  {
+    "CJIS_SPN": 281215,
+    "CJIS_CASE_NUMBER": "2026CF700A2",
+    "CASE_DEFENDANT_ID": 892903,
+    "CHARGE_ID": 1241028,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "15000"
+  },
+  {
+    "CJIS_SPN": 281215,
+    "CJIS_CASE_NUMBER": "2026CF700A3",
+    "CASE_DEFENDANT_ID": 892903,
+    "CHARGE_ID": 1241029,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "15000"
+  },
+  {
+    "CJIS_SPN": 281215,
+    "CJIS_CASE_NUMBER": "2026CF700A4",
+    "CASE_DEFENDANT_ID": 892903,
+    "CHARGE_ID": 1241030,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "15000"
+  },
+  {
+    "CJIS_SPN": 281215,
+    "CJIS_CASE_NUMBER": "2026CF700A6",
+    "CASE_DEFENDANT_ID": 892903,
+    "CHARGE_ID": 1241031,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "15000"
+  },
+  {
+    "CJIS_SPN": 281220,
+    "CJIS_CASE_NUMBER": "2026CF703A1",
+    "CASE_DEFENDANT_ID": 892931,
+    "CHARGE_ID": 1241054,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "10000"
+  },
+  {
+    "CJIS_SPN": 281220,
+    "CJIS_CASE_NUMBER": "2026CF703A2",
+    "CASE_DEFENDANT_ID": 892931,
+    "CHARGE_ID": 1241055,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 281222,
+    "CJIS_CASE_NUMBER": "2026CF1615A1",
+    "CASE_DEFENDANT_ID": 896231,
+    "CHARGE_ID": 1246818,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281222,
+    "CJIS_CASE_NUMBER": "2026CF1615A2",
+    "CASE_DEFENDANT_ID": 896231,
+    "CHARGE_ID": 1246821,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281222,
+    "CJIS_CASE_NUMBER": "2026CF1615A3",
+    "CASE_DEFENDANT_ID": 896231,
+    "CHARGE_ID": 1246820,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281222,
+    "CJIS_CASE_NUMBER": "2026CF1615A4",
+    "CASE_DEFENDANT_ID": 896231,
+    "CHARGE_ID": 1246819,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281259,
+    "CJIS_CASE_NUMBER": "2026CF758A1",
+    "CASE_DEFENDANT_ID": 893160,
+    "CHARGE_ID": 1241431,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "5000"
+  },
+  {
+    "CJIS_SPN": 281259,
+    "CJIS_CASE_NUMBER": "2026CF758A2",
+    "CASE_DEFENDANT_ID": 893160,
+    "CHARGE_ID": 1241432,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281286,
+    "CJIS_CASE_NUMBER": "2026MM576A1",
+    "CASE_DEFENDANT_ID": 893269,
+    "CHARGE_ID": 1241625,
+    "STATUS": "O",
+    "LOCATION": "OREC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281292,
+    "CJIS_CASE_NUMBER": "2026CF806A1",
+    "CASE_DEFENDANT_ID": 893305,
+    "CHARGE_ID": 1241673,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 281387,
+    "CJIS_CASE_NUMBER": "2026CF916A1",
+    "CASE_DEFENDANT_ID": 893693,
+    "CHARGE_ID": 1242881,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 281395,
+    "CJIS_CASE_NUMBER": "2026MM659A1",
+    "CASE_DEFENDANT_ID": 893718,
+    "CHARGE_ID": 1242926,
+    "STATUS": "V",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 281395,
+    "CJIS_CASE_NUMBER": "2026MM659A2",
+    "CASE_DEFENDANT_ID": 893718,
+    "CHARGE_ID": 1242927,
+    "STATUS": "V",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 281437,
+    "CJIS_CASE_NUMBER": "2026CF994A1",
+    "CASE_DEFENDANT_ID": 893979,
+    "CHARGE_ID": 1243313,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281437,
+    "CJIS_CASE_NUMBER": "2026CF994A2",
+    "CASE_DEFENDANT_ID": 893979,
+    "CHARGE_ID": 1243310,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281437,
+    "CJIS_CASE_NUMBER": "2026CF994A4",
+    "CASE_DEFENDANT_ID": 893979,
+    "CHARGE_ID": 1243312,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281483,
+    "CJIS_CASE_NUMBER": "2026CF1054A1",
+    "CASE_DEFENDANT_ID": 894182,
+    "CHARGE_ID": 1243657,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281564,
+    "CJIS_CASE_NUMBER": "2026MM793A1",
+    "CASE_DEFENDANT_ID": 894504,
+    "CHARGE_ID": 1244168,
+    "STATUS": "O",
+    "LOCATION": "OREC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281569,
+    "CJIS_CASE_NUMBER": "2026MM802A1",
+    "CASE_DEFENDANT_ID": 894525,
+    "CHARGE_ID": 1244198,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": "0"
+  },
+  {
+    "CJIS_SPN": 281627,
+    "CJIS_CASE_NUMBER": "2026CT601A1",
+    "CASE_DEFENDANT_ID": 894786,
+    "CHARGE_ID": 1244589,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 281633,
+    "CJIS_CASE_NUMBER": "2026MM1296A1",
+    "CASE_DEFENDANT_ID": 897450,
+    "CHARGE_ID": 1248620,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281633,
+    "CJIS_CASE_NUMBER": "2026MM1296A2",
+    "CASE_DEFENDANT_ID": 897450,
+    "CHARGE_ID": 1248621,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 281678,
+    "CJIS_CASE_NUMBER": "2026HH1980A1",
+    "CASE_DEFENDANT_ID": 901880,
+    "CHARGE_ID": 1252691,
+    "STATUS": "D",
+    "LOCATION": "LCJ",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281699,
+    "CJIS_CASE_NUMBER": "2026MM892A1",
+    "CASE_DEFENDANT_ID": 895090,
+    "CHARGE_ID": 1245014,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 281720,
+    "CJIS_CASE_NUMBER": "2026CT652A1",
+    "CASE_DEFENDANT_ID": 895282,
+    "CHARGE_ID": 1245306,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 281734,
+    "CJIS_CASE_NUMBER": "2026CT668A1",
+    "CASE_DEFENDANT_ID": 895341,
+    "CHARGE_ID": 1245383,
+    "STATUS": "O",
+    "LOCATION": "RLSDWD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281734,
+    "CJIS_CASE_NUMBER": "2026CT668A2",
+    "CASE_DEFENDANT_ID": 895341,
+    "CHARGE_ID": 1245384,
+    "STATUS": "O",
+    "LOCATION": "RLSDWD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281746,
+    "CJIS_CASE_NUMBER": "2026MM956A1",
+    "CASE_DEFENDANT_ID": 895397,
+    "CHARGE_ID": 1245490,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281773,
+    "CJIS_CASE_NUMBER": "2026CF1416A1",
+    "CASE_DEFENDANT_ID": 895542,
+    "CHARGE_ID": 1245668,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 281781,
+    "CJIS_CASE_NUMBER": "2026MM992A1",
+    "CASE_DEFENDANT_ID": 895581,
+    "CHARGE_ID": 1245735,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 281799,
+    "CJIS_CASE_NUMBER": "2026MM1009A1",
+    "CASE_DEFENDANT_ID": 895717,
+    "CHARGE_ID": 1245910,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281813,
+    "CJIS_CASE_NUMBER": "2026CF1494A1",
+    "CASE_DEFENDANT_ID": 895817,
+    "CHARGE_ID": 1246106,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 281814,
+    "CJIS_CASE_NUMBER": "2026CF1498A1",
+    "CASE_DEFENDANT_ID": 895825,
+    "CHARGE_ID": 1246132,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 281814,
+    "CJIS_CASE_NUMBER": "2026CF1498A2",
+    "CASE_DEFENDANT_ID": 895825,
+    "CHARGE_ID": 1246133,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 281814,
+    "CJIS_CASE_NUMBER": "2026CF1498A3",
+    "CASE_DEFENDANT_ID": 895825,
+    "CHARGE_ID": 1246134,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "10000"
+  },
+  {
+    "CJIS_SPN": 281816,
+    "CJIS_CASE_NUMBER": "2026CF1500A1",
+    "CASE_DEFENDANT_ID": 895827,
+    "CHARGE_ID": 1246136,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 281816,
+    "CJIS_CASE_NUMBER": "2026CF1500A2",
+    "CASE_DEFENDANT_ID": 895827,
+    "CHARGE_ID": 1246137,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 281825,
+    "CJIS_CASE_NUMBER": "2026CT1009A1",
+    "CASE_DEFENDANT_ID": 898295,
+    "CHARGE_ID": 1250188,
+    "STATUS": "V",
+    "LOCATION": "CAP.",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281859,
+    "CJIS_CASE_NUMBER": "2026MM1072A1",
+    "CASE_DEFENDANT_ID": 896038,
+    "CHARGE_ID": 1246482,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281885,
+    "CJIS_CASE_NUMBER": "2026MM1261A1",
+    "CASE_DEFENDANT_ID": 897268,
+    "CHARGE_ID": 1248279,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281904,
+    "CJIS_CASE_NUMBER": "2026MM1123A1",
+    "CASE_DEFENDANT_ID": 896282,
+    "CHARGE_ID": 1246896,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 281923,
+    "CJIS_CASE_NUMBER": "2026CF1657A1",
+    "CASE_DEFENDANT_ID": 896406,
+    "CHARGE_ID": 1247038,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": "10000"
+  },
+  {
+    "CJIS_SPN": 281923,
+    "CJIS_CASE_NUMBER": "2026CF1657A2",
+    "CASE_DEFENDANT_ID": 896406,
+    "CHARGE_ID": 1247039,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 281923,
+    "CJIS_CASE_NUMBER": "2026CF1657A3",
+    "CASE_DEFENDANT_ID": 896406,
+    "CHARGE_ID": 1247040,
+    "STATUS": "D",
+    "LOCATION": "RLSDNI",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281944,
+    "CJIS_CASE_NUMBER": "2026MM1168A1",
+    "CASE_DEFENDANT_ID": 896657,
+    "CHARGE_ID": 1247311,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281967,
+    "CJIS_CASE_NUMBER": "2026CF1716A1",
+    "CASE_DEFENDANT_ID": 896763,
+    "CHARGE_ID": 1247443,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281967,
+    "CJIS_CASE_NUMBER": "2026CF1716A2",
+    "CASE_DEFENDANT_ID": 896763,
+    "CHARGE_ID": 1247441,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281967,
+    "CJIS_CASE_NUMBER": "2026CF1716A3",
+    "CASE_DEFENDANT_ID": 896763,
+    "CHARGE_ID": 1247442,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 281970,
+    "CJIS_CASE_NUMBER": "2026CF1736A1",
+    "CASE_DEFENDANT_ID": 896819,
+    "CHARGE_ID": 1247536,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 281970,
+    "CJIS_CASE_NUMBER": "2026CF1736A2",
+    "CASE_DEFENDANT_ID": 896819,
+    "CHARGE_ID": 1247538,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 281970,
+    "CJIS_CASE_NUMBER": "2026CF1736A3",
+    "CASE_DEFENDANT_ID": 896819,
+    "CHARGE_ID": 1247537,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 281982,
+    "CJIS_CASE_NUMBER": "2026CT840A1",
+    "CASE_DEFENDANT_ID": 896841,
+    "CHARGE_ID": 1247573,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 281992,
+    "CJIS_CASE_NUMBER": "2026CT914A1",
+    "CASE_DEFENDANT_ID": 897530,
+    "CHARGE_ID": 1248687,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 281992,
+    "CJIS_CASE_NUMBER": "2026CT914A2",
+    "CASE_DEFENDANT_ID": 897530,
+    "CHARGE_ID": 1248688,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 282006,
+    "CJIS_CASE_NUMBER": "2026MM1219A1",
+    "CASE_DEFENDANT_ID": 896959,
+    "CHARGE_ID": 1247720,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 282021,
+    "CJIS_CASE_NUMBER": "2026MM1426A1",
+    "CASE_DEFENDANT_ID": 898117,
+    "CHARGE_ID": 1249930,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282104,
+    "CJIS_CASE_NUMBER": "2026CF1897A1",
+    "CASE_DEFENDANT_ID": 897596,
+    "CHARGE_ID": 1248757,
+    "STATUS": "D",
+    "LOCATION": "OTJA",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282104,
+    "CJIS_CASE_NUMBER": "2026CF1897A2",
+    "CASE_DEFENDANT_ID": 897596,
+    "CHARGE_ID": 1248758,
+    "STATUS": "D",
+    "LOCATION": "OTJA",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282104,
+    "CJIS_CASE_NUMBER": "2026CF1897A3",
+    "CASE_DEFENDANT_ID": 897596,
+    "CHARGE_ID": 1248759,
+    "STATUS": "D",
+    "LOCATION": "OTJA",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282104,
+    "CJIS_CASE_NUMBER": "2026CF1897A4",
+    "CASE_DEFENDANT_ID": 897596,
+    "CHARGE_ID": 1248760,
+    "STATUS": "D",
+    "LOCATION": "OTJA",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282104,
+    "CJIS_CASE_NUMBER": "2026CF1897A5",
+    "CASE_DEFENDANT_ID": 897596,
+    "CHARGE_ID": 1248761,
+    "STATUS": "D",
+    "LOCATION": "OTJA",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282115,
+    "CJIS_CASE_NUMBER": "2026MM1325A1",
+    "CASE_DEFENDANT_ID": 897654,
+    "CHARGE_ID": 1249025,
+    "STATUS": "R",
+    "LOCATION": "LCJ",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282115,
+    "CJIS_CASE_NUMBER": "2026MM1325A2",
+    "CASE_DEFENDANT_ID": 897654,
+    "CHARGE_ID": 1249026,
+    "STATUS": "R",
+    "LOCATION": "LCJ",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282115,
+    "CJIS_CASE_NUMBER": "2026MM1325A3",
+    "CASE_DEFENDANT_ID": 897654,
+    "CHARGE_ID": 1249027,
+    "STATUS": "R",
+    "LOCATION": "LCJ",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282146,
+    "CJIS_CASE_NUMBER": "2026HH656A1",
+    "CASE_DEFENDANT_ID": 897815,
+    "CHARGE_ID": 1249489,
+    "STATUS": "D",
+    "LOCATION": "RLSDBE",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282146,
+    "CJIS_CASE_NUMBER": "2026HH656A2",
+    "CASE_DEFENDANT_ID": 897815,
+    "CHARGE_ID": 1249490,
+    "STATUS": "D",
+    "LOCATION": "RLSDBE",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282149,
+    "CJIS_CASE_NUMBER": "2026MM1360A1",
+    "CASE_DEFENDANT_ID": 897824,
+    "CHARGE_ID": 1249510,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": "0"
+  },
+  {
+    "CJIS_SPN": 282155,
+    "CJIS_CASE_NUMBER": "2026CF1932A1",
+    "CASE_DEFENDANT_ID": 897837,
+    "CHARGE_ID": 1249531,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 282165,
+    "CJIS_CASE_NUMBER": "2026CF1943A1",
+    "CASE_DEFENDANT_ID": 897898,
+    "CHARGE_ID": 1249620,
+    "STATUS": "D",
+    "LOCATION": "OREC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282168,
+    "CJIS_CASE_NUMBER": "2026CF1945A1",
+    "CASE_DEFENDANT_ID": 897905,
+    "CHARGE_ID": 1249629,
+    "STATUS": "D",
+    "LOCATION": "OTJA",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282172,
+    "CJIS_CASE_NUMBER": "2026MM1385A1",
+    "CASE_DEFENDANT_ID": 897929,
+    "CHARGE_ID": 1249677,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 282174,
+    "CJIS_CASE_NUMBER": "2026MM1389A1",
+    "CASE_DEFENDANT_ID": 897937,
+    "CHARGE_ID": 1249687,
+    "STATUS": "C",
+    "LOCATION": "CAP.",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282174,
+    "CJIS_CASE_NUMBER": "2026MM1389A2",
+    "CASE_DEFENDANT_ID": 897937,
+    "CHARGE_ID": 1249688,
+    "STATUS": "C",
+    "LOCATION": "CAP.",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282177,
+    "CJIS_CASE_NUMBER": "2026CF1954A1",
+    "CASE_DEFENDANT_ID": 897966,
+    "CHARGE_ID": 1249716,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282177,
+    "CJIS_CASE_NUMBER": "2026CF1954A2",
+    "CASE_DEFENDANT_ID": 897966,
+    "CHARGE_ID": 1249717,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282177,
+    "CJIS_CASE_NUMBER": "2026CF1954A3",
+    "CASE_DEFENDANT_ID": 897966,
+    "CHARGE_ID": 1249718,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282202,
+    "CJIS_CASE_NUMBER": "2026MM1431A1",
+    "CASE_DEFENDANT_ID": 898128,
+    "CHARGE_ID": 1249948,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282211,
+    "CJIS_CASE_NUMBER": "2026MM1438A1",
+    "CASE_DEFENDANT_ID": 898232,
+    "CHARGE_ID": 1250084,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 282213,
+    "CJIS_CASE_NUMBER": "2026MM1440A1",
+    "CASE_DEFENDANT_ID": 898244,
+    "CHARGE_ID": 1250108,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 282217,
+    "CJIS_CASE_NUMBER": "2026MM1441A1",
+    "CASE_DEFENDANT_ID": 898263,
+    "CHARGE_ID": 1250153,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 282233,
+    "CJIS_CASE_NUMBER": "2026MM1447A1",
+    "CASE_DEFENDANT_ID": 898340,
+    "CHARGE_ID": 1250290,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282238,
+    "CJIS_CASE_NUMBER": "2026MM1458A1",
+    "CASE_DEFENDANT_ID": 898373,
+    "CHARGE_ID": 1250349,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282244,
+    "CJIS_CASE_NUMBER": "2026CF2034A1",
+    "CASE_DEFENDANT_ID": 898377,
+    "CHARGE_ID": 1250357,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282244,
+    "CJIS_CASE_NUMBER": "2026CF2034A2",
+    "CASE_DEFENDANT_ID": 898377,
+    "CHARGE_ID": 1250356,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282248,
+    "CJIS_CASE_NUMBER": "2026CF2038A1",
+    "CASE_DEFENDANT_ID": 898385,
+    "CHARGE_ID": 1250371,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A1",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251257,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A10",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251266,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A11",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251267,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A12",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251268,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A13",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251269,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A14",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251270,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A15",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251271,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A16",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251272,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A17",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251273,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A18",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251274,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A19",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251275,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A2",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251258,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A20",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251276,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A21",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251277,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A22",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251278,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A23",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251279,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A24",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251280,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A25",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251281,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A26",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251282,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A27",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251283,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A28",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251284,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A29",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251285,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A3",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251259,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A30",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251286,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A31",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251287,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A32",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251288,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A33",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251289,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A34",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251290,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A35",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251291,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A36",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251292,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A37",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251293,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A38",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251294,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A39",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251295,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A4",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251260,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A40",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251296,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A41",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251297,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A42",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251298,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A43",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251299,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A44",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251300,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A45",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251301,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A5",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251261,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A6",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251262,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A7",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251263,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A8",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251264,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282273,
+    "CJIS_CASE_NUMBER": "2026CF2159A9",
+    "CASE_DEFENDANT_ID": 898979,
+    "CHARGE_ID": 1251265,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 282369,
+    "CJIS_CASE_NUMBER": "2026CF2195A1",
+    "CASE_DEFENDANT_ID": 899100,
+    "CHARGE_ID": 1251518,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "500"
+  },
+  {
+    "CJIS_SPN": 282369,
+    "CJIS_CASE_NUMBER": "2026HH772A1",
+    "CASE_DEFENDANT_ID": 899106,
+    "CHARGE_ID": 1251527,
+    "STATUS": "D",
+    "LOCATION": "OTJA",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282397,
+    "CJIS_CASE_NUMBER": "2026CF2212A2",
+    "CASE_DEFENDANT_ID": 899218,
+    "CHARGE_ID": 1251965,
+    "STATUS": "N",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 282415,
+    "CJIS_CASE_NUMBER": "2026CF2240A1",
+    "CASE_DEFENDANT_ID": 899314,
+    "CHARGE_ID": 1251784,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 282418,
+    "CJIS_CASE_NUMBER": "2026MM1617A1",
+    "CASE_DEFENDANT_ID": 899340,
+    "CHARGE_ID": 1251813,
+    "STATUS": "O",
+    "LOCATION": "PTRL",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 28353,
+    "CJIS_CASE_NUMBER": "2025CF904A1",
+    "CASE_DEFENDANT_ID": 878250,
+    "CHARGE_ID": 1220222,
+    "STATUS": "D",
+    "LOCATION": "RLSD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 28353,
+    "CJIS_CASE_NUMBER": "2025CF904A2",
+    "CASE_DEFENDANT_ID": 878250,
+    "CHARGE_ID": 1220224,
+    "STATUS": "D",
+    "LOCATION": "RLSD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 28353,
+    "CJIS_CASE_NUMBER": "2026MM1175A1",
+    "CASE_DEFENDANT_ID": 896684,
+    "CHARGE_ID": 1247337,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 28353,
+    "CJIS_CASE_NUMBER": "2026MM1175A2",
+    "CASE_DEFENDANT_ID": 896684,
+    "CHARGE_ID": 1247338,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 31578,
+    "CJIS_CASE_NUMBER": "2025CF2275A1",
+    "CASE_DEFENDANT_ID": 883591,
+    "CHARGE_ID": 1228870,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 3179,
+    "CJIS_CASE_NUMBER": "2026CF1616A1",
+    "CASE_DEFENDANT_ID": 896232,
+    "CHARGE_ID": 1246822,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "15000"
+  },
+  {
+    "CJIS_SPN": 3179,
+    "CJIS_CASE_NUMBER": "2026CF1616A2",
+    "CASE_DEFENDANT_ID": 896232,
+    "CHARGE_ID": 1246823,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2500"
+  },
+  {
+    "CJIS_SPN": 33345,
+    "CJIS_CASE_NUMBER": "2023CF3290A1",
+    "CASE_DEFENDANT_ID": 859657,
+    "CHARGE_ID": 1190209,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 33345,
+    "CJIS_CASE_NUMBER": "2023CF3290A2",
+    "CASE_DEFENDANT_ID": 859657,
+    "CHARGE_ID": 1190208,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 33345,
+    "CJIS_CASE_NUMBER": "2023CF3290A3",
+    "CASE_DEFENDANT_ID": 859657,
+    "CHARGE_ID": 1190207,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 33345,
+    "CJIS_CASE_NUMBER": "2023CF3290A4",
+    "CASE_DEFENDANT_ID": 859657,
+    "CHARGE_ID": 1190205,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "5000"
+  },
+  {
+    "CJIS_SPN": 33345,
+    "CJIS_CASE_NUMBER": "2023CF3290A5",
+    "CASE_DEFENDANT_ID": 859657,
+    "CHARGE_ID": 1190206,
+    "STATUS": "O",
+    "LOCATION": "OREC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 34704,
+    "CJIS_CASE_NUMBER": "2026CF1207A1",
+    "CASE_DEFENDANT_ID": 894740,
+    "CHARGE_ID": 1244532,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "2000"
+  },
+  {
+    "CJIS_SPN": 34790,
+    "CJIS_CASE_NUMBER": "2004CF2290A1",
+    "CASE_DEFENDANT_ID": 389093,
+    "CHARGE_ID": 525242,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 34790,
+    "CJIS_CASE_NUMBER": "2004CF2797A1",
+    "CASE_DEFENDANT_ID": 391787,
+    "CHARGE_ID": 529054,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 34790,
+    "CJIS_CASE_NUMBER": "2004CF2797A2",
+    "CASE_DEFENDANT_ID": 391787,
+    "CHARGE_ID": 529056,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 34790,
+    "CJIS_CASE_NUMBER": "2004CF2797A3",
+    "CASE_DEFENDANT_ID": 391787,
+    "CHARGE_ID": 529057,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 34790,
+    "CJIS_CASE_NUMBER": "2007CF1615A1",
+    "CASE_DEFENDANT_ID": 466492,
+    "CHARGE_ID": 634875,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 34790,
+    "CJIS_CASE_NUMBER": "2007CF1615A2",
+    "CASE_DEFENDANT_ID": 466492,
+    "CHARGE_ID": 634874,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 39916,
+    "CJIS_CASE_NUMBER": "2026MM1197A1",
+    "CASE_DEFENDANT_ID": 896846,
+    "CHARGE_ID": 1247583,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 39916,
+    "CJIS_CASE_NUMBER": "2026MM1375A1",
+    "CASE_DEFENDANT_ID": 897894,
+    "CHARGE_ID": 1249616,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 44431,
+    "CJIS_CASE_NUMBER": "2024CF2560A1",
+    "CASE_DEFENDANT_ID": 870516,
+    "CHARGE_ID": 1207723,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 45206,
+    "CJIS_CASE_NUMBER": "2025CF716A1",
+    "CASE_DEFENDANT_ID": 877435,
+    "CHARGE_ID": 1218775,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 45206,
+    "CJIS_CASE_NUMBER": "2025CF716A2",
+    "CASE_DEFENDANT_ID": 877435,
+    "CHARGE_ID": 1219761,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 45206,
+    "CJIS_CASE_NUMBER": "2025CF716A3",
+    "CASE_DEFENDANT_ID": 877435,
+    "CHARGE_ID": 1218776,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 45206,
+    "CJIS_CASE_NUMBER": "2025CF716A4",
+    "CASE_DEFENDANT_ID": 877435,
+    "CHARGE_ID": 1219762,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 45206,
+    "CJIS_CASE_NUMBER": "2025CF716A5",
+    "CASE_DEFENDANT_ID": 877435,
+    "CHARGE_ID": 1219764,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 45206,
+    "CJIS_CASE_NUMBER": "2025CF716A6",
+    "CASE_DEFENDANT_ID": 877435,
+    "CHARGE_ID": 1219763,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 45568,
+    "CJIS_CASE_NUMBER": "2026CF1909A1",
+    "CASE_DEFENDANT_ID": 897649,
+    "CHARGE_ID": 1249016,
+    "STATUS": "C",
+    "LOCATION": "CAP.",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 45568,
+    "CJIS_CASE_NUMBER": "2026CF1909A2",
+    "CASE_DEFENDANT_ID": 897649,
+    "CHARGE_ID": 1249017,
+    "STATUS": "C",
+    "LOCATION": "CAP.",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 45568,
+    "CJIS_CASE_NUMBER": "2026CF1909A3",
+    "CASE_DEFENDANT_ID": 897649,
+    "CHARGE_ID": 1249018,
+    "STATUS": "C",
+    "LOCATION": "CAP.",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 58858,
+    "CJIS_CASE_NUMBER": "2026CF591A2",
+    "CASE_DEFENDANT_ID": 892464,
+    "CHARGE_ID": 1240345,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": "1000"
+  },
+  {
+    "CJIS_SPN": 60714,
+    "CJIS_CASE_NUMBER": "2024CF3644A1",
+    "CASE_DEFENDANT_ID": 874760,
+    "CHARGE_ID": 1214623,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 61278,
+    "CJIS_CASE_NUMBER": "2026CF1501A1",
+    "CASE_DEFENDANT_ID": 895832,
+    "CHARGE_ID": 1246142,
+    "STATUS": "D",
+    "LOCATION": "LCJ",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 61278,
+    "CJIS_CASE_NUMBER": "2026CF1501A2",
+    "CASE_DEFENDANT_ID": 895832,
+    "CHARGE_ID": 1246144,
+    "STATUS": "D",
+    "LOCATION": "LCJ",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 61278,
+    "CJIS_CASE_NUMBER": "2026CF1501A3",
+    "CASE_DEFENDANT_ID": 895832,
+    "CHARGE_ID": 1246143,
+    "STATUS": "D",
+    "LOCATION": "LCJ",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 61278,
+    "CJIS_CASE_NUMBER": "2026CF1501A4",
+    "CASE_DEFENDANT_ID": 895832,
+    "CHARGE_ID": 1246145,
+    "STATUS": "D",
+    "LOCATION": "RLSDNI",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 61516,
+    "CJIS_CASE_NUMBER": "2005CF2912A1",
+    "CASE_DEFENDANT_ID": 416829,
+    "CHARGE_ID": 564385,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 61516,
+    "CJIS_CASE_NUMBER": "2005CF2912A2",
+    "CASE_DEFENDANT_ID": 416829,
+    "CHARGE_ID": 564386,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 61516,
+    "CJIS_CASE_NUMBER": "2005CF2912A3",
+    "CASE_DEFENDANT_ID": 416829,
+    "CHARGE_ID": 564387,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 61516,
+    "CJIS_CASE_NUMBER": "2009MM4057A1",
+    "CASE_DEFENDANT_ID": 526005,
+    "CHARGE_ID": 717112,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 61516,
+    "CJIS_CASE_NUMBER": "2010MM2391A1",
+    "CASE_DEFENDANT_ID": 543140,
+    "CHARGE_ID": 742309,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 61516,
+    "CJIS_CASE_NUMBER": "2010MM3880A1",
+    "CASE_DEFENDANT_ID": 548581,
+    "CHARGE_ID": 750892,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 61516,
+    "CJIS_CASE_NUMBER": "2010MM3880A2",
+    "CASE_DEFENDANT_ID": 548581,
+    "CHARGE_ID": 750893,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 61516,
+    "CJIS_CASE_NUMBER": "2012MM2202A1",
+    "CASE_DEFENDANT_ID": 592308,
+    "CHARGE_ID": 814350,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 61516,
+    "CJIS_CASE_NUMBER": "2013CF160A2",
+    "CASE_DEFENDANT_ID": 622178,
+    "CHARGE_ID": 849451,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 61516,
+    "CJIS_CASE_NUMBER": "2014MM1998A1",
+    "CASE_DEFENDANT_ID": 675127,
+    "CHARGE_ID": 917325,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 61516,
+    "CJIS_CASE_NUMBER": "2016MM910A2",
+    "CASE_DEFENDANT_ID": 722335,
+    "CHARGE_ID": 981832,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 61516,
+    "CJIS_CASE_NUMBER": "2024CF1985A1",
+    "CASE_DEFENDANT_ID": 868519,
+    "CHARGE_ID": 1204115,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 61516,
+    "CJIS_CASE_NUMBER": "2024MM81A1",
+    "CASE_DEFENDANT_ID": 861536,
+    "CHARGE_ID": 1193139,
+    "STATUS": "D",
+    "LOCATION": "RLSDPT",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 61931,
+    "CJIS_CASE_NUMBER": "2006CF4680A1",
+    "CASE_DEFENDANT_ID": 453518,
+    "CHARGE_ID": 616944,
+    "STATUS": "D",
+    "LOCATION": "RLSDWD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 64646,
+    "CJIS_CASE_NUMBER": "2021CF2165A1",
+    "CASE_DEFENDANT_ID": 825755,
+    "CHARGE_ID": 1138587,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 65121,
+    "CJIS_CASE_NUMBER": "2017CF801A1",
+    "CASE_DEFENDANT_ID": 740554,
+    "CHARGE_ID": 1009736,
+    "STATUS": "D",
+    "LOCATION": "CLRK",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 65577,
+    "CJIS_CASE_NUMBER": "2024CF1409A1",
+    "CASE_DEFENDANT_ID": 866411,
+    "CHARGE_ID": 1200791,
+    "STATUS": "D",
+    "LOCATION": "RLSDCC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 65577,
+    "CJIS_CASE_NUMBER": "2024CF1409A2",
+    "CASE_DEFENDANT_ID": 866411,
+    "CHARGE_ID": 1200792,
+    "STATUS": "D",
+    "LOCATION": "RLSDCC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 65577,
+    "CJIS_CASE_NUMBER": "2024CF1409A3",
+    "CASE_DEFENDANT_ID": 866411,
+    "CHARGE_ID": 1200794,
+    "STATUS": "D",
+    "LOCATION": "RLSDCC",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 65577,
+    "CJIS_CASE_NUMBER": "2024CF1409A4",
+    "CASE_DEFENDANT_ID": 866411,
+    "CHARGE_ID": 1200795,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 65577,
+    "CJIS_CASE_NUMBER": "2024CF1409A5",
+    "CASE_DEFENDANT_ID": 866411,
+    "CHARGE_ID": 1200796,
+    "STATUS": "D",
+    "LOCATION": "RLSDTS",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 68598,
+    "CJIS_CASE_NUMBER": "2014CF3464A1",
+    "CASE_DEFENDANT_ID": 684416,
+    "CHARGE_ID": 930289,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 7728,
+    "CJIS_CASE_NUMBER": "2026MM38A1",
+    "CASE_DEFENDANT_ID": 890561,
+    "CHARGE_ID": 1236904,
+    "STATUS": "D",
+    "LOCATION": "RLSDPB",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 81297,
+    "CJIS_CASE_NUMBER": "2025CF702A1",
+    "CASE_DEFENDANT_ID": 877382,
+    "CHARGE_ID": 1218683,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 81297,
+    "CJIS_CASE_NUMBER": "2026CF616A1",
+    "CASE_DEFENDANT_ID": 892584,
+    "CHARGE_ID": 1240521,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 85585,
+    "CJIS_CASE_NUMBER": "2026CF2260A1",
+    "CASE_DEFENDANT_ID": 899384,
+    "CHARGE_ID": 1251920,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 85585,
+    "CJIS_CASE_NUMBER": "2026CF2260A2",
+    "CASE_DEFENDANT_ID": 899384,
+    "CHARGE_ID": 1251921,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 85585,
+    "CJIS_CASE_NUMBER": "2026CF2260A3",
+    "CASE_DEFENDANT_ID": 899384,
+    "CHARGE_ID": 1251922,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 85585,
+    "CJIS_CASE_NUMBER": "2026CF2260A4",
+    "CASE_DEFENDANT_ID": 899384,
+    "CHARGE_ID": 1251923,
+    "STATUS": "O",
+    "LOCATION": "BOND",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 89539,
+    "CJIS_CASE_NUMBER": "2025CF1453A1",
+    "CASE_DEFENDANT_ID": 880333,
+    "CHARGE_ID": 1223796,
+    "STATUS": "D",
+    "LOCATION": "RLSD",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 89540,
+    "CJIS_CASE_NUMBER": "2025CF297A1",
+    "CASE_DEFENDANT_ID": 875931,
+    "CHARGE_ID": 1216399,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 9072,
+    "CJIS_CASE_NUMBER": "2022CF909A1",
+    "CASE_DEFENDANT_ID": 834477,
+    "CHARGE_ID": 1151861,
+    "STATUS": "R",
+    "LOCATION": "LCJ",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 9072,
+    "CJIS_CASE_NUMBER": "2022CF909A2",
+    "CASE_DEFENDANT_ID": 834477,
+    "CHARGE_ID": 1155466,
+    "STATUS": "R",
+    "LOCATION": "LCJ",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 97496,
+    "CJIS_CASE_NUMBER": "2026CF1472A2",
+    "CASE_DEFENDANT_ID": 895753,
+    "CHARGE_ID": 1245984,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 97496,
+    "CJIS_CASE_NUMBER": "2026CF1472A3",
+    "CASE_DEFENDANT_ID": 895753,
+    "CHARGE_ID": 1245985,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 97496,
+    "CJIS_CASE_NUMBER": "2026CF1472A4",
+    "CASE_DEFENDANT_ID": 895753,
+    "CHARGE_ID": 1245987,
+    "STATUS": "D",
+    "LOCATION": "RLSDNP",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 98137,
+    "CJIS_CASE_NUMBER": "2026CF936A1",
+    "CASE_DEFENDANT_ID": 893770,
+    "CHARGE_ID": 1242977,
+    "STATUS": "D",
+    "LOCATION": "STPR",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 99436,
+    "CJIS_CASE_NUMBER": "2026CT916A1",
+    "CASE_DEFENDANT_ID": 897534,
+    "CHARGE_ID": 1248694,
+    "STATUS": "F",
+    "LOCATION": "RLSDNI",
+    "BOND_AMT": null
+  },
+  {
+    "CJIS_SPN": 99436,
+    "CJIS_CASE_NUMBER": "2026CT916A2",
+    "CASE_DEFENDANT_ID": 897534,
+    "CHARGE_ID": 1248695,
+    "STATUS": "F",
+    "LOCATION": "RLSDNI",
+    "BOND_AMT": null
+  }
+]
