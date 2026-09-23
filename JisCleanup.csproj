@@ -14,6 +14,7 @@
     <ItemGroup>
       <Folder Include="Cleanups\01_GroceryStoreRun\scripts\" />
       <Folder Include="Cleanups\03_DocketsWithoutStatusChanges\scripts\" />
+      <Folder Include="Cleanups\05_Manual_TechnicalReview\scripts\" />
     </ItemGroup>
     <ItemGroup>
       <PackageReference Include="ClosedXML" Version="0.105.1" />

@@ -17,6 +17,26 @@ public class CsvChargeLoader(string filePath) : ILoader<Charge>
 
             if (segment.Length != 7) throw new FileLoadException($"File contains invalid data at: '{line}'");
 
+            if (string.IsNullOrWhiteSpace(segment[2]))
+            {
+                Console.WriteLine($"{segment[1]} invalid CaseDefendantId");
+                
+                foreach (var s in segment)
+                {
+                    Console.WriteLine($"Seg: {s}");
+                }
+            }
+            
+            if (string.IsNullOrWhiteSpace(segment[3]))
+            {
+                Console.WriteLine($"{segment[1]} invalid CaseDefendantId");
+                
+                foreach (var s in segment)
+                {
+                    Console.WriteLine($"Seg: {s}");
+                }
+            }
+            
             yield return new Charge
             {
                 CjisSpn = int.Parse(segment[0]),
