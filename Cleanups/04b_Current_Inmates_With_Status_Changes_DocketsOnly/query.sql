@@ -70,6 +70,6 @@ where exists (
              from JISJDW.CHARGE_HIST
          ) t
     where rownum = 1
-      and last_user_change IN ('UNKNOWN', 'SYSTEMA')
+      and last_user_change NOT IN ('UNKNOWN', 'SYSTEMA')
       and t.CHARGE_ID = bd.CHARGE_ID
 )
