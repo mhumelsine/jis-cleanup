@@ -31,4 +31,11 @@ public record Charge
     
         return match.Groups[0].Value;
     }
+    
+    public string GetCaseNumber()
+    {
+        var match = Regex.Match(CjisCaseNumber, @"(\d{4}\w{2}\d+[a-zA-Z])\d+");
+    
+        return match.Groups[0].Value;
+    }
 }

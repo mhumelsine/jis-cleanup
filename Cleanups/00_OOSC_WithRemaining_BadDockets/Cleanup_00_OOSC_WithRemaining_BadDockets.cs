@@ -1,3 +1,4 @@
+using JisCleanup.Changes;
 using JisCleanup.TableChanges;
 
 namespace JisCleanup.Cleanups;
@@ -19,7 +20,7 @@ public class Cleanup_00_OOSC_WithRemaining_BadDockets : CleanupBase {
         ];
         
         Changes = [
-            new CjisDocketDelete(),
+            new CjisDocketByCaseDelete(),
             new InsertCleanupDocketEntry()
         ];
     }
