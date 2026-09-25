@@ -17,7 +17,8 @@ public class Cleanup_05_Manual_TechnicalReview : CleanupBase {
         };
         
         Validations =
-        [  
+        [
+            new NoStatusOrLocationChanges()
         ];
         
         Changes = [

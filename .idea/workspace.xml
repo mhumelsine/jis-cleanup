@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6e534e5d-9c4f-4083-98d0-9fdf0098165d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Cleanups/court_admin_order/attorney_assignments.json" beforeDir="false" afterPath="$PROJECT_DIR$/Cleanups/court_admin_order/attorney_assignments.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cleanups/court_admin_order/cases_for_remediation_for_ao.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Cleanups/court_admin_order/cases_for_remediation_for_ao.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +61,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1790199766758</updated>
-      <workItem from="1790199767772" duration="332000" />
+      <workItem from="1790199767772" duration="934000" />
     </task>
     <servers />
   </component>
