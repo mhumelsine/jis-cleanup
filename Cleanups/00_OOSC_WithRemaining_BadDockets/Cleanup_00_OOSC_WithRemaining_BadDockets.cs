@@ -3,8 +3,8 @@ using JisCleanup.TableChanges;
 namespace JisCleanup.Cleanups;
 
 [ManualCleanup("data.csv")]
-public class Cleanup_06_OOSC_WithRemaining_BadDockets : CleanupBase {
-    public Cleanup_06_OOSC_WithRemaining_BadDockets()
+public class Cleanup_00_OOSC_WithRemaining_BadDockets : CleanupBase {
+    public Cleanup_00_OOSC_WithRemaining_BadDockets()
     {
         
         Metadata = new CleanupMetadata
