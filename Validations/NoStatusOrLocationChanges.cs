@@ -4,11 +4,8 @@ public class NoStatusOrLocationChanges : Validator
 {
     protected override string Collect(Charge charge)
         => $"""
-
-            select
-                ACTIVITY_TABLE_NAME
-                ,ACTIVITY_DETAILS
-                ,CJIS_CASE_NUMBER
+            SELECT COUNT(*)
+            INTO v_count
             from JISJDW.AUDIT_TRAIL
             WHERE ACTIVITY_DATE_TIME > '23-SEP-2026'
             AND CJIS_CASE_NUMBER = '{charge.CjisCaseNumber}'
@@ -18,7 +15,7 @@ public class NoStatusOrLocationChanges : Validator
             OR (
                      ACTIVITY_TABLE_NAME = 'CHARGE'
                          AND ACTIVITY_DETAILS LIKE '%STATUS%'
-                     ))
+                     ));
             """;
 
     protected override string Check() => ExactlyZero("Changes to STATUS or LOCATION detected");
