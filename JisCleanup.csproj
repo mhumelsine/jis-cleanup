@@ -18,7 +18,9 @@
       <Folder Include="Cleanups\04b_Current_Inmates_With_Status_Changes_DocketsOnly\scripts\" />
       <Folder Include="Cleanups\04_Current_Inmates_StatusChanges_With_NoHumanAction\scripts\" />
       <Folder Include="Cleanups\04_Manual_TechnicalReview\scripts\" />
+      <Folder Include="Cleanups\05_Current_Inmates_StatusChanges_With_NoHumanAction\scripts\" />
       <Folder Include="Cleanups\05_Manual_TechnicalReview\scripts\" />
+      <Folder Include="Cleanups\06_Current_Inmates_With_Status_Changes_DocketsOnly\scripts\" />
     </ItemGroup>
     <ItemGroup>
       <PackageReference Include="ClosedXML" Version="0.105.1" />
