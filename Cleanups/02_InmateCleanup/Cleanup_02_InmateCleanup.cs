@@ -12,7 +12,7 @@ public class Cleanup_02_InmateCleanup : CleanupBase
         Metadata = new CleanupMetadata
         {
             Name = GetType().Name,
-            Description = "All Inmates that have status, location, or bond amount changes",
+            Description = "All defendants that were inmates on 08/18 that have status, location, or bond amount changes without human activity that affected status, location, or bond amount.",
             RequestedBy = "JIS",
             RunNumber = 2
         };

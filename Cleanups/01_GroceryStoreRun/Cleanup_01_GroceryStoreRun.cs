@@ -11,8 +11,8 @@ public class Cleanup_01_GroceryStoreRun : CleanupBase {
         Metadata = new CleanupMetadata
         {
             Name = GetType().Name,
-            Description = "Grocery store run; Initial cleanup of around 395 cases with only invalid system activity",
-            RequestedBy = "JIS",
+            Description = "Grocery store run; Initial cleanup of cases with only invalid system activity for defendants already released.",
+            RequestedBy = "JIS"
         };
         
         Validations =

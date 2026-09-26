@@ -4,8 +4,8 @@ using JisCleanup.Validations;
 
 namespace JisCleanup.Cleanups;
 
-public class Cleanup_04_Current_Inmates_StatusChanges_With_NoHumanAction : CleanupBase {
-    public Cleanup_04_Current_Inmates_StatusChanges_With_NoHumanAction()
+public class Cleanup_05_Current_Inmates_StatusChanges_With_NoHumanAction : CleanupBase {
+    public Cleanup_05_Current_Inmates_StatusChanges_With_NoHumanAction()
     {
         
         Metadata = new CleanupMetadata

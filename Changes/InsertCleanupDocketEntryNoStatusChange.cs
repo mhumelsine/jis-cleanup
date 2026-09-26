@@ -1,8 +1,8 @@
 namespace JisCleanup.TableChanges;
 
-public class InsertCleanupDocketEntry : InsertTableChange
+public class InsertCleanupDocketEntryNoStatusChange : InsertTableChange
 {
-    public InsertCleanupDocketEntry() 
+    public InsertCleanupDocketEntryNoStatusChange() 
         : base(new TableDefinition("JISJDW", "CJIS_DOCKET", "CJIS_DOCKET_ID"), "JISJDW.cjis_docket_seq")
     {
     }
@@ -26,7 +26,7 @@ public class InsertCleanupDocketEntry : InsertTableChange
                       'PURSUANT TO OMNIBUS ORDER ON CASE CHANGES/CORRECTIONS ENTERED 09/25/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
                       'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
                       'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
-                      ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
+                      ' NO OTHER DOCKET ENTRY ALTERED.'||
                       ' JIS RECORD CORRECTION, BATCH ' || __CLEANUP_ID__ );
               
                 v_count := SQL%ROWCOUNT;

@@ -11,7 +11,7 @@ public class Cleanup_00_OOSC_WithRemaining_BadDockets : CleanupBase {
         Metadata = new CleanupMetadata
         {
             Name = GetType().Name,
-            Description = "Case that had a OOSC after the bad docket entries, but the bad docket entries were not removed.",
+            Description = "Cases that had an OOSC after bad docket entries, but bad docket entries were not removed.",
             RequestedBy = "JIS"
         };
         
@@ -21,7 +21,7 @@ public class Cleanup_00_OOSC_WithRemaining_BadDockets : CleanupBase {
         
         Changes = [
             new CjisDocketByCaseDelete(),
-            new InsertCleanupDocketEntry()
+            new InsertCleanupDocketEntryNoStatusChange()
         ];
     }
 }

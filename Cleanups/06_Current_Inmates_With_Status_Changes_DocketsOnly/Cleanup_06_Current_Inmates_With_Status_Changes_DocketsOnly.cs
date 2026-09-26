@@ -4,8 +4,8 @@ using JisCleanup.Validations;
 
 namespace JisCleanup.Cleanups;
 
-public class Cleanup_04b_Current_Inmates_With_Status_Changes_DocketsOnly : CleanupBase {
-    public Cleanup_04b_Current_Inmates_With_Status_Changes_DocketsOnly()
+public class Cleanup_06_Current_Inmates_With_Status_Changes_DocketsOnly : CleanupBase {
+    public Cleanup_06_Current_Inmates_With_Status_Changes_DocketsOnly()
     {
         
         Metadata = new CleanupMetadata
@@ -21,7 +21,7 @@ public class Cleanup_04b_Current_Inmates_With_Status_Changes_DocketsOnly : Clean
         
         Changes = [
             new CjisDocketDelete(),
-            new InsertCleanupDocketEntry()
+            new InsertCleanupDocketEntryNoStatusChange()
         ];
     }
 }

@@ -11,7 +11,7 @@ public class Cleanup_03_DocketsWithoutStatusChanges : CleanupBase {
         Metadata = new CleanupMetadata
         {
             Name = GetType().Name,
-            Description = "Removes docket entries that do not status changes",
+            Description = "Removes docket entries that do not have status, location, or bond amount changes",
             RequestedBy = "JIS"
         };
         
@@ -21,7 +21,7 @@ public class Cleanup_03_DocketsWithoutStatusChanges : CleanupBase {
         
         Changes = [
             new CjisDocketDelete(),
-            new InsertCleanupDocketEntry()
+            new InsertCleanupDocketEntryNoStatusChange()
         ];
     }
 }

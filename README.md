@@ -476,13 +476,13 @@ Check the generated SQL, not just the C# configuration.
 
 ## Cleanup Checklist
 
-- The docket entry is correct for the cleanup being applied, including date and language.
-- The cleanup name and description accurately describe the scenario.
-- `query.sql` selects only the intended records.
-- The generated CSV contains the expected records and columns.
-- Validators fail safely when a record should not be changed.
-- Changes are ordered correctly.
-- Generated SQL has been reviewed and tested before production execution.
+- [x] The docket entry is correct for the cleanup being applied, including date and language.
+- [x] The cleanup name and description accurately describe the scenario.
+- [x] `query.sql` selects only the intended records.
+- [x] The generated CSV contains the expected records and columns.
+- [x] Validators fail safely when a record should not be changed.
+- [x] Changes are ordered correctly.
+- [x] Generated SQL has been reviewed and tested before production execution.
 
 # DUCKDB Query for Targeted Cleanup
 ```sql
