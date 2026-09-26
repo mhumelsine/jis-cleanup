@@ -19,7 +19,7 @@ public class Cleanup_02_InmateCleanup : CleanupBase
         
         Validations =
         [  
-            new NoHumanActivity()
+            new NoHumanChargeActivity()
         ];
         
         Changes = [

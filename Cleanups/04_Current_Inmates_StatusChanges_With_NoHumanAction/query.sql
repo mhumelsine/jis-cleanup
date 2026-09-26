@@ -3,7 +3,6 @@ with last_change_hist as (
     from (
              select
                  row_number() over (partition by h.CHARGE_NUMBER order by h.CHARGE_HIST_ID) rank_order
-
             , h.CHARGE_ID
                   , h.OLD_BOND_AMT
                   , h.OLD_LOCATION
@@ -13,6 +12,8 @@ with last_change_hist as (
                   , h.NEW_STATUS
                   , h.CHANGED_COLUMNS
                   , h.CREATE_USER_ID
+                  ,h.CHARGE_HIST_ID
+                  ,h.CREATE_DATE_TIME
              from JISJDW.CHARGE_HIST h
              where (
                  CHANGED_COLUMNS LIKE '%LOCATION%'
@@ -23,7 +24,16 @@ with last_change_hist as (
                and CREATE_DATE_TIME <= TO_DATE('2026-09-01 00:00', 'yyyy-mm-dd hh24:mi')
          )
     where rank_order = 1
-)
+),
+     charge_history_change_deltas as (
+         select
+             CHARGE_HIST_ID
+              ,lag(CREATE_DATE_TIME, 1) over(partition by CHARGE_NUMBER order by CHARGE_HIST_ID) previous_create_date_time
+            ,FIRST_VALUE(CHARGE_HIST_ID) over(partition by CHARGE_NUMBER order by CHARGE_HIST_ID desc) last_charge_history_id
+            ,FIRST_VALUE(CREATE_DATE_TIME) over(partition by CREATE_DATE_TIME order by CHARGE_HIST_ID desc) last_charge_date_time
+            ,CREATE_DATE_TIME
+         from JISJDW.CHARGE_HIST
+     )
 
 select distinct
     bd.cjis_spn,
@@ -33,11 +43,13 @@ select distinct
     h.OLD_STATUS,
     h.OLD_LOCATION,
     h.OLD_BOND_AMT
-
 from JISJDW.V_PNX2JIS_BAD_DKT bd
 
          inner join last_change_hist h
                     on bd.CHARGE_ID = h.CHARGE_ID
+
+         inner join charge_history_change_deltas cd
+                    on h.CHARGE_HIST_ID = cd.CHARGE_HIST_ID
 
 where exists (
     select /*+ PARALLEL */ *
@@ -57,19 +69,15 @@ where exists (
     where i.PHYSICAL_RELEASE_DATE IS NULL
       AND i.CJIS_SPN = bd.CJIS_SPN
 )
-  and exists (
-    select *
-    from (
-             select
-                 LAST_VALUE(CREATE_USER_ID) over (
-                PARTITION BY CHARGE_ID
-                order by CHARGE_HIST_ID
-                ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING
-            ) last_user_change,
-                 CHARGE_ID
-             from JISJDW.CHARGE_HIST
-         ) t
-    where rownum = 1
-      and last_user_change IN ('UNKNOWN', 'SYSTEMA')
-      and t.CHARGE_ID = bd.CHARGE_ID
+  and not exists (
+    SELECT *
+    FROM audit_trail sys_only_changes
+    WHERE activity_date_time > TO_DATE('2026-08-18 00:00','YYYY-MM-DD HH24:MI')
+      and activity_user_id NOT IN ('JISJDW', 'SYSTEMA', 'PNX2JIS', 'RAO')
+      and ACTIVITY_TABLE_NAME = 'CHARGE'
+      and (ACTIVITY_DETAILS LIKE '%STATUS%'
+        OR ACTIVITY_DETAILS LIKE '%LOCATION%'
+        OR ACTIVITY_DETAILS LIKE '%BOND_AMT%'
+        )
+      and sys_only_changes.CJIS_CASE_NUMBER = bd.CJIS_CASE_NUMBER
 )

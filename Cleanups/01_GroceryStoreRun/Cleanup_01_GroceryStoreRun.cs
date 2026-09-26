@@ -17,7 +17,7 @@ public class Cleanup_01_GroceryStoreRun : CleanupBase {
         
         Validations =
         [  
-            new NoHumanActivity()
+            new NoHumanChargeActivity()
         ];
         
         Changes = [
@@ -28,14 +28,6 @@ public class Cleanup_01_GroceryStoreRun : CleanupBase {
             new FirstAppearanceDelete(), 
             new CustodyStatusDelete(), 
             new ReleaseBondDelete(),
-            // new ChargeJailInfoDelete(),  //TODO:  Should we delete or not
-            // new CaseRelatedPersonDelete(),  //TODO:  
-            // new ChargeDelete(), //TODO:  Should we delete or not?
-            // new ArrestDelete(),
-            // new JailActivityDelete(),
-            // new InmateDelete(),
-            // new CaseDefendantDelete(),
-            // new CjisCaseDelete(),
             new InsertCleanupDocketEntry()
         ];
     }

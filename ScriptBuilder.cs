@@ -23,7 +23,7 @@ public static class ScriptBuilder
         
         Console.WriteLine($"Using:\t\t{cleanupType.FullName}");
 
-        string? dataFilePath = null;
+        string? dataFilePath;
         
         if (manualCleanupAttribute is not null)
         {

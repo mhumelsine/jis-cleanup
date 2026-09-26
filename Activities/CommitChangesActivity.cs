@@ -13,7 +13,7 @@ public class CommitChangesActivity : IActivity
                 UPDATE JISREM.CLEANUP 
                 SET 
                     status='CHARGES_PROCESSED'
-                WHERE cleanup_id=CLEANUP_ID;
+                WHERE cleanup_id = __CLEANUP_ID__;
                 
                 JISREM.LOG
                 (

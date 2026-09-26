@@ -105,7 +105,12 @@ with target_set as (
         SELECT *
         FROM audit_trail sys_only_changes
         WHERE activity_date_time > TO_DATE('2026-08-18 00:00','YYYY-MM-DD HH24:MI')
-          and activity_user_id NOT IN ('JISJDW', 'SYSTEMA', 'PNX2JIS')
+          and activity_user_id NOT IN ('JISJDW', 'SYSTEMA', 'PNX2JIS', 'RAO')
+          AND ACTIVITY_TABLE_NAME = 'CHARGE'
+          and (ACTIVITY_DETAILS LIKE '%STATUS%'
+            OR ACTIVITY_DETAILS LIKE '%LOCATION%'
+            OR ACTIVITY_DETAILS LIKE '%BOND_AMT%'
+            )
           and sys_only_changes.CJIS_CASE_NUMBER = c.CJIS_CASE_NUMBER
     )
 

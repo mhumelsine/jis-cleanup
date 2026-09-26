@@ -20,22 +20,22 @@ public record Charge
     
     public string GetCaseCourt()
     {
-        var match = Regex.Match(CjisCaseNumber, @"\d{4}(\w{2})\d+[a-zA-Z]\d+");
+        var match = Regex.Match(CjisCaseNumber, @"\d{4}(\w{2})\d+\w\d+");
     
-        return match.Groups[0].Value;
+        return match.Groups[1].Value;
     }
     
     public string GetCaseSequence()
     {
-        var match = Regex.Match(CjisCaseNumber, @"\d{4}\w{2}(\d+)[a-zA-Z]\d+");
+        var match = Regex.Match(CjisCaseNumber, @"\d{4}\w{2}(\d+)\w\d+");
     
-        return match.Groups[0].Value;
+        return match.Groups[1].Value;
     }
     
     public string GetCaseNumber()
     {
-        var match = Regex.Match(CjisCaseNumber, @"(\d{4}\w{2}\d+[a-zA-Z])\d+");
+        var match = Regex.Match(CjisCaseNumber, @"(\d{4}\w{2}\d+\w)\d+");
     
-        return match.Groups[0].Value;
+        return match.Groups[1].Value;
     }
 }

@@ -14,9 +14,7 @@ public static class ValidationDefaults
     public const string
         BadDataStartDate = "AND source_row.CREATE_DATE_TIME >= to_date('2026-08-18','YYYY-MM-DD')",
         OnlySystemCreatedOrChanged =
-            """
-            AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')
-            """;
+            "AND NVL(UPPER(TRIM(source_row.create_user_id)),'~') IN ('JISJDW','PNX2JIS','SYSTEMA')";
 }
 
 public abstract class Validator : IValidation

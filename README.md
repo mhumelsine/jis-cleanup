@@ -528,6 +528,7 @@ judge_assignment as (
     on rp.CASE_DEFENDANT_ID = d.CASE_DEFENDANT_ID
     inner join JISJDW.JUDGE j
     on rp.JUDGE_ID  = j.JUDGE_ID
+  --WHERE rp.PERSON_CODE = 'JU' --TODO:  Most recent activity's judge vs. most recent judge assignment?
 ),
 data_source as (
     select

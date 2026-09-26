@@ -12,8 +12,11 @@
     </Content>
     </ItemGroup>
     <ItemGroup>
+      <Folder Include="Cleanups\00_OOSC_WithRemaining_BadDockets\scripts\" />
       <Folder Include="Cleanups\01_GroceryStoreRun\scripts\" />
       <Folder Include="Cleanups\03_DocketsWithoutStatusChanges\scripts\" />
+      <Folder Include="Cleanups\04b_Current_Inmates_With_Status_Changes_DocketsOnly\scripts\" />
+      <Folder Include="Cleanups\04_Current_Inmates_StatusChanges_With_NoHumanAction\scripts\" />
       <Folder Include="Cleanups\05_Manual_TechnicalReview\scripts\" />
     </ItemGroup>
     <ItemGroup>
