@@ -26,6 +26,60 @@ pwsh New-Cleanup.ps1 "03_DocketsWithStatusChanges"
 pwsh Build-Cleanup.ps1 "03_DocketsWithStatusChanges" 
 ```
 
+- [ ] Review the output under `Cleanups/03_DocketsWithStatusChanges/scripts/<timestamp>/`
+
+- [ ] Run the generated scripts against Oracle
+```powershell
+pwsh Run-Cleanup.ps1 -CleanupTimestamp "<timestamp>" -CleanupNames "03_DocketsWithStatusChanges"
+```
+
+## Runbook: Creating a New Cleanup
+
+Follow these steps end to end to produce and run a cleanup.
+
+1. **Configure credentials.** Create a `.env` file at the repository root (not checked in):
+
+   ```text
+   ORACLE_USERNAME=TODO_SOMEUSER
+   ORACLE_PASSWORD=TODO_SOMEPASSWORD
+   ORACLE_HOST=TODO_SOMEHOST
+   ```
+
+2. **Scaffold the cleanup.**
+
+   ```powershell
+   pwsh New-Cleanup.ps1 "04_MyCleanup"
+   ```
+
+   This creates `Cleanups/04_MyCleanup/` with `Cleanup_04_MyCleanup.cs`, an empty `query.sql`, and a `scripts/` folder. It exits without changes if the directory already exists.
+
+3. **Write the source query.** Add the Oracle query that identifies the records to `Cleanups/04_MyCleanup/query.sql`. It must return the seven CSV columns: `CJIS_SPN,CJIS_CASE_NUMBER,CASE_DEFENDANT_ID,CHARGE_ID,OLD_STATUS,OLD_LOCATION,OLD_BOND_AMT`.
+
+4. **Implement the cleanup class.** Edit `Cleanups/04_MyCleanup/Cleanup_04_MyCleanup.cs`:
+   - Set `Metadata.Description`.
+   - Add validators to `Validations` (run before changes; a failing validator skips the charge).
+   - Add changes to `Changes` in execution order. Reuse existing changes from `Changes/` where possible.
+
+5. **Build the cleanup.**
+
+   ```powershell
+   pwsh Build-Cleanup.ps1 "04_MyCleanup"
+   ```
+
+   The build runs `query.sql` against Oracle, writes `Cleanups/04_MyCleanup/yyyyMMdd_hhmmss_data.csv`, and emits SQL to `Cleanups/04_MyCleanup/scripts/yyyyMMdd_hhmmss/`. It ends with `Build Success`.
+
+6. **Review the output.** Check the generated CSV row count and read the generated SQL files. Confirm names, predicates, change order, and snapshot tables before executing.
+
+7. **Run the cleanup.** Use the timestamp from the build output:
+
+   ```powershell
+   pwsh Run-Cleanup.ps1 -CleanupTimestamp "yyyyMMdd_hhmmss" -CleanupNames "04_MyCleanup"
+   ```
+
+   This executes every `.sql` file in `Cleanups/04_MyCleanup/scripts/yyyyMMdd_hhmmss/` against Oracle with SQLcl and rolls back on error.
+
+8. **Verify in Oracle.** Check the `JISREM.CLEANUP_LOG` entries and the `JISREM` snapshot tables for the cleanup partition.
+
 ## What It Does
 
 The generator:
@@ -66,8 +120,9 @@ Snapshots work like this:
 - .NET 10 SDK
 - PowerShell
 - Oracle connection settings in the project's `.env` file
+- SQLcl (Oracle command-line client) for `Run-Cleanup.ps1`, expected at `/opt/sqlcl/bin/sql`
 
-`Build-Cleanup.ps1` loads the values from `.env` into the local process environment before running the generator. The required variable names are determined by `OracleCsvDataExtractor`.
+`Build-Cleanup.ps1` loads the values from `.env` into the local process environment before running the generator. The required variable names are determined by `OracleFacade`.
 
 ## Cleanup Structure
 
@@ -79,10 +134,13 @@ Cleanups/
     ├── Cleanup_CleanupName.cs
     ├── query.sql
     ├── scripts/
-    └── yyyyMMdd_hhmmss_data.csv
+    │   └── yyyyMMdd_hhmmss/        # generated SQL, one folder per build
+    │       ├── Cleanup_CleanupName_1.sql
+    │       └── ...
+    └── yyyyMMdd_hhmmss_data.csv    # extracted query results
 ```
 
-The `scripts` directory is created for cleanup-specific SQL or supporting scripts. Generated files are written under the cleanup path by `CleanupBase.Build`.
+The `scripts` directory is created for cleanup-specific SQL or supporting scripts. Generated files are written to `Cleanups/CleanupName/scripts/<timestamp>/` by `CleanupBase.Build`.
 
 The cleanup name passed on the command line must match both:
 
@@ -172,14 +230,14 @@ Run:
 
 `Build-Cleanup.ps1`:
 
-1. Requires the cleanup name as a positional argument.
+1. Requires one or more cleanup names as positional arguments.
 2. Loads local environment variables from `.env`.
-3. Runs `dotnet run -- "CleanupName"`.
+3. Runs `dotnet run -- "build" "CleanupName"` (for each name).
 
 You can also run the generator directly if the required environment variables are already set:
 
 ```powershell
-dotnet run -- "CleanupName"
+dotnet run -- "build" "CleanupName"
 ```
 
 The application resolves the cleanup type using:
@@ -225,13 +283,13 @@ public interface ILoader<out TRecord>
 
 `CsvChargeLoader` loads the timestamped CSV created by `OracleCsvDataExtractor`.
 
-The loader expects a header followed by seven columns in this order:
+The loader expects a header followed by seven comma-separated columns:
 
 ```text
-CJIS SPN,CJIS Case Number,Case Defendant ID,Charge ID,Status,Location,Bond Amount
+CJIS_SPN,CJIS_CASE_NUMBER,CASE_DEFENDANT_ID,CHARGE_ID,OLD_STATUS,OLD_LOCATION,OLD_BOND_AMT
 ```
 
-The CSV loader expects exactly seven comma-separated values. It does not handle quoted values containing commas.
+The CSV loader expects exactly seven comma-separated values per row. It does not handle quoted values containing commas.
 
 ## Validators
 
@@ -391,7 +449,10 @@ The main activities are:
 - `LoggingProcedureActivity`: creates the logging procedure.
 - `EnsureSnapshotTableExistActivity`: creates missing snapshot tables.
 - `InitializeCleanupActivity`: registers the cleanup and queues its input records.
+- `ReportCleanupAgentsRegistered`: reports the agents/changes registered for the cleanup.
 - `BeginTransactionActivity`: starts transaction processing.
+- `ValidationsActivity`: runs the validators for one charge.
+- `ApplyChangesActivity`: applies the changes for one charge.
 - `ChargeBlock`: runs validation and changes for one charge inside a savepoint.
 - `CommitChangesActivity`: commits a normal run or rolls back a what-if run.
 
@@ -440,25 +501,45 @@ JISREM.CLEANUP_LOG_SEQ
 The configured partition size is 100 charges.
 
 ```csharp
-private List<CleanupBatch<TRecord>> Partition<TRecord>(
-    ILoader<TRecord> loader)
-{
-    return loader
-        .Load()
-        .Distinct()
+private List<CleanupBatch<TRecord>> Partition<TRecord>(ILoader<TRecord> loader)
+    => loader.Load()
         .Chunk(PartitionSize)
-        .Select((items, index) => new CleanupBatch<TRecord>
+        .Select((x, index) => new CleanupBatch<TRecord>
         {
-            OutputFileName =
-                $"{Metadata.Name}_Run{Metadata.RunNumber + 1}_Partition{index + 1}.sql",
-            Items = items.ToHashSet(),
-            Metadata = Metadata
+            OutputFileName = $"{Metadata.Name}_{index + 1}.sql",
+            Items = x.ToHashSet(),
+            Metadata = Metadata with { Name = $"{timestamp}_{Metadata.Name}_{index + 1}" }
         })
         .ToList();
-}
 ```
 
-Generated SQL filenames follow the format defined by `CleanupBase`. Review the emitted filenames in the console after each build.
+Generated SQL files are written to `Cleanups/CleanupName/scripts/<timestamp>/` and named `<CleanupName>_<partitionIndex>.sql`. The console lists each emitted file after a build.
+
+## Run a Generated Cleanup
+
+```powershell
+pwsh Run-Cleanup.ps1 -CleanupTimestamp "yyyyMMdd_hhmmss" -CleanupNames "CleanupName"
+```
+
+`Run-Cleanup.ps1`:
+
+1. Requires the build timestamp and one or more cleanup names.
+2. Loads local environment variables from `.env`.
+3. Looks for `Cleanups/<name>/scripts/<timestamp>/*.sql` and exits if the directory does not exist.
+4. Executes the scripts in that folder (newest first) with SQLcl, stopping on the first error and rolling back on failure.
+
+The connection string is built from `ORACLE_USERNAME`, `ORACLE_PASSWORD`, and `ORACLE_HOST` in `.env`, targeting the `JISPROD` service on port 1521.
+
+## Manual Cleanups
+
+A cleanup can skip the Oracle extraction step by adding a `ManualCleanup` attribute with the name of a data file already in the cleanup directory:
+
+```csharp
+[ManualCleanup("data.csv")]
+public class Cleanup_04_Manual_TechnicalReview : CleanupBase { ... }
+```
+
+The build then loads `data.csv` directly instead of running `query.sql` against Oracle. `Process-Manual.ps1` prepares and validates manual workbooks via `dotnet run -- excel <directory>`.
 
 ## Before You Execute a Generated Script
 
