@@ -7,7 +7,7 @@ select distinct
     null OLD_LOCATION,
     null OLD_BOND_AMT
 
-from JISJDW.V_PNX2JIS_BAD_DKT bd
+from JISJDW.V_PNX2JIS_BAD_DKT_v2 bd
 where not exists (
     select /*+ PARALLEL */ *
     from JISJDW.CHARGE_HIST h

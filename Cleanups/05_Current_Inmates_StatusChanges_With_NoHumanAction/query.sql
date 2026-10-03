@@ -43,7 +43,7 @@ select distinct
     h.OLD_STATUS,
     h.OLD_LOCATION,
     h.OLD_BOND_AMT
-from JISJDW.V_PNX2JIS_BAD_DKT bd
+from JISJDW.V_PNX2JIS_BAD_DKT_v2 bd
 
          inner join last_change_hist h
                     on bd.CHARGE_ID = h.CHARGE_ID

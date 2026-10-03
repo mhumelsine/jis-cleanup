@@ -649,3 +649,43 @@ select distinct
 from data_source
 order by SPN, "CASE NUMBER";
 ```
+
+# Updated View on 10/02:  V_PNX2JIS_BAD_DKT_v2
+
+```sql
+create or replace view JISJDW.V_PNX2JIS_BAD_DKT_v2 as
+    SELECT
+        de.cjis_spn,
+        de.last_name,
+        de.first_name,
+        ch.cjis_case_number,
+        ch.case_defendant_id,
+        d.charge_id,
+        ch.charge_literal,
+        ch.charge_count,
+        d.cjis_docket_id,
+        d.docket_seq,
+        d.docket_code,
+        dc.docket_literal,
+        d.docket_free_text,
+        d.docket_date,
+        d.received_date,
+        D.CREATE_USER_ID
+    from JISJDW.cjis_docket d
+
+    left join JISJDW.CJIS_DOCKET_CODE dc
+    on d.DOCKET_CODE = dc.DOCKET_CODE
+
+    inner join JISJDW.charge ch on ch.charge_id = d.charge_id
+
+    left join JISJDW.DEFENDANT de
+    on de.CJIS_SPN = ch.CJIS_SPN
+
+    left join JISJDW.user_list ul on d.create_user_id = ul.user_id
+
+    where d.CREATE_DATE_TIME >= '18-AUG-2026'
+    and d.CREATE_DATE_TIME < '31-AUG-2026'
+    and (docket_date - received_date) < 0
+    and d.CREATE_USER_ID IN ('SYSTEMA', 'PNX2JIS');
+/
+```

@@ -38,7 +38,7 @@ with target_set as (
                          count(distinct v.cjis_docket_id) bad_docket_count,
                          min(v.received_date) first_bad_received_date,
                          max(v.received_date) last_bad_received_date
-                     from jisjdw.v_pnx2jis_bad_dkt v
+                     from jisjdw.V_PNX2JIS_BAD_DKT_v2 v
                      group by v.case_defendant_id,v.cjis_spn, v.cjis_case_number,v.charge_id
                  ) x
          ) b, -- affected charges already identified

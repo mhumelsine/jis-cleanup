@@ -14,7 +14,7 @@ public sealed class FaChargeDelete : DeleteTableChange
            exists (
                select CJIS_DOCKET_ID
                from JISJDW.CHARGE c
-               inner join JISJDW.V_PNX2JIS_BAD_DKT d
+               inner join JISJDW.V_PNX2JIS_BAD_DKT_v2 d
                on c.CHARGE_ID = d.CHARGE_ID
                where c.CHARGE_ID = source_row.CHARGE_ID
            )
