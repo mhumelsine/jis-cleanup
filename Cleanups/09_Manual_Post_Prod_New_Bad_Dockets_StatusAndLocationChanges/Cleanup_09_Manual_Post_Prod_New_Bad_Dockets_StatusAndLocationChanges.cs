@@ -23,7 +23,7 @@ public class Cleanup_09_Manual_Post_Prod_New_Bad_Dockets_StatusAndLocationChange
         Changes = [
             new RestoreStatusLocation(),
             new CjisDocketDelete(),
-            new InsertCleanupDocketEntry()
+            new InsertAmendedCleanupDocketEntry()
         ];
     }
 }

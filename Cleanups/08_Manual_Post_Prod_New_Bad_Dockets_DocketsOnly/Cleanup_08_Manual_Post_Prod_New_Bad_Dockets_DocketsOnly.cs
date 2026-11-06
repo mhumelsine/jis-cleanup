@@ -22,7 +22,7 @@ public class Cleanup_08_Manual_Post_Prod_New_Bad_Dockets_DocketsOnly : CleanupBa
         
         Changes = [
             new CjisDocketDelete(),
-            new InsertCleanupDocketEntryNoStatusChange()
+            new InsertAmendedCleanupDocketEntry()
         ];
     }
 }

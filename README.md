@@ -584,70 +584,78 @@ with case_attorney as (
     select
         row_number() over (partition by d.CJIS_CASE_NUMBER order by rp.DATE_ASSIGNED desc) most_recent_attorney
         ,rp.DEFENSE_ATTORNEY_TYPE
-        ,a.LAST_NAME
-        ,a.FIRST_NAME
-        ,d.CJIS_CASE_NUMBER
+         ,a.LAST_NAME
+         ,a.FIRST_NAME
+         ,d.CJIS_CASE_NUMBER
     from JISJDW.case_related_person rp
-    left join JISJDW.CASE_DEFENDANT d
-    on rp.CASE_DEFENDANT_ID = d.CASE_DEFENDANT_ID
-    left join JISJDW.ATTORNEY a
-    on rp.DEFENSE_ATTORNEY_ID = a.FLORIDA_BAR_ID
+             left join JISJDW.CASE_DEFENDANT d
+                       on rp.CASE_DEFENDANT_ID = d.CASE_DEFENDANT_ID
+             left join JISJDW.ATTORNEY a
+                       on rp.DEFENSE_ATTORNEY_ID = a.FLORIDA_BAR_ID
     where rp.PERSON_CODE IN ('CA', 'PD', 'DA')
     order by d.CJIS_CASE_NUMBER desc
 ),
-judge_assignment as (
-    select
-        row_number() over (partition by d.CJIS_CASE_NUMBER order by rp.DATE_ASSIGNED desc) most_recent_judge
+     judge_assignment as (
+         select
+             row_number() over (partition by d.CJIS_CASE_NUMBER order by rp.DATE_ASSIGNED desc) most_recent_judge
         ,d.CJIS_SPN
-        ,d.CJIS_CASE_NUMBER
-        ,j.LAST_NAME
-        ,j.FIRST_NAME
-        ,rp.DATE_ASSIGNED
-        ,d.DIVISION
-    from JISJDW.CASE_RELATED_PERSON rp
-    inner join JISJDW.CASE_DEFENDANT d
-    on rp.CASE_DEFENDANT_ID = d.CASE_DEFENDANT_ID
-    inner join JISJDW.JUDGE j
-    on rp.JUDGE_ID  = j.JUDGE_ID
-  --WHERE rp.PERSON_CODE = 'JU' --TODO:  Most recent activity's judge vs. most recent judge assignment?
-),
-data_source as (
-    select
-        c.SPN_ID SPN
-        ,REGEXP_SUBSTR(c.CASE_ID, '(\d{4}\w{2}\d+\w{1}).+', 1,1,null,1) "CASE NUMBER"
-        ,atty.LAST_NAME "ATTORNEY LAST NAME"
-        ,atty.FIRST_NAME "ATTORNEY FIRST NAME"
-        ,judge.DIVISION
-        ,judge.LAST_NAME "JUDGE LAST NAME"
-        ,judge.FIRST_NAME "JUDGE FIRST NAME"
-        ,d.LAST_NAME "DEFENDANT LAST NAME"
-        ,d.FIRST_NAME "DEFENDANT FIRST NAME"
-    from (
-        select CHARGE_ID,
-           CJIS_SPN SPN_ID,
-           CJIS_CASE_NUMBER CASE_ID
-        from JISJDW.V_PNX2JIS_BAD_DKT
-    ) c
-    left join case_attorney atty
-    on atty.CJIS_CASE_NUMBER = REGEXP_SUBSTR(c.CASE_ID, '(\d{4}\w{2}\d+\w{1}).+', 1,1,null,1) --c.CASE_ID
-    left join judge_assignment judge
-    on judge.CJIS_CASE_NUMBER = REGEXP_SUBSTR(c.CASE_ID, '(\d{4}\w{2}\d+\w{1}).+', 1,1,null,1) --c.CASE_ID
-    left join JISJDW.DEFENDANT d
-    on d.CJIS_SPN = c.SPN_ID
-    where atty.most_recent_attorney = 1
-    and judge.most_recent_judge = 1
-)
+              ,d.CJIS_CASE_NUMBER
+              ,j.LAST_NAME
+              ,j.FIRST_NAME
+              ,rp.DATE_ASSIGNED
+              ,d.DIVISION
+         from JISJDW.CASE_RELATED_PERSON rp
+                  inner join JISJDW.CASE_DEFENDANT d
+                             on rp.CASE_DEFENDANT_ID = d.CASE_DEFENDANT_ID
+                  inner join JISJDW.JUDGE j
+                             on rp.JUDGE_ID  = j.JUDGE_ID
+         WHERE rp.PERSON_CODE = 'JU'
+           AND rp.CURRENT_FLAG = 'Y'  --TODO:  Most recent activity's judge vs. most recent judge assignment?
+     ),
+     data_source as (
+         select
+             c.SPN_ID SPN
+              ,REGEXP_SUBSTR(c.CASE_ID, '(\d{4}\w{2}\d+\w{1}).+', 1,1,null,1) "CASE NUMBER"
+              ,atty.LAST_NAME "ATTORNEY LAST NAME"
+              ,atty.FIRST_NAME "ATTORNEY FIRST NAME"
+              ,judge.DIVISION
+              ,judge.LAST_NAME "JUDGE LAST NAME"
+              ,judge.FIRST_NAME "JUDGE FIRST NAME"
+              ,d.LAST_NAME "DEFENDANT LAST NAME"
+              ,d.FIRST_NAME "DEFENDANT FIRST NAME"
+         from (
+                  select CHARGE_ID,
+                         CJIS_SPN SPN_ID,
+                         CJIS_CASE_NUMBER CASE_ID
+                  from JISJDW.V_PNX2JIS_BAD_DKT
+              ) c
+                  left join case_attorney atty
+                            on atty.CJIS_CASE_NUMBER = REGEXP_SUBSTR(c.CASE_ID, '(\d{4}\w{2}\d+\w{1}).+', 1,1,null,1) --c.CASE_ID
+                                and atty.most_recent_attorney = 1
+                  left join judge_assignment judge
+                            on judge.CJIS_CASE_NUMBER = REGEXP_SUBSTR(c.CASE_ID, '(\d{4}\w{2}\d+\w{1}).+', 1,1,null,1) --c.CASE_ID
+                                and judge.most_recent_judge = 1
+                  left join JISJDW.DEFENDANT d
+                            on d.CJIS_SPN = c.SPN_ID
+     )
 select distinct
     DIVISION,
-    "JUDGE LAST NAME" || ', ' || "JUDGE FIRST NAME" "JUDGE",
+    case when data_source.DIVISION is not null
+             then "JUDGE LAST NAME" || ', ' || "JUDGE FIRST NAME"
+         else null
+        end "JUDGE",
     SPN,
     "DEFENDANT LAST NAME",
     "DEFENDANT FIRST NAME",
     "CASE NUMBER",
-    "ATTORNEY LAST NAME" || ', ' || "ATTORNEY FIRST NAME" "LAST DEFENSE ATTORNEY"
+    case when data_source."ATTORNEY LAST NAME" is not null
+             then "ATTORNEY LAST NAME" || ', ' || "ATTORNEY FIRST NAME"
+         else null
+        end "LAST DEFENSE ATTORNEY"
 
 from data_source
 order by SPN, "CASE NUMBER";
+
 ```
 
 # Updated View on 10/02:  V_PNX2JIS_BAD_DKT_v2
