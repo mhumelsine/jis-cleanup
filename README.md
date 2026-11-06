@@ -697,3 +697,8 @@ create or replace view JISJDW.V_PNX2JIS_BAD_DKT_v2 as
     and d.CREATE_USER_ID IN ('SYSTEMA', 'PNX2JIS');
 /
 ```
+
+# TODOS
+
+- [ ] Replace all three manual files for cleanups 8, 9, and 10
+- [ ] Update docket entry for the amended order (dates, language)
