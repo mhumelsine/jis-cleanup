@@ -22,6 +22,7 @@
       <Folder Include="Cleanups\05_Manual_TechnicalReview\scripts\" />
       <Folder Include="Cleanups\06_Current_Inmates_With_Status_Changes_DocketsOnly\scripts\" />
       <Folder Include="Cleanups\07_Manual_Post_Production_Review\scripts\" />
+      <Folder Include="Cleanups\10_Manual_Rearrest_NoBadDockets\scripts\" />
     </ItemGroup>
     <ItemGroup>
       <PackageReference Include="ClosedXML" Version="0.105.1" />

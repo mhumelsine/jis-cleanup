@@ -700,5 +700,9 @@ create or replace view JISJDW.V_PNX2JIS_BAD_DKT_v2 as
 
 # TODOS
 
-- [ ] Replace all three manual files for cleanups 8, 9, and 10
-- [ ] Update docket entry for the amended order (dates, language)
+- [x] Replace all three manual files for cleanups 8, 9, and 10
+- [x] Update docket entry for the amended order (dates, language)
+
+# STEP NAME Too Long
+
+`alter table JISREM.CLEANUP_LOG MODIFY (STEP_NAME VARCHAR2(100));`

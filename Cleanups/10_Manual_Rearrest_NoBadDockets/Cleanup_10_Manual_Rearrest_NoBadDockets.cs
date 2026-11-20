@@ -1,5 +1,4 @@
 using JisCleanup.Changes;
-using JisCleanup.TableChanges;
 
 namespace JisCleanup.Cleanups;
 

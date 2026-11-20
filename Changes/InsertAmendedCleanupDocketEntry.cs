@@ -24,7 +24,7 @@ public class InsertAmendedCleanupDocketEntry : InsertTableChange
                      
                 INSERT INTO JISJDW.cjis_docket (cjis_docket_id, charge_id, docket_date, received_date, docket_code, docket_free_text)
                 VALUES (v_inserted_id, '{charge.ChargeId}', SYSDATE,SYSDATE, 'APPF',
-                       'PURSUANT TO OMNIBUS ORDER ON CASE CHANGES/CORRECTIONS ENTERED 09/25/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
+                       'PURSUANT TO SECOND OMNIBUS ORDER ON CASE CHANGES/CORRECTIONS ENTERED 11/13/2026, REMOVED ERRONEOUS SYSTEM-GENERATED '||
                        'DOCKET ENTRIES SEQ [' || v_docket_id_str || '] ' ||
                        'CREATED 08/18-08/21/2026 DURING THE COUNTY''S UPGRADE TO THE LEGACY JIS SYSTEM.'||
                        ' [CASE STATUS RESTORED TO STATUS AS OF 08/17/2026.] NO OTHER DOCKET ENTRY ALTERED.'||
